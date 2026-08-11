@@ -60,7 +60,7 @@ TARGET_KEYWORDS = [
     "vp of marketing",
 ]
 
-SEEN_JOBS_HEADERS = ["job_id", "company", "title", "url", "found_date", "matched"]
+SEEN_JOBS_HEADERS = ["job_id", "company", "title", "url", "found_date", "matched", "source"]
 
 # ---------------------------------------------------------------------------
 # Seen-jobs helpers
@@ -256,6 +256,7 @@ def main() -> None:
                 "url": job["url"],
                 "found_date": today,
                 "matched": "yes" if matched else "no",
+                "source": platform,
             })
             new_count += 1
 
