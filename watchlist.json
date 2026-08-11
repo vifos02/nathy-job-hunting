@@ -1,0 +1,11 @@
+[
+  {"company": "Figma",       "platform": "greenhouse", "slug": "figma"},
+  {"company": "Klaviyo",     "platform": "greenhouse", "slug": "klaviyo"},
+  {"company": "Remote",      "platform": "greenhouse", "slug": "remote"},
+  {"company": "GitLab",      "platform": "greenhouse", "slug": "gitlab"},
+  {"company": "Automattic",  "platform": "greenhouse", "slug": "automattic"},
+  {"company": "HubSpot",     "platform": "greenhouse", "slug": "hubspot"},
+  {"company": "Miro",        "platform": "greenhouse", "slug": "miro"},
+  {"company": "Doist",       "platform": "lever",      "slug": "doist"},
+  {"company": "Linear",      "platform": "ashby",      "slug": "linear"}
+]
