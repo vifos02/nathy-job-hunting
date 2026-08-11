@@ -1,12 +1,22 @@
 #!/usr/bin/env python3
 """
-Browser-based job scanner for sites that block API access (Indeed, LinkedIn, Remote.co).
+Browser-based job scanner for sites that block API access.
 
-Uses Playwright + Chromium. In the Claude Web remote session, Chromium is
-pre-installed at /opt/pw-browsers — no browser download needed.
+Covers: Indeed (remote filter, 14 days), LinkedIn (remote, past 7 days), Remote.co.
 
-Matches are written to browser-finds.json (full detail) and appended to
-evaluated-jobs.csv (same format as scan_jobs.py) for dedup and scoring.
+MUST RUN LOCALLY on your Mac — not in the Claude Web remote session.
+The remote session's network egress policy blocks indeed.com, linkedin.com, and remote.co.
+scan_jobs.py handles API-accessible sources and runs in the remote session.
+
+Standard run cycle (twice a day):
+    git pull                          # sync dedup list before running
+    python browser_search.py
+    git add evaluated-jobs.csv browser-finds.json
+    git commit -m "browser scan $(date +%Y-%m-%d)"
+    git push
+
+Matches append to evaluated-jobs.csv (dedup record shared with scan_jobs.py)
+and write to browser-finds.json (matches only, for /digest review).
 
 Usage:
     python browser_search.py                     # run all sources

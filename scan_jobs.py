@@ -1,6 +1,9 @@
 #!/usr/bin/env python3
 """
-Job board scanner for Nathália's job hunt system.
+API-based job board scanner for Nathália's job hunt system.
+
+Runs in the Claude Web remote session (personal account) — twice a day.
+For browser-based sources (Indeed, LinkedIn, Remote.co) use browser_search.py locally.
 
 Reads watchlist.json, hits each company's ATS API, filters by target keywords,
 and skips anything already logged in evaluated-jobs.csv.

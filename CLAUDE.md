@@ -193,6 +193,55 @@ All specifics in any rewrite must come from resume/master-resume.md, resume/know
 
 ---
 
+## Scanning Workflow
+
+### Cadence
+
+Run the full scan cycle **twice a day** — once in the morning, once mid-afternoon.
+
+### Script Split by Environment
+
+| Script | Where it runs | What it covers |
+|--------|--------------|----------------|
+| `scan_jobs.py` | Claude Web session (personal account) | ATS APIs: Greenhouse, Lever, Ashby, Workday, Gupy, Workable — plus aggregators: Remote OK, Remotive, Working Nomads, We Work Remotely |
+| `browser_search.py` | Local Mac, Terminal | Indeed (remote filter, 14 days), LinkedIn (remote, 7 days), Remote.co — sites that block API access |
+
+The remote session (Claude Web) cannot reach Indeed, LinkedIn, or Remote.co due to network egress policy. `browser_search.py` must run locally where outbound internet is unrestricted.
+
+### Running the API Scanner (Claude Web Session)
+
+Open a personal-account Claude Web session and run:
+
+```
+python scan_jobs.py
+```
+
+New matches print to stdout. All seen jobs append to `evaluated-jobs.csv`.
+
+### Running the Browser Scanner (Local Mac Terminal)
+
+```bash
+cd ~/path/to/nathy-job-hunting
+git pull                              # get latest dedup list first
+pip install playwright                # one-time
+python browser_search.py              # runs all three sources
+git add evaluated-jobs.csv browser-finds.json
+git commit -m "browser scan $(date +%Y-%m-%d)"
+git push
+```
+
+Matches write to both `evaluated-jobs.csv` (dedup record) and `browser-finds.json` (scored finds for review). Always `git pull` before running so the local dedup list is current — prevents the same job appearing from both scripts.
+
+### After Each Scan
+
+1. New matches print to stdout
+2. Paste interesting postings into `/evaluate` to score them
+3. If score ≥ 7.0, run `/tailor` then apply
+4. Log the application in `applications.csv`
+5. Run `/digest` for a current pipeline view
+
+---
+
 ## Applications Pipeline — Status Values
 
 Used in applications.csv. The /digest command uses these to group entries.
