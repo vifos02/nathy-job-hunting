@@ -78,3 +78,79 @@ How closely do their stated requirements map to my documented skills?
 ---
 
 ## Weighted Score Formula
+Final = (Role Fit × 0.30) + (Remote × 0.25) + (Comp × 0.20) + (Company × 0.15) + (Skills × 0.10)
+
+## Apply Threshold
+
+| Score | Action |
+|-------|--------|
+| ≥ 7.0 | **APPLY** |
+| 5.5–6.9 | **CONSIDER** – apply if the pipeline is thin |
+| < 5.5 | **SKIP** |
+
+---
+
+## My Real Skills (Source of Truth for Tailoring)
+
+**SEO & Content**
+- On-page SEO, content optimization, page launches, migrations
+- AHREFs, Botify, Google Search Console, Looker Studio, GA4
+- Editorial calendars, tone of voice, localization (EN → PT-BR)
+- Managed 100% SEO content production for a major global market (Canva Brazil)
+- Led SEO for Brazil reporting to stakeholders during a 5-month gap between hires
+
+**Social & Paid Media**
+- Meta Ads: strategy, execution, A/B testing (budgets up to $10k+)
+- Instagram, YouTube, influencer relations
+- Facebook community growth (400% fan base growth at mDhil, India)
+
+**Email Marketing & Automation**
+- Brevo, MailChimp, automated nurture funnels, PLG strategies
+- Built email funnels at CondoConta, Lumine, and Macromator
+
+**Project & Operations Management**
+- Trello, ClickUp, Notion, Jira
+- OKR methodology, Salesforce reporting
+- Cross-border team management (up to 21 people across 17+ cities, 3 countries)
+- Budget ownership, vendor negotiations, agency-side project delivery
+
+**Strategy**
+- Communications planning, brand positioning
+- Launch campaigns (Lumine: 6-digit revenue in 7 days, 22k+ leads, 7% conversion)
+- Channel partner marketing (Genesys LATAM via Macromator)
+
+**Languages**
+- Portuguese: native
+- English: fluent (professional, 10+ years daily use)
+- Spanish: fluent (lived in Argentina, Chile, Spain)
+- Italian: beginner (citizenship process ongoing)
+- Català: beginner (living in Tarragona)
+
+**Industries I've Worked In**
+- Tech / SaaS / AI tools (Canva)
+- Fintech / banking (CondoConta)
+- Streaming / subscription media (Lumine.tv)
+- Digital agencies / WPP network (Mirum/JWT)
+- Healthcare startup (mDhil, India)
+- Channel partner marketing (Genesys/Macromator)
+- International NGO / student-run org (AIESEC)
+- Broadcasting/media (Grupo RBS)
+
+## What I Genuinely Do NOT Have
+
+Be explicit about these — don't work around them:
+- Deep Google Ads / SEM ownership (I've used Meta Ads extensively; Google Ads is limited)
+- SQL or data engineering skills
+- Product management depth (one brief PM engagement at Clube de Literatura Clássica)
+- Developer / coding skills (some basic HTML, not programming)
+- UK/EU work permit currently (Italian citizenship application in progress — flag this clearly)
+
+---
+
+## Context for Evaluations
+
+- I am returning from maternity leave — I need **flexibility and async-friendly culture**
+- I have two young daughters at home — **rigid 9–5 video-call-heavy roles are a concern**
+- My Canva contract ends November 2026 — I may be able to bridge with overlap contracts
+- I am open to both **employee roles (CLT/full-time/permanent)** and **senior contractor gigs**
+- Income goal: equivalent of $2,000–$3,500 USD/month net, ideally growing
