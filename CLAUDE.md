@@ -143,7 +143,7 @@ Be explicit about these — don't work around them:
 - SQL or data engineering skills
 - Product management depth (one brief PM engagement at Clube de Literatura Clássica)
 - Developer / coding skills (some basic HTML, not programming)
-- UK/EU work permit currently (Italian citizenship application in progress — flag this clearly)
+- US work permit currently
 
 ---
 
@@ -153,4 +153,32 @@ Be explicit about these — don't work around them:
 - I have two young daughters at home — **rigid 9–5 video-call-heavy roles are a concern**
 - My Canva contract ends November 2026 — I may be able to bridge with overlap contracts
 - I am open to both **employee roles (CLT/full-time/permanent)** and **senior contractor gigs**
-- Income goal: equivalent of $2,000–$3,500 USD/month net, ideally growing
+- Income goal: equivalent of 3,500 EUR/month net salary, ideally growing
+- Relocation: planning to move to Brazil, Curitiba, by November 2026 but currently still targeting companies in EMEA
+- Timezone friendliness: can't work for East Cost Pacific US but other US/Canada timezones are fine
+
+---
+
+## SYSTEM GUARDRAILS
+
+- The master resume is never edited unless specifically requested, only copied.
+- Tailoring means reordering and reframing what's true, never fabricating.
+- Aggregator links don't count as verification; the agent has to find the live posting on the company's actual ATS.
+- Scoring a job and applying to it are separate decisions, and the agent never marks anything as applied. I do that manually.
+
+---
+
+## Applications Pipeline — Status Values
+
+Used in applications.csv. The /digest command uses these to group entries.
+
+| Status | Meaning |
+|--------|---------|
+| Applied | Submitted, waiting to hear back |
+| Screening | HR/recruiter call booked or completed |
+| Interview | Technical or hiring manager interview stage |
+| Final | Final round / decision pending |
+| Offer | Offer received |
+| Rejected | No from them |
+| Withdrew | No from me |
+| Ghosted | No response after 3+ weeks |
