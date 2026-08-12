@@ -2,7 +2,7 @@
 """
 Browser-based job scanner for sites that block API access.
 
-Covers: Indeed (remote filter, 14 days), LinkedIn (remote, past 7 days), Remote.co.
+Covers: Indeed (remote filter, 14 days), LinkedIn (remote, past 7 days), Remote.co, InfoJobs (remote, Spain/LATAM).
 
 MUST RUN LOCALLY on your Mac — not in the Claude Web remote session.
 The remote session's network egress policy blocks indeed.com, linkedin.com, and remote.co.
@@ -68,6 +68,11 @@ TARGET_KEYWORDS = [
     "head of content",
     "vp marketing",
     "vp of marketing",
+    # Spanish-language equivalents — surfaces InfoJobs and LATAM board postings
+    "marketing digital",
+    "director marketing",
+    "responsable seo",
+    "responsable de marketing",
 ]
 
 # Applied after TARGET_KEYWORDS match — mirrors scan_jobs.py / evaluate_matches.py
@@ -132,6 +137,29 @@ SEARCH_QUERIES = [
     # Portugal-based remote — viable once EU citizenship clears
     "marketing manager portugal",
     "seo manager portugal",
+]
+
+# InfoJobs-specific query list — focused on what the Spanish board is good at:
+# international remote postings indexed in English + Spanish-language roles from Spain/LATAM.
+# Kept shorter than SEARCH_QUERIES to avoid running 30 near-useless queries on a regional board.
+INFOJOBS_QUERIES = [
+    "seo manager",
+    "content marketing manager",
+    "digital marketing manager",
+    "growth marketing manager",
+    "head of content",
+    "head of seo",
+    "marketing operations manager",
+    # Spanish-language variants
+    "marketing digital",
+    "director marketing",
+    "responsable de marketing",
+    "responsable seo",
+    # LATAM / Portuguese signals
+    "marketing manager latam",
+    "marketing manager brazil",
+    "content marketing portuguese",
+    "marketing manager portuguese speaking",
 ]
 
 SEEN_JOBS_HEADERS = ["job_id", "company", "title", "url", "found_date", "matched", "source"]
@@ -465,6 +493,103 @@ def scrape_remoteco(page, seen_ids: set, today: str) -> tuple:
 
 
 # ---------------------------------------------------------------------------
+# InfoJobs
+# ---------------------------------------------------------------------------
+
+def scrape_infojobs(page, seen_ids: set, today: str) -> tuple:
+    all_new, matches = [], []
+    found_urls: set = set()
+
+    for query in INFOJOBS_QUERIES:
+        q = query.replace(" ", "+")
+        # teleworking=FULL_REMOTE = 100% remote filter; sortBy=PUBLICATION_DATE = newest first
+        url = (
+            f"https://www.infojobs.net/jobsearch/search-results/list.xhtml"
+            f"?keyword={q}&teleworking=FULL_REMOTE&sortBy=PUBLICATION_DATE"
+        )
+        print(f"    {query!r} ... ", end="", flush=True)
+
+        try:
+            page.goto(url, timeout=30000, wait_until="domcontentloaded")
+            page.wait_for_timeout(3000)
+        except Exception as e:
+            print(f"SKIP ({type(e).__name__})")
+            continue
+
+        body = page.content().lower()
+        if "captcha" in body[:3000] or "access denied" in body[:3000] or "robot" in body[:3000]:
+            print("BLOCKED — skipping InfoJobs for this run")
+            break
+
+        # InfoJobs renders offer cards as <li> items; try multiple selector patterns
+        cards = page.query_selector_all(
+            "li.ij-OfferCard, "
+            "li[data-jobid], "
+            "article.ij-OfferCard, "
+            "ul#offerList li"
+        )
+        new_count = 0
+
+        for card in cards:
+            try:
+                title_el = (
+                    card.query_selector("h2 a")
+                    or card.query_selector("a[class*='title']")
+                    or card.query_selector("a[class*='Title']")
+                    or card.query_selector("a[class*='offer']")
+                )
+                if not title_el:
+                    continue
+                title = title_el.inner_text().strip()
+                if not title:
+                    continue
+
+                company_el = (
+                    card.query_selector("a[class*='company']")
+                    or card.query_selector("span[class*='company']")
+                    or card.query_selector("[class*='Company']")
+                    or card.query_selector("[class*='subtitle'] a")
+                )
+                company = company_el.inner_text().strip() if company_el else "Unknown"
+
+                href = title_el.get_attribute("href") or ""
+                if href.startswith("/"):
+                    href = "https://www.infojobs.net" + href
+                # Strip tracking params
+                href = href.split("?")[0].rstrip("/")
+                if not href or href in found_urls:
+                    continue
+                found_urls.add(href)
+
+                job_id = f"infojobs:{url_id(href)}"
+                if job_id in seen_ids:
+                    continue
+                seen_ids.add(job_id)
+
+                matched = is_match(title, company)
+                row = {
+                    "job_id": job_id,
+                    "company": company,
+                    "title": title,
+                    "url": href,
+                    "found_date": today,
+                    "matched": "yes" if matched else "no",
+                    "source": "infojobs",
+                }
+                all_new.append(row)
+                new_count += 1
+                if matched:
+                    matches.append(row)
+            except Exception:
+                continue
+
+        print(f"{new_count} new")
+        time.sleep(2)
+
+    return all_new, matches
+
+
+# ---------------------------------------------------------------------------
 # Source registry
 # ---------------------------------------------------------------------------
 
@@ -472,6 +597,7 @@ SOURCES = {
     "indeed":   scrape_indeed,
     "linkedin": scrape_linkedin,
     "remoteco": scrape_remoteco,
+    "infojobs": scrape_infojobs,
 }
 
 

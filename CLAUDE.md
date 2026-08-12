@@ -239,7 +239,7 @@ Run the full scan cycle **twice a day** — once in the morning, once mid-aftern
 | Script | Where it runs | What it covers |
 |--------|--------------|----------------|
 | `scan_jobs.py` | Local Mac, Terminal | ATS APIs: Greenhouse, Lever, Ashby, Workday, Gupy, Workable — plus aggregators: Remote OK, Remotive, Working Nomads, We Work Remotely |
-| `browser_search.py` | Local Mac, Terminal | Indeed (remote filter, 14 days), LinkedIn (remote, 7 days), Remote.co |
+| `browser_search.py` | Local Mac, Terminal | Indeed (remote filter, 14 days), LinkedIn (remote, 7 days), Remote.co, InfoJobs (remote, Spain/LATAM) |
 
 Both scripts run locally. The Claude Web remote session cannot make outbound HTTP requests due to network egress policy — it is used only for Claude AI interactions (evaluate, tailor, digest, humanize, prep).
 
