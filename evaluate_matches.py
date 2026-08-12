@@ -47,9 +47,29 @@ DEFAULT_LIMIT = 15
 
 # Pre-filter: skip without calling the API
 SKIP_TITLE_WORDS = [
+    # Wrong level
     "junior", " jr ", "associate", "coordinator", "intern", "entry level",
+    # Wrong function
     "developer", "engineer", "data scientist", "data analyst",
     "ppc specialist", "sem specialist", "paid search specialist",
+    "product marketing",     # different discipline
+    "lifecycle marketing",   # CRM/email focus, not her primary strength
+    "account based",         # ABM, B2B ops
+    "field marketing",       # events/in-person
+    "event marketing",
+    "enablement",            # sales enablement
+    "demand generation",     # performance/paid focus
+    "brand manager",         # brand-only, not digital
+    "pr manager", "public relations",
+    "influencer manager",
+    "affiliate",
+    # On-site locations in title
+    "são paulo", "sao paulo",
+    "tel aviv",
+    "new york", "new york,",
+    "san francisco",
+    "austin,", "chicago,", "london,",
+    "los angeles",
 ]
 
 SKIP_INDUSTRY_WORDS = [
