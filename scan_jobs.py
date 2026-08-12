@@ -96,6 +96,7 @@ SKIP_TITLE_WORDS = [
     "affiliate",
     # APAC / non-workable locations in title
     "japan", "tokyo", "singapore", "apac", "asia pacific",
+    "indonesia", "jakarta", "malaysia", "kuala lumpur", "philippines",
     "china", "hong kong", "korea", "sydney", "australia",
     # On-site US/LATAM cities in title (city + comma = likely on-site location tag)
     "são paulo", "sao paulo", "tel aviv",

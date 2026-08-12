@@ -84,6 +84,7 @@ SKIP_TITLE_WORDS = [
     "field marketing", "event marketing", "enablement", "affiliate",
     "japan", "tokyo", "singapore", "apac", "asia pacific",
     "china", "hong kong", "korea", "sydney", "australia",
+    "indonesia", "jakarta", "malaysia", "kuala lumpur", "philippines",
     "são paulo", "sao paulo", "tel aviv",
     "new york,", "san francisco,", "austin,", "chicago,", "los angeles,",
     "seattle,", "boston,", "denver,", "miami,", "atlanta,",
