@@ -81,6 +81,7 @@ SKIP_TITLE_WORDS = [
     "junior", " jr ", "associate", "coordinator", "intern", "entry level",
     "developer", "engineer", "data scientist", "data analyst",
     "ppc specialist", "sem specialist", "paid search specialist",
+    ", sem",  # e.g. "Growth Marketing Lead, SEM"
     "product marketing",
     "lifecycle marketing",
     "account based",
@@ -88,9 +89,13 @@ SKIP_TITLE_WORDS = [
     "event marketing",
     "enablement",
     "affiliate",
+    # APAC / non-workable locations in title
+    "japan", "tokyo", "singapore", "apac", "asia pacific",
+    "china", "hong kong", "korea", "sydney", "australia",
     # On-site locations in title
     "são paulo", "sao paulo", "tel aviv",
     "new york,", "san francisco,", "austin,", "chicago,", "los angeles,",
+    "seattle,", "boston,", "denver,", "miami,", "atlanta,",
 ]
 
 SKIP_INDUSTRY_WORDS = [

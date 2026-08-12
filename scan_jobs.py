@@ -33,6 +33,7 @@ import argparse
 import csv
 import hashlib
 import json
+import re
 import sys
 import time
 import xml.etree.ElementTree as ET
@@ -80,6 +81,38 @@ TARGET_KEYWORDS = [
     "latam seo",
 ]
 
+# Hard blocklist — mirrors evaluate_matches.py. Skip even if a TARGET_KEYWORD matched.
+SKIP_TITLE_WORDS = [
+    "junior", " jr ", "associate", "coordinator", "intern", "entry level",
+    "developer", "engineer", "data scientist", "data analyst",
+    "ppc specialist", "sem specialist", "paid search specialist",
+    ", sem",
+    "product marketing",
+    "lifecycle marketing",
+    "account based",
+    "field marketing",
+    "event marketing",
+    "enablement",
+    "affiliate",
+    # APAC / non-workable locations in title
+    "japan", "tokyo", "singapore", "apac", "asia pacific",
+    "china", "hong kong", "korea", "sydney", "australia",
+    # On-site US/LATAM cities in title
+    "são paulo", "sao paulo", "tel aviv",
+    "new york,", "san francisco,", "austin,", "chicago,", "los angeles,",
+    "seattle,", "boston,", "denver,", "miami,", "atlanta,",
+]
+
+SKIP_INDUSTRY_WORDS = [
+    "crypto", "cryptocurrency", "bitcoin", "blockchain",
+    "betting", "gambling", "casino", "adult",
+]
+
+US_ONLY_TITLE_SIGNALS = [
+    "remote us", "(us only)", "us-based", "north america only",
+    "california", "us northeast", "us south", "us midwest",
+]
+
 SEEN_JOBS_HEADERS = ["job_id", "company", "title", "url", "found_date", "matched", "source"]
 
 # ---------------------------------------------------------------------------
@@ -109,9 +142,25 @@ def append_seen(rows: list[dict], dry_run: bool) -> None:
 # Keyword filter
 # ---------------------------------------------------------------------------
 
-def is_match(title: str) -> bool:
+def _kw_match(keyword: str, text: str) -> bool:
+    """Word-boundary match for short keywords (≤4 chars) to avoid false positives."""
+    if len(keyword) <= 4:
+        return bool(re.search(r'\b' + re.escape(keyword) + r'\b', text))
+    return keyword in text
+
+
+def is_match(title: str, company: str = "") -> bool:
     t = title.lower()
-    return any(kw in t for kw in TARGET_KEYWORDS)
+    c = company.lower()
+    if not any(_kw_match(kw, t) for kw in TARGET_KEYWORDS):
+        return False
+    if any(kw in t for kw in SKIP_TITLE_WORDS):
+        return False
+    if any(kw in c for kw in SKIP_INDUSTRY_WORDS):
+        return False
+    if any(kw in t for kw in US_ONLY_TITLE_SIGNALS):
+        return False
+    return True
 
 
 # ---------------------------------------------------------------------------
@@ -298,11 +347,12 @@ def fetch_remoteok() -> list[dict]:
         if not isinstance(j, dict) or "id" not in j:
             continue
         title = j.get("position", "")
-        if not is_match(title):
+        company_name = j.get("company", "Unknown")
+        if not is_match(title, company_name):
             continue
         jobs.append({
             "id": f"remoteok:{j['id']}",
-            "company": j.get("company", "Unknown"),
+            "company": company_name,
             "title": title,
             "location": "Remote",
             "url": j.get("url", f"https://remoteok.com/l/{j['id']}"),
@@ -319,11 +369,12 @@ def fetch_remotive() -> list[dict]:
     jobs = []
     for j in resp.json().get("jobs", []):
         title = j.get("title", "")
-        if not is_match(title):
+        company_name = j.get("company_name", "Unknown")
+        if not is_match(title, company_name):
             continue
         jobs.append({
             "id": f"remotive:{j['id']}",
-            "company": j.get("company_name", "Unknown"),
+            "company": company_name,
             "title": title,
             "location": j.get("candidate_required_location", "Remote"),
             "url": j.get("url", ""),
@@ -340,11 +391,12 @@ def fetch_workingnomads() -> list[dict]:
     jobs = []
     for j in resp.json():
         title = j.get("title", "")
-        if not is_match(title):
+        company_name = j.get("company", "Unknown")
+        if not is_match(title, company_name):
             continue
         jobs.append({
             "id": f"workingnomads:{j['id']}",
-            "company": j.get("company", "Unknown"),
+            "company": company_name,
             "title": title,
             "location": j.get("region", "Remote"),
             "url": j.get("url", ""),
@@ -372,7 +424,7 @@ def fetch_weworkremotely() -> list[dict]:
             company, title = full_title.split(": ", 1)
         else:
             company, title = "Unknown", full_title
-        if not is_match(title):
+        if not is_match(title, company):
             continue
         href = (link_el.text if link_el is not None else "") or \
                (guid_el.text if guid_el is not None else "")
@@ -419,7 +471,7 @@ def process_jobs(jobs: list, job_id_prefix: str, company: str, source: str,
         if job_id in seen_ids:
             continue
         seen_ids.add(job_id)
-        matched = is_match(job["title"])
+        matched = is_match(job["title"], company or job.get("company", ""))
         row = {
             "job_id": job_id,
             "company": company or job.get("company", "Unknown"),
