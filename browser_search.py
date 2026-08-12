@@ -120,6 +120,18 @@ SEARCH_QUERIES = [
     "remote marketing brazil",
     "marketing brasil",
     "seo brasil",
+    # Portuguese language signals — native speaker, strong differentiator for LATAM/global roles
+    "marketing manager portuguese speaking",
+    "seo manager portuguese speaking",
+    "content marketing portuguese speaking",
+    "portuguese speaking marketing",
+    # Portuguese-market scope signals
+    "seo portuguese market",
+    "content manager portuguese",
+    "digital marketing portuguese",
+    # Portugal-based remote — viable once EU citizenship clears
+    "marketing manager portugal",
+    "seo manager portugal",
 ]
 
 SEEN_JOBS_HEADERS = ["job_id", "company", "title", "url", "found_date", "matched", "source"]
