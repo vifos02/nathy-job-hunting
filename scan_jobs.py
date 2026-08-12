@@ -23,6 +23,8 @@ watchlist.json entry formats:
   Lever:      {"company": "Doist",   "platform": "lever",      "slug": "doist"}
   Ashby:      {"company": "Linear",  "platform": "ashby",      "slug": "linear"}
   Workday:    {"company": "AcmeCo",  "platform": "workday",    "tenant": "acmeco", "host": "wd3", "site": "AcmeCo_Careers"}
+  Breezy:     {"company": "Acme",    "platform": "breezy",     "slug": "acme"}
+              slug = subdomain of the company's Breezy board (e.g. veta-virtual-inc.breezy.hr → "veta-virtual-inc")
 """
 
 import argparse
@@ -211,6 +213,25 @@ def fetch_gupy(slug: str) -> list[dict]:
     return jobs
 
 
+def fetch_breezy(slug: str) -> list[dict]:
+    url = f"https://{slug}.breezy.hr/json"
+    resp = requests.get(url, timeout=15)
+    resp.raise_for_status()
+    jobs = []
+    for j in resp.json():
+        if not isinstance(j, dict):
+            continue
+        job_id = str(j.get("_id", ""))
+        loc = j.get("location") or {}
+        jobs.append({
+            "id": job_id,
+            "title": j.get("name", ""),
+            "location": loc.get("name", "") if isinstance(loc, dict) else "",
+            "url": f"https://{slug}.breezy.hr/p/{job_id}",
+        })
+    return jobs
+
+
 def fetch_workable(slug: str) -> list[dict]:
     url = f"https://apply.workable.com/api/v3/accounts/{slug}/jobs"
     resp = requests.post(
@@ -345,6 +366,7 @@ FETCHERS = {
     "workday":    fetch_workday,
     "gupy":       lambda entry: fetch_gupy(entry["slug"]),
     "workable":   lambda entry: fetch_workable(entry["slug"]),
+    "breezy":     lambda entry: fetch_breezy(entry["slug"]),
 }
 
 AGGREGATORS = [
