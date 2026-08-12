@@ -2,15 +2,19 @@
 """
 API-based job board scanner for Nathália's job hunt system.
 
-Runs in the Claude Web remote session (personal account) — twice a day.
-For browser-based sources (Indeed, LinkedIn, Remote.co) use browser_search.py locally.
+Runs locally on your Mac — twice a day (morning and mid-afternoon).
+Pair with browser_search.py which covers Indeed, LinkedIn, and Remote.co.
+
+Always git pull before running to sync the dedup list.
 
 Reads watchlist.json, hits each company's ATS API, filters by target keywords,
 and skips anything already logged in evaluated-jobs.csv.
 
 Usage:
-    python scan_jobs.py            # scan and record new jobs
-    python scan_jobs.py --dry-run  # scan but don't write to evaluated-jobs.csv
+    python scan_jobs.py                   # scan ATS sources + aggregators
+    python scan_jobs.py --dry-run         # print matches, don't write files
+    python scan_jobs.py --ats-only        # skip aggregators
+    python scan_jobs.py --aggregators-only  # skip watchlist ATS sources
 
 Requires: pip install requests
 
@@ -23,9 +27,11 @@ watchlist.json entry formats:
 
 import argparse
 import csv
+import hashlib
 import json
 import sys
 import time
+import xml.etree.ElementTree as ET
 from datetime import date
 from pathlib import Path
 
@@ -189,23 +195,204 @@ def fetch_workday(entry: dict) -> list[dict]:
     return jobs
 
 
+def fetch_gupy(slug: str) -> list[dict]:
+    url = f"https://{slug}.gupy.io/api/jobs"
+    resp = requests.get(url, timeout=15)
+    resp.raise_for_status()
+    jobs = []
+    for j in resp.json().get("data", []):
+        job_id = str(j.get("id", ""))
+        jobs.append({
+            "id": job_id,
+            "title": j.get("name", ""),
+            "location": j.get("city") or j.get("state") or "",
+            "url": j.get("jobUrl") or f"https://{slug}.gupy.io/jobs/{job_id}",
+        })
+    return jobs
+
+
+def fetch_workable(slug: str) -> list[dict]:
+    url = f"https://apply.workable.com/api/v3/accounts/{slug}/jobs"
+    resp = requests.post(
+        url,
+        headers={"Content-Type": "application/json"},
+        json={"query": "", "location": [], "department": [], "worktype": [], "remote": []},
+        timeout=15,
+    )
+    resp.raise_for_status()
+    jobs = []
+    for j in resp.json().get("results", []):
+        shortcode = j.get("shortcode", "")
+        loc = j.get("location") or {}
+        jobs.append({
+            "id": shortcode or j.get("id", ""),
+            "title": j.get("title", ""),
+            "location": loc.get("city", "") if isinstance(loc, dict) else "",
+            "url": j.get("url") or f"https://apply.workable.com/{slug}/j/{shortcode}",
+        })
+    return jobs
+
+
+# ---------------------------------------------------------------------------
+# Aggregator fetchers — keyword-filtered, not company-specific
+# ---------------------------------------------------------------------------
+
+def fetch_remoteok() -> list[dict]:
+    resp = requests.get(
+        "https://remoteok.com/remote-jobs.json",
+        headers={"User-Agent": "nathy-job-hunter/1.0"},
+        timeout=15,
+    )
+    resp.raise_for_status()
+    jobs = []
+    for j in resp.json():
+        if not isinstance(j, dict) or "id" not in j:
+            continue
+        title = j.get("position", "")
+        if not is_match(title):
+            continue
+        jobs.append({
+            "id": f"remoteok:{j['id']}",
+            "company": j.get("company", "Unknown"),
+            "title": title,
+            "location": "Remote",
+            "url": j.get("url", f"https://remoteok.com/l/{j['id']}"),
+        })
+    return jobs
+
+
+def fetch_remotive() -> list[dict]:
+    resp = requests.get(
+        "https://remotive.com/api/remote-jobs?category=marketing",
+        timeout=15,
+    )
+    resp.raise_for_status()
+    jobs = []
+    for j in resp.json().get("jobs", []):
+        title = j.get("title", "")
+        if not is_match(title):
+            continue
+        jobs.append({
+            "id": f"remotive:{j['id']}",
+            "company": j.get("company_name", "Unknown"),
+            "title": title,
+            "location": j.get("candidate_required_location", "Remote"),
+            "url": j.get("url", ""),
+        })
+    return jobs
+
+
+def fetch_workingnomads() -> list[dict]:
+    resp = requests.get(
+        "https://www.workingnomads.com/api/exposed_jobs/?category=digital-marketing",
+        timeout=15,
+    )
+    resp.raise_for_status()
+    jobs = []
+    for j in resp.json():
+        title = j.get("title", "")
+        if not is_match(title):
+            continue
+        jobs.append({
+            "id": f"workingnomads:{j['id']}",
+            "company": j.get("company", "Unknown"),
+            "title": title,
+            "location": j.get("region", "Remote"),
+            "url": j.get("url", ""),
+        })
+    return jobs
+
+
+def fetch_weworkremotely() -> list[dict]:
+    resp = requests.get(
+        "https://weworkremotely.com/categories/remote-marketing-jobs.rss",
+        timeout=15,
+    )
+    resp.raise_for_status()
+    root = ET.fromstring(resp.content)
+    jobs = []
+    for item in root.findall(".//item"):
+        title_el = item.find("title")
+        link_el  = item.find("link")
+        guid_el  = item.find("guid")
+        if title_el is None:
+            continue
+        full_title = title_el.text or ""
+        # WWR title format: "Company Name: Job Title"
+        if ": " in full_title:
+            company, title = full_title.split(": ", 1)
+        else:
+            company, title = "Unknown", full_title
+        if not is_match(title):
+            continue
+        href = (link_el.text if link_el is not None else "") or \
+               (guid_el.text if guid_el is not None else "")
+        job_id = "wwr:" + hashlib.sha1(href.encode()).hexdigest()[:12]
+        jobs.append({
+            "id": job_id,
+            "company": company.strip(),
+            "title": title.strip(),
+            "location": "Remote",
+            "url": href,
+        })
+    return jobs
+
+
 FETCHERS = {
     "greenhouse": lambda entry: fetch_greenhouse(entry["slug"]),
     "lever":      lambda entry: fetch_lever(entry["slug"]),
     "ashby":      lambda entry: fetch_ashby(entry["slug"]),
     "workday":    fetch_workday,
+    "gupy":       lambda entry: fetch_gupy(entry["slug"]),
+    "workable":   lambda entry: fetch_workable(entry["slug"]),
 }
+
+AGGREGATORS = [
+    ("Remote OK",        "remoteok",        fetch_remoteok),
+    ("Remotive",         "remotive",        fetch_remotive),
+    ("Working Nomads",   "workingnomads",   fetch_workingnomads),
+    ("We Work Remotely", "weworkremotely",  fetch_weworkremotely),
+]
 
 
 # ---------------------------------------------------------------------------
 # Main
 # ---------------------------------------------------------------------------
 
+def process_jobs(jobs: list, job_id_prefix: str, company: str, source: str,
+                 seen_ids: set, today: str) -> tuple[list, list]:
+    """Deduplicate and classify a list of raw job dicts. Returns (new_seen, matches)."""
+    new_seen, matches = [], []
+    for job in jobs:
+        job_id = f"{job_id_prefix}:{job['id']}"
+        if job_id in seen_ids:
+            continue
+        seen_ids.add(job_id)
+        matched = is_match(job["title"])
+        row = {
+            "job_id": job_id,
+            "company": company or job.get("company", "Unknown"),
+            "title": job["title"],
+            "url": job["url"],
+            "found_date": today,
+            "matched": "yes" if matched else "no",
+            "source": source,
+        }
+        new_seen.append(row)
+        if matched:
+            matches.append(row)
+    return new_seen, matches
+
+
 def main() -> None:
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
     parser.add_argument("--dry-run", action="store_true",
                         help="Print matches but don't update evaluated-jobs.csv")
+    parser.add_argument("--ats-only", action="store_true",
+                        help="Skip aggregators, scan watchlist ATS sources only")
+    parser.add_argument("--aggregators-only", action="store_true",
+                        help="Skip watchlist ATS sources, scan aggregators only")
     args = parser.parse_args()
 
     if not WATCHLIST_PATH.exists():
@@ -216,79 +403,71 @@ def main() -> None:
     today = date.today().isoformat()
 
     all_new_seen: list[dict] = []
-    matches: list[dict] = []
+    all_matches: list[dict] = []
 
-    print(f"Scanning {len(watchlist)} companies...\n")
+    # --- Watchlist ATS scan ---
+    if not args.aggregators_only:
+        print(f"Scanning {len(watchlist)} companies (ATS)...\n")
+        for entry in watchlist:
+            company  = entry["company"]
+            platform = entry.get("platform", "").lower()
+            fetcher  = FETCHERS.get(platform)
 
-    for entry in watchlist:
-        company = entry["company"]
-        platform = entry.get("platform", "").lower()
-        fetcher = FETCHERS.get(platform)
-
-        if not fetcher:
-            print(f"  [SKIP] {company}: unknown platform '{platform}'")
-            continue
-
-        print(f"  {company} ({platform}) ... ", end="", flush=True)
-
-        try:
-            jobs = fetcher(entry)
-        except requests.HTTPError as e:
-            print(f"HTTP {e.response.status_code}")
-            continue
-        except Exception as e:
-            print(f"ERROR: {e}")
-            continue
-
-        new_count = 0
-        match_count = 0
-
-        for job in jobs:
-            job_id = f"{platform}:{entry.get('slug', entry.get('tenant', ''))}:{job['id']}"
-
-            if job_id in seen_ids:
+            if not fetcher:
+                print(f"  [SKIP] {company}: unknown platform '{platform}'")
                 continue
 
-            seen_ids.add(job_id)
-            matched = is_match(job["title"])
+            print(f"  {company} ({platform}) ... ", end="", flush=True)
+            try:
+                jobs = fetcher(entry)
+            except requests.HTTPError as e:
+                print(f"HTTP {e.response.status_code}")
+                continue
+            except Exception as e:
+                print(f"ERROR: {e}")
+                continue
 
-            all_new_seen.append({
-                "job_id": job_id,
-                "company": company,
-                "title": job["title"],
-                "url": job["url"],
-                "found_date": today,
-                "matched": "yes" if matched else "no",
-                "source": platform,
-            })
-            new_count += 1
+            prefix = f"{platform}:{entry.get('slug', entry.get('tenant', ''))}"
+            new_seen, matches = process_jobs(jobs, prefix, company, platform, seen_ids, today)
+            all_new_seen.extend(new_seen)
+            all_matches.extend(matches)
+            print(f"{len(new_seen)} new, {len(matches)} match{'es' if len(matches) != 1 else ''}")
 
-            if matched:
-                matches.append({
-                    "company": company,
-                    "title": job["title"],
-                    "location": job.get("location", ""),
-                    "url": job["url"],
-                })
-                match_count += 1
+    # --- Aggregator scan ---
+    if not args.ats_only:
+        print(f"\nScanning {len(AGGREGATORS)} aggregators...\n")
+        for label, source_key, fetcher in AGGREGATORS:
+            print(f"  {label} ... ", end="", flush=True)
+            try:
+                jobs = fetcher()
+            except requests.HTTPError as e:
+                print(f"HTTP {e.response.status_code}")
+                continue
+            except Exception as e:
+                print(f"ERROR: {e}")
+                continue
 
-        print(f"{new_count} new jobs, {match_count} match{'es' if match_count != 1 else ''}")
+            new_seen, matches = process_jobs(jobs, source_key, "", source_key, seen_ids, today)
+            all_new_seen.extend(new_seen)
+            all_matches.extend(matches)
+            print(f"{len(new_seen)} new, {len(matches)} match{'es' if len(matches) != 1 else ''}")
+            time.sleep(1)
 
     append_seen(all_new_seen, dry_run=args.dry_run)
     if args.dry_run and all_new_seen:
         print(f"\n[dry-run] Would have recorded {len(all_new_seen)} new jobs to evaluated-jobs.csv")
 
     print()
-    if not matches:
+    if not all_matches:
         print("No new matching roles found.")
         return
 
     print(f"{'=' * 62}")
-    print(f"  NEW MATCHING ROLES  ({len(matches)} found — {today})")
+    print(f"  NEW MATCHING ROLES  ({len(all_matches)} found — {today})")
     print(f"{'=' * 62}")
-    for job in matches:
-        loc = f"  [{job['location']}]" if job["location"] else ""
-        print(f"\n{job['company']}: {job['title']}{loc}")
+    for job in all_matches:
+        src = f"  [via {job['source']}]" if job.get("source") else ""
+        print(f"\n{job['company']}: {job['title']}{src}")
         print(f"  {job['url']}")
 
     print(f"\n{'=' * 62}")

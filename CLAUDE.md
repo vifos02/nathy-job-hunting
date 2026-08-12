@@ -203,39 +203,33 @@ Run the full scan cycle **twice a day** — once in the morning, once mid-aftern
 
 | Script | Where it runs | What it covers |
 |--------|--------------|----------------|
-| `scan_jobs.py` | Claude Web session (personal account) | ATS APIs: Greenhouse, Lever, Ashby, Workday, Gupy, Workable — plus aggregators: Remote OK, Remotive, Working Nomads, We Work Remotely |
-| `browser_search.py` | Local Mac, Terminal | Indeed (remote filter, 14 days), LinkedIn (remote, 7 days), Remote.co — sites that block API access |
+| `scan_jobs.py` | Local Mac, Terminal | ATS APIs: Greenhouse, Lever, Ashby, Workday, Gupy, Workable — plus aggregators: Remote OK, Remotive, Working Nomads, We Work Remotely |
+| `browser_search.py` | Local Mac, Terminal | Indeed (remote filter, 14 days), LinkedIn (remote, 7 days), Remote.co |
 
-The remote session (Claude Web) cannot reach Indeed, LinkedIn, or Remote.co due to network egress policy. `browser_search.py` must run locally where outbound internet is unrestricted.
+Both scripts run locally. The Claude Web remote session cannot make outbound HTTP requests due to network egress policy — it is used only for Claude AI interactions (evaluate, tailor, digest, humanize, prep).
 
-### Running the API Scanner (Claude Web Session)
-
-Open a personal-account Claude Web session and run:
-
-```
-python scan_jobs.py
-```
-
-New matches print to stdout. All seen jobs append to `evaluated-jobs.csv`.
-
-### Running the Browser Scanner (Local Mac Terminal)
+### Running Both Scanners (Local Mac Terminal)
 
 ```bash
 cd ~/path/to/nathy-job-hunting
-git pull                              # get latest dedup list first
-pip install playwright                # one-time
-python browser_search.py              # runs all three sources
+git pull                              # sync dedup list before every run
+
+pip install requests playwright       # one-time setup
+
+python scan_jobs.py                   # API scanner — ATS + aggregators
+python browser_search.py              # browser scanner — Indeed, LinkedIn, Remote.co
+
 git add evaluated-jobs.csv browser-finds.json
-git commit -m "browser scan $(date +%Y-%m-%d)"
+git commit -m "scan $(date +%Y-%m-%d-%H%M)"
 git push
 ```
 
-Matches write to both `evaluated-jobs.csv` (dedup record) and `browser-finds.json` (scored finds for review). Always `git pull` before running so the local dedup list is current — prevents the same job appearing from both scripts.
+Always `git pull` first. Both scripts share `evaluated-jobs.csv` as the dedup record — running either one without a pull risks logging duplicates already found by the other.
 
 ### After Each Scan
 
 1. New matches print to stdout
-2. Paste interesting postings into `/evaluate` to score them
+2. Open a Claude Web session (personal account) and paste interesting postings into `/evaluate` to score them
 3. If score ≥ 7.0, run `/tailor` then apply
 4. Log the application in `applications.csv`
 5. Run `/digest` for a current pipeline view

@@ -1,6 +1,6 @@
 Generate a job hunt digest — a snapshot of the current pipeline and new unscored matches.
 
-Run this any time after a scan cycle. The system runs scans twice a day (morning and mid-afternoon), so the digest reflects whichever run just completed or the full day's picture.
+Run this any time after a scan cycle. Both scanners run locally on your Mac (twice a day — morning and mid-afternoon) and push results to the repo. Open a Claude Web session and run /digest to review what they found.
 
 Steps:
 1. Read CLAUDE.md for workflow context and scoring rubric.
