@@ -135,24 +135,38 @@ def load_evaluated_ids() -> set:
     return ids
 
 
+def _company_title_key(row: dict) -> str:
+    """Normalised key for cross-platform dedup (same role posted on LinkedIn + ATS)."""
+    c = re.sub(r"[^a-z0-9]", "", row.get("company", "").lower())
+    t = re.sub(r"[^a-z0-9]", "", row.get("title", "").lower())
+    return f"{c}|{t}"
+
+
 def load_new_matches(evaluated_ids: set) -> list[dict]:
     """Load matched rows from CSV + browser-finds that haven't been evaluated."""
     matches = []
     seen_urls: set = set()
+    seen_co_title: set = set()  # cross-platform dedup: same role on LinkedIn + ATS
 
     if SEEN_JOBS.exists():
         with SEEN_JOBS.open(newline="", encoding="utf-8") as f:
             for row in csv.DictReader(f):
                 if row.get("matched") == "yes" and row["job_id"] not in evaluated_ids:
-                    if row.get("url") not in seen_urls:
-                        seen_urls.add(row.get("url", ""))
+                    url = row.get("url", "")
+                    key = _company_title_key(row)
+                    if url not in seen_urls and key not in seen_co_title:
+                        seen_urls.add(url)
+                        seen_co_title.add(key)
                         matches.append(row)
 
     if BROWSER_FINDS.exists():
         for entry in json.loads(BROWSER_FINDS.read_text(encoding="utf-8")):
             if entry.get("job_id") not in evaluated_ids:
-                if entry.get("url") not in seen_urls:
-                    seen_urls.add(entry.get("url", ""))
+                url = entry.get("url", "")
+                key = _company_title_key(entry)
+                if url not in seen_urls and key not in seen_co_title:
+                    seen_urls.add(url)
+                    seen_co_title.add(key)
                     matches.append(entry)
 
     return matches
@@ -360,6 +374,8 @@ def main() -> None:
     )
     parser.add_argument("--dry-run", action="store_true",
                         help="List candidates without calling API")
+    parser.add_argument("--limit", type=int, default=0,
+                        help="Cap evaluations per run (0 = no cap)")
     args = parser.parse_args()
 
     key_file = Path.home() / ".anthropic_key"
@@ -380,6 +396,9 @@ def main() -> None:
     if not matches:
         print("No new matches to evaluate.")
         return
+
+    if args.limit and args.limit > 0:
+        matches = matches[:args.limit]
 
     total = len(matches)
     print(f"{total} candidates after pre-filtering. "
