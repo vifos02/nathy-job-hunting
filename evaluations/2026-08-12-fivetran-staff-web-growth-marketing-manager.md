@@ -1,69 +1,12 @@
-<!-- job_id: linkedin:0b117756d42a -->
-# Honest Evaluation: Fivetran — Staff Web Growth Marketing Manager
-
+<!-- job_id: linkedin:2965c4c2fdc1 -->
 ---
-
-## Problem: Incomplete Posting
-
-The job posting provided is **truncated and missing critical details.** I can see:
-- Title: Staff Web Growth Marketing Manager
-- Location: Oakland, CA
-- Company: Fivetran (strong, post-merger with dbt Labs)
-- Role type: Growth marketing
-
-**But missing:**
-- Full job description (responsibilities, required/nice-to-have skills)
-- Salary/compensation
-- Remote eligibility
-- Team size, reporting structure
-- Specific tools/channels (SEO? Paid? Content? All?)
-
-**I cannot score accurately without the full posting.** However, I can flag what I already know:
-
----
-
-## Preliminary Red Flags (Before Full Details)
-
-| Dimension | Early Signal | Risk Level |
-|-----------|--------------|-----------|
-| **Location** | Oakland, CA (on-site implied) | 🔴 HIGH — This is a hard dealbreaker unless fully remote |
-| **US Role** | Oakland HQ suggests US employment model | 🟡 MEDIUM — May require US work permit or US contractor status |
-| **Compensation** | Not disclosed | ⚠️ UNKNOWN — Fivetran is well-funded, likely competitive, but need to see it |
-| **Role Fit** | "Staff Web Growth Marketing" sounds strong match | 🟢 GOOD — aligns with your growth/content/social background |
-
----
-
-## What I Need to Score This Properly
-
-**Please provide:**
-1. Full job description (responsibilities, required/preferred qualifications)
-2. Salary range or compensation model (employee vs. contractor)
-3. Remote policy (on-site, hybrid, fully remote, timezone requirements?)
-4. Reporting line and team size
-5. Which growth channels are primary (SEO, paid, content, product-led, etc.)?
-
----
-
-## Placeholder Score (Incomplete Data)
+**Fivetran — Staff Web Growth Marketing Manager**
+*Source: https://www.linkedin.com/jobs/view/staff-web-growth-marketing-manager-at-fivetran-4441679012 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | **6/10** | "Staff Web Growth Manager" fits your seniority and skill set, but without full JD, I can't confirm scope alignment. Could be too technical (SQL/analytics) or too paid-ads-heavy. |
-| Remote / Location (25%) | **2/10** | Oakland, CA on-site is a hard dealbreaker unless you have recent clarification it's remote-first. You're in Tarragona. No EU work permit yet. Flag this immediately. |
-| Compensation (20%) | **5/10** | Fivetran is post-Series E, well-funded, likely pays market rates ($130k–$180k USD for Staff role in US), but no salary disclosed. Assume competitive if hired, but need confirmation. |
-| Company Quality (15%) | **9/10** | Fivetran is a real, profitable data infrastructure company; just merged with dbt Labs (strong signal). Solid financial backing, international team, positive industry reputation. |
-| Skill Match (10%) | **7/10** | Growth marketing + SEO + social + ops experience overlap well. But if role is heavily SEM/Google Ads or SQL analytics, your gap in deep Google Ads is a concern. Need full JD. |
-| **Final Score** | **5.0/10** | *(6×0.30)+(2×0.25)+(5×0.20)+(9×0.15)+(7×0.10) = 1.8+0.5+1.0+1.35+0.7 = 5.35* |
-
-**Verdict: SKIP (pending location clarification) — or CONSIDER ONLY if remote-first confirmed**
-
----
-
-## Hard Dealbreakers Present?
-
-- [x] **On-site in city she doesn't live in** — Oakland, CA, no remote detail provided
-- [x] **No EU work permit currently** — Italian citizenship in process; you'd need US visa sponsorship or contractor structure
-- [ ] BRL-only pay below R$15k/month
-- [ ] US-remote only (unclear; may not apply if fully remote)
-- **Others:** 
-  - **Maternity flexibility concern** — "Staff" level role at VC-backed SaaS typically expects high engagement/meeting load
+| Role Fit (30%) | 6/10 | This is a **Staff-level web growth role**, which is strategically senior to your typical execution background. You have 16 years of experience and have led teams (21 at AIESEC, 5 at Lumine, 4 at CondoConta), so seniority level is credible. However, the core mandate is *web growth marketing* — meaning website optimization, conversion, A/B testing, CRO, analytics-driven experimentation. Your strength is in **SEO content, social/paid ads, email, and campaign launches**, not deep web growth/CRO/funnel optimization. You've done landing page work (Lumine 7% conversion, 22k leads) and influencer campaigns, but the role seems to prioritize continuous experimentation and web platform optimization as the *primary* function. You could grow into this, but you'd be learning on the job. **6/10 = partial fit**: you have the leadership chops and strategic mindset, but web growth optimization is not your documented core strength. |
+| Remote / Location (25%) | 2/10 | **HARD BLOCKER: On-site in Denver, CO.** Posting says "Denver, CO" with no indication of remote eligibility. You are currently in Tarragona, Spain (until Nov 2026), then Brazil (UTC-3). Denver is Mountain Time (UTC-7). This is not workable. Even if it were remote, you have **no US work authorization** — you hold Portuguese residency (Spain), Italian citizenship in progress, Brazilian citizenship. Fivetran is a US company and would almost certainly require US employment sponsorship (H-1B or similar), which is a hard blocker per your rubric. The posting does not clarify whether remote is possible or whether they sponsor international talent. **Score reflects on-site requirement + likely US-auth requirement.** |
+| Compensation (20%) | 5/10 | **Posting does not disclose salary.** Fivetran is a well-funded, post-Series C data infra company (recent dbt Labs merger), so a Staff-level role in the US would likely pay $180k–$220k USD total comp (base + equity). That *would* exceed your target of $50–70k EUR/year equivalent. However, without explicit disclosure, this is speculative. If the role were remote and international, they might offer EUR equivalent or contract rates. Given the uncertainty and the on-site requirement (which makes negotiation harder), I score this as **borderline**. 5/10 = assume market-rate for a US Staff role, but can't verify. |
+| Company Quality (15%) | 9/10 | **Fivetran is a tier-1 data infrastructure company.** Founded 2012, backed by major VCs (Insight Partners, Andreessen Horowitz, etc.), recently merged with dbt Labs (a beloved analytics tool). Strong product-market fit, thousands of enterprise customers, international presence, positive Glassdoor reviews (~4.5/5). This is a credible, well-funded, stable company with an excellent reputation in the data space. 9/10 = established, well-regarded, financially strong, international team. Not a 10 only because it's US-centric and you'd be forced into a Denver office. |
+| Skill Match (10%) | 5/10 | **Moderate overlap, but gaps in core mandate.** You have *some* relevant skills: analytics (Looker Studio, GA4, Salesforce reporting), campaign measurement, landing page optimization (Lumine case), A/B testing (Meta Ads, email funnels). However, the role explicitly calls for **"web growth marketing" expertise** — meaning CRO, funnel optimization, experimentation frameworks, cohort analysis, and possibly some technical depth (analytics, pixel tracking, tag management). The posting emphasizes "hands-on execution," "complex initiatives," and "measurement" — all of which require deeper CRO/analytics chops than you've publicly documented. Your background is stronger in

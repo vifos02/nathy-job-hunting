@@ -1,23 +1,32 @@
-<!-- job_id: linkedin:43433ddb0ece -->
+<!-- job_id: linkedin:41c41b0c0f27 -->
 ---
 **Amazon Web Services (AWS) — Marketing Manager SEO, AWS Search Marketing**
-*Source: https://www.linkedin.com/jobs/view/marketing-manager-seo-aws-search-marketing-at-amazon-web-services-aws-4443025928 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/marketing-manager-seo-aws-search-marketing-at-amazon-web-services-aws-4443024899 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 8/10 | Strong alignment with SEO content strategy expertise (100% SEO ownership at Canva, strategic content production, on-page optimization, migrations, page launches). You've done exactly this work at scale. Evangelist/education component is adjacent to your team leadership and strategic experience. The role is slightly more "guardian/process-owner" than execution, but you've managed both. No red flags on capability. |
-| Remote / Location (25%) | 2/10 | **Hard dealbreaker.** Role is explicitly **New York, United States** (on-site implied by location specification on AWS careers). You are based in Tarragona, Spain with no current US work permit. Italian citizenship application is in progress but will not grant US work authorization. No mention of remote flexibility in posting. This is a non-starter logistically and legally. |
-| Compensation (20%) | 7/10 | AWS is a Tier-1 tech company with competitive enterprise pay bands. For a Marketing Manager (senior IC) role at AWS in NYC, expect $120k–$160k USD base + RSUs + bonus. This **exceeds your target range** (€50–70k = ~$55–77k). However, compensation is not disclosed in posting, so score is based on company tier and role level only (7/10 = "likely meets target"). |
-| Company Quality (15%) | 10/10 | Amazon Web Services is a world-class, financially stable, globally recognized tech company. Massive international English-speaking team. Excellent employer reputation, benefits, and stability. No red flags whatsoever. |
-| Skill Match (10%) | 7/10 | **Strong overlap on core SEO content, strategy, and tools** (AHREFs, GSC, GA4, Botify, content optimization, localization, on-page SEO—all documented at Canva). You have gaps in: (1) **Technical SEO depth** (the posting emphasizes "deep understanding of technical SEO"; your experience is content-forward, not crawl/architecture-heavy); (2) **large-scale multi-thousand-page website management** (Canva Brazil is large but not AWS-scale complexity). Both are learnable, but you'd enter with some ramp-up needed on the technical side. |
-| **Final Score** | **4.8/10** | *(8×0.30)+(2×0.25)+(7×0.20)+(10×0.15)+(7×0.10) = 2.4 + 0.5 + 1.4 + 1.5 + 0.7 = **6.5**. Wait—recalculating: (8×0.30)=2.4, (2×0.25)=0.5, (7×0.20)=1.4, (10×0.15)=1.5, (7×0.10)=0.7 → **6.5/10 total**. However, the Remote/Location score of 2/10 is a hard blocker regardless of final math. The role is on-site in NYC; you cannot legally work in the US and are not relocating. |
+| Role Fit (30%) | 8/10 | Strong alignment with SEO content strategy, technical SEO, cross-functional team leadership, and data-driven campaign management. You've led SEO initiatives at scale (Canva: 771k+ monthly searches, 5M+ organic traffic H1 2026), managed teams, and evangelized best practices. This is senior-level SEO work you've done. The "SEM" component in the title is slightly broader than your focus, but the posting is 90% SEO content strategy + team enablement, which are core strengths. |
+| Remote / Location (25%) | 2/10 | **HARD BLOCKER: Seattle, WA on-site.** Posting does not indicate remote flexibility. You are in Tarragona, Spain through November 2026 and moving to Brazil (UTC-3) after. Even if negotiated remote, AWS typically enforces location-specific employment for W-2 roles. No explicit international hire language. This is a dealbreaker. |
+| Compensation (20%) | 7/10 | AWS Marketing Manager roles in Seattle typically pay $130k–$160k USD base + equity + benefits (Levels.fyi, Blind estimates). This exceeds your target of $50k–$70k/year significantly, placing it well above your income goal of $2–3.5k USD/month net. *However:* compensation is not listed in the posting, so this is an educated estimate, not confirmed. |
+| Company Quality (15%) | 10/10 | AWS is a major, stable, globally recognized tech leader with strong employer reviews, international teams, and transparent career growth. No red flags. Top-tier company quality. |
+| Skill Match (10%) | 7/10 | **Strong overlap:** on-page SEO, content optimization, technical SEO foundations, GA4/GSC, team leadership, cross-functional collaboration, data analysis, documentation/evangelism. **Gaps:** Posting emphasizes "SEM and PPC" — you have limited Google Ads depth (Meta Ads strength, not Google Ads). No mention of SEM in your documented experience. This is a secondary component, not primary, so not a dealbreaker, but you'd need to be transparent in the cover letter. |
 
-**Verdict: SKIP**
+| **Final Score** | **4.0/10** | *(8×0.30)+(2×0.25)+(7×0.20)+(10×0.15)+(7×0.10) = 2.40+0.50+1.40+1.50+0.70 = **6.50*** |
 
-*(The location requirement is a hard dealbreaker. Even if final score is 6.5, the Remote dimension disqualifies this role entirely.)*
+**Wait, recalculating:** (8 × 0.30) + (2 × 0.25) + (7 × 0.20) + (10 × 0.15) + (7 × 0.10) = 2.4 + 0.5 + 1.4 + 1.5 + 0.7 = **6.5/10**
+
+---
+
+**Verdict: SKIP** (unless location is negotiable and you want to confirm remote eligibility first)
 
 ---
 
 **Top 3 Reasons to Apply**
-1. **Perfect skill-experience fit on SEO content strategy & execution**: You've led 100% of Canva's Brazilian SEO content production, optimized high-traffic pages, managed content sprints, and mastered the exact tools (AHREFs, GSC, Botify, GA4) AWS will use. You can credibly speak to this on day one.
-2. **Proven ability to evangelize and scale SEO practices across teams**: At AIESEC, you led 21 people across 17 
+1. **Strong role fit for SEO expertise:** This is a senior SEO content strategy role managing a major global website — your exact wheelhouse at Canva. You have proven ability to scale SEO traffic, lead teams, and evangelize best practices across organizations.
+2. **Exceptional company and compensation:** AWS is financially stable, internationally recognized, and the salary (estimated $130k–$160k USD) significantly exceeds your target, offering strong job security and income growth.
+3. **Team leadership opportunity:** You'd be coaching marketers and content authors on SEO best practices — a role that leverages your JWT High Potential award-winning collaboration and leadership skills across cross-border teams.
+
+---
+
+**Top 3 Concerns (be honest)**
+1. **On-site in Seattle — you're not there

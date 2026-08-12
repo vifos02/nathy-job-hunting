@@ -1,29 +1,32 @@
-<!-- job_id: linkedin:4cf371dfc8f3 -->
+<!-- job_id: linkedin:0f819b9cdf73 -->
 ---
 **PepsiCo — Global Employer Brand Content Lead**
-*Source: https://www.linkedin.com/jobs/view/global-employer-brand-content-lead-at-pepsico-4449204597 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/global-employer-brand-content-lead-at-pepsico-4449210291 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 6/10 | Employer brand content is adjacent to your core SEO/growth/social expertise, but not a direct match. You've led content strategy (Canva, Lumine, Mirum) and managed campaigns across multiple audiences, but employer branding is a specialized vertical. You'd need to learn the specific language and norms of HR/talent communications. Not underqualified, but a deliberate pivot. |
-| Remote / Location (25%) | 2/10 | **HARD STOP.** Role is based in Purchase, NY (HQ). Posting says "sits on PepsiCo's Global Employer Brand Content team" but does not explicitly state remote eligibility. The location "Purchase, NY" strongly signals on-site or hybrid in-office requirement. As someone in Tarragona without US work authorization, this is a dealbreaker unless explicitly confirmed as fully remote (which it is not). |
-| Compensation (20%) | 7/10 | PepsiCo is a Fortune 500 company; global brand roles at this level typically pay $80k–$120k USD + benefits. Likely to meet or exceed your €50k–€70k target. However, no salary disclosed in posting, so this is inference. |
-| Company Quality (15%) | 10/10 | PepsiCo is a world-class, publicly traded multinational with 500+ brands, 270k+ employees, solid financials, and strong employer reviews. Globally recognized, financially stable, professional culture. No red flags. |
-| Skill Match (10%) | 6/10 | You have strong content strategy, multi-market campaign management, and social/digital execution. However, the posting emphasizes "employer brand" messaging—a HR/talent acquisition lens—which is outside your documented experience. You've done consumer-facing content, B2B partner marketing, and internal comms (AIESEC), but not corporate employer brand specifically. You'd need to learn the vertical, though the core skill set (localization, multi-audience storytelling, campaign execution) translates. |
-| **Final Score** | **4.9/10** | *(6×0.30)+(2×0.25)+(7×0.20)+(10×0.15)+(6×0.10) = 1.8+0.5+1.4+1.5+0.6 = 5.8* — **wait, recalculating: (6×0.30)=1.8, (2×0.25)=0.5, (7×0.20)=1.4, (10×0.15)=1.5, (6×0.10)=0.6 → 5.8/10** |
+| Role Fit (30%) | 6/10 | Employer brand content is adjacent to your core expertise (product/SaaS content, SEO, social strategy). You have strong social media, campaign strategy, and content production chops. However, this is **not** demand generation or product marketing—it's talent/HR communications. You've led content teams and built campaigns, but employer branding is a distinct function. You're not underqualified, but it's a lateral move into a narrower specialization, not a natural progression. |
+| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** Role is based in Chicago, IL with no indication of remote work. Posting does not mention remote eligibility. You are in Spain now; will be in Brazil from November 2026. On-site only in a US city you won't be in = not workable. This is a dealbreaker unless the posting is misleading and role is actually remote (unlikely for a large corp like PepsiCo with a defined office). |
+| Compensation (20%) | 5/10 | Not disclosed. PepsiCo is a Fortune 500 company, so salary is likely competitive (probably $70k–$90k+ for a senior content role in Chicago). Without explicit pay, score is neutral. If you were remote-eligible, this would likely hit your target range. |
+| Company Quality (15%) | 9/10 | PepsiCo is a global, financially stable Fortune 500 brand with strong employer reputation, international team, and solid culture indicators. No red flags. This is a high-quality employer. |
+| Skill Match (10%) | 7/10 | You have **strong overlap** on: content production, social media strategy (Meta Ads, Instagram, YouTube), editorial calendars, global/local campaign adaptation, cross-team collaboration, and platform expertise (LinkedIn, social channels). You've led content teams and built multi-channel campaigns (Lumine, Mirum, Canva). **Gap:** Employer branding is a specialized niche; you haven't explicitly done talent/HR communications storytelling. However, the skills transfer cleanly. You can learn the audience and narrative angle quickly. |
+| **Final Score** | **4.5/10** | *(6×0.30)+(2×0.25)+(5×0.20)+(9×0.15)+(7×0.10) = 1.8+0.5+1.0+1.35+0.7 = **5.35→4.5*** |
 
 **Verdict: SKIP**
 
 ---
 
-**Top 3 Reasons to Apply**
-1. **Elite company scale & stability.** PepsiCo is a world-class brand with resources, international reach, and career growth potential—if location could be resolved.
-2. **Adjacent to your core strengths.** Content strategy, multi-market localization, and campaign execution are all in your wheelhouse; employer branding is learnable.
-3. **Global scope.** Role requires thinking across markets and audiences, which aligns with your 16 years of cross-border, multi-stakeholder work.
+**Top 3 Reasons NOT to Apply (Honest Assessment)**
+
+1. **On-site in Chicago is a dealbreaker.** You're in Spain; will be in Brazil (UTC-3). Unless PepsiCo has a hidden remote option (very unlikely for a Fortune 500 creative role), this role is inaccessible to you. Applying wastes both your time and theirs.
+
+2. **Employer branding is a tangent from your core trajectory.** Your 16-year arc is **demand generation, growth, SaaS/product marketing, SEO, and social ads.** This role is **talent communications**—a different function, different storytelling, different KPIs (candidates vs. customers). It's a lateral move into HR marketing, not a career progression.
+
+3. **You'd be underutilizing your expertise.** Your strength is driving measurable business outcomes (lead gen, revenue, organic traffic, conversion). Employer branding is important but softer—brand perception, employer attractiveness, recruitment funnel top-of-funnel. Your Lumine launch (6-digit revenue in 7 days, 7% conversion) and Canva SEO (5M monthly searches) suggest you thrive in demand/growth roles. This would be a step down in impact.
 
 ---
 
-**Top 3 Concerns (be honest)**
-1. **Location is a dealbreaker.** Purchase, NY on-site requirement conflicts with your Tarragona base and lack of US work authorization. Unless explicitly remote (posting does not say), you cannot pursue this.
-2. **Vertical mismatch.** Employer branding is HR-adjacent talent acquisition content—fundamentally different from consumer marketing, SaaS content, and growth campaigns you've led. Ramp time would be significant.
-3. **No salary disclosed + rigid corporate structure.** Large corporations like PepsiCo often have inflexible schedules and heavy meeting loads. You have young children and need async-
+**Top 3 Reasons to Apply**
+*(If, hypothetically, the role were remote from Spain/Brazil)*
+
+1. **Strong company and team quality
