@@ -9,6 +9,9 @@ Steps:
 4. Read evaluated-jobs.csv — find rows where matched=yes that have no corresponding file in evaluations/. These are unscored API matches awaiting review.
 5. Read browser-finds.json — these are unscored browser matches (Indeed, LinkedIn, Remote.co) awaiting review.
 6. Check companies.md for Tier 1 companies with no recent evaluation — flag as "not yet checked."
+7. After generating the digest, save it to digests/YYYY-MM-DD-HHMM.md (use the actual timestamp), then run:
+   git add digests/YYYY-MM-DD-HHMM.md && git commit -m "digest YYYY-MM-DD-HHMM" && git push
+   Confirm the push succeeded at the end of your output.
 
 Output:
 
