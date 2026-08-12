@@ -24,7 +24,17 @@
   {"company": "LEGO",         "platform": "workday",    "tenant": "lego",       "host": "wd103", "site": "LEGO_External"},
   {"company": "Dell",         "platform": "workday",    "tenant": "dell",       "host": "wd1",   "site": "External"},
   {"company": "Mango",        "platform": "workday",    "tenant": "mango",      "host": "wd3",   "site": "Mango_Work_Your_Passion"},
-  {"company": "Grupo RBS",       "platform": "gupy",   "slug": "gruporbs"},
-  {"company": "GRPCOM",          "platform": "gupy",   "slug": "grpcom"},
-  {"company": "Veta Virtual Inc","platform": "breezy", "slug": "veta-virtual-inc"}
+  {"company": "Grupo RBS",        "platform": "gupy",      "slug": "gruporbs"},
+  {"company": "GRPCOM",           "platform": "gupy",      "slug": "grpcom"},
+  {"company": "Veta Virtual Inc", "platform": "breezy",    "slug": "veta-virtual-inc"},
+  {"company": "Typeform",         "platform": "greenhouse","slug": "typeform"},
+  {"company": "Factorial HR",     "platform": "workable",  "slug": "factorialhr"},
+  {"company": "Domestika",        "platform": "ashby",     "slug": "domestika.org"},
+  {"company": "Buffer",           "platform": "ashby",     "slug": "buffer"},
+  {"company": "Hotmart (EN)",     "platform": "greenhouse","slug": "hotmartcareersen"},
+  {"company": "Hotmart (BR)",     "platform": "greenhouse","slug": "hotmartcareersbr"},
+  {"company": "Ahrefs",           "platform": "greenhouse","slug": "ahrefsjobs"},
+  {"company": "RD Station",       "platform": "greenhouse","slug": "rdstation"},
+  {"company": "Pipefy",           "platform": "workable",  "slug": "pipefy"},
+  {"company": "Personio",         "platform": "personio",  "slug": "open"}
 ]

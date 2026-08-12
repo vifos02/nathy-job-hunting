@@ -25,6 +25,8 @@ watchlist.json entry formats:
   Workday:    {"company": "AcmeCo",  "platform": "workday",    "tenant": "acmeco", "host": "wd3", "site": "AcmeCo_Careers"}
   Breezy:     {"company": "Acme",    "platform": "breezy",     "slug": "acme"}
               slug = subdomain of the company's Breezy board (e.g. veta-virtual-inc.breezy.hr → "veta-virtual-inc")
+  Personio:   {"company": "Personio","platform": "personio",   "slug": "open"}
+              slug = subdomain of the company's Personio board (e.g. open.jobs.personio.com → "open")
 """
 
 import argparse
@@ -232,6 +234,25 @@ def fetch_breezy(slug: str) -> list[dict]:
     return jobs
 
 
+def fetch_personio(slug: str) -> list[dict]:
+    url = f"https://{slug}.jobs.personio.com/api/v1/positions"
+    resp = requests.get(url, timeout=15)
+    resp.raise_for_status()
+    jobs = []
+    for j in resp.json():
+        if not isinstance(j, dict):
+            continue
+        job_id = str(j.get("id", ""))
+        office = j.get("office", "") or ""
+        jobs.append({
+            "id": job_id,
+            "title": j.get("name", ""),
+            "location": office if isinstance(office, str) else "",
+            "url": f"https://{slug}.jobs.personio.com/{job_id}",
+        })
+    return jobs
+
+
 def fetch_workable(slug: str) -> list[dict]:
     url = f"https://apply.workable.com/api/v3/accounts/{slug}/jobs"
     resp = requests.post(
@@ -367,6 +388,7 @@ FETCHERS = {
     "gupy":       lambda entry: fetch_gupy(entry["slug"]),
     "workable":   lambda entry: fetch_workable(entry["slug"]),
     "breezy":     lambda entry: fetch_breezy(entry["slug"]),
+    "personio":   lambda entry: fetch_personio(entry["slug"]),
 }
 
 AGGREGATORS = [
