@@ -145,6 +145,14 @@ def load_new_matches(evaluated_ids: set) -> list[dict]:
     return matches
 
 
+def _kw_match(keyword: str, text: str) -> bool:
+    """Match keyword against text. Short keywords (≤4 chars) use word boundaries
+    to avoid false positives like 'seo' matching 'Seoul'."""
+    if len(keyword) <= 4:
+        return bool(re.search(r'\b' + re.escape(keyword) + r'\b', text))
+    return keyword in text
+
+
 def prefilter(matches: list[dict]) -> list[dict]:
     """Keep only roles that match target disciplines; apply hard exclusions."""
     keep = []
@@ -153,7 +161,7 @@ def prefilter(matches: list[dict]) -> list[dict]:
         company = m.get("company", "").lower()
 
         # Must contain at least one target keyword
-        if not any(kw in title for kw in REQUIRED_TITLE_KEYWORDS):
+        if not any(_kw_match(kw, title) for kw in REQUIRED_TITLE_KEYWORDS):
             continue
         # Hard blocklist overrides the allowlist
         if any(kw in title for kw in SKIP_TITLE_WORDS):
@@ -330,7 +338,24 @@ def main() -> None:
             print(f"  ... and {total - cap} more")
         return
 
-    client    = anthropic.Anthropic(api_key=api_key)
+    client = anthropic.Anthropic(api_key=api_key)
+
+    # Validate API key with a minimal call before processing the full batch
+    print("Validating API key ... ", end="", flush=True)
+    try:
+        client.messages.create(
+            model="claude-haiku-4-5-20251001",
+            max_tokens=5,
+            messages=[{"role": "user", "content": "ping"}],
+        )
+        print("ok\n")
+    except anthropic.AuthenticationError:
+        sys.exit("ERROR: ANTHROPIC_API_KEY is invalid or expired.\n"
+                 "Generate a new key at https://console.anthropic.com and re-export it.")
+    except Exception as e:
+        sys.exit(f"ERROR: Could not reach Anthropic API — {e}\n"
+                 "Check your internet connection and try again.")
+
     evaluated = 0
 
     for m in matches:
