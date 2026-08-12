@@ -352,6 +352,11 @@ def main() -> None:
     except anthropic.AuthenticationError:
         sys.exit("ERROR: ANTHROPIC_API_KEY is invalid or expired.\n"
                  "Generate a new key at https://console.anthropic.com and re-export it.")
+    except UnicodeEncodeError:
+        sys.exit("ERROR: ANTHROPIC_API_KEY contains non-ASCII characters — the key was "
+                 "likely pasted with smart quotes or invisible characters.\n"
+                 "Fix: delete the export line from ~/.zshrc, paste the key fresh using "
+                 "single straight quotes, then run: source ~/.zshrc")
     except Exception as e:
         sys.exit(f"ERROR: Could not reach Anthropic API — {e}\n"
                  "Check your internet connection and try again.")
