@@ -24,6 +24,7 @@
   {"company": "LEGO",         "platform": "workday",    "tenant": "lego",       "host": "wd103", "site": "LEGO_External"},
   {"company": "Dell",         "platform": "workday",    "tenant": "dell",       "host": "wd1",   "site": "External"},
   {"company": "Mango",        "platform": "workday",    "tenant": "mango",      "host": "wd3",   "site": "Mango_Work_Your_Passion"},
-  {"company": "Grupo RBS",    "platform": "gupy",       "slug": "gruporbs"},
-  {"company": "GRPCOM",       "platform": "gupy",       "slug": "grpcom"}
+  {"company": "Grupo RBS",       "platform": "gupy",   "slug": "gruporbs"},
+  {"company": "GRPCOM",          "platform": "gupy",   "slug": "grpcom"},
+  {"company": "Veta Virtual Inc","platform": "breezy", "slug": "veta-virtual-inc"}
 ]
