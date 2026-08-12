@@ -15,6 +15,15 @@
   {"company": "Gartner",      "platform": "greenhouse", "slug": "gartner"},
   {"company": "ThoughtWorks", "platform": "greenhouse", "slug": "thoughtworks"},
   {"company": "Hallow",       "platform": "greenhouse", "slug": "hallow"},
+  {"company": "WPP",          "platform": "greenhouse", "slug": "wpp"},
+  {"company": "SpaceX",       "platform": "greenhouse", "slug": "spacex"},
   {"company": "Doist",        "platform": "lever",      "slug": "doist"},
-  {"company": "Linear",       "platform": "ashby",      "slug": "linear"}
+  {"company": "Linear",       "platform": "ashby",      "slug": "linear"},
+  {"company": "37signals",    "platform": "workable",   "slug": "37signals"},
+  {"company": "Accenture",    "platform": "workday",    "tenant": "accenture",  "host": "wd103", "site": "AccentureCareers"},
+  {"company": "LEGO",         "platform": "workday",    "tenant": "lego",       "host": "wd103", "site": "LEGO_External"},
+  {"company": "Dell",         "platform": "workday",    "tenant": "dell",       "host": "wd1",   "site": "External"},
+  {"company": "Mango",        "platform": "workday",    "tenant": "mango",      "host": "wd3",   "site": "Mango_Work_Your_Passion"},
+  {"company": "Grupo RBS",    "platform": "gupy",       "slug": "gruporbs"},
+  {"company": "GRPCOM",       "platform": "gupy",       "slug": "grpcom"}
 ]

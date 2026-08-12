@@ -1,22 +1,35 @@
-Generate a weekly job hunt digest.
+Generate a job hunt digest — a snapshot of the current pipeline and new unscored matches.
+
+Run this any time after a scan cycle. Both scanners run locally on your Mac (twice a day — morning and mid-afternoon) and push results to the repo. Open a Claude Web session and run /digest to review what they found.
 
 Steps:
-1. Read all files in evaluations/ and parse scores and verdicts.
-2. Read applications.csv and show the current pipeline by status.
-3. Check companies.md for Tier 1 companies with no recent evaluation — flag as "not yet checked."
+1. Read CLAUDE.md for workflow context and scoring rubric.
+2. Read applications.csv and group by status.
+3. Read all files in evaluations/ and extract scores and verdicts.
+4. Read evaluated-jobs.csv — find rows where matched=yes that have no corresponding file in evaluations/. These are unscored API matches awaiting review.
+5. Read browser-finds.json — these are unscored browser matches (Indeed, LinkedIn, Remote.co) awaiting review.
+6. Check companies.md for Tier 1 companies with no recent evaluation — flag as "not yet checked."
 
 Output:
 
 ---
-# Job Hunt Digest — [Week of YYYY-MM-DD]
+# Job Hunt Digest — [YYYY-MM-DD, HH:MM]
 
-## Pipeline Status
+## Pipeline
 | Company | Role | Score | Status | Next Step |
 |---------|------|-------|--------|-----------|
 
-## Top Unactioned Opportunities (APPLY verdict, not yet applied)
+## Top Unactioned (APPLY verdict, not yet applied)
 
-## Evaluated This Week
+## New Unscored Matches — API Sources
+List company, title, URL for each evaluated-jobs.csv row where matched=yes and no evaluations/ file exists.
+If none: "None — all API matches have been evaluated."
+
+## New Unscored Matches — Browser Sources
+List company, title, URL, source for each entry in browser-finds.json.
+If file is empty or missing: "No browser scan results yet. Run browser_search.py locally."
+
+## Evaluated This Period
 | Company | Role | Score | Verdict | Date |
 |---------|------|-------|---------|------|
 
@@ -27,6 +40,17 @@ Output:
 2.
 3.
 
+## Outreach
+Read outreach-tracker.csv and show:
+- Contacts due for follow-up (follow_up_date ≤ today, status = Sent or No Response)
+- Reply rate so far: Replied or Meeting Booked / total Sent
+
+| Person | Company | Platform | Status | Follow-up Due |
+|--------|---------|----------|--------|---------------|
+
 ## Stats
-- Evaluated: X | Applied: X | Interviews: X | Offers: X
+- API scan seen: X total | X matched | X evaluated
+- Browser scan seen: X total | X in browser-finds.json
+- Pipeline: Applied X | Screening X | Interview X | Offers X
+- Outreach: X sent | X replied (X% reply rate) | X meetings booked
 ---

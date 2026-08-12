@@ -193,6 +193,68 @@ All specifics in any rewrite must come from resume/master-resume.md, resume/know
 
 ---
 
+## Scanning Workflow
+
+### Cadence
+
+Run the full scan cycle **twice a day** — once in the morning, once mid-afternoon.
+
+### Script Split by Environment
+
+| Script | Where it runs | What it covers |
+|--------|--------------|----------------|
+| `scan_jobs.py` | Local Mac, Terminal | ATS APIs: Greenhouse, Lever, Ashby, Workday, Gupy, Workable — plus aggregators: Remote OK, Remotive, Working Nomads, We Work Remotely |
+| `browser_search.py` | Local Mac, Terminal | Indeed (remote filter, 14 days), LinkedIn (remote, 7 days), Remote.co |
+
+Both scripts run locally. The Claude Web remote session cannot make outbound HTTP requests due to network egress policy — it is used only for Claude AI interactions (evaluate, tailor, digest, humanize, prep).
+
+### Running Both Scanners (Local Mac Terminal)
+
+```bash
+cd ~/path/to/nathy-job-hunting
+git pull                              # sync dedup list before every run
+
+pip install requests playwright       # one-time setup
+
+python scan_jobs.py                   # API scanner — ATS + aggregators
+python browser_search.py              # browser scanner — Indeed, LinkedIn, Remote.co
+
+git add evaluated-jobs.csv browser-finds.json
+git commit -m "scan $(date +%Y-%m-%d-%H%M)"
+git push
+```
+
+Always `git pull` first. Both scripts share `evaluated-jobs.csv` as the dedup record — running either one without a pull risks logging duplicates already found by the other.
+
+### After Each Scan
+
+1. New matches print to stdout
+2. Open a Claude Web session (personal account) and paste interesting postings into `/evaluate` to score them
+3. If score ≥ 7.0, run `/tailor` then apply
+4. Log the application in `applications.csv`
+5. Run `/digest` for a current pipeline view
+
+---
+
+## Outreach Tracker
+
+`outreach-tracker.csv` logs every networking touch. Columns:
+
+| Column | Notes |
+|--------|-------|
+| date | Date message was sent (YYYY-MM-DD) |
+| person | Full name of the contact |
+| company | Their company |
+| platform | LinkedIn, Email, Twitter/X, WhatsApp, other |
+| status | Sent, Replied, Meeting Booked, No Response, Declined |
+| follow_up_date | Date to follow up if no reply (YYYY-MM-DD) |
+| message | Exact text sent — used to track what gets responses |
+| notes | Who they are, their role, any context |
+
+The `message` column is intentionally verbatim. Over time the pattern of what gets replies vs. silence will be visible in the data.
+
+---
+
 ## Applications Pipeline — Status Values
 
 Used in applications.csv. The /digest command uses these to group entries.
