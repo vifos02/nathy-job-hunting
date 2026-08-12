@@ -8,18 +8,28 @@ JWT High Potential award winner (2017) — one of 54 chosen from 12,000+ WPP emp
 
 ## Target Roles
 
-**Yes — Senior-level in:**
-- SEO Manager / Head of SEO
+**Yes — evaluate these titles:**
+- Marketing Specialist / LATAM Marketing Specialist / Marketing Specialist Portuguese
+- Marketing Manager / Senior Marketing Manager / LATAM Marketing Manager
+- Marketing Project Manager / Marketing Program Manager
+- Growth Marketing Manager or Specialist
+- Content Specialist / SEO Content Specialist
 - Content Marketing Manager or Director
 - Digital Marketing Manager or Director
-- Growth Marketing Manager
 - Marketing Operations Manager
+- SEO Manager / Head of SEO / Head of Content / Head of Marketing
+- VP Marketing / VP of Marketing
+
+**Boolean/location qualifiers that are positive signals (not exclusions):**
+Words like Remote, LATAM, Brazil, Spanish, Portuguese in a title indicate the role is likely relevant to Nathália's background and should be evaluated, not skipped.
 
 **No — do not evaluate:**
-- Junior, associate, or coordinator titles
+- Junior, coordinator, or clearly entry-level titles
 - Roles requiring on-site presence in a city I don't live in
 - Pure performance marketing / PPC-only roles (not my primary strength)
 - Developer, data engineering, or product-heavy roles
+- Product Marketing Manager (different discipline)
+- Lifecycle Marketing / Account-Based Marketing / Field Marketing / Sales Enablement
 - BRL-only salaries at below R$15k/month
 - Any role at a company in cryptocurrency, online betting, gambling, or adult content
 - US-remote roles (remote but restricted to US candidates, requires US work authorization, or lists only US locations)
