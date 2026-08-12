@@ -92,10 +92,12 @@ SKIP_TITLE_WORDS = [
     # APAC / non-workable locations in title
     "japan", "tokyo", "singapore", "apac", "asia pacific",
     "china", "hong kong", "korea", "sydney", "australia",
-    # On-site locations in title
+    # On-site locations in title (city + comma = likely location tag)
     "são paulo", "sao paulo", "tel aviv",
     "new york,", "san francisco,", "austin,", "chicago,", "los angeles,",
     "seattle,", "boston,", "denver,", "miami,", "atlanta,",
+    # On-site role types that rarely go remote
+    "office manager",
 ]
 
 SKIP_INDUSTRY_WORDS = [
@@ -103,9 +105,14 @@ SKIP_INDUSTRY_WORDS = [
     "betting", "gambling", "casino", "adult",
 ]
 
-US_ONLY_TITLE_SIGNALS = [
-    "remote us", "(us only)", "us-based", "north america only",
-    "california", "us northeast", "us south", "us midwest",
+# Title signals that explicitly restrict to US applicants (work authorization implied)
+# Note: timezone signals like "east coast hours" or "us remote" alone are NOT blockers —
+# Brazil (UTC-3) is compatible with US East Coast. Only skip if authorization is clearly required.
+US_AUTH_TITLE_SIGNALS = [
+    "(us only)", "us citizens only", "us citizenship required",
+    "must be authorized to work in the us",
+    # US city names with comma (indicating on-site, not remote)
+    "california,", "us northeast,", "us south,", "us midwest,",
 ]
 
 US_ONLY_COMPANIES = {
@@ -183,7 +190,7 @@ def prefilter(matches: list[dict]) -> list[dict]:
             continue
         if any(kw in company for kw in SKIP_INDUSTRY_WORDS):
             continue
-        if any(kw in title for kw in US_ONLY_TITLE_SIGNALS):
+        if any(kw in title for kw in US_AUTH_TITLE_SIGNALS):
             continue
         if any(co in company for co in US_ONLY_COMPANIES):
             continue

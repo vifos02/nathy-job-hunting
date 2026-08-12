@@ -97,10 +97,12 @@ SKIP_TITLE_WORDS = [
     # APAC / non-workable locations in title
     "japan", "tokyo", "singapore", "apac", "asia pacific",
     "china", "hong kong", "korea", "sydney", "australia",
-    # On-site US/LATAM cities in title
+    # On-site US/LATAM cities in title (city + comma = likely on-site location tag)
     "são paulo", "sao paulo", "tel aviv",
     "new york,", "san francisco,", "austin,", "chicago,", "los angeles,",
     "seattle,", "boston,", "denver,", "miami,", "atlanta,",
+    # Common on-site role types that rarely go remote
+    "office manager",
 ]
 
 SKIP_INDUSTRY_WORDS = [
@@ -108,9 +110,11 @@ SKIP_INDUSTRY_WORDS = [
     "betting", "gambling", "casino", "adult",
 ]
 
-US_ONLY_TITLE_SIGNALS = [
-    "remote us", "(us only)", "us-based", "north america only",
-    "california", "us northeast", "us south", "us midwest",
+# Timezone signals ("remote us", "east coast hours") are NOT blockers — Brazil (UTC-3)
+# is compatible with US East Coast. Only block explicit authorization requirements in title.
+US_AUTH_TITLE_SIGNALS = [
+    "(us only)", "us citizens only", "us citizenship required",
+    "california,", "us northeast,", "us south,", "us midwest,",
 ]
 
 SEEN_JOBS_HEADERS = ["job_id", "company", "title", "url", "found_date", "matched", "source"]
@@ -158,7 +162,7 @@ def is_match(title: str, company: str = "") -> bool:
         return False
     if any(kw in c for kw in SKIP_INDUSTRY_WORDS):
         return False
-    if any(kw in t for kw in US_ONLY_TITLE_SIGNALS):
+    if any(kw in t for kw in US_AUTH_TITLE_SIGNALS):
         return False
     return True
 

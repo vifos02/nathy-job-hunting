@@ -2,7 +2,16 @@
 
 ## Who I Am
 
-Award-winning digital marketing professional, 16 years of experience across agencies, startups, SaaS, and streaming. Brazilian national, currently based in Tarragona, Spain. Fluent in English, Portuguese, and Spanish. Italian citizenship process ongoing (EU work rights in progress). Mother of two young daughters, currently on maternity leave ending soon. Canva SEO contract runs until November 2026.
+Award-winning digital marketing professional, 16 years of experience across agencies, startups, SaaS, and streaming. Brazilian national, currently based in Tarragona, Spain — moving to Brazil in November 2026. Fluent in English, Portuguese, and Spanish. Italian citizenship process ongoing (EU work rights in progress). Mother of two young daughters, currently on maternity leave ending soon. Canva SEO contract runs until November 2026.
+
+**Location timeline:**
+- Now through October 2026: Tarragona, Spain (UTC+1/+2)
+- November 2026 onward: Brazil (UTC-3)
+
+**Work authorization:**
+- No US work visa — cannot take roles requiring US employment authorization (W-2, sponsorship)
+- No EU work permit yet — Italian citizenship in progress; can take remote roles that hire internationally from Spain
+- Brazilian national — can take any role hiring in Brazil, including CLT (full-time) and PJ (contractor)
 
 JWT High Potential award winner (2017) — one of 54 chosen from 12,000+ WPP employees globally.
 
@@ -32,7 +41,8 @@ Words like Remote, LATAM, Brazil, Spanish, Portuguese in a title indicate the ro
 - Lifecycle Marketing / Account-Based Marketing / Field Marketing / Sales Enablement
 - BRL-only salaries at below R$15k/month
 - Any role at a company in cryptocurrency, online betting, gambling, or adult content
-- US-remote roles (remote but restricted to US candidates, requires US work authorization, or lists only US locations)
+- Roles explicitly requiring US work authorization, US citizenship, or US employment (W-2 only)
+- On-site roles in cities I won't be in (any US city, APAC, European cities other than where I am)
 
 ---
 
@@ -58,12 +68,22 @@ Does the title and scope match my 16-year trajectory? Would I be underqualified 
 - 2 = wrong level or wrong function entirely
 
 ### 2. Remote & Location (weight: 25%)
-Is this role workable from Tarragona, Spain?
-- 10 = fully remote with no location restriction, or Spain-based
-- 8 = remote within EU only (I qualify or will soon via Italian citizenship)
-- 5 = remote-first but timezone requirements unclear
-- 3 = hybrid in a city far from Tarragona
-- 1 = on-site only, or requires a work permit I don't have
+Is this role workable from Spain now, or from Brazil from November 2026?
+
+**Hard blockers (score 1):**
+- Requires US work authorization, US citizenship, or W-2 employment
+- On-site only, in a city I won't be in
+
+**Scoring:**
+- 10 = fully remote, no location restriction, no work-auth requirement
+- 9 = remote; explicitly open to international/global applicants
+- 8 = remote within EU only (qualifies via Italian citizenship in progress), or Brazil-based
+- 7 = remote with US East Coast hours required (workable from Brazil UTC-3; 2h gap)
+- 6 = remote with US Central/Mountain hours (workable from Brazil with some stretch)
+- 5 = remote with US Pacific hours or timezone unclear (investigate before applying)
+- 4 = hybrid in a city far from current location but possibly workable with travel
+- 2 = strong indication of US work authorization required (flag clearly)
+- 1 = on-site only in inaccessible city, or explicit US work-auth requirement confirmed
 
 ### 3. Compensation (weight: 20%)
 Is the pay competitive for a senior professional with 16 years' experience?
@@ -167,6 +187,9 @@ Be explicit about these — don't work around them:
 - I am returning from maternity leave — I need **flexibility and async-friendly culture**
 - I have two young daughters at home — **rigid 9–5 video-call-heavy roles are a concern**
 - My Canva contract ends November 2026 — I may be able to bridge with overlap contracts
+- Moving to Brazil in November 2026 — roles viable from Brazil (UTC-3) are in scope, including US East Coast timezone roles
+- US East Coast hours are compatible with Brazil; US Pacific is a stretch but not a dealbreaker
+- **No US work authorization** — any role requiring US employment sponsorship or W-2 is blocked regardless of timezone
 - I am open to both **employee roles (CLT/full-time/permanent)** and **senior contractor gigs**
 - Income goal: equivalent of $2,000–$3,500 USD/month net, ideally growing
 
