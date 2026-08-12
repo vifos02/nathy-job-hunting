@@ -188,6 +188,37 @@ def prefilter(matches: list[dict]) -> list[dict]:
 
 
 # ---------------------------------------------------------------------------
+# Extract only scoring-relevant sections from CLAUDE.md
+# ---------------------------------------------------------------------------
+
+EVAL_SECTIONS = [
+    "Hard Rules for Claude",
+    "Scoring Rubric",
+    "Weighted Score Formula",
+    "Apply Threshold",
+    "My Real Skills",
+    "What I Genuinely Do NOT Have",
+    "Context for Evaluations",
+]
+
+def extract_eval_context(full_text: str) -> str:
+    """Return only the rubric/skills sections from CLAUDE.md — skip writing rules, workflow docs."""
+    lines = full_text.split("\n")
+    out, capturing = [], False
+    stop_headers = {"Writing Voice Rules", "Scanning Workflow", "Outreach Tracker",
+                    "Applications Pipeline", "Script Split", "Running Both"}
+    for line in lines:
+        header = line.lstrip("#").strip()
+        if any(s in header for s in EVAL_SECTIONS):
+            capturing = True
+        elif line.startswith("#") and any(s in header for s in stop_headers):
+            capturing = False
+        if capturing:
+            out.append(line)
+    return "\n".join(out)
+
+
+# ---------------------------------------------------------------------------
 # Fetch posting content
 # ---------------------------------------------------------------------------
 
@@ -208,7 +239,7 @@ def fetch_posting(url: str) -> str:
         for tag in soup(["script", "style", "nav", "footer", "header"]):
             tag.decompose()
         text = soup.get_text(separator="\n", strip=True)
-        return text[:8000]
+        return text[:4000]
     except Exception:
         return ""
 
@@ -283,7 +314,7 @@ URL: {url}
 
     msg = client.messages.create(
         model="claude-haiku-4-5-20251001",
-        max_tokens=1500,
+        max_tokens=1000,
         messages=[{"role": "user", "content": prompt}],
     )
     return msg.content[0].text
@@ -326,7 +357,7 @@ def main() -> None:
     if not api_key and not args.dry_run:
         sys.exit("API key not found.\nRun: python3 setup_key.py")
 
-    rubric = CLAUDE_MD.read_text(encoding="utf-8")     if CLAUDE_MD.exists()     else ""
+    rubric = extract_eval_context(CLAUDE_MD.read_text(encoding="utf-8")) if CLAUDE_MD.exists() else ""
     resume = MASTER_RESUME.read_text(encoding="utf-8") if MASTER_RESUME.exists() else ""
 
     evaluated_ids = load_evaluated_ids()
