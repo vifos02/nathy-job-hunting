@@ -45,11 +45,52 @@ EVALS_DIR     = ROOT / "evaluations"
 
 DEFAULT_LIMIT = 15
 
-# Pre-filter: skip without calling the API
+# Allowlist: title must contain at least one of these to pass to the API.
+# Keeps only the roles that genuinely match Nathália's target disciplines.
+REQUIRED_TITLE_KEYWORDS = [
+    "seo",
+    "search engine optimization",
+    "content marketing",
+    "content manager",
+    "content director",
+    "content strategist",
+    "content lead",
+    "content specialist",
+    "digital marketing",
+    "growth marketing",
+    "growth manager",
+    "marketing operations",
+    "marketing manager",
+    "marketing director",
+    "marketing specialist",
+    "marketing project manager",
+    "marketing program manager",
+    "head of marketing",
+    "head of content",
+    "head of seo",
+    "vp marketing",
+    "vp of marketing",
+    "vp, marketing",
+    "latam marketing",
+    "latam content",
+    "latam seo",
+]
+
+# Hard blocklist: skip even if an allowlist keyword matched
 SKIP_TITLE_WORDS = [
     "junior", " jr ", "associate", "coordinator", "intern", "entry level",
     "developer", "engineer", "data scientist", "data analyst",
     "ppc specialist", "sem specialist", "paid search specialist",
+    "product marketing",
+    "lifecycle marketing",
+    "account based",
+    "field marketing",
+    "event marketing",
+    "enablement",
+    "affiliate",
+    # On-site locations in title
+    "são paulo", "sao paulo", "tel aviv",
+    "new york,", "san francisco,", "austin,", "chicago,", "los angeles,",
 ]
 
 SKIP_INDUSTRY_WORDS = [
@@ -105,12 +146,16 @@ def load_new_matches(evaluated_ids: set) -> list[dict]:
 
 
 def prefilter(matches: list[dict]) -> list[dict]:
-    """Apply hard exclusion rules without API calls."""
+    """Keep only roles that match target disciplines; apply hard exclusions."""
     keep = []
     for m in matches:
         title   = m.get("title", "").lower()
         company = m.get("company", "").lower()
 
+        # Must contain at least one target keyword
+        if not any(kw in title for kw in REQUIRED_TITLE_KEYWORDS):
+            continue
+        # Hard blocklist overrides the allowlist
         if any(kw in title for kw in SKIP_TITLE_WORDS):
             continue
         if any(kw in company for kw in SKIP_INDUSTRY_WORDS):

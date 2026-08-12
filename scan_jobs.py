@@ -59,6 +59,7 @@ TARGET_KEYWORDS = [
     "content director",
     "content strategist",
     "content lead",
+    "content specialist",
     "digital marketing",
     "growth marketing",
     "growth manager",
@@ -66,11 +67,17 @@ TARGET_KEYWORDS = [
     "marketing manager",
     "marketing director",
     "marketing lead",
+    "marketing specialist",
+    "marketing project manager",
+    "marketing program manager",
     "head of marketing",
     "head of seo",
     "head of content",
     "vp marketing",
     "vp of marketing",
+    "latam marketing",
+    "latam content",
+    "latam seo",
 ]
 
 SEEN_JOBS_HEADERS = ["job_id", "company", "title", "url", "found_date", "matched", "source"]
