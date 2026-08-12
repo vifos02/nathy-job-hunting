@@ -353,9 +353,9 @@ def main() -> None:
             messages=[{"role": "user", "content": "ping"}],
         )
         print("ok\n")
-    except anthropic.AuthenticationError:
-        sys.exit("ERROR: ANTHROPIC_API_KEY is invalid or expired.\n"
-                 "Generate a new key at https://console.anthropic.com and re-export it.")
+    except anthropic.AuthenticationError as e:
+        sys.exit(f"ERROR: Authentication failed — {e}\n"
+                 "Check billing at https://console.anthropic.com/settings/billing")
     except UnicodeEncodeError:
         sys.exit("ERROR: ANTHROPIC_API_KEY contains non-ASCII characters — the key was "
                  "likely pasted with smart quotes or invisible characters.\n"
