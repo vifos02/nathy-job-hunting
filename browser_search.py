@@ -112,6 +112,14 @@ SEARCH_QUERIES = [
     # Global/international signals — prioritises truly remote-worldwide postings
     "global seo manager",
     "global content marketing manager",
+    # Brazil-specific — moving November 2026, Brazilian national, any Brazil-based role is in scope
+    "seo manager brazil remote",
+    "content marketing brazil remote",
+    "digital marketing brazil remote",
+    "marketing manager brazil remote",
+    "remote marketing brazil",
+    "marketing brasil",
+    "seo brasil",
 ]
 
 SEEN_JOBS_HEADERS = ["job_id", "company", "title", "url", "found_date", "matched", "source"]
