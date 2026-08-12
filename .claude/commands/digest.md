@@ -40,8 +40,17 @@ If file is empty or missing: "No browser scan results yet. Run browser_search.py
 2.
 3.
 
+## Outreach
+Read outreach-tracker.csv and show:
+- Contacts due for follow-up (follow_up_date ≤ today, status = Sent or No Response)
+- Reply rate so far: Replied or Meeting Booked / total Sent
+
+| Person | Company | Platform | Status | Follow-up Due |
+|--------|---------|----------|--------|---------------|
+
 ## Stats
 - API scan seen: X total | X matched | X evaluated
 - Browser scan seen: X total | X in browser-finds.json
 - Pipeline: Applied X | Screening X | Interview X | Offers X
+- Outreach: X sent | X replied (X% reply rate) | X meetings booked
 ---

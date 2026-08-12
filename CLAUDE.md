@@ -242,6 +242,25 @@ Matches write to both `evaluated-jobs.csv` (dedup record) and `browser-finds.jso
 
 ---
 
+## Outreach Tracker
+
+`outreach-tracker.csv` logs every networking touch. Columns:
+
+| Column | Notes |
+|--------|-------|
+| date | Date message was sent (YYYY-MM-DD) |
+| person | Full name of the contact |
+| company | Their company |
+| platform | LinkedIn, Email, Twitter/X, WhatsApp, other |
+| status | Sent, Replied, Meeting Booked, No Response, Declined |
+| follow_up_date | Date to follow up if no reply (YYYY-MM-DD) |
+| message | Exact text sent — used to track what gets responses |
+| notes | Who they are, their role, any context |
+
+The `message` column is intentionally verbatim. Over time the pattern of what gets replies vs. silence will be visible in the data.
+
+---
+
 ## Applications Pipeline — Status Values
 
 Used in applications.csv. The /digest command uses these to group entries.
