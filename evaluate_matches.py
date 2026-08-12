@@ -311,8 +311,12 @@ def main() -> None:
     args = parser.parse_args()
 
     api_key = os.environ.get("ANTHROPIC_API_KEY")
+    if not api_key:
+        key_file = Path.home() / ".anthropic_key"
+        if key_file.exists():
+            api_key = key_file.read_text(encoding="ascii").strip()
     if not api_key and not args.dry_run:
-        sys.exit("ANTHROPIC_API_KEY not set.\nRun: export ANTHROPIC_API_KEY='sk-ant-...'")
+        sys.exit("API key not found.\nRun: python3 setup_key.py")
 
     rubric = CLAUDE_MD.read_text(encoding="utf-8")     if CLAUDE_MD.exists()     else ""
     resume = MASTER_RESUME.read_text(encoding="utf-8") if MASTER_RESUME.exists() else ""
