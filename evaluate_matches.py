@@ -45,31 +45,43 @@ EVALS_DIR     = ROOT / "evaluations"
 
 DEFAULT_LIMIT = 15
 
-# Pre-filter: skip without calling the API
+# Allowlist: title must contain at least one of these to pass to the API.
+# Keeps only the roles that genuinely match Nathália's target disciplines.
+REQUIRED_TITLE_KEYWORDS = [
+    "seo",
+    "search engine optimization",
+    "content marketing",
+    "content manager",
+    "content director",
+    "content strategist",
+    "content lead",
+    "digital marketing",
+    "growth marketing",
+    "growth manager",
+    "marketing operations",
+    "head of marketing",
+    "head of content",
+    "head of seo",
+    "vp marketing",
+    "vp of marketing",
+    "vp, marketing",
+]
+
+# Hard blocklist: skip even if an allowlist keyword matched
 SKIP_TITLE_WORDS = [
-    # Wrong level
     "junior", " jr ", "associate", "coordinator", "intern", "entry level",
-    # Wrong function
     "developer", "engineer", "data scientist", "data analyst",
     "ppc specialist", "sem specialist", "paid search specialist",
-    "product marketing",     # different discipline
-    "lifecycle marketing",   # CRM/email focus, not her primary strength
-    "account based",         # ABM, B2B ops
-    "field marketing",       # events/in-person
+    "product marketing",
+    "lifecycle marketing",
+    "account based",
+    "field marketing",
     "event marketing",
-    "enablement",            # sales enablement
-    "demand generation",     # performance/paid focus
-    "brand manager",         # brand-only, not digital
-    "pr manager", "public relations",
-    "influencer manager",
+    "enablement",
     "affiliate",
     # On-site locations in title
-    "são paulo", "sao paulo",
-    "tel aviv",
-    "new york", "new york,",
-    "san francisco",
-    "austin,", "chicago,", "london,",
-    "los angeles",
+    "são paulo", "sao paulo", "tel aviv",
+    "new york,", "san francisco,", "austin,", "chicago,", "los angeles,",
 ]
 
 SKIP_INDUSTRY_WORDS = [
@@ -125,12 +137,16 @@ def load_new_matches(evaluated_ids: set) -> list[dict]:
 
 
 def prefilter(matches: list[dict]) -> list[dict]:
-    """Apply hard exclusion rules without API calls."""
+    """Keep only roles that match target disciplines; apply hard exclusions."""
     keep = []
     for m in matches:
         title   = m.get("title", "").lower()
         company = m.get("company", "").lower()
 
+        # Must contain at least one target keyword
+        if not any(kw in title for kw in REQUIRED_TITLE_KEYWORDS):
+            continue
+        # Hard blocklist overrides the allowlist
         if any(kw in title for kw in SKIP_TITLE_WORDS):
             continue
         if any(kw in company for kw in SKIP_INDUSTRY_WORDS):
