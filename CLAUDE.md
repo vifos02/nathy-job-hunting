@@ -22,6 +22,7 @@ JWT High Potential award winner (2017) — one of 54 chosen from 12,000+ WPP emp
 - Developer, data engineering, or product-heavy roles
 - BRL-only salaries at below R$15k/month
 - Any role at a company in cryptocurrency, online betting, gambling, or adult content
+- US-remote roles (remote but restricted to US candidates, requires US work authorization, or lists only US locations)
 
 ---
 
