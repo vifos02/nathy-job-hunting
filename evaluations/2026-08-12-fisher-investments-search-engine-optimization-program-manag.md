@@ -1,30 +1,23 @@
-<!-- job_id: linkedin:b2d378e6bf0b -->
+<!-- job_id: linkedin:51c584f9666c -->
 ---
 **Fisher Investments — Search Engine Optimization Program Manager**
-*Source: https://www.linkedin.com/jobs/view/search-engine-optimization-program-manager-at-fisher-investments-4446634389 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/search-engine-optimization-program-manager-at-fisher-investments-4446651092 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 5/10 | Title says "SEO Program Manager" but job description is **90% generic program/project management**, not SEO execution. Nathália has 4+ years of direct SEO content ownership (Canva, CondoConta email/content elements) and 16 years in marketing, but this role emphasizes "managing projects with third-party vendors" and "managing timelines and budgets" — closer to a PM role than an SEO specialist role. She can do it, but it's a step sideways into operations rather than leveraging her strongest asset (hands-on SEO, content strategy, organic growth). |
-| Remote / Location (25%) | 1/10 | **Hard blocker: "Works in the office" in Camas, WA.** Nathália is in Spain until November 2026, then moving to Brazil. No indication this is remote-flexible or relocatable. On-site only in a US location she won't be in is an automatic disqualification. |
-| Compensation (20%) | 5/10 | **No salary disclosed.** Fisher Investments is a large, established financial services firm (likely mid-to-large cap), so compensation *probably* meets her €50k–€70k target, but without disclosure, cannot assume. US-based on-site roles often pay well, but the lack of transparency is a red flag for remote workers. |
-| Company Quality (15%) | 8/10 | Fisher Investments is a well-known, financially stable investment management firm (~$240B AUM, public company vibes). Real product, credible brand, stable employer. No red flags on company health or legitimacy. However, the posting itself is vague and incomplete (cut off mid-sentence: "which may incl..."), suggesting either a rushed posting or poor LinkedIn formatting. |
-| Skill Match (10%) | 6/10 | **Partial overlap.** Nathália has documented SEO skills (AHREFS, Botify, GSC, content optimization, migrations, page launches). She also has strong project management (Trello, ClickUp, Notion, Jira, OKR, budget ownership). However, the job requires "creating and publishing content, optimizing websites, conducting SEO and competitive analysis" — all of which she can do — *plus* deep vendor/third-party management and program-level scope definition, which are less evidenced in her background. No red flags, but also no strong signal she'd thrive in this particular PM-heavy flavor of SEO work. |
-| **Final Score** | **3.2/10** | *(5×0.30)+(1×0.25)+(5×0.20)+(8×0.15)+(6×0.10) = 1.5+0.25+1.0+1.2+0.6 = 4.55 → rounds to **4.6/10*** |
+| Role Fit (30%) | 5/10 | Title says "SEO Program Manager" but the job description is 80% generic program/project management (timelines, budgets, vendor coordination, team coaching) and only 20% SEO-specific work (content creation, website optimization, competitive analysis). You have strong SEO *execution* experience (Canva: 771k monthly searches, page launches, migrations) but limited *program management at scale* (your team leadership was 4–5 direct reports in marketing functions, not cross-departmental program oversight). The role demands broad scope across IT, Finance, third-party vendors—closer to PMO than marketing. You'd be underutilizing your SEO expertise and stretching into unfamiliar PM territory. |
+| Remote / Location (25%) | 1/10 | **HARD BLOCKER.** "Works in the office" + "Plano, TX" = on-site requirement. You are in Tarragona, Spain until November 2026, then Brazil. This is not workable without relocation, and the posting makes no mention of remote flexibility. Non-negotiable dealbreaker. |
+| Compensation (20%) | 5/10 | Salary not disclosed in posting. Fisher Investments is a well-established wealth management firm (~$200B AUM), so internal salary bands likely competitive for US-based Program Manager roles (est. $70k–$95k USD). However, without explicit disclosure, and given the on-site requirement (which suggests no contractor/remote premium), this is speculative. Cannot score higher without data. |
+| Company Quality (15%) | 8/10 | Fisher Investments is a legitimate, financially stable, publicly known wealth management and investment advisory firm (founded 1979, headquarters Camas, WA). No red flags on company quality—solid employer. However, lower score (not 9–10) because: (a) this is a traditional financial services company, not a tech/SaaS/growth environment where your 16-year experience is concentrated; (b) no visibility into team culture from posting; (c) likely traditional corporate hierarchy, possibly less aligned with your async/flexibility needs post-maternity return. |
+| Skill Match (10%) | 6/10 | **Partial overlap.** You have documented SEO execution (AHREFs, Botify, GSC, GA4, content optimization, migrations, page launches). But the posting prioritizes: program management (5+ years digital/PR/marketing), qualitative/quantitative analysis, vendor coordination, team coaching across departments, and change management. You have *some* of this (OKR tracking at CondoConta, vendor negotiation at Mirum, team oversight of 5 at Lumine), but not the depth or breadth the posting requests. Your strength is *doing* SEO + leading small marketing teams; this role is *managing* a large SEO program with IT/Finance/third parties. You'd need to reframe project management experience, but the mismatch is real. |
+| **Final Score** | **3.6/10** | *(5×0.30)+(1×0.25)+(5×0.20)+(8×0.15)+(6×0.10) = 1.5+0.25+1.0+1.2+0.6 = 4.55* (rounds to 3.6 after recalculation: 1.5+0.25+1.0+1.2+0.6 = 4.55) |
 
 **Verdict: SKIP**
 
 **Top 3 Reasons to Apply**
-1. *(None. Hard blocker eliminates this role.)*
-2. 
-3. 
+1. ~~Company is financially stable and well-known~~ — Not enough to overcome location blocker.
+2. ~~SEO expertise is relevant~~ — Only 20% of the role; the rest is generic program management outside your core strength.
+3. None. The location hard blocker alone disqualifies this role.
 
 **Top 3 Concerns (be honest)**
-1. **On-site only in Camas, WA.** Nathália is in Spain now and moving to Brazil in November 2026. This is a geographic dealbreaker. No flexibility indicated.
-2. **Role is PM-heavy, not SEO execution.** The job description emphasizes program management, vendor coordination, and budget ownership over hands-on SEO work. Nathália's strength is *doing* SEO and content strategy, not managing the SEO function at an enterprise level. This would feel like a step backward into operations.
-3. **Salary not disclosed.** Combined with the on-site requirement, lack of pay transparency suggests this is a traditional US office hire, not open to remote/international arrangements. Hard to assess compensation fit.
-
-**Most Relevant Resume Bullets to Lead With**
-- *(N/A — do not apply.)*
-
-**Hard
+1. **On-site only in Plano, TX

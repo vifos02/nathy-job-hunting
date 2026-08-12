@@ -1,34 +1,28 @@
-<!-- job_id: linkedin:8587b9060e10 -->
+<!-- job_id: linkedin:4c4c7027284f -->
 ---
 **Morgan, Lewis & Bockius LLP — Senior Digital Content Manager**
-*Source: https://www.linkedin.com/jobs/view/senior-digital-content-manager-at-morgan-lewis-bockius-llp-4452061151 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/senior-digital-content-manager-at-morgan-lewis-bockius-llp-4452066066 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 6/10 | Strong content leadership and strategy experience, but this is a law firm role requiring deep understanding of professional services, B2B thought leadership, and compliance/governance in a way Nathália hasn't demonstrated. She has led content teams (Mirum, Lumine), managed editorial calendars, and executed brand positioning — all transferable. However, the "newsroom approach" and complex B2B legal positioning are outside her documented core experience (which leans SaaS, fintech, streaming, NGO). Not a perfect match, but credibly doable with ramp-up. |
-| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** Posting states "Maintaining an on-office presence is important" and role is "New York, NY." The posting was truncated, but the emphasis on in-office collaboration and NYC location is explicit. Nathália is in Spain now (through Nov 2026) and moving to Brazil in Nov 2026. No indication this is remote-friendly. This is not a workable role from either location. |
-| Compensation (20%) | 5/10 | No salary disclosed in posting. Morgan Lewis is a top-tier global law firm (AmLaw 100), so pay is likely competitive for a senior role (~$120–$160k USD range for NYC). However, without explicit disclosure and given the seniority level required, scoring is speculative. Assume competitive but unconfirmed. |
-| Company Quality (15%) | 10/10 | Morgan, Lewis & Bockius is one of the world's largest and most prestigious law firms, with global offices, financial stability, strong reputation, and international teams. No red flags. |
-| Skill Match (10%) | 7/10 | Strong overlap: content strategy, editorial planning, team leadership, SEO/search visibility, analytics (Looker Studio, GA4), brand positioning, and AI adoption guidance. Gaps: no demonstrated experience with legal/professional services content, compliance/governance frameworks, or accessibility standards (WCAG) specific to enterprise digital. These are learnable but not in her background. |
-| **Final Score** | **4.3/10** | *(6×0.30)+(2×0.25)+(5×0.20)+(10×0.15)+(7×0.10) = 1.8 + 0.5 + 1.0 + 1.5 + 0.7 = 5.5* |
+| Role Fit (30%) | 6/10 | Senior content role at a global firm aligns with your 16-year trajectory and past leadership. However, this is a **law firm content role**, not SaaS/tech/growth marketing. The "newsroom approach" and "thought leadership" positioning are adjacent to your content expertise but skew toward corporate communications / PR rather than SEO, demand generation, or product marketing where you've thrived. You can do this, but it's a lateral move into a different function (corporate content vs. growth/performance marketing). Not a perfect fit. |
+| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** The posting says "Greater Philadelphia" with no mention of remote flexibility. Law firms are traditionally on-site or hybrid in-office cultures. No explicit remote option is stated. You are in Spain now and moving to Brazil in Nov 2026. Unless this role is explicitly remote (which the posting does not indicate), this is not workable. Philadelphia is neither Spain nor Brazil-compatible. |
+| Compensation (20%) | 5/10 | **Salary not disclosed in posting.** Morgan Lewis is a major global law firm (top 10 AmLaw 200), so compensation is likely in the $80k–$120k USD range for a senior content role—above your target. However, without explicit numbers, this is an assumption. The firm's scale suggests they pay competitively, but you cannot verify. |
+| Company Quality (15%) | 9/10 | **Morgan, Lewis & Bockius LLP is a legitimate, established, global law firm** with offices across North America, Asia, Europe, and the Middle East. Strong brand, financial stability, international team. One of the world's leading law firms. No red flags. This is a credible employer. |
+| Skill Match (10%) | 6/10 | You have strong **content strategy, SEO, editorial planning, and cross-team collaboration** skills that apply here. However, the posting emphasizes: (1) **global websites governance** (infrastructure, CMS, possibly technical content management beyond your past scope), (2) **newsroom / editorial operations** (you've done this at Mirum and Canva, but it's not your primary identity), and (3) **thought leadership positioning** (adjacent to brand strategy, which you've done, but not your core). You can learn and succeed here, but it's not a tight match. No SEM, Meta Ads, or demand-gen focus—those strengths aren't highlighted. |
+| **Final Score** | **4.9/10** | *(6×0.30)+(2×0.25)+(5×0.20)+(9×0.15)+(6×0.10) = 1.8+0.5+1.0+1.35+0.6 = 5.25* **Recalculated: 5.25/10** |
 
 **Verdict: SKIP**
 
 ---
 
 **Top 3 Reasons to Apply**
-1. **Prestige & resume value:** Morgan Lewis is a world-class firm; working here would be a significant credential and network builder.
-2. **Content leadership at scale:** The role directly aligns with her team leadership and content strategy experience (Mirum, Lumine, CondoConta).
-3. **AI & emerging tech adoption:** She has experience guiding AI integration and would be well-positioned to lead that for the firm's digital function.
+1. **Credible, stable employer** with global reach and a strong brand (Morgan Lewis is a top law firm).
+2. **Senior-level content leadership** role matches your seniority and past content/editorial management experience.
+3. **International team** context aligns with your cross-border collaboration skills.
 
 ---
 
 **Top 3 Concerns (be honest)**
-1. **Location is a hard blocker.** On-site presence required in NYC. Nathália is in Spain through Nov 2026, then moving to Brazil. This role is not workable from either location unless fully remote (which the posting does not indicate). **This alone is disqualifying.**
-2. **No law/professional services background.** Her expertise is in SaaS, fintech, streaming, and NGOs. Legal/professional services B2B positioning, compliance, and thought leadership governance are outside her documented experience. Ramp-up would be required.
-3. **Salary undisclosed.** While Morgan Lewis likely pays competitively, the lack of transparency makes it impossible to confirm this meets her income goals (~$2–3.5k USD/month net). Senior NYC role likely does, but verification needed before investing time.
-
----
-
-**Most Relevant Resume Bullets to Lead With**
-- **
+1. **Location is a hard blocker.** Posted for "Greater Philadelphia" with no remote flexibility stated. You are in Spain; moving to Brazil in Nov 2026. On-site or hybrid in Philadelphia is not workable for you. **This alone makes the role unviable unless you confirm remote is possible.**
+2. **Function mismatch.** This is corporate/law firm content strategy, not growth marketing, demand generation, or performance-driven content. Your 16 years have been in SaaS, fintech, media, agencies, and NGOs where you drove revenue, leads, and organic growth. Law firm thought leadership is a different

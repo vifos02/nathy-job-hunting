@@ -1,22 +1,29 @@
-<!-- job_id: linkedin:bd7e6f725b12 -->
+<!-- job_id: linkedin:e6dda5f2ff89 -->
 ---
 **Directive — SEO Strategist (Remote US) - Future Opening**
-*Source: https://www.linkedin.com/jobs/view/seo-strategist-remote-us-future-opening-at-directive-4433005128 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/seo-strategist-remote-us-future-opening-at-directive-4414973310 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 7/10 | Title says "SEO Strategist" but job description cuts off mid-sentence after mentioning "Content Strategist" and "client-facing deliverables." From what's visible, this is a senior client-facing strategy role at a B2B agency—adjacent to your Mirum/Macromator background and your 4+ years SEO ownership at Canva. You're qualified, but the incomplete posting makes it hard to assess depth of SEO vs. broader content/strategy scope. Assuming it's SEO-heavy, it's a solid fit for your experience level. |
-| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** Posting says "Remote US" and location is listed as "Houston, TX." This strongly signals US employment requirement (W-2, US work authorization, or US-based contractor with tax ID). You have no US work authorization, no US citizenship, and no path to W-2 sponsorship. Even if it's genuinely remote, "Remote US" typically means "must be based in US timezone and able to work US hours"—which conflicts with your Spain-now, Brazil-from-Nov-2026 location. This is a dealbreaker. |
-| Compensation (20%) | 5/10 | No salary disclosed. At a B2B agency like Directive (established, 420+ clients, 10+ years), a senior strategist role would likely offer $80k–$130k USD annually. That would exceed your target of €50–70k / $2–3.5k/month net. However, without explicit numbers or clarity on contractor vs. employee status, score is speculative. If you could somehow bypass the location issue, compensation would likely be competitive. |
-| Company Quality (15%) | 8/10 | Directive Consulting is a credible, established B2B marketing agency. 420+ brands, 10+ years operating, three divisions (Performance, Communications, Commerce), proprietary DiscoverabilityOS™ methodology. Appears financially stable and well-regarded in the B2B marketing space. No red flags visible. Team seems to value performance metrics and bold strategy—aligns with your strengths. Solid company. |
-| Skill Match (10%) | 8/10 | Your Canva SEO ownership (100% of Brazilian market production, 771k+ monthly searches, 5M organic traffic in H1 2026) directly matches "SEO Strategist." You have AHREFs, Botify, GSC, GA4, Looker Studio. You've led SEO strategy during hiring gaps, managed content sprints, optimized pages. You've also led client-facing work at Macromator (Genesys LATAM) and managed enterprise clients at Mirum. The posting cuts off before listing specific tools, but your toolkit is strong and transferable. High match. |
-| **Final Score** | **4.3/10** | *(7×0.30)+(2×0.25)+(5×0.20)+(8×0.15)+(8×0.10) = 2.1+0.5+1.0+1.2+0.8 = 5.6* — **Wait, recalculating:** (7×0.30)=2.1, (2×0.25)=0.5, (5×0.20)=1.0, (8×0.15)=1.2, (8×0.10)=0.8 → Total = **5.6/10**. However, the Remote/Location score of 2/10 is a hard dealbreaker that should override the formula. Final actionable score: **2/10 (BLOCKED).** |
+| Role Fit (30%) | 7/10 | Strong SEO foundation matches your Canva experience. However, the posting is cut off and doesn't detail full scope. "Account Strategist, Content & SEO" suggests client-facing account management + strategy — you have both, but it's less pure SEO and more account servicing. The "Enterprise clients" angle is credible for your scale (teams of 21, cross-border ops). Not a perfect fit because account management with heavy client contact may conflict with your flexibility needs post-maternity leave. |
+| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** Posting explicitly states "Remote US" and lists "Columbus, OH" as location. No mention of international remote, work-visa sponsorship, or global team. This is a US-employment-only role. You have no US work authorization and no path to it (Italian citizenship is EU, not US). Even though you could work US East Coast hours from Brazil, Directive will almost certainly require US employment eligibility (W-2, tax withholding, etc.). This is a dealbreaker. |
+| Compensation (20%) | 5/10 | Posting does not disclose salary. Directive is a "leading B2B marketing agency" with 420+ clients and multi-division operations — suggests established, profitable company. For a senior SEO strategist / account strategist role at an agency, typical US market range is $70k–$110k+. Likely meets your threshold, but unknown and unconfirmed. Cannot score higher without data. |
+| Company Quality (15%) | 8/10 | Directive Consulting appears solid: 10+ years in business, 420+ B2B clients, multi-division structure (Performance, Communications, Commerce), proprietary methodology (DiscoverabilityOS™). Tone suggests high-performance, growth-focused culture. B2B marketing agencies with this scale are usually well-resourced and stable. No red flags visible in posting. Score reflects credibility but lack of employee review data (Glassdoor, Blind, etc.). |
+| Skill Match (10%) | 8/10 | Strong overlap. You have documented SEO expertise (Canva: 771k+ monthly searches, page launches, migrations, AHREFs, Botify, GSC). Content strategy is core to your background (Lumine, CondoConta, Mirum). Client-facing and stakeholder communication are well-proven (CondoConta team lead, Mirum strategist, AIESEC director of 21-person team). Only minor gap: posting is truncated, so full requirements are unknown. No SEM/Google Ads depth, but role title says "Content & SEO," not paid. |
+| **Final Score** | **4.3/10** | *(7×0.30)+(2×0.25)+(5×0.20)+(8×0.15)+(8×0.10) = 2.1+0.5+1.0+1.2+0.8 = **5.6/10*** |
 
-**Verdict: SKIP (Hard Dealbreaker — US-Remote Requirement)**
+**Verdict: SKIP** (due to hard location/work-auth blocker)
 
-**Top 3 Reasons to Apply**
-1. *(Not applicable — dealbreaker prevents application)*
-2. 
-3. 
+---
 
-**
+**Hard Dealbreakers Present?**
+- [x] **US-remote only / US work authorization required** — Posting says "Remote US" and lists Columbus, OH. No indication of visa sponsorship or international remote. You cannot legally work as a W-2 employee in the US without authorization.
+- [ ] EU work permit required
+- [ ] On-site in city she doesn't live in
+- [ ] BRL-only pay below R$15k/month
+- **Others:** Posting is truncated (cut off mid-sentence at "result in"), so full job scope, benefits, and work-auth language are unknown. However, the "Remote US" language is explicit and typical for US-only roles.
+
+---
+
+**Top 3 Reasons to Apply** (if the work-auth issue didn't exist)
+1. **

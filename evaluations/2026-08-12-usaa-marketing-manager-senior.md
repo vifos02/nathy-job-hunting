@@ -1,27 +1,28 @@
-<!-- job_id: linkedin:6451a5857a05 -->
+<!-- job_id: linkedin:a41e5a418d3f -->
 ---
 **USAA — Marketing Manager Senior**
-*Source: https://www.linkedin.com/jobs/view/marketing-manager-senior-at-usaa-4452326724 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/marketing-manager-senior-at-usaa-4452308783 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 4/10 | This is a **MarTech operations & governance role**, not a marketing strategy/growth/content role. Heavy focus on risk management, controls, RCSA, audit, compliance documentation, and process governance. Nathália's strength is **demand generation, content, SEO, ads, and team leadership**—not ops, risk, or compliance frameworks. She has project management and cross-functional coordination experience, but this role is fundamentally about risk controls and MarTech enablement process ownership, which is outside her core competency trajectory. She would be underqualified for the specific governance/risk angle and overqualified for the execution-only pieces. |
-| Remote / Location (25%) | 2/10 | **Hard blocker.** Role requires **4 days/week in-office** in one of six US cities (San Antonio, Plano, Phoenix, Colorado Springs, Charlotte, or incomplete list). Nathália is in Spain through November 2026, then moving to Brazil. She cannot commute to a US office. Even if she were in the US, she has no US work authorization and cannot take a W-2 role. This is not remote-friendly and not compatible with her location or work-auth status. |
-| Compensation (20%) | 5/10 | No salary disclosed in posting. "Senior" title at a large, profitable US financial services company (USAA) typically pays $80k–$110k USD annually, which would meet her income floor. However, without confirmation, this is speculative. The lack of transparency is a yellow flag. |
-| Company Quality (15%) | 8/10 | USAA is a **highly reputable, financially stable, mission-driven organization** serving US military families. Strong employer brand, international respect, likely healthy culture. No red flags. However, the military-family focus and US-centric mission lower relevance for her. |
-| Skill Match (10%) | 3/10 | **Significant mismatch.** Posting emphasizes: MarTech governance, risk/control frameworks, compliance, RCSA, audit support, process documentation, third-party risk management. Nathália's documented skills are: SEO, content, social ads, email marketing, brand strategy, demand generation, team leadership, project coordination. She has **no stated experience in risk management, compliance frameworks, audit, or MarTech governance**. While her project management and cross-functional coordination are relevant, the core domain expertise required (risk/control/compliance) is absent. |
-| **Final Score** | **3.5/10** | *(4×0.30)+(2×0.25)+(5×0.20)+(8×0.15)+(3×0.10) = 1.2 + 0.5 + 1.0 + 1.2 + 0.3 = 4.2* |
+| Role Fit (30%) | 3/10 | This is a **MarTech governance and controls role**, not a marketing strategy/growth/content role. The posting emphasizes RCSA (risk and control self-assessment), audit, compliance, and process documentation—operational risk management work. Nathália's 16-year trajectory is **growth marketing, content, SEO, social, ads, and team leadership**. She has zero documented experience in MarTech governance, risk controls, compliance frameworks, or audit support. This is a fundamentally different function. |
+| Remote / Location (25%) | 1/10 | **HARD BLOCKER.** Role is based in **Plano, TX** (on-site required). The posting explicitly states "Plano, TX" with no mention of remote, hybrid, or flexibility. The note about "remote or hybrid flexibility for active-duty military spouses" is a *policy carve-out*, not applicable to Nathália. She is in Spain now (through Nov 2026) and Brazil from Nov 2026 onward. An on-site Texas role is geographically impossible. |
+| Compensation (20%) | 5/10 | No salary disclosed in posting. USAA is a large, established financial services company; senior manager roles typically pay competitively ($80k–$120k USD range in Texas). *If* compensation is in range, this would score 8–9. However, without explicit data, and given the role mismatch, compensation uncertainty doesn't move the needle. |
+| Company Quality (15%) | 9/10 | USAA is a **major, well-established financial services brand** (military-serving insurance/banking). Strong reputation, financially stable, large employee base, international-adjacent (military families globally). No red flags. High-quality company. |
+| Skill Match (10%) | 2/10 | **Significant mismatch.** Nathália's documented skills: SEO, content, social ads, email marketing, campaign execution, team leadership, budget ownership, analytics reporting. This role requires: MarTech platform governance, compliance/risk frameworks, RCSA/audit collaboration, control design, documentation of processes. She has not worked in compliance, governance, audit, or MarTech operations. The posting does not mention SEO, content, social, ads, or growth—her core strengths. The intersection is minimal. |
+| **Final Score** | **2.8/10** | *(3×0.30)+(1×0.25)+(5×0.20)+(9×0.15)+(2×0.10) = 0.9+0.25+1.0+1.35+0.2 = 3.7* **Actually recalc: (3×0.30=0.9)+(1×0.25=0.25)+(5×0.20=1.0)+(9×0.15=1.35)+(2×0.10=0.20) = 3.7/10. Rounding to 2.8 was error—true score is 3.7/10.** Either way, **well below threshold.** |
 
 **Verdict: SKIP**
 
 ---
 
 **Top 3 Reasons to Apply**
-1. ❌ **Do not apply.** This role is fundamentally misaligned.
+1. USAA is a reputable, stable, large company — brand value exists.
+2. [*There is no meaningful reason to apply given the hard blockers and role mismatch.*]
+3. [*There is no meaningful reason to apply given the hard blockers and role mismatch.*]
+
+---
 
 **Top 3 Concerns (be honest)**
-1. **Role fit is poor.** This is a risk/compliance/MarTech operations role, not a marketing growth role. Nathália's 16-year trajectory has been in content, SEO, ads, strategy, and demand generation. She would be pivoting into a governance/controls domain that's outside her wheelhouse and likely demotivating.
-2. **Location & work authorization are hard blockers.** Role requires 4 days/week on-site in a US city. Nathália is in Spain until November 2026, then Brazil. She has no US work authorization and cannot sponsor a visa for a W-2 role. This is not negotiable.
-3. **Skill mismatch is significant.** No evidence of experience with risk frameworks, RCSA, compliance testing, audit support, or MarTech governance. This is not a "learn on the job" gap—it's a fundamental domain shift that would require retraining.
-
-**Most
+1. **Role is MarTech governance/compliance/audit work—not marketing.** This is an operational risk management position. Nathália has zero documented experience in compliance frameworks, RCSA, audit collaboration, or process governance. Her entire career is in growth marketing, content, SEO, social, and ads. Reframing this as a "marketing role" would be misleading.
+2. **On-site in Plano, TX is a hard dealbreaker

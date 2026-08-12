@@ -1,27 +1,31 @@
-<!-- job_id: linkedin:c3dd5127bef3 -->
+<!-- job_id: linkedin:9ea2fc7c3969 -->
 ---
 **HomeTrust Bank — Digital Marketing Manager**
-*Source: https://www.linkedin.com/jobs/view/digital-marketing-manager-at-hometrust-bank-4451542191 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/digital-marketing-manager-at-hometrust-bank-4449909823 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 7/10 | Senior digital marketing leadership role with hands-on execution across email, content, web, SEO, and CRM. Aligns well with your 16-year trajectory and proven track record managing marketing ops, team oversight, and multi-channel strategy. Slightly lower than perfect fit because the role emphasizes HubSpot/CRM depth (you have Salesforce + Brevo/MailChimp experience, not deep HubSpot) and marketing automation infrastructure, which is less central to your core strength in SEO, content, and paid social. |
-| Remote / Location (25%) | 2/10 | **Charlotte, NC on-site position.** You are currently in Tarragona, Spain; moving to Brazil in November 2026. No remote option stated in the posting. This is a hard blocker unless the company offers relocation support or unexpected remote flexibility. Charlotte is not a city you'll be in. Hard rule violation: on-site in inaccessible location. |
-| Compensation (20%) | 5/10 | **Salary not disclosed.** For a Digital Marketing Manager at a regional US bank in Charlotte, typical range is $60k–$85k USD (glassdoor estimate for similar regional bank roles). This *could* meet your target of $2,000–$3,500/month net (~$24k–$42k/year gross), but likely at the lower end. Without transparency, score is borderline. If it's $70k+, it's solid; if <$60k, it's below target. |
-| Company Quality (15%) | 6/10 | HomeTrust Bank is a real, established regional US bank (community bank, FDIC-insured). Publicly traded or private community bank with legitimate operations. Not a household name but credible and stable. Limited international team visibility from the posting, and no cultural signals. Solid company, not a red flag, but not a standout employer brand for a senior professional with your global experience. |
-| Skill Match (10%) | 7/10 | Strong overlap in most areas: email marketing (automated workflows), content strategy, web/CRM operations, analytics reporting (GA4, Looker Studio match well), SEO (on-page, keyword research, site architecture), campaign execution, and cross-functional collaboration. **Gaps:** limited HubSpot depth (you know Salesforce + Brevo/MailChimp), no mention of Google Ads or SEM (you excel at Meta Ads, not Google Ads), and "AI-driven search and answer engines" is vague—unclear if this requires technical expertise you lack. Overall, 70% match. |
-| **Final Score** | **4.2/10** | *(7×0.30)+(2×0.25)+(5×0.20)+(6×0.15)+(7×0.10) = 2.1+0.5+1.0+0.9+0.7 = **4.2*** |
+| Role Fit (30%) | 7/10 | Strong match on responsibilities: email, content, web, automation, CRM, SEO, analytics, reporting, website management, CRO. You've done nearly all of this across Canva, CondoConta, Lumine, and Mirum. The management/oversight component fits your track record (led teams at Lumine, CondoConta, AIESEC, Mirum). However, this is a smaller regional bank (not a high-growth SaaS), so it's a lateral move rather than a step up. |
+| Remote / Location (25%) | 2/10 | **Hard blocker: on-site only in Greenville, NC.** Posting does not mention remote or flexibility. You will be in Brazil from Nov 2026. Even if you were in the US now (Spain), this is a US-based, on-site role tied to a physical location. Unworkable from Brazil or Spain. |
+| Compensation (20%) | 5/10 | **Not disclosed.** Regional bank in Greenville, NC suggests mid-market salary range (~$55k–$75k USD/year, rough estimate). This is likely acceptable, but without confirmation it's a guess. US salary would need to be verified before serious consideration. |
+| Company Quality (15%) | 6/10 | HomeTrust Bank is a real, established regional bank (North Carolina–based). Publicly traded (HTBK). Stable, but not a cutting-edge tech company or a high-growth startup. Limited international footprint or tech-forward culture signals. No red flags, but not a marquee name for a marketing portfolio. |
+| Skill Match (10%) | 8/10 | Very strong overlap: SEO (on-page, keyword research, backlink strategy), email marketing, CRM workflows, automation, content, web management, analytics (GA4, Looker Studio, HubSpot), CRO, reporting. You've owned these across multiple roles. Minor gap: Google Ads mentioned (not Meta)—you have Meta Ads depth but limited Google Ads execution. HubSpot is new to you, but it's learnable. |
+| **Final Score** | **4.1/10** | *(7×0.30)+(2×0.25)+(5×0.20)+(6×0.15)+(8×0.10) = 2.1+0.5+1.0+0.9+0.8 = 5.3* |
+
+**Correction:** *(7×0.30)+(2×0.25)+(5×0.20)+(6×0.15)+(8×0.10) = 2.1 + 0.5 + 1.0 + 0.9 + 0.8 = **5.3/10*** 
+
+---
 
 **Verdict: SKIP**
 
 ---
 
-**Top 3 Reasons to Apply**
-1. Role scope (email, CRM, SEO, web, analytics, team leadership) genuinely matches your core expertise and seniority level.
-2. Company is stable and credible; marketing operations work is strategically sound.
-3. If the role were remote or you were relocating to the US, this would be a strong 7.5+ candidate fit.
+**Top 3 Reasons NOT to Apply**
+1. **On-site only in Greenville, NC** — You are in Spain now and moving to Brazil in Nov 2026. This is a dealbreaker unless you have a hidden plan to relocate to North Carolina, which doesn't align with your stated location strategy.
+2. **No remote flexibility mentioned** — The posting has no language about remote work, hybrid options, or relocation assistance. This is a regional bank with a physical presence expectation.
+3. **Sideways move, not upward** — You've managed teams, led cross-border operations (AIESEC: 21 people, 17+ cities), and worked on larger SaaS/subscription products. A regional bank Digital Marketing Manager role is a lateral step at best, with lower brand prestige and growth ceiling.
 
-**Top 3 Concerns (be honest)**
-1. **On-site in Charlotte, NC — you are in Spain now and moving to Brazil in November 2026.** This is a dealbreaker unless the company explicitly offers remote or relocation. No remote option mentioned in the posting.
-2. **No salary transparency.** Without knowing the range, you can't assess whether this meets your €50k–€70k equivalent target. Regional US bank roles *may* be below that.
-3. **HubSpot depth required.** You have Salesforce + email automation platform experience, but HubSpot
+---
+
+**Top 3 Strengths You'd Bring (If Location Were Not a Factor)**
+1. **End-to-end digital funnel ownership** — Email, CRM, automation, SEO, content, web, analytics, reporting. You've built and optimized these repeatedly (CondoC
