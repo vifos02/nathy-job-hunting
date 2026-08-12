@@ -22,7 +22,7 @@ import os
 import re
 import sys
 import time
-from datetime import date
+from datetime import date, timedelta
 from pathlib import Path
 
 try:
@@ -43,7 +43,7 @@ SEEN_JOBS     = ROOT / "evaluated-jobs.csv"
 BROWSER_FINDS = ROOT / "browser-finds.json"
 EVALS_DIR     = ROOT / "evaluations"
 
-DEFAULT_LIMIT = 15
+MAX_AGE_DAYS = 7
 
 # Allowlist: title must contain at least one of these to pass to the API.
 # Keeps only the roles that genuinely match Nathália's target disciplines.
@@ -155,8 +155,18 @@ def _kw_match(keyword: str, text: str) -> bool:
 
 def prefilter(matches: list[dict]) -> list[dict]:
     """Keep only roles that match target disciplines; apply hard exclusions."""
+    cutoff = date.today() - timedelta(days=MAX_AGE_DAYS)
     keep = []
     for m in matches:
+        # Drop listings older than MAX_AGE_DAYS
+        found_date_str = m.get("found_date", "")
+        if found_date_str:
+            try:
+                if date.fromisoformat(found_date_str) < cutoff:
+                    continue
+            except ValueError:
+                pass
+
         title   = m.get("title", "").lower()
         company = m.get("company", "").lower()
 
@@ -306,8 +316,6 @@ def main() -> None:
     )
     parser.add_argument("--dry-run", action="store_true",
                         help="List candidates without calling API")
-    parser.add_argument("--limit", type=int, default=DEFAULT_LIMIT,
-                        help=f"Max evaluations per run (default: {DEFAULT_LIMIT})")
     args = parser.parse_args()
 
     key_file = Path.home() / ".anthropic_key"
@@ -330,16 +338,13 @@ def main() -> None:
         return
 
     total = len(matches)
-    cap   = args.limit
     print(f"{total} candidates after pre-filtering. "
-          f"{'Dry run.' if args.dry_run else f'Evaluating up to {cap}.'}\n")
+          f"{'Dry run.' if args.dry_run else 'Evaluating all.'}\n")
 
     if args.dry_run:
-        for m in matches[:cap]:
+        for m in matches:
             print(f"  {m['company']}: {m['title']}")
             print(f"    {m['url']}")
-        if total > cap:
-            print(f"  ... and {total - cap} more")
         return
 
     client = anthropic.Anthropic(api_key=api_key)
@@ -368,18 +373,12 @@ def main() -> None:
     evaluated = 0
 
     for m in matches:
-        if evaluated >= cap:
-            remaining = total - evaluated
-            print(f"\nLimit of {cap} reached ({remaining} remaining). "
-                  f"Run again or increase --limit.")
-            break
-
         company = m.get("company", "Unknown")
         title   = m.get("title", "Unknown")
         url     = m.get("url", "")
         job_id  = m.get("job_id", f"noid-{slugify(company)}-{slugify(title)}")
 
-        print(f"  [{evaluated + 1}/{min(cap, total)}] {company} — {title}")
+        print(f"  [{evaluated + 1}/{total}] {company} — {title}")
         print(f"    Fetching posting ... ", end="", flush=True)
         posting_text = fetch_posting(url)
         print("ok" if posting_text else "blocked (will score from title/company)")
