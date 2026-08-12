@@ -36,5 +36,7 @@
   {"company": "Ahrefs",           "platform": "greenhouse","slug": "ahrefsjobs"},
   {"company": "RD Station",       "platform": "greenhouse","slug": "rdstation"},
   {"company": "Pipefy",           "platform": "workable",  "slug": "pipefy"},
-  {"company": "Personio",         "platform": "personio",  "slug": "open"}
+  {"company": "Personio",         "platform": "personio",  "slug": "open"},
+  {"company": "Semrush",          "platform": "greenhouse","slug": "semrush"},
+  {"company": "Rock Content",     "platform": "greenhouse","slug": "rockcontent"}
 ]

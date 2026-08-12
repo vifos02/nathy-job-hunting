@@ -12,7 +12,7 @@ echo "=== $TIMESTAMP ===" >> "$LOGFILE"
 
 cd "$REPO_DIR" || exit 1
 
-git pull >> "$LOGFILE" 2>&1
+git pull --rebase >> "$LOGFILE" 2>&1
 
 python3 scan_jobs.py >> "$LOGFILE" 2>&1 || echo "scan_jobs.py exited with error" >> "$LOGFILE"
 python3 browser_search.py >> "$LOGFILE" 2>&1 || echo "browser_search.py exited with error" >> "$LOGFILE"
@@ -25,6 +25,9 @@ git add evaluations/ >> "$LOGFILE" 2>&1 || true
 git diff --cached --quiet && echo "Nothing new to commit." >> "$LOGFILE" || \
   git commit -m "scan $(date +%Y-%m-%d-%H%M)" >> "$LOGFILE" 2>&1
 
-git push >> "$LOGFILE" 2>&1
+git push >> "$LOGFILE" 2>&1 || {
+  echo "Push failed (remote has new commits); rebasing and retrying..." >> "$LOGFILE"
+  git pull --rebase >> "$LOGFILE" 2>&1 && git push >> "$LOGFILE" 2>&1
+}
 
 echo "Done." >> "$LOGFILE"
