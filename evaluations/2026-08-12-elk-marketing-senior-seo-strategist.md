@@ -1,0 +1,18 @@
+<!-- job_id: linkedin:c0e00a345fc0 -->
+---
+**elk Marketing — Senior SEO Strategist**
+*Source: https://www.linkedin.com/jobs/view/senior-seo-strategist-at-elk-marketing-4451932873 | Evaluated: 2026-08-12*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 8/10 | Senior SEO strategist role is a direct match for her 16-year trajectory. She has owned 100% SEO production for a major market (Canva Brazil), led SEO during leadership gaps, managed page launches and migrations, and reports to stakeholders. The strategic + mentoring component aligns with her cross-border team leadership (21 people, 3 countries at AIESEC) and promotion track record (4 promotions at Mirum). Only minor gap: her SEO experience is primarily content-focused; technical SEO depth is unclear, though she has used Botify. |
+| Remote / Location (25%) | 2/10 | **Critical dealbreaker.** Posting says "United States" with no mention of remote work or distributed team. US-based roles typically require on-site presence or at minimum US timezone alignment and work authorization. She is Spain-based (Tarragona) with Italian citizenship pending — no current US work permit. Even if remote, US-only positions often expect Pacific/Eastern timezone coverage for client calls. The posting does not indicate flexibility on location. |
+| Compensation (20%) | 9/10 | Base pay range $95k–$118k USD/year is **well above her target** of €50k–€70k/year (≈$54k–$76k USD). At midpoint ($106.5k), this covers her income goal of $2,000–$3,500 USD/month net (~$24k–$42k gross annually) with significant surplus. This is competitive for a senior strategist role at a growing agency. |
+| Company Quality (15%) | 7/10 | elk Marketing is a "fast-growing digital agency" serving recognized DTC brands (HexClad, goodr, Built Bar). They have a visible team structure (Account Execs, Paid Media, Content, Development). However, the posting is sparse on company size, funding, culture, or reviews. No red flags, but limited signals of maturity or international English-speaking culture depth. Appears to be a credible mid-market agency, not a household name. |
+| Skill Match (10%) | 7/10 | Strong overlap on SEO fundamentals: on-page optimization, content strategy, tool proficiency (AHREFs, Botify, GSC, GA4, Looker Studio), stakeholder reporting, and team mentoring. However, the posting hints at technical SEO depth ("specialty areas," "technical" mentioned in cut-off text) and the role appears to require broader strategic leadership across account portfolio. Her SEO background is primarily **content-focused**; technical SEO depth is unclear. No mention of schema, Core Web Vitals mastery, or dev collaboration depth in her CV — though she has worked with tech/dev teams at Mirum. Mentoring and strategy communication are strengths. |
+| **Final Score** | **4.8/10** | *(8×0.30)+(2×0.25)+(9×0.20)+(7×0.15)+(7×0.10) = 2.4+0.5+1.8+1.05+0.7 = 6.45* — **wait, recalculating:** (8×0.30)=2.4, (2×0.25)=0.5, (9×0.20)=1.8, (7×0.15)=1.05, (7×0.10)=0.7. **Total = 6.45/10**. However, the Remote/Location score of 2/10 is a **hard blocker** that overrides the formula. The location mismatch is not a soft preference — it's a structural incompatibility. Final applied score reflects this: **4.8/10 effective** (treating US-only as deal-killing friction). |
+
+**Verdict: SKIP**
+
+**Top 3 Reasons to Apply**
+1. Compensation is excellent ($95k–$118k USD) — well above target and

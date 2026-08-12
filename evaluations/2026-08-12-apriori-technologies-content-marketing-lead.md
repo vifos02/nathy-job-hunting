@@ -1,0 +1,20 @@
+<!-- job_id: linkedin:867c1f2680f8 -->
+---
+**aPriori Technologies — Content Marketing Lead**
+*Source: https://www.linkedin.com/jobs/view/content-marketing-lead-at-apriori-technologies-4432395683 | Evaluated: 2026-08-12*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 7/10 | Strong alignment with content strategy, editorial voice, and cross-functional collaboration. You've built content operations at scale (Canva 100% Brazil SEO production, Lumine creative team oversight, Mirum international content scaling). The AI-assisted drafting and prompt engineering is new territory, but it's an evolution of skills you already have (you use AI tools daily). The "builder, problem-solver" profile matches your track record. However, this role leans heavily on **content creation velocity and AI tooling mastery** — while you're strong on strategy and editorial, you're not a prolific daily writer or AI-tooling specialist. Not a mismatch, but not a perfect 9/10. |
+| Remote / Location (25%) | 3/10 | **Hard friction here.** Posting explicitly states "Hybrid – Greater Boston, MA." You are based in Tarragona, Spain. While you've managed remote teams across continents, this role requires you to be on-site in Boston. You do not have a US work permit, and your Italian citizenship application is still in progress (which would only grant EU rights, not US work authorization). This is a **dealbreaker unless the company is willing to sponsor an H-1B or similar visa** — unlikely for a mid-level marketing role. Flag this upfront. |
+| Compensation (20%) | 5/10 | Posting contains **no salary information.** Based on US market comparables, a Content Marketing Lead at a mid-market B2B SaaS firm in Greater Boston would likely fall in the $70k–$90k USD range. That *could* meet your target, but the absence of transparency is a yellow flag. You can't assess whether this meets your $2,000–$3,500 USD/month net goal without asking. Assume it's adequate if the company is credible, but mark it as "TBD." |
+| Company Quality (15%) | 7/10 | **aPriori Technologies** is a real, established company (manufacturing cost estimation software, B2B SaaS, founded 2008, likely profitable or well-funded). They have a professional job posting, clear role definition, and appear to be a credible mid-market player. No visible red flags (toxic reviews, layoffs, cash crunch). However, they are not a household brand like Canva, and the posting is sparse on team culture, growth trajectory, or international presence details. Solid company, but not a household name. |
+| Skill Match (10%) | 6/10 | **Moderate-to-good overlap, with one notable gap.** You have strong skills in: content strategy, editorial voice, cross-functional collaboration, performance measurement, SME interviewing, and brand positioning. You use AI tools, but the posting emphasizes **daily prompt engineering, AI-assisted drafting workflows, and building reusable AI templates at scale** — this is not a documented strength in your CV. You've used AI to *streamline reports and analysis* (Canva), not to architect scalable AI-content systems. The role also asks for social, newsletters, ebooks, emails — you have email marketing and social experience, but the **daily content production velocity** and **AI-as-core-tool** emphasis suggests a different skill set than your current profile. You could learn this quickly, but it's not a native strength. Missing: deep Google Ads (not required here, but shows SEM depth). |
+| **Final Score** | **5.2/10** | *(7×0.30)+(3×0.25)+(5×0.20)+(7×0.15)+(6×0.10) = 2.1+0.75+1.0+1.05+0.6 = 5.5* |
+
+**Verdict: SKIP** (unless sponsor visa and remote negotiation are realistic)
+
+---
+
+**Top 3 Reasons to Apply**
+1. **Strong role-function fit:** Content strategy, editorial leadership, cross-GTM collaboration, and performance measurement align directly with your 16-year

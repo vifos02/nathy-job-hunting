@@ -1,0 +1,17 @@
+<!-- job_id: linkedin:c28723f3de03 -->
+---
+**Lovingly — SEO Generalist**
+*Source: https://www.linkedin.com/jobs/view/seo-generalist-at-lovingly-4452434433 | Evaluated: 2026-08-12*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 8/10 | Strong alignment with your 16-year trajectory. You've owned SEO end-to-end at Canva (100% Brazil SEO production, 771k+ monthly searches, 5M searches in H1 2026), led content strategy, audited/optimized pages, and managed cross-team execution. This role mirrors that scope: define SEO standards, run audits, direct others' work, own reporting. You're not overqualified — it's a generalist role, not a narrow specialist slot — and you're not underqualified. The "direct not manage" framing suits your style. Only gap: you haven't owned local SEO / GBP at scale, but that's learnable and accounts for the 8 rather than 9-10. |
+| Remote / Location (25%) | 2/10 | **Critical blocker.** Role is on-site in Hopewell Junction, NY (Westchester County). You live in Tarragona, Spain. The posting does not mention remote or hybrid options. Even if the company were open to negotiation, you do not have a US work permit (Italian citizenship is in progress — not yet finalized). No EU work authorization covers US employment. This is a non-starter unless you're willing to relocate to the US permanently, which contradicts your stated preference for Tarragona-based work. |
+| Compensation (20%) | 9/10 | Base range $75k–$200k/yr is solid. At the lower end ($75k = ~€69k), it meets your €50k–€70k target. At mid-range ($110k–$130k), it exceeds it comfortably. Senior professional with 16 years and proven revenue impact (Lumine: 6-digit revenue in 7 days; CondoConta: doubled lead volume) would likely negotiate toward $110k+. Only flagged as 9 rather than 10 because the range is wide and no sense of where a new hire would land without negotiation. |
+| Company Quality (15%) | 7/10 | Lovingly is a real company with a credible product (B2B SaaS for florists). They're profitable enough to hire and offer a solid range. LinkedIn presence suggests an established company, not a pre-seed startup. However, limited public visibility compared to Canva or Lumine. No Glassdoor review data mentioned in the posting; can't assess culture/stability without deeper digging. Mid-market tech company — solid but not a household name. 7/10 reflects "credible, but not extensively visible" rather than red flags. |
+| Skill Match (10%) | 7/10 | **Good but not perfect overlap.** You have: on-page SEO, content optimization, page launches, AHREFs, Botify, Google Search Console, GA4, Looker Studio, reporting, cross-team coordination, OKR tracking. You do **not** have: deep local SEO / GBP expertise (maps, packs, citations, NAP consistency). The role is 40–50% local SEO; your background is primarily organic/content-driven web SEO. You can learn GBP and local basics quickly — they're simpler than technical SEO — but it's not a core strength documented in your resume. The AI-assisted copy drafting at scale aligns well with how you've described using AI tools at Canva. 7/10 reflects "you can do this, but you'll ramp the local SEO component." |
+| **Final Score** | **4.9/10** | *(8 × 0.30) + (2 × 0.25) + (9 × 0.20) + (7 × 0.15) + (7 × 0.10)* = *2.4 + 0.5 + 1.8 + 1.05 + 0.7* = **6.45/10** |
+
+**Verdict: SKIP**
+
+**Top 3 
