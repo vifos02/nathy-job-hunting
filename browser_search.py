@@ -70,7 +70,32 @@ TARGET_KEYWORDS = [
     "vp of marketing",
 ]
 
+# Applied after TARGET_KEYWORDS match — mirrors scan_jobs.py / evaluate_matches.py
+SKIP_TITLE_WORDS = [
+    "junior", " jr ", "associate", "coordinator", "intern", "entry level",
+    "developer", "engineer", "data scientist", "data analyst",
+    "ppc specialist", "sem specialist", "paid search specialist", ", sem",
+    "product marketing", "lifecycle marketing", "account based",
+    "field marketing", "event marketing", "enablement", "affiliate",
+    "japan", "tokyo", "singapore", "apac", "asia pacific",
+    "china", "hong kong", "korea", "sydney", "australia",
+    "são paulo", "sao paulo", "tel aviv",
+    "new york,", "san francisco,", "austin,", "chicago,", "los angeles,",
+    "seattle,", "boston,", "denver,", "miami,", "atlanta,",
+    "office manager",
+]
+SKIP_INDUSTRY_WORDS = [
+    "crypto", "cryptocurrency", "bitcoin", "blockchain",
+    "betting", "gambling", "casino", "adult",
+]
+# Only explicit auth language in titles — timezone alone is not a block (Brazil = UTC-3)
+US_AUTH_TITLE_SIGNALS = [
+    "(us only)", "us citizens only", "us citizenship required",
+    "california,", "us northeast,", "us south,", "us midwest,",
+]
+
 SEARCH_QUERIES = [
+    # Core discipline queries — run worldwide
     "seo manager",
     "content marketing manager",
     "digital marketing manager",
@@ -78,6 +103,15 @@ SEARCH_QUERIES = [
     "head of content",
     "head of seo",
     "marketing operations manager",
+    # LATAM-focused — surfaces roles targeting her background and Brazil move
+    "latam marketing manager",
+    "marketing manager latam",
+    "marketing manager brazil",
+    "seo manager brazil",
+    "content marketing latam",
+    # Global/international signals — prioritises truly remote-worldwide postings
+    "global seo manager",
+    "global content marketing manager",
 ]
 
 SEEN_JOBS_HEADERS = ["job_id", "company", "title", "url", "found_date", "matched", "source"]
@@ -92,9 +126,18 @@ def url_id(url: str) -> str:
     return hashlib.sha1(url.encode()).hexdigest()[:12]
 
 
-def is_match(title: str) -> bool:
+def is_match(title: str, company: str = "") -> bool:
     t = title.lower()
-    return any(kw in t for kw in TARGET_KEYWORDS)
+    c = company.lower()
+    if not any(kw in t for kw in TARGET_KEYWORDS):
+        return False
+    if any(kw in t for kw in SKIP_TITLE_WORDS):
+        return False
+    if any(kw in c for kw in SKIP_INDUSTRY_WORDS):
+        return False
+    if any(kw in t for kw in US_AUTH_TITLE_SIGNALS):
+        return False
+    return True
 
 
 def load_seen_ids() -> set:
@@ -221,7 +264,7 @@ def scrape_indeed(page, seen_ids: set, today: str) -> tuple:
                     continue
                 seen_ids.add(job_id)
 
-                matched = is_match(title)
+                matched = is_match(title, company)
                 row = {
                     "job_id": job_id,
                     "company": company,
@@ -254,10 +297,10 @@ def scrape_linkedin(page, seen_ids: set, today: str) -> tuple:
 
     for query in SEARCH_QUERIES:
         q = query.replace(" ", "%20")
-        # f_WT=2 = remote; f_TPR=r604800 = past 7 days
+        # f_WT=2 = remote; geoId=92000000 = Worldwide; f_TPR=r604800 = past 7 days
         url = (
             f"https://www.linkedin.com/jobs/search/"
-            f"?keywords={q}&f_WT=2&f_TPR=r604800"
+            f"?keywords={q}&f_WT=2&geoId=92000000&f_TPR=r604800"
         )
         print(f"    {query!r} ... ", end="", flush=True)
 
@@ -312,7 +355,7 @@ def scrape_linkedin(page, seen_ids: set, today: str) -> tuple:
                     continue
                 seen_ids.add(job_id)
 
-                matched = is_match(title)
+                matched = is_match(title, company)
                 row = {
                     "job_id": job_id,
                     "company": company,
