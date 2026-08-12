@@ -310,11 +310,11 @@ def main() -> None:
                         help=f"Max evaluations per run (default: {DEFAULT_LIMIT})")
     args = parser.parse_args()
 
-    api_key = os.environ.get("ANTHROPIC_API_KEY")
-    if not api_key:
-        key_file = Path.home() / ".anthropic_key"
-        if key_file.exists():
-            api_key = key_file.read_text(encoding="ascii").strip()
+    key_file = Path.home() / ".anthropic_key"
+    if key_file.exists():
+        api_key = key_file.read_text(encoding="ascii").strip()
+    else:
+        api_key = os.environ.get("ANTHROPIC_API_KEY", "")
     if not api_key and not args.dry_run:
         sys.exit("API key not found.\nRun: python3 setup_key.py")
 
