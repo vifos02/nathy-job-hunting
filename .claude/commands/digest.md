@@ -16,6 +16,7 @@ Steps:
 8. **Always publish an interactive HTML artifact** after the git push. Build the digest as a self-contained HTML page and publish it using the Artifact tool so it appears inline and can be opened in a browser tab. Requirements for the HTML:
    - Stat bar at the top: total evaluated, active APPLY count, CONSIDER count, unevaluated API count, browser finds count, applied count.
    - Sections: APPLY Candidates, CONSIDER, Unscored Highlights, Tier 1 Not Checked, Action Items, Stats.
+   - Within each scored section, rows are sorted by final score descending (highest score at the top).
    - Every job row must be a clickable link (`<a href="..." target="_blank">`). No URL, no row.
    - Rows are color-coded by status using a left-border stripe: green = APPLY, amber = CONSIDER, blue = verify first, red = disqualified, grey = unscored.
    - Each row shows: role title (linked), company, score (monospace), verdict pill.
@@ -36,6 +37,7 @@ Output:
 
 ## Top Unactioned (APPLY verdict, not yet applied)
 Every row MUST include a clickable URL to the job posting.
+**Sort by final score, highest to lowest.** This applies to every scored section in this digest.
 **Do NOT list disqualified roles** (US-only, 401K, short-term contract, or any other hard dealbreaker confirmed by manual review). They are off the list — omit them entirely. Only show roles that are actionable.
 **Do NOT list closed or dead postings** — any role whose evaluation file contains "SKIPPED: posting closed or URL dead", or whose verdict is SKIP due to a 403/404 URL. These are gone and should not reappear.
 
