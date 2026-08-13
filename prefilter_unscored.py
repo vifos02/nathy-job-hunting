@@ -14,18 +14,19 @@ Fetch strategies used automatically by source:
   others        → plain requests + BeautifulSoup
 
 Usage:
-    python prefilter_unscored.py                     # fetch + filter + print ranked list
-    python prefilter_unscored.py --playwright        # use Playwright for LinkedIn JDs
-    python prefilter_unscored.py --write-skips       # also write tombstone eval files
-    python prefilter_unscored.py --csv ranked.csv    # save survivors to CSV
+    # Step 1 — save your LinkedIn login once (opens a real browser window):
+    python prefilter_unscored.py --save-auth
+
+    # Step 2 — run the full pre-filter using saved login:
+    python prefilter_unscored.py --playwright --write-skips --csv ranked.csv
+
+    # Other flags:
     python prefilter_unscored.py --dry-run           # show list, no fetching
     python prefilter_unscored.py --limit 50          # process only first N jobs
 
-Recommended first run:
-    python prefilter_unscored.py --playwright --write-skips --csv ranked.csv
-
 After running with --write-skips, evaluate_matches.py will skip the confirmed SKIPs
-and only score the survivors.
+and only score the survivors. Without API credits, open ranked.csv and manually
+paste the top URLs into Claude Web (/evaluate) to score them for free.
 """
 
 import argparse
@@ -50,10 +51,11 @@ try:
 except ImportError:
     PLAYWRIGHT_AVAILABLE = False
 
-ROOT        = Path(__file__).parent
-SEEN_JOBS   = ROOT / "evaluated-jobs.csv"
+ROOT          = Path(__file__).parent
+SEEN_JOBS     = ROOT / "evaluated-jobs.csv"
 BROWSER_FINDS = ROOT / "browser-finds.json"
-EVALS_DIR   = ROOT / "evaluations"
+EVALS_DIR     = ROOT / "evaluations"
+AUTH_STATE    = ROOT / "linkedin_auth.json"  # saved by --save-auth, gitignored
 
 # ---------------------------------------------------------------------------
 # Load unscored matched jobs (same dedup logic as list_unscored.py)
@@ -453,13 +455,32 @@ def write_tombstone(job_id: str, company: str, title: str, url: str, reasons: li
 # Main
 # ---------------------------------------------------------------------------
 
+def save_linkedin_auth():
+    """Open a headed browser, let the user log into LinkedIn, then save the session."""
+    if not PLAYWRIGHT_AVAILABLE:
+        sys.exit("Playwright not installed. Run: pip install playwright && playwright install chromium")
+    print("Opening browser — log into LinkedIn, then press Enter here to save the session.")
+    with sync_playwright() as pw:
+        browser = pw.chromium.launch(headless=False)
+        context = browser.new_context()
+        page = context.new_page()
+        page.goto("https://www.linkedin.com/login")
+        input("\nLog in inside the browser window, then press Enter here to save... ")
+        context.storage_state(path=str(AUTH_STATE))
+        browser.close()
+    print(f"Session saved → {AUTH_STATE}")
+    print("linkedin_auth.json is gitignored — it won't be committed.")
+
+
 def main():
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--save-auth", action="store_true",
+                        help="Open a browser window to log into LinkedIn and save the session for future runs")
     parser.add_argument("--dry-run", action="store_true",
                         help="Show unscored list without fetching any URLs")
     parser.add_argument("--playwright", action="store_true",
-                        help="Use Playwright to fetch LinkedIn JDs (requires: pip install playwright && playwright install chromium)")
+                        help="Use Playwright + saved LinkedIn session to fetch JDs")
     parser.add_argument("--write-skips", action="store_true",
                         help="Write tombstone eval files for confirmed hard-blocker SKIPs")
     parser.add_argument("--csv", metavar="FILE",
@@ -467,6 +488,10 @@ def main():
     parser.add_argument("--limit", type=int, default=0,
                         help="Cap number of jobs fetched (0 = no cap)")
     args = parser.parse_args()
+
+    if args.save_auth:
+        save_linkedin_auth()
+        return
 
     if args.playwright and not PLAYWRIGHT_AVAILABLE:
         sys.exit("Playwright not installed. Run: pip install playwright && playwright install chromium")
@@ -504,15 +529,22 @@ def main():
 
     if args.playwright:
         print("Starting Playwright browser for LinkedIn fetches...")
-        pw_inst = sync_playwright().start()
-        browser = pw_inst.chromium.launch(headless=True)
-        pw_context = browser.new_context(
-            user_agent=(
+        context_kwargs = {
+            "user_agent": (
                 "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
                 "AppleWebKit/537.36 (KHTML, like Gecko) "
                 "Chrome/124.0.0.0 Safari/537.36"
             )
-        )
+        }
+        if AUTH_STATE.exists():
+            context_kwargs["storage_state"] = str(AUTH_STATE)
+            print(f"  Using saved LinkedIn session from {AUTH_STATE.name}")
+        else:
+            print("  No saved session found — LinkedIn JDs may hit auth walls.")
+            print("  Run with --save-auth first for better results.")
+        pw_inst = sync_playwright().start()
+        browser = pw_inst.chromium.launch(headless=True)
+        pw_context = browser.new_context(**context_kwargs)
         pw_page = pw_context.new_page()
         print("Browser ready.\n")
 

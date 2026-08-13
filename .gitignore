@@ -4,3 +4,4 @@ __pycache__/
 .DS_Store
 .anthropic_key
 scan.log
+linkedin_auth.json
