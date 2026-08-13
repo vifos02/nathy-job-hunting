@@ -1,0 +1,19 @@
+<!-- job_id: linkedin:0be4805d90ba -->
+---
+**Stannah Group — Marketing Manager**
+*Source: https://es.linkedin.com/jobs/view/marketing-manager-at-stannah-group-4451416226 | Evaluated: 2026-08-13*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 7/10 | Senior marketing leadership role with P&L ownership, strategy, B2C demand gen, product launches, and cross-functional influence. This matches your 16-year trajectory well — you've done similar scope at CondoConta (Growth Marketing Manager leading 4 people, OKR methodology, Salesforce reporting) and Lumine (Operations Manager with creative team oversight, launch campaigns, budget ownership ~$4k). The "highly visible" and "commercially focused" language fits your profile. However, it's positioning as a pure Spain-in-charge role with no remote flexibility mentioned, which is a step *toward* operational seniority but *away* from the flexibility you need post-maternity leave. Not perfect, but credible fit. |
+| Remote / Location (25%) | 3/10 | **This is a hard concern.** Posting says "Barcelona" with no mention of remote work. The role appears to be on-site: "Reporting directly to the General Manager" (suggests daily/frequent presence), "work closely with the Spanish leadership team" (co-location language), and no remote language anywhere. You're in Tarragona (45 min from Barcelona by train), so *technically* commutable, but the role doesn't explicitly allow it. Post-November 2026, you'll be in Brazil, making this impossible. Even now, a 9–5 Barcelona commute + two young daughters at home = friction with your flexibility needs. The posting gives no indication of async or remote option. Flagging this as a critical gap. |
+| Compensation (20%) | 8/10 | €45k–€65k base + annual bonus. Midpoint ~€55k is solidly in your target (€50k–€70k). Annual bonus is a plus. This is competitive for a senior marketing manager role in Spain, especially Barcelona. No equity mentioned, but base + bonus structure is straightforward and meets income goal. Clear and fair. |
+| Company Quality (15%) | 8/10 | Stannah Group is an established, international company (UK-headquartered, multinational presence in lifts/accessibility). Not a startup; financially stable, real product (stairlifts/accessibility solutions), professional HR (Alberto Redolfi, International HR Business Partner listed — suggests real recruitment infrastructure). No red flags visible. B2C brand with regional/global structure. Credible, mid-market international company. Not a household name in tech, but solid and legitimate. |
+| Skill Match (10%) | 8/10 | **Strong overlap.** Posting requires: senior marketing role (✓ you've done 4 promotions and led teams), B2C demand generation (✓ Lumine, CondoConta, mDhil), marketing strategy & execution (✓ Lumine launch campaign, CondoConta lead gen strategy), product launches (✓ Lumine 6-digit launch, 22k leads), CRM & automation (✓ Brevo, MailChimp, PLG strategies at CondoConta), budget ownership (✓ Lumine ~$4k, CondoConta lead gen budget), analytics & ROI (✓ Looker Studio, Salesforce reporting, OKR methodology). Gaps: posting emphasizes "Business Intelligence, marketing automation and AI" — you have AI tools experience but not BI *depth* (though you've used Nielsen, IBOPE, Salesforce). No SEM/Google Ads heavy requirement. This is a good match; no major technical red flags. |
+| **Final Score** | **6.3/10** | *(7×0.30)+(3×0.25)+(8×0.20)+(8×0.15)+(8×0.10)* = *2.1+0.75+1.6+1.2+0.8* = **6.45 → 6.3/10** |
+
+**Verdict: CONSIDER** — *Apply only if your pipeline is thin, or if you can negotiate remote/hybrid flexibility before applying.*
+
+---
+
+##

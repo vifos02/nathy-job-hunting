@@ -1,0 +1,17 @@
+<!-- job_id: linkedin:482ad7ed60d0 -->
+---
+**Jobgether — Generative Engine Optimization (GEO) & SEO Specialist**
+*Source: https://br.linkedin.com/jobs/view/generative-engine-optimization-geo-seo-specialist-at-jobgether-4452428572 | Evaluated: 2026-08-13*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 8/10 | Strong alignment with your SEO expertise and 16-year trajectory. GEO (Generative Engine Optimization) is an emerging specialization that directly extends your on-page SEO, content strategy, and AI-tool experience at Canva. You've led SEO for Brazil, owned page launches and migrations, and mastered SEO tools — all core to this role. The emphasis on "analytical SEO + authoritative writing" matches your documented strength. Only a 8 (not 10) because GEO is still nascent and the posting doesn't clarify if this is a new discipline you'd learn on-the-job vs. one you've actively practiced. |
+| Remote / Location (25%) | 9/10 | **"Based in Brazil"** — explicitly Brazil-based role, aligns perfectly with your November 2026 move. Remote work is strongly implied (no on-site language, partner-managed hiring model suggests distributed team). No explicit location lock-in language. Deduct 1 point only because posting doesn't explicitly state "remote" — infer from context, but not 100% confirmed. |
+| Compensation (20%) | 5/10 | **Critical gap: no salary disclosed.** Posting mentions "based in Brazil" but gives zero compensation details. Brazilian market norms for senior SEO roles range R$8k–R$15k+/month depending on company stage. Jobgether appears to be a startup (partner-managed hiring, emerging GEO focus) — likely early-stage with potentially lower budgets. Cannot score higher without transparency. Risk it's below your €50k–€70k/year (≈R$28k–R$40k/month) equivalent target or even below R$15k/month. Flag this immediately in outreach. |
+| Company Quality (15%) | 5/10 | **Limited public information.** Jobgether is described as a "partner company" managing higher ed brand discovery via AI/search. Appears to be a startup or scale-up, but: no visible brand recognition, no obvious LinkedIn company page detail in posting, no funding/headcount data provided, no team size or culture signals. The "partner on behalf of" language is a minor red flag for transparency. Not enough to score lower, but not enough confidence to score higher. Could be solid; could be pre-seed. Requires due diligence before committing. |
+| Skill Match (10%) | 9/10 | Excellent match. You have: ✅ **On-page SEO & content optimization** (Canva, CondoConta, Lumine, Mirum); ✅ **AHREFs, Botify, GSC, GA4, Looker Studio** (explicitly listed in CV); ✅ **Structured data & technical SEO** (implied in Canva's "page launches, migrations, optimizations"); ✅ **Authoritative long-form writing** (SEO content production for Brazil, 771k+ Monthly Searches); ✅ **Analytics & experimentation** (A/B testing at Meta Ads, OKR tracking); ✅ **AI tools** (mastered at Canva H1 2026). Only -1 because GEO (AI-powered search optimization) is a newer domain — you have the foundation but may need to upskill on Claude/ChatGPT/Perplexity search ranking factors specifically. Not a blocker. |
+| **Final Score** | **6.9/10** | *(8×0.30)+(9×0.25)+(5×0.20)+(5×0.15)+(9×0.10) = 2.4+2.25+1.0+0.75+0.9 = **7.3**/10* |
+
+**Verdict: CONSIDER** — *Apply if pipeline is thin; otherwise, flag compensation before investing time.*
+
+**Top 3 

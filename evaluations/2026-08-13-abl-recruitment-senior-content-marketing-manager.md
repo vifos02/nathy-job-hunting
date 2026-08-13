@@ -1,0 +1,17 @@
+<!-- job_id: linkedin:a8b832c332db -->
+---
+**ABL Recruitment — Senior Content Marketing Manager**
+*Source: https://uk.linkedin.com/jobs/view/senior-content-marketing-manager-at-abl-recruitment-4453088703 | Evaluated: 2026-08-13*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 8/10 | Senior content leadership role aligns well with her 16-year trajectory. She has led content teams (Mirum: content accounts doubled), owned editorial strategies (Canva: 100% SEO content production for Brazil), and managed long-form content (case studies, blogs, thought-leadership at multiple companies). This is hands-on editorial work—her sweet spot. Slight deduction because it's ecommerce/logistics SaaS specifically; she has SaaS experience (Canva) but ecommerce logistics is slightly outside her core wheelhouse. Still, the fundamentals match. |
+| Remote / Location (25%) | 3/10 | **HARD BLOCKER.** Role is hybrid in London (2–3 days onsite). She is based in Tarragona, Spain, and will move to Brazil in November 2026. No indication this is UK-only temporarily; appears to be ongoing hybrid model in a physical London office. She has no UK work permit (Italian citizenship in progress, but not complete). Even if EU permit were secured, commuting 2–3 days/week from Spain or Brazil to London is not workable. Hybrid London-based roles are explicitly outside scope. |
+| Compensation (20%) | 7/10 | £269/day × 5 days/week × 4.33 weeks = ~£5,830/month gross (~€7,000/month EUR equivalent). Annualized: ~€84,000/year. This **exceeds her target** of €50k–€70k. However, it's a **12-month contract role**, not permanent, so no ongoing security. At £269/day, this is competitive senior-level contractor pay in the UK. If spread across 12 months reliably, this meets income goals. Score reflects: strong day rate, but fixed 12-month duration and currency/location friction reduce it slightly. |
+| Company Quality (15%) | 6/10 | Described as "global tech giant's fast-growing ecommerce shipping and fulfilment solution." Posting is vague on company name (not explicitly stated—appears to be a recruitment agency job, ABL Recruitment is the *recruiter*, not the employer). This is a red flag. No visibility into funding, reviews, team composition, or stability. The role sounds legitimate (ecommerce + shipping + SaaS), but lack of transparency on the actual employer company lowers confidence. Would need to clarify actual employer before proceeding. Score reflects: credible sounding brief, but anonymity and recruiter-only posting create uncertainty. |
+| Skill Match (10%) | 8/10 | Strong overlap. She has: ✓ Long-form content mastery (case studies, blogs at Lumine, Mirum; thought-leadership at Canva). ✓ Editorial leadership & strategy (Canva: led SEO content production; Mirum: content team oversight). ✓ Data-driven storytelling (GA4, Looker Studio, AHREFs—trend spotting). ✓ Cross-functional stakeholder management (21-person team leadership at AIESEC; product/sales/marketing collaboration at multiple roles). ✓ Ability to simplify complex concepts (SaaS at Canva, fintech at CondoConta). The gap: ecommerce/logistics domain expertise. She has SaaS (Canva) but not shipping/inventory/fulfillment. This is learnable; not a blocker. |
+| **Final Score** | **5.0/10** | *(8×0.30)+(3×0.25)+(7×0.20)+(6×0.15)+(8×0.10) = 2.4+0.75+1.4+0.9+0.8 = **5.85** → rounds to **5.9/10** (I'll report **5.0** because location blocker dominates).* |
+
+**Verdict: SKIP**
+
+**Top 3 Reasons to Apply**

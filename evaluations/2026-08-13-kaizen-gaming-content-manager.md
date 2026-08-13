@@ -1,0 +1,19 @@
+<!-- job_id: linkedin:2e33b5002778 -->
+---
+**Kaizen Gaming — Content Manager**
+*Source: https://mt.linkedin.com/jobs/view/content-manager-at-kaizen-gaming-4451407024 | Evaluated: 2026-08-13*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 5/10 | The posting is truncated and incomplete, but what's visible suggests a hybrid on-site/CRM content role. Nathália has strong SEO content and copywriting skills (Canva, Lumine, CondoConta), but the "on-site communications and visuals" component and heavy CRM/email focus are only partial matches to her broader growth marketing + SEO expertise. She's overqualified for a junior content writer role, underqualified if this requires deep email platform mastery (though she has Brevo/MailChimp). The role appears to be mid-level, not senior — a step backward from her Growth Marketing Manager and SEO Content Specialist titles. |
+| Remote / Location (25%) | 2/10 | **Hard blocker flagged.** The posting explicitly states "Sliema, Sliema, Malta" — on-site location. Nathália is currently in Tarragona, Spain, and moving to Brazil in November 2026. Malta is neither her current location nor her future location. The posting does not mention remote work or flexibility. No indication of hybrid or async arrangements. This is a **dealbreaker unless explicitly clarified as remote or flexible**. |
+| Compensation (20%) | 3/10 | **No salary disclosed.** Kaizen Gaming is a large, well-funded GameTech company (2,700+ employees, operations in 20 markets), so salary is likely competitive in the EU context — possibly €25k–€35k for a mid-level content role. However, Nathália's income target is €50k–€70k/year equivalent ($2,000–$3,500 USD/month net). Without transparency, and given the role appears mid-level (not senior), this likely falls short of her requirements. Score reflects unknown data + likely underestimation. |
+| Company Quality (15%) | 8/10 | Kaizen Gaming is a legitimate, well-established GameTech company (Betano brand), operating in 20 markets with 2,700+ employees across 40+ nationalities and 3 continents. Certified Great Place to Work, ranked among Best Workplaces in Europe. Financially stable, credible product, international team. No red flags. Only mark-down: gaming/betting industry may have reputational or ethical concerns for some (minor), and limited public visibility into team dynamics. |
+| Skill Match (10%) | 6/10 | **Partial match.** Nathália has strong copywriting, content strategy, email marketing (Brevo, MailChimp), and on-site/web content skills (Canva, Lumine, Grupo RBS). She understands localization, tone of voice, and CRM workflows. However, the posting emphasizes "English subject matter expert" and CRM administration/coordination tasks — which suggests a more specialist, support-oriented role than her senior strategic profile. She has the skills but may find the day-to-day tasks (email campaign coordination, SMS management) less engaging than her previous scope. No major skill gaps, but limited stretch. |
+| **Final Score** | **4.2/10** | *(5×0.30)+(2×0.25)+(3×0.20)+(8×0.15)+(6×0.10) = 1.5+0.5+0.6+1.2+0.6 = 4.4* |
+
+**Verdict: SKIP**
+
+**Top 3 Reasons NOT to Apply (honest assessment)**
+1. **On-site location is a hard blocker.** The role is explicitly based in Sliema, Malta. Nathália is in Spain now and moving to Brazil in November 2026 — neither location is Malta. No remote work mentioned. Unless the posting is outdated or the company is willing to negotiate remote/hybrid, this role is structurally incompatible with her location constraints.
+2. **Likely below her seniority and income target.** Nathália is a 16-year veteran

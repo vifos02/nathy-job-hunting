@@ -1,0 +1,17 @@
+<!-- job_id: linkedin:b8fe816f2471 -->
+---
+**Vestiaire Collective — Content Strategist & Copy Manager (English)**
+*Source: https://fr.linkedin.com/jobs/view/content-strategist-copy-manager-english-at-vestiaire-collective-4451195437 | Evaluated: 2026-08-13*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 6/10 | Content strategy + copywriting are adjacent to your SEO content + campaign execution experience, but this is **primarily a creative/copy role**, not a growth or demand-gen role. You've done copy as part of broader campaigns (Lumine, CondoConta email funnels, Genesys partner marketing), but you've never held a dedicated "Copy Manager" or strategic copywriting position. You'd be stepping into a more narrow, copy-focused function than your typical scope (which spans social, ads, SEO, ops, strategy). Not a bad fit, but a slight downgrade in seniority and breadth. |
+| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** Posting says "Paris" with no mention of remote options. No explicit statement that it's hybrid or remote-friendly. Vestiaire Collective has offices in Paris, London, Berlin, NY, Singapore, Ho Chi Minh—this reads as **on-site in Paris.** You are in Tarragona, Spain now; moving to Brazil in November 2026. Unless you can confirm this is remote or hybrid-from-anywhere, this is not workable. |
+| Compensation (20%) | 5/10 | **Posting does not disclose salary.** Paris-based creative/content role at an established, VC-backed marketplace (likely well-funded) suggests it could be €40k–€60k range for a 3–5 year level, possibly higher. Your target is €50k–€70k. Vestiaire Collective is credible enough that salary *could* meet your floor, but without transparency, I score this as uncertain. No red flags, but no confidence either. |
+| Company Quality (15%) | 8/10 | **Vestiaire Collective is a strong, established company.** Founded 2009, ~600 employees, offices across 6+ countries, 50+ nationalities, profitable-looking marketplace model. Circular fashion is a real mission. VC-backed, culturally aligned ("Activism, Transparency, Dedication, Greatness, Collective"). No obvious red flags. Not a household name like Canva, but a credible, well-run European tech company with international reach. |
+| Skill Match (10%) | 7/10 | **Good overlap, but not perfect.** You have: tone of voice leadership (Lumine creative team, Mirum international work), multi-channel campaign copy (Meta Ads, email, social, offline at Lumine/Mirum), brand strategy exposure (Mirum clients: Danone, HSBC, etc.), cultural trend awareness, and cross-functional collaboration. **Gaps:** You've never led a dedicated copywriting team or owned "copy direction" as a primary function. You've written copy *as part of* broader marketing campaigns, but not as a specialist. No portfolio of pure copywriting work documented. The role asks for "3–5 years in content strategy or copywriting"—you have content strategy (SEO at Canva, Lumine campaigns) and copywriting *embedded* in broader roles, but not isolated. This is learnable, but not a perfect match. |
+| **Final Score** | **4.9/10** | *(6×0.30)+(2×0.25)+(5×0.20)+(8×0.15)+(7×0.10) = 1.8+0.5+1.0+1.2+0.7 = 5.2* **Wait, recalc:** (6×0.30)=1.8, (2×0.25)=0.5, (5×0.20)=1.0, (8×0.15)=1.2, (7×0.10)=0.7 = **5.2/10** |
+
+**Verdict: SKIP** (due to location blocker; final score is marginal even if location were solved)
+
+---

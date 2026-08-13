@@ -1,0 +1,19 @@
+<!-- job_id: linkedin:3dac08e40d4d -->
+# Scoring: Diversey — TASKI Cluster Marketing Manager EU SOUTH
+
+---
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 5/10 | **Partial fit.** Title suggests "product marketing" + "commercial enablement," which is adjacent to your experience but not core. You've done social, content, SEO, email, and campaign execution—not traditional product marketing, launch coordination, or B2B sales enablement at this level. The role is described as "hands-on, commercially minded" and focuses on connecting global product teams, local sales, channel partners, pricing, master data, and supply chain. That's heavier on operations/GTM coordination than on the digital demand generation and creative strategy you've excelled at. You could credibly do parts of it (campaign execution, local activation, sales tools), but large chunks (pricing strategy, master data, supply chain alignment, service propositions) are outside your documented wheelhouse. This isn't a "wrong level" issue—it's a sideways move into a domain you'd have to learn. |
+| Remote / Location (25%) | 4/10 | **Location is a red flag.** The role is based in **Porto, Portugal**, with no mention of remote work. You are currently in Tarragona, Spain (a viable commute of ~350km), but you've stated rigid 9–5 on-site roles are a concern given maternity leave flexibility needs. The posting does not indicate hybrid or remote, and Diversey is a large industrial company (cleaning/hygiene tech)—these tend to expect office presence. Even if Porto is technically driveable from Tarragona, a daily commute is not workable for someone managing young daughters. In November 2026, you'll be in Brazil, making this completely inaccessible. **This is a strong practical blocker.** |
+| Compensation (20%) | 5/10 | **Undisclosed; assume mid-range.** Diversey is an established industrial company (Solenis parent), so a "Manager" title in Portugal likely falls in the €35k–€50k range—plausible but not disclosed. Portugal salaries are generally lower than Spain. Without explicit compensation, you must assume it's below your €50k–€70k target. Not a dealbreaker on its own, but combined with location friction, the financial upside is unclear. |
+| Company Quality (15%) | 7/10 | **Solid, established company.** Diversey/Solenis is a real, multinational industrial company with a known product (cleaning machines, robotics, chemicals). Financially stable, international, and credible. However, it's a B2B industrial/manufacturing firm, not a high-growth tech/SaaS environment you've thrived in (Canva, CondoConta, Lumine). The culture is likely more risk-averse and process-heavy. No red flags, but also less alignment with the kind of dynamic, growth-focused teams you've excelled in. |
+| Skill Match (10%) | 5/10 | **Moderate overlap, but key gaps.** You have strong campaign execution, lead generation, social, email, and content chops. But this role is asking for **product marketing** (positioning, GTM, sales enablement, competitive positioning), **launch coordination** (cross-functional, supply chain, pricing, master data integration), and **B2B commercial support**—areas where your documented experience is thin. You've done *campaign* launches (Lumine 6-digit launch, CondoConta lead gen), but not *product launches* in an industrial/B2B context with the complexity of robotics, accessories, spare parts, and service propositions. Your Salesforce and project management skills (Trello, ClickUp, Jira) will help, but you'd be learning the function on the job. Not impossible, but not a natural fit. |
+| **Final Score** | **5.1/10** | *(5×0.30)+(4×0.25)+(5×0.20)+(7×0.15)+(5×0.10) = 1.5+1.0+1.0+1.05+0.5 = **5.05*** |
+
+---
+
+## **Verdict: SKIP**
+
+This posting falls below your threshold (5.5). While the company is legitimate and the compensation may be workable

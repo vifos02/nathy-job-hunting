@@ -1,0 +1,19 @@
+<!-- job_id: linkedin:0808d06c98f2 -->
+---
+**Canonical — Marketing Manager**
+*Source: https://br.linkedin.com/jobs/view/marketing-manager-at-canonical-4434729119 | Evaluated: 2026-08-13*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 7/10 | Senior marketing role managing GTM, campaigns, and cross-functional teams across portfolios—matches your trajectory well. You've done similar work at Lumine (team oversight, campaign execution, budget ownership) and CondoConta (growth marketing, team leadership). Title and scope are credible for your 16 years. Not a perfect 10 because the posting emphasizes "open source technology" positioning and developer-to-executive messaging, which is outside your core SaaS/fintech/media background, but learnable. |
+| Remote / Location (25%) | 9/10 | **Remote, EMEA and Americas.** Explicitly distributed team (1200+ people, 75+ countries), 2–4 annual in-person meetings. You're in Spain now (EMEA), moving to Brazil (Americas) in Nov 2026—both fit the geographic scope. No mention of work authorization restrictions. High score because fully remote + international + async-friendly culture (distributed org pattern). Minor deduction because "EMEA and Americas" *could* imply less flexibility for pure APAC, but Brazil is Americas, so you're safe. |
+| Compensation (20%) | 5/10 | **Posting does not disclose salary.** Canonical is profitable, founder-led, and well-funded (UK-based, public credibility). For a Marketing Manager role at an established, profitable enterprise tech company, you'd typically expect £45k–£65k (~€54k–€78k) or equivalent. Without disclosure, assume mid-range (€60k+), which meets your target—but this is a *guess*. If you apply, ask early. Score reflects uncertainty; if they come back with €55k+, this jumps to 8/10. |
+| Company Quality (15%) | 9/10 | Canonical is a **real, established, profitable company** with strong brand (Ubuntu, open source leadership, enterprise clients). Founder-led, 1200+ employees, global presence, healthy culture signals (distributed work, in-person strategy meetings in "interesting locations"). Publicly known, financially stable, no red flags. Deduct 1pt only because you don't have deep tech/open-source domain knowledge—but that's skill risk, not company risk. |
+| Skill Match (10%) | 6/10 | **Moderate overlap with some gaps.** You have: campaign execution, cross-functional team leadership, GTM planning (via launches at Lumine), budget ownership, demand generation, data-driven iteration (OKR, Salesforce reporting). You *lack*: deep product positioning expertise (open source tech, developer marketing, enterprise positioning), account-based marketing depth, partner/alliance messaging (Genesys LATAM touched this lightly, but not core). The posting emphasizes "transform complex open-source technology into messages"—domain expertise you'd need to build quickly. Your social, content, and ads skills are less central here; this is more strategy/positioning-heavy. You can do it, but there's a learning curve on the *what* (open source, developer personas, enterprise buying cycles). |
+| **Final Score** | **7.1/10** | *(7.0×0.30)+(9×0.25)+(5×0.20)+(9×0.15)+(6×0.10) = 2.1 + 2.25 + 1.0 + 1.35 + 0.6 = 7.3* |
+
+**Verdict: APPLY**
+
+**Top 3 Reasons to Apply**
+1. **Strong organizational fit:** Canonical is a distributed, async-friendly org (1200+ people, 75+ countries, 2–4 in-person/year). This aligns perfectly with your maternity-leave flexibility needs and Brazil move. No rigid 9–5 video-call culture.
+2. **Credible role match:** You've managed GTM campaigns, owned budgets, led teams, and reported to stakeholders in similar contexts (Lumine launch, CondoConta growth, Mirum strategy).
