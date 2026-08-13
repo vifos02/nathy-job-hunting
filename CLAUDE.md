@@ -22,6 +22,8 @@ JWT High Potential award winner (2017) — one of 54 chosen from 12,000+ WPP emp
 - Marketing Manager / Senior Marketing Manager / LATAM Marketing Manager
 - Marketing Project Manager / Marketing Program Manager
 - Growth Marketing Manager or Specialist
+- Demand Generation Manager or Specialist
+- Social Media Marketing Manager
 - Content Specialist / SEO Content Specialist
 - Content Marketing Manager or Director
 - Digital Marketing Manager or Director

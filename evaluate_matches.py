@@ -74,6 +74,8 @@ REQUIRED_TITLE_KEYWORDS = [
     "latam marketing",
     "latam content",
     "latam seo",
+    "social media marketing",
+    "demand generation",
 ]
 
 # Hard blocklist: skip even if an allowlist keyword matched
@@ -89,6 +91,16 @@ SKIP_TITLE_WORDS = [
     "event marketing",
     "enablement",
     "affiliate",
+    # Paid/specialist disciplines outside target scope
+    "performance marketing",
+    "trade marketing",
+    "partner marketing",
+    "channel marketing",
+    "influencer marketing",
+    "paid media",
+    "paid social",
+    "communications manager",
+    "public relations",
     # APAC / non-workable locations in title
     "japan", "tokyo", "singapore", "apac", "asia pacific",
     "china", "hong kong", "korea", "sydney", "australia",

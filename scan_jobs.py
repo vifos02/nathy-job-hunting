@@ -79,6 +79,8 @@ TARGET_KEYWORDS = [
     "latam marketing",
     "latam content",
     "latam seo",
+    "social media marketing",
+    "demand generation",
 ]
 
 # Hard blocklist — mirrors evaluate_matches.py. Skip even if a TARGET_KEYWORD matched.
@@ -94,6 +96,16 @@ SKIP_TITLE_WORDS = [
     "event marketing",
     "enablement",
     "affiliate",
+    # Paid/specialist disciplines outside target scope
+    "performance marketing",
+    "trade marketing",
+    "partner marketing",
+    "channel marketing",
+    "influencer marketing",
+    "paid media",
+    "paid social",
+    "communications manager",
+    "public relations",
     # APAC / non-workable locations in title
     "japan", "tokyo", "singapore", "apac", "asia pacific",
     "indonesia", "jakarta", "malaysia", "kuala lumpur", "philippines",
@@ -152,6 +164,27 @@ def _kw_match(keyword: str, text: str) -> bool:
     if len(keyword) <= 4:
         return bool(re.search(r'\b' + re.escape(keyword) + r'\b', text))
     return keyword in text
+
+
+_US_STATES = {
+    "al","ak","az","ar","ca","co","ct","de","fl","ga","hi","id","il","in",
+    "ia","ks","ky","la","me","md","ma","mi","mn","ms","mo","mt","ne","nv",
+    "nh","nj","nm","ny","nc","nd","oh","ok","or","pa","ri","sc","sd","tn",
+    "tx","ut","vt","va","wa","wv","wi","wy","dc",
+}
+
+def _is_us_location(location: str) -> bool:
+    """Return True if the location field indicates a US-specific on-site/geo-restricted role."""
+    loc = location.lower().strip()
+    if not loc or loc in ("remote", "worldwide", "global", "anywhere"):
+        return False
+    if "united states" in loc or loc == "usa":
+        return True
+    # State abbreviation suffix: "New York, NY" or "Remote, TX"
+    m = re.search(r",\s*([a-z]{2})\s*$", loc)
+    if m and m.group(1) in _US_STATES:
+        return True
+    return False
 
 
 def is_match(title: str, company: str = "") -> bool:
@@ -474,6 +507,9 @@ def process_jobs(jobs: list, job_id_prefix: str, company: str, source: str,
     for job in jobs:
         job_id = f"{job_id_prefix}:{job['id']}"
         if job_id in seen_ids:
+            continue
+        # Drop roles with a US location field before dedup — saves API evaluation cost
+        if _is_us_location(job.get("location", "")):
             continue
         seen_ids.add(job_id)
         matched = is_match(job["title"], company or job.get("company", ""))

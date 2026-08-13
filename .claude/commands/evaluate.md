@@ -2,14 +2,19 @@ Score the job posting below against Nathália's rubric in CLAUDE.md.
 
 Steps:
 1. Read CLAUDE.md fully before scoring anything. Pay attention to the Location Timeline and Work Authorization section.
-2. Read the posting carefully, noting: role level, location/remote policy, salary (or estimate from company size), company background, and required skills.
-3. Score each dimension 1–10 using the rubric.
+2. Read the posting carefully, noting: role level, location/remote policy, salary (or estimate from company size), company background, required skills, **contract duration**, and any benefits that reveal employment type.
+3. Before scoring, explicitly check for these dealbreaker signals in the full posting text:
+   - **US work authorization**: "W-2", "must be authorized to work in the US", "US citizens only", "across the country" (means US-only remote), "across the US"
+   - **US employment type**: "401(k)", "401K" benefit mentioned → confirms US W-2 role, not a contractor or international hire
+   - **Contract duration**: if the posting specifies a fixed contract term (e.g. "4-month contract", "6-month engagement") and Nathália is looking for a permanent or long-term role, flag this explicitly
+   - If any of the above are present, set Remote/Location = 1 and Verdict = SKIP with explanation
+4. Score each dimension 1–10 using the rubric.
    - Remote/Location: distinguish between work authorization requirements (hard block, score 1–2) and timezone requirements (not a block from Brazil, score 6–7 for US East Coast hours).
-4. Calculate the weighted final score.
-5. Give a clear APPLY / CONSIDER / SKIP verdict.
-6. List the top 3 reasons to apply and the top 3 honest concerns.
-7. List which resume bullets from resume/master-resume.md are most relevant to lead with.
-8. Flag any hard dealbreakers from CLAUDE.md.
+5. Calculate the weighted final score.
+6. Give a clear APPLY / CONSIDER / SKIP verdict.
+7. List the top 3 reasons to apply and the top 3 honest concerns.
+8. List which resume bullets from resume/master-resume.md are most relevant to lead with.
+9. Flag any hard dealbreakers from CLAUDE.md.
 
 After the evaluation output, run the **Watchlist Check**:
 
@@ -74,6 +79,9 @@ Output format — follow this exactly:
 
 **Hard Dealbreakers Present?**
 - [ ] US work authorization required (W-2, visa sponsorship, citizenship)
+- [ ] US-only remote ("across the country", "across the US", or US states listed as location)
+- [ ] 401(k) / 401K benefit listed (confirms US W-2 employment)
+- [ ] Short-term contract (specify duration if yes)
 - [ ] On-site in city I won't be in
 - [ ] BRL-only pay below R$15k
 - Others:

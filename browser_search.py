@@ -68,6 +68,8 @@ TARGET_KEYWORDS = [
     "head of content",
     "vp marketing",
     "vp of marketing",
+    "social media marketing",
+    "demand generation",
     # Spanish-language equivalents — surfaces InfoJobs and LATAM board postings
     "marketing digital",
     "director marketing",
@@ -82,6 +84,16 @@ SKIP_TITLE_WORDS = [
     "ppc specialist", "sem specialist", "paid search specialist", ", sem",
     "product marketing", "lifecycle marketing", "account based",
     "field marketing", "event marketing", "enablement", "affiliate",
+    # Paid/specialist disciplines outside target scope
+    "performance marketing",
+    "trade marketing",
+    "partner marketing",
+    "channel marketing",
+    "influencer marketing",
+    "paid media",
+    "paid social",
+    "communications manager",
+    "public relations",
     "japan", "tokyo", "singapore", "apac", "asia pacific",
     "china", "hong kong", "korea", "sydney", "australia",
     "indonesia", "jakarta", "malaysia", "kuala lumpur", "philippines",
@@ -169,6 +181,27 @@ SEEN_JOBS_HEADERS = ["job_id", "company", "title", "url", "found_date", "matched
 # ---------------------------------------------------------------------------
 # Utilities
 # ---------------------------------------------------------------------------
+
+_US_STATES = {
+    "al","ak","az","ar","ca","co","ct","de","fl","ga","hi","id","il","in",
+    "ia","ks","ky","la","me","md","ma","mi","mn","ms","mo","mt","ne","nv",
+    "nh","nj","nm","ny","nc","nd","oh","ok","or","pa","ri","sc","sd","tn",
+    "tx","ut","vt","va","wa","wv","wi","wy","dc",
+}
+
+def _is_us_location(location: str) -> bool:
+    """Return True if the location field indicates a US-specific role."""
+    import re as _re
+    loc = location.lower().strip()
+    if not loc or loc in ("remote", "worldwide", "global", "anywhere"):
+        return False
+    if "united states" in loc or loc == "usa":
+        return True
+    m = _re.search(r",\s*([a-z]{2})\s*$", loc)
+    if m and m.group(1) in _US_STATES:
+        return True
+    return False
+
 
 def url_id(url: str) -> str:
     """12-char SHA1 of the URL — stable job ID for browser-found jobs."""
@@ -296,6 +329,16 @@ def scrape_indeed(page, seen_ids: set, today: str) -> tuple:
                 )
                 company = company_el.inner_text().strip() if company_el else "Unknown"
 
+                # Skip US-location roles before dedup
+                location_el = (
+                    card.query_selector("[data-testid='text-location']")
+                    or card.query_selector(".companyLocation")
+                    or card.query_selector(".company_location")
+                )
+                location = location_el.inner_text().strip() if location_el else ""
+                if _is_us_location(location):
+                    continue
+
                 link_el = card.query_selector("h2.jobTitle a")
                 href = (link_el.get_attribute("href") or "") if link_el else ""
                 if href.startswith("/"):
@@ -387,6 +430,15 @@ def scrape_linkedin(page, seen_ids: set, today: str) -> tuple:
                     or card.query_selector("a.job-search-card__company-name")
                 )
                 company = company_el.inner_text().strip() if company_el else "Unknown"
+
+                # Skip US-location roles before dedup — covers the 93% geo-block failure mode
+                location_el = (
+                    card.query_selector("span.job-search-card__location")
+                    or card.query_selector(".base-search-card__metadata span")
+                )
+                location = location_el.inner_text().strip() if location_el else ""
+                if _is_us_location(location):
+                    continue
 
                 link_el = (
                     card.query_selector("a.base-card__full-link")
