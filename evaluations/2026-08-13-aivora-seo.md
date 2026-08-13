@@ -1,0 +1,17 @@
+<!-- job_id: linkedin:254ac53ee4f5 -->
+---
+**Aivora — Seo 专员 (SEO Specialist)**
+*Source: https://cn.linkedin.com/jobs/view/seo-%E4%B8%93%E5%91%98-at-aivora-4451410044 | Evaluated: 2026-08-13*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 6/10 | **Partial fit.** The role is SEO-focused, which aligns with my Canva experience (100% SEO content production, 771k monthly searches driven, 5M monthly searches in H1 2026). However, this is a **junior-level specialist role** ("助理" = assistant/coordinator level), and I'm a **senior professional with 16 years' experience, team leadership, and strategic scope.** I would likely be overqualified and underutilized. The role focuses heavily on technical SEO (on-page, HTML/CSS, tool mastery), which I have but is not my strength compared to my content strategy, team leadership, and campaign execution track record. This feels like a step backward. |
+| Remote / Location (25%) | 2/10 | **Hard blocker.** The posting explicitly states **"上海市" (Shanghai, on-site).** I am currently in Spain (Tarragona) and will be in Brazil (UTC-3) from November 2026. No mention of remote work or flexibility. Shanghai is not workable without relocation, visa sponsorship, and abandoning my current location strategy. I have no indication Aivora sponsors international work permits or offers remote work. This is **not viable.** |
+| Compensation (20%) | 4/10 | **Unclear and likely low.** The posting contains **no salary information.** Based on similar Shanghai SEO specialist roles in the job feed (¥13,000–¥40,000 range, typically ¥18,000–¥25,000 for this level), this would likely fall into the **¥15,000–¥25,000/month range (~$2,000–$3,300 USD/month gross).** That's at the floor of my target (€50k–€70k/year = ~$4,200–$5,800/month gross), and the junior level suggests lower pay. No equity, no remote premium, no international multiplier. **Insufficient info to score higher.** |
+| Company Quality (15%) | 5/10 | **Limited visibility.** Aivora is not a recognizable global brand in my professional network. The LinkedIn posting is sparse—no company description, size, funding stage, or team visibility in the snippet. The job feed shows it's competing in a crowded Shanghai SaaS/tech SEO market. **Red flag:** I cannot verify company stability, culture, or international team composition (critical for my async/flexible needs post-maternity). Without a company website preview or Glassdoor presence in the posting, I score this as **early-stage or opaque.** Moderate risk. |
+| Skill Match (10%) | 7/10 | **Strong technical overlap, but junior requirements.** The role explicitly asks for: GSC, GA4, Ahrefs, SEMrush, Screaming Frog, white-hat SEO, HTML/CSS, data analysis, Google algorithm fluency. I have **all of these** (AHREFs, Botify, GSC, GA4, Looker Studio; strong data analysis; content + SEO strategy). I also have **content marketing + international (multilingual) SEO experience** — both listed as "加分项" (bonus points). However, the role is asking for *1.1+ years independent experience*—a junior bar—when I have 4+ years of dedicated SEO leadership (Canva alone). **Skill match is strong, but role level is too junior to require my depth.** |
+| **Final Score** | **3.7/10** | *(6×0.30)+(2×0.25)+(4×0.20)+(5×0.15)+(7×0.10)* = *1.8+0.5+0.8+0.75+0.7* = **4.55/10** |
+
+**Verdict: SKIP**
+
+---

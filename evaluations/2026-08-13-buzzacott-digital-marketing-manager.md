@@ -1,0 +1,18 @@
+<!-- job_id: linkedin:6fe8e3c428e0 -->
+# EVALUATION: Buzzacott — Digital Marketing Manager
+
+**URL:** https://uk.linkedin.com/jobs/view/digital-marketing-manager-at-buzzacott-4429965111
+**Evaluation Date:** 2026-08-13
+
+---
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| **Role Fit (30%)** | 6/10 | Senior digital marketing role with strategy ownership, cross-functional leadership, and data-driven optimization. Matches your 16-year profile well — you've done this at CondoConta (led team, owned campaigns, OKR planning), Lumine (creative oversight, budget ownership), and Mirum (senior strategist across teams). However, the posting is **incomplete** (truncated mid-sentence), so I can't assess whether there are heavy technical requirements (e.g., heavy MarTech stack, SQL, or analytics depth) that would lower fit. Assuming standard digital marketing scope: solid match, but not a perfect 8+ because there's no evidence you'd be stretched or learning new strategic areas. |
+| **Remote / Location (25%)** | 2/10 | **HARD BLOCKER.** Posting says "City Of London, England, United Kingdom" with no mention of remote work flexibility. You are currently in Spain (Tarragona); in November 2026 you move to Brazil. An on-site role in London is incompatible with your location plan. Unless the posting is mislabeled and the role is actually remote or hybrid-flexible, this role is not workable. **Flag before applying:** contact Buzzacott to confirm if remote options exist. Assuming on-site: score is 2. |
+| **Compensation (20%)** | 5/10 | **No salary disclosed.** Buzzacott is a UK accountancy/advisory firm (credible, established). A Digital Marketing Manager role in London typically pays £35k–£50k GBP (~€42k–€60k), which *could* meet your €50k–€70k target but is on the lower end. Without explicit numbers, I score this as borderline. If it's at the higher end (£50k+), it becomes a 7. For now: **5/10 — investigate before applying.** |
+| **Company Quality (15%)** | 8/10 | **Buzzacott is a real, established UK firm.** Founded 1957, independent accountancy and advisory house (not Big 4, but solid mid-market player). UK-based, financially stable, and appears in major business directories. Posting tone suggests a collaborative, organized culture ("doing things properly," "approachable, trusted experts"). Limited red flags in the snippet. However, I can't verify Glassdoor reviews or speak to international team composition from this posting alone. **Score: 8/10 — credible firm, but not FTSE 100 scale.** |
+| **Skill Match (10%)** | 7/10 | **Strong overlap:** strategy development, data-driven optimization, cross-functional collaboration, lead generation, OKR/performance planning. You've owned budget, led teams, and run campaigns end-to-end. **Gaps:** posting mentions "latest digital developments" and "testing new tools and channels" — you excel at this, but there's no mention of *which* tools (Google Ads, advanced analytics, MarTech platforms). If the role leans heavily into technical platforms (Salesforce, HubSpot, advanced GA4 modeling, SQL) beyond your current toolkit, you'd need ramp-up time. Based on what's visible: **7/10 — you can do this role, minor tool learning possible.** |
+| **Final Score** | **4.9/10** | *(6×0.30)+(2×0.25)+(5×0.20)+(8×0.15)+(7×0.10) = 1.8+0.5+1.0+1.2+0.7 = **5.2/10*** |
+
+**RECALCULATION:** (6 × 0.30) + (2 × 0.25) + (5 × 0.20) + (8 × 0.15) + (7 × 0.10) = 1.8 + 0.5 + 1.0 + 1.2

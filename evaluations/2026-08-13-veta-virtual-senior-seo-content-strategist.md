@@ -1,27 +1,35 @@
-<!-- job_id: linkedin:0a018db072f4 -->
+<!-- job_id: linkedin:286db15feed8 -->
 ---
 **Veta Virtual — Senior SEO Content Strategist**
-*Source: https://uy.linkedin.com/jobs/view/senior-seo-content-strategist-at-veta-virtual-4440625496 | Evaluated: 2026-08-13*
+*Source: https://py.linkedin.com/jobs/view/senior-seo-content-strategist-at-veta-virtual-4440636052 | Evaluated: 2026-08-13*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 9/10 | This is a near-perfect match. Senior SEO + content strategy + technical SEO + digital PR ownership across a full organic growth roadmap mirrors Nathália's 4+ years at Canva (100% SEO content production for Brazil, 5M monthly searches, page launches/migrations). The fintech industry is also relevant (CondoConta experience). Only minor gap: no explicit mention of leading a team, but the role emphasizes execution over management — which aligns with her current level post-maternity. |
-| Remote / Location (25%) | 9/10 | 100% remote, no location restriction mentioned, no work-auth requirement indicated. Uruguay-based client posting is a signal of LATAM openness. Timezone: Uruguay is UTC-3 (same as Brazil from Nov 2026), so no friction. Currently in Spain, fully workable. |
-| Compensation (20%) | 7/10 | "Competitive Salary in USD" is stated but no figure given. For a senior SEO strategist at a fintech/crypto platform with multi-country scale, this likely lands in $60k–$80k USD range (€55k–€73k), which meets her target of €50k–€70k+. Crypto/fintech salaries tend skew high. **Flag**: Must clarify exact figure before applying. |
-| Company Quality (15%) | 6/10 | **Limited visibility.** Veta Virtual appears to be a recruitment/staffing agency (hiring "for one of our high-growth clients"), not the actual employer. The *client* is unnamed — fintech/crypto platform with kiosk footprint across multiple countries. Positive: high-growth, multi-country, operates at scale. Negative: no company name, no public reviews, no funding visibility on Veta Virtual itself. This adds friction to due diligence. Crypto industry also carries regulatory/reputational risk (not a dealbreaker, but a flag). |
-| Skill Match (10%) | 9/10 | Exceptional overlap. Nathália has: AHREFs, Botify, GSC, GA4, on-page SEO, content optimization, page launches, migrations, technical SEO diagnosis, AI tools mastery, localization. Missing: explicit "digital PR / high-authority backlink" execution at scale (though her Canva and agency backgrounds suggest exposure). Core SEO chops are 9/10; PR outreach is a 7/10 (learnable, adjacent to her experience). |
-| **Final Score** | **8.0/10** | *(9×0.30)+(9×0.25)+(7×0.20)+(6×0.15)+(9×0.10) = 2.7+2.25+1.4+0.9+0.9 = **8.15*** |
+| Role Fit (30%) | 9/10 | Perfect alignment. Senior SEO + content strategy + writing + organic growth ownership mirrors your Canva Brazil role exactly. You've done this at scale (771k+ monthly searches, 5M monthly searches H1 2026). This is your wheelhouse. |
+| Remote / Location (25%) | 9/10 | 100% remote, no location restriction stated, no work-auth requirement indicated. Paraguay-based company but role is fully remote. Workable from Spain now, Brazil from November 2026. No blockers. |
+| Compensation (20%) | 7/10 | "Competitive Salary in USD" is stated but undisclosed. For a senior role at a fintech/crypto startup, likely $50k–$70k USD or equivalent. No red flags, but specificity needed before committing. Medium confidence it meets your €50k–€70k target. |
+| Company Quality (15%) | 5/10 | **Limited public info.** Veta Virtual appears to be a recruitment agency/employer of record (EOR) model company based in Paraguay, placing people at fintech/crypto clients. Unclear if they are the direct employer or a placement intermediary. No LinkedIn company page visibility, no funding/financials, no Glassdoor reviews found. The client is "high-growth fintech/crypto" but unnamed. Red flag: lack of transparency about the actual employer and company stability. |
+| Skill Match (10%) | 10/10 | Direct match. Technical SEO, content strategy, hands-on writing, digital PR, organic growth ownership — you've done all of this at Canva and Lumine. AHREFs, GSC, GA4, Botify all in your toolkit. No gaps. |
+| **Final Score** | **7.5/10** | *(9×0.30)+(9×0.25)+(7×0.20)+(5×0.15)+(10×0.10) = 2.7+2.25+1.4+0.75+1.0 = **8.1/10*** |
 
-**Verdict: APPLY**
-
----
-
-**Top 3 Reasons to Apply**
-1. **Role fit is exceptional.** This is a senior SEO + content strategy role with full organic ownership — nearly identical to her Canva mandate but with added technical SEO and digital PR dimensions. Her 4-year track record managing 771k–5M monthly searches directly translates.
-2. **100% remote, LATAM-friendly timezone.** Fully remote, no location restriction, Uruguay client signals LATAM openness, and UTC-3 aligns with her November 2026 Brazil move. Zero timezone friction.
-3. **Fintech/crypto is a growth industry.** She has fintech pedigree (CondoConta), and crypto platforms typically offer competitive USD salaries and ambitious growth targets — good match for her career trajectory and income goals.
+**Verdict: APPLY** *(with conditions — see concerns)*
 
 ---
 
-**Top 3 Concerns (be honest)**
-1. **Veta Virtual is a staffing agency — actual client unnamed.** No way to vet company culture, stability, or product before applying. Red flag for transparency. Recommend asking immediately: "Who is the client?
+### **Top 3 Reasons to Apply**
+
+1. **Perfect role match:** Senior SEO content strategist with full organic growth accountability is exactly what you've done at Canva. This is a high-confidence skill-fit and seniority level.
+
+2. **Fully remote, USD-based, no location friction:** 100% remote, no work-auth requirement apparent, and USD compensation means it works from Spain, Brazil, or anywhere. Structurally clean.
+
+3. **High-growth fintech/crypto sector:** You've worked fintech (CondoConta), SaaS (Canva), and managed both technical SEO and team leadership. This is a proven strong market for you.
+
+---
+
+### **Top 3 Concerns (be honest)**
+
+1. **Company opacity — Veta Virtual is likely an EOR/placement agency, not the direct employer.** The posting says they're hiring "for one of our high-growth clients" — meaning Veta Virtual is a middleman, not your actual boss. The actual employer (the fintech/crypto company) is unnamed. This introduces risk: unclear culture, unclear stability, potential for contract instability if the client relationship shifts. Before applying, you need clarity on who signs your contract and who you report to.
+
+2. **Fintech/crypto sector volatility:** While you have fintech experience (CondoConta), the crypto space carries regulatory and market risk. No visibility into whether this client is well-funded, profitable, or stable. The posting doesn't mention funding, runway, or team size. Could be a 3-person startup or a 300-person scaleup — you don't know.
+
+3. **Salary undisclosed — "Competitive in USD" is vague.** For a senior role, this *should* meet your target, but you need confirmation before investing time. Ask for range up

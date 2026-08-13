@@ -1,0 +1,18 @@
+<!-- job_id: linkedin:ed92f51b838d -->
+---
+**Bodaq Interior Films — Marketing Manager, Content & Growth**
+*Source: https://ca.linkedin.com/jobs/view/marketing-manager-content-growth-at-bodaq-interior-films-4451426383 | Evaluated: 2026-08-13*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 6/10 | The role spans content creation, video editing, design, social media, email, and project coordination—all areas where Nathália has strong hands-on experience (Lumine, CondoConta, mDhil). However, this role leans heavily toward **video editing and Adobe Creative Cloud production**, which are secondary skills in her CV. She has managed creative teams and overseen video content strategy, but the posting emphasizes *hands-on editing* of short/long-form video, Photoshop mockups, and AI-assisted video tools (Runway, Adobe Firefly, Veo)—tools not documented in her experience. The role is also more operational/production-focused than strategic, which may underutilize her 16 years and MBA. She can do this job, but it's a step down in seniority and a shift toward execution over strategy. |
+| Remote / Location (25%) | 1/10 | **HARD BLOCKER.** Posting specifies "Burnaby, British Columbia, Canada" with no mention of remote work. Nathália is currently in Spain (Tarragona) and moving to Brazil in November 2026. No work authorization for Canada mentioned in her profile. On-site-only roles in inaccessible cities score 1. Unless there is explicit remote flexibility (not stated here), this is not viable. |
+| Compensation (20%) | 5/10 | **No salary disclosed.** Bodaq is a B2B architectural finishes company (solid, global brand), likely based in Canada (Burnaby HQ), but no pay band, currency, or equity structure mentioned. For a "Marketing Manager" role in Canada (BC salary range typically CAD $55k–$75k for mid-level), the compensation *could* meet her €50k–€70k target if converted and assuming full-time employment. However, without disclosure, this is speculative. Scoring 5 (borderline/unclear) pending investigation. |
+| Company Quality (15%) | 7/10 | Bodaq is a **real, established company** with a global product (self-adhesive interior films) serving commercial, hospitality, healthcare, and retail sectors. They have a solid B2B positioning and multi-country presence. No red flags in the job posting; the writing is professional and detailed. Limited public sentiment data available, but the company appears credible and financially stable (not early-stage startup). Scoring 7 (solid company, less well-known than Fortune 500 but legitimate). |
+| Skill Match (10%) | 5/10 | **Moderate overlap with notable gaps.** Nathália has proven expertise in: social media content, email marketing, campaign coordination, project management, and creative team oversight. **However, the posting's core technical demands are production-heavy:** video editing (short/long-form), Adobe Photoshop mockups, AI-assisted video generation (Runway, Firefly, Veo), subtitle/reformat workflows, and graphic design. Her CV shows she has *managed* creative teams and *directed* content strategy, but does not document hands-on video editing or Photoshop proficiency. She can likely learn these tools quickly (she has used basic AI tools and has creative sensibility), but she is not a **video editor or graphic designer by documented experience**. This is a meaningful gap for a role that positions this as a core 40%+ of the job. Scoring 5 (moderate overlap; can probably do it with ramp, but not a natural fit). |
+| **Final Score** | **3.9/10** | *(6×0.30)+(1×0.25)+(5×0.20)+(7×0.15)+(5×0.10) = 1.8 + 0.25 + 1.0 + 1.05 + 0.5 = 4.6* |
+
+**Verdict: SKIP**
+
+**Top 3 Reasons to Apply**
+1. *(There are none

@@ -1,0 +1,18 @@
+<!-- job_id: linkedin:623bd51cbab1 -->
+---
+**AMBOSS — Marketing Specialist - LATAM**
+*Source: https://mx.linkedin.com/jobs/view/marketing-specialist-latam-at-amboss-4434534859 | Evaluated: 2026-08-13*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 7/10 | LATAM marketing strategy aligns well with your 16-year trajectory and proven LATAM expertise (Brazil, Argentina, Chile, Mexico via Macromator). Title is "Specialist" (not Manager), which is slightly below your current seniority, but the scope (localized strategies, growth ownership) matches mid-to-senior level. You've done this work before at CondoConta, Lumine, and Macromator. Not a perfect match (you're overqualified for "Specialist"), but credible and relevant. |
+| Remote / Location (25%) | 4/10 | **Major concern.** Posting lists "Costa Rica, Sinaloa, México" as locations. The posting text cuts off mid-sentence ("Why can this position be exciting for you?...") and **does not explicitly state remote eligibility.** Locations listed (Costa Rica, Mexico) suggest on-site or regional presence may be required. You are in Spain now (until November 2026) and moving to Brazil after. No confirmation of full remote work. This is a hard flag — you must clarify before applying. If on-site in Mexico/Costa Rica is required, this is a blocker. Scoring assumes it *might* be remote (hence 4 instead of 1), but this needs verification. |
+| Compensation (20%) | 5/10 | **No salary disclosed in the posting.** AMBOSS is a well-funded Berlin-based medical SaaS (600+ employees, active in 180 countries, offices in Berlin, Cologne, NY, Cagliari, Cape Town). For a LATAM Specialist role at a company of this caliber, salary is likely in the €40–65k range or equivalent in local currency (if based in Mexico/Costa Rica). **This is speculative.** If remote and contractor-friendly, could support your $2–3.5k USD/month target. But without explicit salary, cannot score higher than 5. Request detailed comp info before committing. |
+| Company Quality (15%) | 8/10 | AMBOSS is a legitimate, well-established medical SaaS (founded 2012, 600+ employees, multi-country presence, strong funding visibility, international offices). No red flags visible. Medical edtech is a solid sector. Team appears professional and mission-driven. Not a mega-brand like Canva, but solidly credible and stable. Score reflects: established company, clear product, international footprint, but less visibility/prestige than your Canva role. |
+| Skill Match (10%) | 7/10 | **Good overlap, some gaps.** Your LATAM marketing expertise (CondoConta, Lumine, Macromator, mDhil) directly maps to localized strategy and execution. You have proven Meta Ads, email marketing, team leadership, and regional growth experience. **Gaps:** Posting text is incomplete, so full JD is unknown. Typical LATAM marketing roles require Spanish fluency (you have it) and cultural market understanding (you have it across 3 countries). If the role leans heavy on paid performance marketing (SEM, programmatic), you have less depth there (you're Meta-strong, Google Ads is weaker). No mention of SEO in the incomplete posting, which is a strength you could lead with. Score reflects: strong localization and growth chops, but unknown technical stack due to truncated posting. |
+| **Final Score** | **6.0/10** | *(7×0.30)+(4×0.25)+(5×0.20)+(8×0.15)+(7×0.10) = 2.1+1.0+1.0+1.2+0.7 = 6.0* |
+
+**Verdict: CONSIDER — but only after clarifying remote eligibility and full job description**
+
+**Top 3 Reasons to Apply**
+1. **LATAM expertise is directly relevant:** You've built growth strategies in Brazil, Argentina, Chile, and Mexico across multiple sectors (fintech,

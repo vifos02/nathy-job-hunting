@@ -1,0 +1,18 @@
+<!-- job_id: linkedin:a915d4bbcaa0 -->
+---
+**Rise at Seven — Organic Media Creator (SEO/Content) - German**
+*Source: https://uk.linkedin.com/jobs/view/organic-media-creator-seo-content-german-at-rise-at-seven-4452448667 | Evaluated: 2026-08-13*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 7/10 | Strong overlap with SEO, content strategy, and multi-channel repurposing (Google, social, AI discovery). You've done this at Canva (771k+ monthly searches, 5M+ organic traffic H1 2026) and Lumine (influencer + email + social integration). The "search-first across platforms" framing matches your cross-channel thinking. Not a perfect match because the posting emphasizes *creator* output (writing, graphics, video repurposing) as primary deliverable, whereas your recent role was more strategic/analytical. Still, you have the content production chops from Lumine oversight and Mirum. |
+| Remote / Location (25%) | 6/10 | **Flag: Location ambiguity is a problem.** Posting says "Remote or London/Manchester"—no explicit confirmation that remote candidates outside UK are welcome. Rise at Seven is a UK agency; no indication of international hiring. You're in Spain now, moving to Brazil in Nov 2026. Remote within UK timezone (GMT) is workable from Spain (CET +1h, manageable); from Brazil (UTC-3), you'd have a 5–8 hour gap depending on season. The "or" suggests they may prefer onsite. Need clarification before applying. No explicit US work-auth requirement flagged, which is good. **Deduct for ambiguity.** |
+| Compensation (20%) | 5/10 | **Posting contains zero salary info.** UK agency roles for "creator"-level (not manager) typically run £28k–£35k (~€33k–€41k), below your €50k+ target. Senior strategist title + 16 years suggests you'd expect £40k+. This looks entry-to-mid level despite the strategic framing. **Cannot assess honestly without disclosure; assume underpay risk.** |
+| Company Quality (15%) | 6/10 | Rise at Seven is a real UK agency with a clear product (organic media strategy). Appears credible but **limited public visibility.** No obvious red flags in posting tone (professional, strategic framing). No funding/revenue data readily available, no Glassdoor/Trustpilot visibility in this excerpt. Medium-sized agency vibes. Not a tier-1 brand like WPP/Canva, but not a red flag. **Solid but unverified.** |
+| Skill Match (10%) | 8/10 | Excellent overlap. You have: SEO (Canva, AHREFs, Botify, GSC), content strategy (Lumine, Canva), multi-channel repurposing (Lumine influencer → email → social; Macromator partner assets across channels), social/organic growth (mDhil 400% fan growth, Lumine 22k leads). The "entity signals" language (schema, onsite/offsite linking) aligns with Canva SEO work. **One gap: posting emphasizes German language.** You speak Spanish fluently, English, Portuguese native—but German is not listed. This is a *hard miss* if German content creation is core. **Reframe: If they need English-language content or strategy support, you're a 9. If they truly need German output, you cannot deliver.** Assuming English + strategy = 8/10. |
+| **Final Score** | **6.3/10** | *(7.0×0.30)+(6.0×0.25)+(5.0×0.20)+(6.0×0.15)+(8.0×0.10) = 2.1+1.5+1.0+0.9+0.8 = 6.3* |
+
+**Verdict: CONSIDER — apply only if:**
+- You confirm remote outside UK is genuinely acceptable
+- You verify salary meets minimum €45k+ threshold  
+- You clarify whether German language is a blocker or nice-to-have
