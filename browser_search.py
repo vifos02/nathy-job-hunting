@@ -284,16 +284,25 @@ def is_match(title: str, company: str = "") -> bool:
 
 
 def load_seen_ids() -> set:
-    ids = set()
+    """Return a flat set of seen identifiers.
+
+    Contains two kinds of entries:
+    - raw job_id strings (URL-hash based, e.g. "linkedin:abc123")
+    - "ct:<company>|<title>" keys for cross-source dedup (same role, different URL)
+    Both are checked before recording a new job to avoid duplicates.
+    """
+    ids: set = set()
     if SEEN_JOBS_PATH.exists():
         with SEEN_JOBS_PATH.open(newline="", encoding="utf-8") as f:
             for row in csv.DictReader(f):
                 if row.get("job_id"):
                     ids.add(row["job_id"])
+                ids.add("ct:" + _co_title_key(row))
     if BROWSER_FINDS_PATH.exists():
         for entry in json.loads(BROWSER_FINDS_PATH.read_text()):
             if entry.get("job_id"):
                 ids.add(entry["job_id"])
+            ids.add("ct:" + _co_title_key(entry))
     return ids
 
 
@@ -308,13 +317,30 @@ def append_to_csv(rows: list, dry_run: bool) -> None:
         writer.writerows(rows)
 
 
+def _co_title_key(entry: dict) -> str:
+    """Normalised company+title key for cross-source dedup."""
+    import re as _re
+    c = _re.sub(r"[^a-z0-9]", "", entry.get("company", "").lower())
+    t = _re.sub(r"[^a-z0-9]", "", entry.get("title", "").lower())
+    return f"{c}|{t}"
+
+
 def save_browser_finds(new_matches: list, dry_run: bool) -> None:
     if dry_run:
         return
     existing = []
     if BROWSER_FINDS_PATH.exists():
         existing = json.loads(BROWSER_FINDS_PATH.read_text())
-    existing.extend(new_matches)
+    # Dedup by both job_id and company+title — same role from two sources gets one entry
+    seen_ids = {e.get("job_id") for e in existing}
+    seen_keys = {_co_title_key(e) for e in existing}
+    for m in new_matches:
+        jid = m.get("job_id")
+        key = _co_title_key(m)
+        if jid not in seen_ids and key not in seen_keys:
+            existing.append(m)
+            seen_ids.add(jid)
+            seen_keys.add(key)
     BROWSER_FINDS_PATH.write_text(json.dumps(existing, indent=2, ensure_ascii=False))
 
 
@@ -413,9 +439,11 @@ def scrape_indeed(page, seen_ids: set, today: str) -> tuple:
                 found_urls.add(href)
 
                 job_id = f"indeed:{url_id(href)}"
-                if job_id in seen_ids:
+                ct_key = "ct:" + _co_title_key({"company": company, "title": title})
+                if job_id in seen_ids or ct_key in seen_ids:
                     continue
                 seen_ids.add(job_id)
+                seen_ids.add(ct_key)
 
                 matched = is_match(title, company)
                 row = {
@@ -513,9 +541,11 @@ def scrape_linkedin(page, seen_ids: set, today: str) -> tuple:
                 found_urls.add(href)
 
                 job_id = f"linkedin:{url_id(href)}"
-                if job_id in seen_ids:
+                ct_key = "ct:" + _co_title_key({"company": company, "title": title})
+                if job_id in seen_ids or ct_key in seen_ids:
                     continue
                 seen_ids.add(job_id)
+                seen_ids.add(ct_key)
 
                 matched = is_match(title, company)
                 row = {
@@ -581,9 +611,11 @@ def scrape_remoteco(page, seen_ids: set, today: str) -> tuple:
                 href = "https://remote.co" + href
 
             job_id = f"remoteco:{url_id(href)}"
-            if job_id in seen_ids:
+            ct_key = "ct:" + _co_title_key({"company": company, "title": title})
+            if job_id in seen_ids or ct_key in seen_ids:
                 continue
             seen_ids.add(job_id)
+            seen_ids.add(ct_key)
 
             matched = is_match(title)
             row = {
@@ -676,9 +708,11 @@ def scrape_infojobs(page, seen_ids: set, today: str) -> tuple:
                 found_urls.add(href)
 
                 job_id = f"infojobs:{url_id(href)}"
-                if job_id in seen_ids:
+                ct_key = "ct:" + _co_title_key({"company": company, "title": title})
+                if job_id in seen_ids or ct_key in seen_ids:
                     continue
                 seen_ids.add(job_id)
+                seen_ids.add(ct_key)
 
                 matched = is_match(title, company)
                 row = {
