@@ -31,7 +31,7 @@ Steps:
 
 9. **Always publish an interactive HTML artifact** after the git push. Build the digest as a self-contained HTML page and publish it using the Artifact tool so it appears inline and can be opened in a browser tab. Requirements for the HTML:
    - Stat bar at the top: total evaluated (all time), active APPLY count (all time), CONSIDER count (all time), unevaluated API count (new only), browser finds count (new only), applied count.
-   - Sections: New APPLY Candidates, New CONSIDER, Unscored Highlights (new only), Tier 1 Not Checked, Action Items, Stats.
+   - Sections: New APPLY / CONSIDER Since Last Digest, Unscored Highlights (new only), Tier 1 Not Checked, Action Items, Stats.
    - Within each scored section, rows are sorted by final score descending (highest score at the top).
    - Every job row must be a clickable link (`<a href="..." target="_blank">`). No URL, no row.
    - Rows are color-coded by status using a left-border stripe: green = APPLY, amber = CONSIDER, blue = verify first, red = disqualified, grey = unscored.
@@ -53,13 +53,6 @@ Output:
 ## Pipeline
 | Company | Role | Score | Status | Next Step |
 |---------|------|-------|--------|-----------|
-
-## Top Unactioned (APPLY verdict, not yet applied)
-**ALL actionable APPLY roles, not just new ones** — this is always cumulative so nothing falls off the radar.
-Every row MUST include a clickable URL to the job posting.
-**Sort by final score, highest to lowest.**
-**Do NOT list disqualified roles** (US-only, 401K, short-term contract, or any confirmed hard dealbreaker). Omit them entirely.
-**Do NOT list closed or dead postings** — any role whose evaluation file contains "SKIPPED: posting closed or URL dead". These are gone.
 
 ## New APPLY / CONSIDER Since Last Digest
 Only evaluations whose company+role was NOT in the previous digest's "Evaluated This Period" table.
