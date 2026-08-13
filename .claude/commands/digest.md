@@ -19,8 +19,8 @@ Steps:
    - Every job row must be a clickable link (`<a href="..." target="_blank">`). No URL, no row.
    - Rows are color-coded by status using a left-border stripe: green = APPLY, amber = CONSIDER, blue = verify first, red = disqualified, grey = unscored.
    - Each row shows: role title (linked), company, score (monospace), verdict pill.
-   - Flag disqualified roles inline (e.g. "Disqualified — US-only remote").
-   - Flag staffing-agency roles that need verification before applying.
+   - Do NOT include disqualified roles (US-only, 401K, short contract, or any confirmed hard dealbreaker). Omit them entirely — they are not actionable.
+   - Flag staffing-agency rows that need verification before applying (blue stripe, "Verify first" pill).
    - Designs both light and dark themes via CSS custom properties.
    - Use the Artifact tool with favicon "📋" and a description of the form "Job hunt snapshot — YYYY-MM-DD".
    - Redeploy to the same artifact URL if one was already published this session (pass the existing URL). Otherwise publish fresh.
@@ -36,7 +36,7 @@ Output:
 
 ## Top Unactioned (APPLY verdict, not yet applied)
 Every row MUST include a clickable URL to the job posting.
-Flag disqualified roles (US-only, 401K, short contract) inline.
+**Do NOT list disqualified roles** (US-only, 401K, short-term contract, or any other hard dealbreaker confirmed by manual review). They are off the list — omit them entirely. Only show roles that are actionable.
 
 ## New Unscored Matches — API Sources
 Every row MUST include the URL from evaluated-jobs.csv.
