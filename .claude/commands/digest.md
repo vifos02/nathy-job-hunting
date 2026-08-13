@@ -17,11 +17,12 @@ Steps:
    - **NEW evaluations** = evaluation files whose company+role combination is NOT in PREV_EVALUATED.
    - **PREVIOUSLY REPORTED** = evaluation files whose company+role IS in PREV_EVALUATED (suppress from "Evaluated Since Last Digest" — do not re-list them).
 
-5. Read evaluated-jobs.csv — find rows where matched=yes that have no corresponding file in evaluations/. These are unscored API matches awaiting review.
-   - **NEW unscored API** = rows not mentioned in PREV_UNSCORED.
+5. Read evaluated-jobs.csv — find rows where matched=yes that have no corresponding file in evaluations/.
+6. Read browser-finds.json — find entries where matched=yes that have no corresponding file in evaluations/.
 
-6. Read browser-finds.json — these are unscored browser matches (LinkedIn, Glassdoor, Indeed, Remote.co, InfoJobs) awaiting review.
-   - **NEW browser finds** = entries not mentioned in PREV_UNSCORED.
+   **Deduplicate steps 5+6 by job_id before counting.** Both scanners write to evaluated-jobs.csv as the shared dedup record, so LinkedIn jobs appear in both files. The only true unique count is the union by job_id.
+   - **NEW unscored (unique)** = job_ids in the union of steps 5+6 that are NOT in PREV_UNSCORED.
+   - When listing unscored matches in the output sections, split by source (API vs browser) for readability, but never show separate totals — only the single deduplicated count matters.
 
 7. Check companies.md for Tier 1 companies with no recent evaluation — flag as "not yet checked."
 
@@ -30,7 +31,7 @@ Steps:
    Confirm the push succeeded at the end of your output.
 
 9. **Always publish an interactive HTML artifact** after the git push. Build the digest as a self-contained HTML page and publish it using the Artifact tool so it appears inline and can be opened in a browser tab. Requirements for the HTML:
-   - Stat bar at the top: total evaluated (all time), active APPLY count (all time), CONSIDER count (all time), unevaluated API count (new only), browser finds count (new only), applied count.
+   - Stat bar at the top: total evaluated (all time), active APPLY count (all time), CONSIDER count (all time), unscored unique count (new only, deduplicated across API + browser by job_id), applied count.
    - Sections: New APPLY / CONSIDER Since Last Digest, Unscored Highlights (new only), Tier 1 Not Checked, Action Items, Stats.
    - Within each scored section, rows are sorted by final score descending (highest score at the top).
    - Every job row must be a clickable link (`<a href="..." target="_blank">`). No URL, no row.
@@ -88,8 +89,10 @@ Read outreach-tracker.csv and show:
 |--------|---------|----------|--------|---------------|
 
 ## Stats
-- API scan seen: X total | X matched | X evaluated (X new since last digest)
-- Browser scan seen: X total | X in browser-finds.json (X new since last digest)
+- API scan seen: X total | X matched
+- Browser scan seen: X total (all matched=yes)
+- Unscored unique: X total | X new since last digest (deduplicated across both sources by job_id)
+- Evaluated all-time: X (X new since last digest)
 - Pipeline: Applied X | Screening X | Interview X | Offers X
 - Outreach: X sent | X replied (X% reply rate) | X meetings booked
 ---
