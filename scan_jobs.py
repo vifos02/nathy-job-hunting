@@ -154,6 +154,16 @@ SKIP_TITLE_WORDS = [
     # Portuguese-language blocklist — junior/entry-level titles in PT
     "coordenador de marketing", "coordenadora de marketing",
     "assistente de marketing", "estagiário", "estagiária", "júnior",
+    # Language-requirement signals in title — languages she doesn't speak professionally.
+    # "— German" / "- French" at end of title = language required, not location.
+    # "germany" / "france" are location tags and are NOT blocked here.
+    # Portuguese and Spanish are NOT blocked (she speaks both natively/fluently).
+    "— german", "- german", "(german)", "| german",
+    "german language", "german speaker", "german-speaking", "native german",
+    "— french", "- french", "(french)", "| french",
+    "french language", "french speaker", "french-speaking", "native french",
+    "— dutch", "- dutch", "(dutch)", "| dutch",
+    "dutch language", "dutch speaker", "dutch-speaking", "native dutch",
 ]
 
 SKIP_INDUSTRY_WORDS = [
