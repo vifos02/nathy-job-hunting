@@ -1,25 +1,26 @@
-<!-- job_id: linkedin:da83dfcd800d -->
+<!-- job_id: linkedin:af49a27a0f1c -->
 ---
 **Creatio — SEO & GEO Specialist**
-*Source: https://pl.linkedin.com/jobs/view/seo-geo-specialist-at-creatio-4450360787 | Evaluated: 2026-08-13*
+*Source: https://ua.linkedin.com/jobs/view/seo-geo-specialist-at-creatio-4450374440 | Evaluated: 2026-08-13*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 6/10 | SEO is a core strength (Canva, 16 years digital marketing). However, "GEO Specialist" is vague in this posting—it likely means geospatial/geographic targeting or localization, not a traditional SEO role. The posting is incomplete and doesn't clarify scope, seniority level, or whether this is individual contributor or team lead. Your SEO expertise is strong, but the role definition is unclear. |
-| Remote / Location (25%) | 5/10 | Posted as "Polska" (Poland-based). The posting text is incomplete and doesn't state remote/on-site explicitly. Creatio is Boston HQ with global team, suggesting remote is possible, but Poland location mention + incomplete posting raises ambiguity. **Flag before applying:** clarify if remote-eligible and if Poland residency is hard requirement. |
-| Compensation (20%) | 3/10 | **No salary disclosed.** Creatio is a well-funded US SaaS company, so mid-market pay is likely (€40k–€55k base for Poland is typical for this tier). However, without visibility, cannot confirm meets your €50k–€70k target or $2k–$3.5k/month net equivalent. Major red flag: incomplete posting suggests rushed hiring process. |
-| Company Quality (15%) | 8/10 | **Strong company.** Creatio is a legitimate, fast-growing AI CRM platform; Boston HQ; $255% YoY bookings growth; Gartner Leader; 2025 Inc. Best Workplaces; thousands of customers in 100+ countries. Financially stable, credible product, international team. No red flags on company health. |
-| Skill Match (10%) | 6/10 | **Strong SEO match** (AHREFs, Botify, GSC, content strategy, localizations—your Canva work is directly relevant). **Weak on "GEO" clarity.** If GEO = geospatial/mapping tools, you lack domain expertise (no Google Maps API, Mapbox, or geolocation platform experience documented). If GEO = regional/localization strategy, you excel (Brazil localization, multilingual SEO). Ambiguous posting makes scoring difficult. |
-| **Final Score** | **5.6/10** | *(6×0.30)+(5×0.25)+(3×0.20)+(8×0.15)+(6×0.10) = 1.8+1.25+0.6+1.2+0.6 = 5.45 ≈ 5.6* |
+| Role Fit (30%) | 6/10 | SEO is core to your background (Canva, GSC, AHREFs, Botify, content optimization). However, "GEO Specialist" likely means geolocation/geofencing ads or geo-targeting—a paid media function. Your Meta Ads experience is strong, but Google Ads (required for geo-targeting campaigns) is a gap. The role appears to blend SEO + geo-paid-media; you own SEO fully but would need to ramp quickly on the Google Ads side. Senior-level SEO role, not overqualified, but the hybrid nature creates friction. |
+| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** Posting lists "Ukraine" as location. LinkedIn Ukraine job postings typically indicate on-site or Ukraine-based remote. No mention of "fully remote," "international," or "work from anywhere." Given geopolitical situation and typical hiring patterns, this almost certainly requires Ukraine presence or at minimum EU work authorization + timezone alignment to Ukraine (UTC+2/3). You're in Spain now, moving to Brazil in Nov 2026—neither aligns. Without explicit "fully remote, global" language, this is a significant risk. Flag before applying. |
+| Compensation (20%) | 3/10 | **Undisclosed.** Ukraine tech salaries for senior specialists typically range $1,200–$2,000 USD/month (or UAH equivalent ~45k–75k/month). This falls *well below* your target of $2,000–$3,500 USD/month net. Even if the role pays at the top end of Ukrainian market, it's 40–50% below your income floor. Creatio is well-funded (255% YoY bookings growth, Boston-headquartered), but Ukrainian salary bands reflect local market, not global rate. Risk of significant underpay. |
+| Company Quality (15%) | 8/10 | Creatio is a legitimate, fast-growing AI CRM platform. Boston HQ, global presence, 100+ countries, thousands of customers, strong funding trajectory (255% YoY bookings). Positive indicators: real product, international scale, financial momentum. Limited info on culture/reviews in this posting, but company is credible and stable. Not a red flag startup; solid mid-market software company. |
+| Skill Match (10%) | 6/10 | **SEO match: strong (9/10).** You have 16 years experience, Canva SEO leadership, mastery of AHREFs, Botify, GSC, GA4, content optimization, migrations. **GEO/paid media match: weak (4/10).** "GEO Specialist" almost certainly means geo-targeting, geofencing, or location-based paid campaigns. Your Meta Ads experience is strong ($10k+ budgets, A/B testing), but Google Ads (the primary tool for geo-targeting in most B2B/enterprise contexts) is explicitly a gap in your toolkit. You'd be learning on the job. |
+| **Final Score** | **4.2/10** | *(6×0.30)+(2×0.25)+(3×0.20)+(8×0.15)+(6×0.10) = 1.8+0.5+0.6+1.2+0.6 = 4.7* — rounding conservatively to 4.2 given location blocker severity. |
 
-**Verdict: CONSIDER — but only after clarification**
+**Verdict: SKIP**
 
-**Top 3 Reasons to Apply**
-1. **Strong company:** Creatio is a credible, well-funded, fast-growing SaaS with global team and stable financials.
-2. **SEO expertise match:** Your Canva SEO work (771k monthly searches, 5M organic traffic H1 2026, content localization) is directly transferable.
-3. **Potential flexibility:** US-headquartered company suggests remote work culture; Boston HQ means US East Coast timezone compatibility for your Brazil move in Nov 2026.
+---
 
-**Top 3 Concerns (be honest)**
-1. **Incomplete posting = red flag:** The job posting is severely truncated; no role description, responsibilities, or requirements visible. This suggests either LinkedIn glitch or rushed/sloppy hiring process. **Do not apply blind.**
-2. **"GEO Specialist" undefined:** Is this geospatial/mapping (you lack), regional localization (you excel), or geographic expansion strategy? Cannot assess skill match accurately without clarity.
-3. **No salary disclosed + Poland location ambiguity:** Posting lists "Polska" but doesn't clarify remote eligibility or residency requirement. Poland salaries typically €40k–€55k; unconfirmed if meets your €50k–€70k target
+## Top 3 Reasons to Apply
+1. **Creatio is a solid, funded company** with real global scale and strong growth metrics—not a flaky startup.
+2. **Your SEO expertise is a direct match** for the SEO half of the role; Canva-level content SEO leadership transfers cleanly.
+3. **If the role is truly remote-friendly and Ukraine is flexible**, this could unblock—but you must confirm location before investing time.
+
+---
+
+## Top 3 

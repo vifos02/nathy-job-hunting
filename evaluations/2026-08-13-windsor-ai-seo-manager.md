@@ -1,23 +1,22 @@
-<!-- job_id: linkedin:1ffe3a9faa63 -->
+<!-- job_id: linkedin:6f93f8826c17 -->
 ---
 **Windsor.ai — SEO Manager**
-*Source: https://bg.linkedin.com/jobs/view/seo-manager-at-windsor-ai-4434456487 | Evaluated: 2026-08-13*
+*Source: https://hu.linkedin.com/jobs/view/seo-manager-at-windsor-ai-4434438892 | Evaluated: 2026-08-13*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 8/10 | Strong match. SEO strategy, content optimization, technical SEO, and programmatic content are core to your Canva Brazil role. You've owned 100% of SEO content production for a major market, led SEO initiatives, and managed page launches and migrations. This is a natural senior progression. The focus on "connector" page optimization maps directly to your experience scaling content programs. Only minor gap: you haven't led a full end-to-end technical SEO program (site architecture, crawlability, structured data) at this depth, but you've supervised these concerns and worked closely with tech teams. |
-| Remote / Location (25%) | 8/10 | Fully remote, across Europe. You're currently in Spain (EU timezone); by November 2026 you'll be in Brazil (UTC-3). The posting lists Sofia but says "fully remote across Europe" — this is ambiguous and needs clarification before applying. **Flag:** Confirm whether this is truly location-agnostic or if there's a soft expectation of EU timezone overlap. Assuming clarification confirms global remote, score remains 8. If EU-only, drops to 6. |
-| Compensation (20%) | 5/10 | **No salary disclosed.** Windsor.ai is a bootstrapped-looking Swiss SaaS (founded 2017, ~30 people, no VC funding signals visible). Typical for European tech at this stage: €45k–€55k base for a remote SEO Manager role, with potential for growth. Target is €50k–€70k; this *might* land at the lower end (€45k–€50k). For a manager-level SEO role with 16 years' experience, you should ask for €55k+. Unclear without disclosure. |
-| Company Quality (15%) | 7/10 | **Real, credible company:** Founded 2017 (9 years old), Swiss-backed, clear product (data integration platform), impressive client roster (Puma, Audi, UBS, Asics). ~30 people, profitable-looking (no funding urgency signals). Team appears technically strong. **Limitation:** Less brand recognition than Canva; smaller team means less institutional support. No obvious red flags on Glassdoor/reviews from quick check. Solid mid-market SaaS, not a household name. |
-| Skill Match (10%) | 7/10 | **Strong overlap:** AHREFs, Botify, GSC, GA4, Looker Studio — all tools you use at Canva. Content strategy, optimization, localization experience. **Gaps you should acknowledge:** (1) You don't have deep technical SEO depth (site architecture, crawlability diagnosis, structured data, Core Web Vitals optimization) — though you've worked *with* technical teams on these. (2) SQL mentioned as team norm; you don't have SQL. (3) Link-building / digital PR strategy is not highlighted in your CV. These are learnable, but not your strongest areas. |
-| **Final Score** | **7.2/10** | *(8×0.30)+(8×0.25)+(5×0.20)+(7×0.15)+(7×0.10) = 2.4 + 2.0 + 1.0 + 1.05 + 0.7 = **7.15*** |
+| Role Fit (30%) | 8/10 | Core SEO expertise with 16 years' experience, including 4+ years leading SEO content production at scale (Canva Brazil: 771k+ monthly searches). Title match is direct. This is not a stretch role — it's in your wheelhouse. Slight deduction because "scale organic growth as core acquisition channel" implies some growth/demand gen strategy, which is adjacent but not your primary depth (you're content + SEO, not full-funnel growth). |
+| Remote / Location (25%) | 3/10 | **Hard blocker flagged.** Posting lists "Budapest" as location. No explicit mention of remote work. LinkedIn posting is in Hungarian (hu.linkedin.com), strongly suggesting this is Hungary-based. You are currently in Tarragona, Spain; moving to Brazil in Nov 2026. Budapest is on-site only unless explicitly remote (which it doesn't appear to be). This fails the location requirement. |
+| Compensation (20%) | 5/10 | **Salary not disclosed in posting.** Windsor.ai is a legitimate SaaS company (founded 2017, customers: Puma, Audi, UBS, Asics — credible tier). Based on company size and EU location (Hungary = lower cost than CH/DE/SE), a Budapest-based SEO Manager role likely pays €35k–€50k/year, which is **below your target of €50k–€70k**. Without disclosure, treating as borderline. If Hungary-based, likely underpays your market rate. |
+| Company Quality (15%) | 8/10 | Windsor.ai is a real, funded SaaS company with strong customer roster (Puma, Audi, UBS, Asics, etc.). Founded 2017 in Zürich; appears to have international presence. No red flags visible; solid B2B SaaS player in data integration. Team size and culture unknown, but the company itself is credible and not early-stage struggling startup. |
+| Skill Match (10%) | 9/10 | **Very strong match.** You have: (1) Direct SEO expertise (AHREFs, Botify, GSC, GA4, Looker Studio — all mentioned in CV); (2) Content strategy and on-page optimization; (3) Experience scaling organic channels (Canva Brazil case study); (4) Familiarity with data tools (Looker Studio, Google Sheets, etc. align with their integration platform positioning). The posting cuts off mid-sentence ("You'll drive our conten..."), but based on SEO Manager scope, you're a strong technical + strategic fit. No significant gaps. |
+| **Final Score** | **5.2/10** | *(8×0.30)+(3×0.25)+(5×0.20)+(8×0.15)+(9×0.10) = 2.4+0.75+1.0+1.2+0.9 = 6.25* **Wait, recalculating:** (8 × 0.30) = 2.4; (3 × 0.25) = 0.75; (5 × 0.20) = 1.0; (8 × 0.15) = 1.2; (9 × 0.10) = 0.9. **Total = 6.25/10.** Rounding and rechecking: **6.3/10** |
 
-**Verdict: APPLY** ✓
+**Verdict: SKIP** *(location blocker + likely underpays)*
 
 ---
 
 **Top 3 Reasons to Apply**
-
-1. **Role-Skill Alignment is Strong:** This is a senior SEO Manager role — exactly where your Canva Brazil experience positions you. You've managed 100% of SEO content production for a major market, scaled organic traffic to 5M monthly searches, and optimized page migrations. Windsor.ai's focus on programmatic "connector" pages is a natural fit for someone who's systematized content production at scale.
-
-2. **Team & Culture Signal Positive:** 30-person fully remote team across Europe, working directly with the founder, highly technical culture (good for credibility
+1. **Role fit is excellent** — SEO Manager is a direct match for your 16-year career; Canva Brazil case study proves you can scale organic at this level.
+2. **Legitimate, credible company** — Windsor.ai has real customers (Puma, Audi, UBS) and is funded; not a risky startup.
+3. **Strong skill overlap** — Your tools (AHRE
