@@ -2,7 +2,7 @@
 """
 Browser-based job scanner for sites that block API access.
 
-Covers: Indeed (remote filter, 14 days), LinkedIn (remote, past 7 days), Remote.co, InfoJobs (remote, Spain/LATAM).
+Covers: Indeed (remote filter, 14 days), LinkedIn (remote, past 7 days), Remote.co, InfoJobs (remote, Spain/LATAM), Glassdoor (remote, past 14 days).
 
 MUST RUN LOCALLY on your Mac — not in the Claude Web remote session.
 The remote session's network egress policy blocks indeed.com, linkedin.com, and remote.co.
@@ -234,6 +234,32 @@ INFOJOBS_QUERIES = [
     "director de marketing",
     "especialista en seo",
     "especialista en marketing digital",
+]
+
+# Glassdoor query list — curated subset. Glassdoor covers companies that post
+# less on LinkedIn (mid-size US/EU SaaS, agencies), so it surfaces genuinely
+# new listings even after cross-source dedup removes overlaps.
+GLASSDOOR_QUERIES = [
+    # Core English queries
+    "seo manager",
+    "content marketing manager",
+    "digital marketing manager",
+    "growth marketing manager",
+    "head of seo",
+    "head of content",
+    "head of marketing",
+    "marketing operations manager",
+    "content strategist remote",
+    # International / LATAM signals
+    "marketing manager latam",
+    "marketing manager brazil",
+    "marketing manager portuguese speaking",
+    "seo manager remote international",
+    # Portuguese-language titles — Glassdoor indexes some PT-language postings
+    "gerente de marketing",
+    "gerente de seo",
+    "especialista em seo",
+    "head de marketing",
 ]
 
 SEEN_JOBS_HEADERS = ["job_id", "company", "title", "url", "found_date", "matched", "source"]
@@ -738,14 +764,147 @@ def scrape_infojobs(page, seen_ids: set, today: str) -> tuple:
 
 
 # ---------------------------------------------------------------------------
+# Glassdoor
+# ---------------------------------------------------------------------------
+
+def scrape_glassdoor(page, seen_ids: set, today: str) -> tuple:
+    all_new, matches = [], []
+    found_urls: set = set()
+
+    for query in GLASSDOOR_QUERIES:
+        q = query.replace(" ", "%20")
+        # remoteWorkType=1 = Remote only; fromAge=14 = past 14 days; locT=N = no location filter
+        url = (
+            f"https://www.glassdoor.com/Job/jobs.htm"
+            f"?sc.keyword={q}&remoteWorkType=1&fromAge=14&locT=N"
+        )
+        print(f"    {query!r} ... ", end="", flush=True)
+
+        try:
+            page.goto(url, timeout=30000, wait_until="domcontentloaded")
+            page.wait_for_timeout(3500)
+        except Exception as e:
+            print(f"SKIP ({type(e).__name__})")
+            continue
+
+        # Dismiss cookie consent banner
+        for btn_sel in [
+            "button#onetrust-accept-btn-handler",
+            "button[data-test='cookie-consent-accept']",
+            "button[id*='accept-recommended']",
+        ]:
+            try:
+                btn = page.query_selector(btn_sel)
+                if btn and btn.is_visible():
+                    btn.click()
+                    page.wait_for_timeout(1000)
+                    break
+            except Exception:
+                pass
+
+        # Dismiss sign-in modal if it appears
+        for modal_sel in [
+            "button[data-test='CloseButton']",
+            "button[class*='modal_closeIcon']",
+            "[class*='ModalContainer'] button[aria-label='Close']",
+            "svg[class*='icon-x']",
+        ]:
+            try:
+                btn = page.query_selector(modal_sel)
+                if btn and btn.is_visible():
+                    btn.click()
+                    page.wait_for_timeout(1000)
+                    break
+            except Exception:
+                pass
+
+        # Hard auth wall — Glassdoor rarely hits this for job search pages
+        if "glassdoor.com/profile/login" in page.url:
+            print("BLOCKED (auth wall)")
+            break
+
+        # Job cards — try stable data-test selector first, then class fragment fallback
+        cards = page.query_selector_all("li[data-test='jobListing']")
+        if not cards:
+            cards = page.query_selector_all("[class*='JobsList'] li")
+
+        new_count = 0
+        for card in cards:
+            try:
+                # Title + link share the same <a> element on Glassdoor
+                title_el = (
+                    card.query_selector("a[data-test='job-title']")
+                    or card.query_selector("[class*='JobCard_jobTitle']")
+                    or card.query_selector("a[class*='jobTitle']")
+                )
+                if not title_el:
+                    continue
+                title = title_el.inner_text().strip()
+                href = title_el.get_attribute("href") or ""
+                if not href.startswith("http"):
+                    href = "https://www.glassdoor.com" + href
+                # Strip Glassdoor tracking params
+                href = href.split("?")[0].rstrip("/")
+                if not href or href in found_urls:
+                    continue
+                found_urls.add(href)
+
+                company_el = (
+                    card.query_selector("[class*='EmployerProfile_compactEmployerName']")
+                    or card.query_selector("[data-test='employer-name']")
+                    or card.query_selector("[class*='employerName']")
+                )
+                company = company_el.inner_text().strip() if company_el else "Unknown"
+
+                location_el = (
+                    card.query_selector("[data-test='emp-location']")
+                    or card.query_selector("[class*='JobCard_location']")
+                    or card.query_selector("[class*='location']")
+                )
+                location = location_el.inner_text().strip() if location_el else ""
+                if _is_us_location(location):
+                    continue
+
+                job_id = f"glassdoor:{url_id(href)}"
+                ct_key = "ct:" + _co_title_key({"company": company, "title": title})
+                if job_id in seen_ids or ct_key in seen_ids:
+                    continue
+                seen_ids.add(job_id)
+                seen_ids.add(ct_key)
+
+                matched = is_match(title, company)
+                row = {
+                    "job_id": job_id,
+                    "company": company,
+                    "title": title,
+                    "url": href,
+                    "found_date": today,
+                    "matched": "yes" if matched else "no",
+                    "source": "glassdoor",
+                }
+                all_new.append(row)
+                new_count += 1
+                if matched:
+                    matches.append(row)
+            except Exception:
+                continue
+
+        print(f"{new_count} new")
+        time.sleep(2)
+
+    return all_new, matches
+
+
+# ---------------------------------------------------------------------------
 # Source registry
 # ---------------------------------------------------------------------------
 
 SOURCES = {
-    "indeed":   scrape_indeed,
-    "linkedin": scrape_linkedin,
-    "remoteco": scrape_remoteco,
-    "infojobs": scrape_infojobs,
+    "indeed":    scrape_indeed,
+    "linkedin":  scrape_linkedin,
+    "remoteco":  scrape_remoteco,
+    "infojobs":  scrape_infojobs,
+    "glassdoor": scrape_glassdoor,
 }
 
 
