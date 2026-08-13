@@ -523,6 +523,10 @@ def scrape_linkedin(page, seen_ids: set, today: str) -> tuple:
             page.wait_for_timeout(3000)
         except Exception as e:
             print(f"SKIP ({type(e).__name__})")
+            try:
+                page.goto("about:blank", timeout=5000, wait_until="domcontentloaded")
+            except Exception:
+                pass
             continue
 
         title_text = page.title().lower()

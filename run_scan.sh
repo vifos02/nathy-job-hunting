@@ -12,7 +12,9 @@ echo "=== $TIMESTAMP ===" >> "$LOGFILE"
 
 cd "$REPO_DIR" || exit 1
 
-git pull --rebase >> "$LOGFILE" 2>&1
+git stash --include-untracked >> "$LOGFILE" 2>&1 || true
+git pull --rebase >> "$LOGFILE" 2>&1 || echo "Pull failed, continuing with local state" >> "$LOGFILE"
+git stash pop >> "$LOGFILE" 2>&1 || true
 
 python3 scan_jobs.py >> "$LOGFILE" 2>&1 || echo "scan_jobs.py exited with error" >> "$LOGFILE"
 python3 browser_search.py >> "$LOGFILE" 2>&1 || echo "browser_search.py exited with error" >> "$LOGFILE"
