@@ -6,13 +6,13 @@
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
 | Role Fit (30%) | 7/10 | Strong alignment with growth marketing, ABM, demand generation, and cross-functional leadership. You've done similar work at CondoConta (lead gen, campaign strategy) and Lumine (launch campaigns, channel partnerships). Title is "Manager" level, which matches your seniority. However, this role is heavily **Retail/CPG/Fashion-focused** — your experience skews more SaaS/fintech/streaming. You can credibly do the work, but it's not your primary vertical. |
-| Remote / Location (25%) | 9/10 | 100% remote, explicitly open to Germany/France/UK, no location restriction stated. No work authorization requirement mentioned. This is workable from Spain now and from Brazil from November 2026 (timezone is EU-based, so minimal friction). Excellent flag: "100% Remote" is clearly stated. |
+| Remote / Location (25%) | 5/10 | Remote, but the JD lists specific EMEA locations (Germany, France, UK) and Spain is not among them. This signals candidates are expected to be based in one of those countries. Nathália is in Spain now and Brazil from November — neither is on the listed location roster. May be workable if the listed countries are examples, not requirements, but it creates friction and probable rejection at screening. Score 5 pending clarification. |
 | Compensation (20%) | 5/10 | **No salary disclosed in posting.** Centric Software is a legitimate, VC-backed SaaS company (enterprise software), so the role likely pays €50k–€75k or equivalent based on company size and Berlin/EU market rates. This is in your range *if* it lands in the upper half. Without explicit info, I score it as "likely meets target" but with uncertainty. Request salary range early in outreach. |
 | Company Quality (15%) | 8/10 | Centric Software is a real, established enterprise software company with a strong product (PLM/supply chain for retail/fashion brands). VC-backed, growing, clients include major retailers and brands. Credible financials and international team. Less brand-recognizable than Canva, but solidly reputable. No toxic red flags evident. Score reflects "solid, credible SaaS company" rather than household name. |
 | Skill Match (10%) | 7/10 | **Strong overlap:** ABM strategy, demand generation, campaign execution, cross-functional team coordination, thought leadership positioning, executive engagement — all in your wheelhouse (CondoConta, Lumine, Mirum, Macromator). **Gaps:** This role is deeply **Retail/Fashion/CPG vertical-focused**; you lack hands-on domain expertise. Also, the posting hints at **Product Marketing** and **Channel Performance** collaboration — you have no formal PM background. You *can* learn the vertical quickly, but you're not walking in as a "retail expert." Tools/tactics (ABM, demand gen, content strategy) are native to you. |
-| **Final Score** | **7.1/10** | *(7×0.30)+(9×0.25)+(5×0.20)+(8×0.15)+(7×0.10) = 2.1+2.25+1.0+1.2+0.7 = 7.25* |
+| **Final Score** | **6.25/10** | *(7×0.30)+(5×0.25)+(5×0.20)+(8×0.15)+(7×0.10) = 2.1+1.25+1.0+1.2+0.7 = 6.25* — corrected 2026-08-13: EMEA locations listed don't include Spain |
 
-**Verdict: APPLY**
+**Verdict: CONSIDER** *(was APPLY at 7.1 — corrected: location restriction, Spain not listed)*
 
 ---
 
