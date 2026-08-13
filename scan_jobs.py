@@ -157,8 +157,13 @@ SKIP_TITLE_WORDS = [
 ]
 
 SKIP_INDUSTRY_WORDS = [
+    # Checked against both job title and company name.
+    # Bare "adult" omitted — too broad (adult education, adult learning); use specific phrases.
     "crypto", "cryptocurrency", "bitcoin", "blockchain",
-    "betting", "gambling", "casino", "adult",
+    "betting", "gambling", "casino",
+    "igaming", "i-gaming",
+    "nft", "defi", "web3", "dao",
+    "adult entertainment", "adult content",
 ]
 
 # Timezone signals ("remote us", "east coast hours") are NOT blockers — Brazil (UTC-3)
@@ -232,7 +237,7 @@ def is_match(title: str, company: str = "") -> bool:
         return False
     if any(kw in t for kw in SKIP_TITLE_WORDS):
         return False
-    if any(kw in c for kw in SKIP_INDUSTRY_WORDS):
+    if any(kw in t or kw in c for kw in SKIP_INDUSTRY_WORDS):
         return False
     if any(kw in t for kw in US_AUTH_TITLE_SIGNALS):
         return False
