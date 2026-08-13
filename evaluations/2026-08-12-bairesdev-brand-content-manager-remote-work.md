@@ -1,23 +1,22 @@
-<!-- job_id: linkedin:ebd0b8cc4f36 -->
+<!-- job_id: linkedin:c0c3c9e2ecba -->
 ---
 **BairesDev — Brand Content Manager - Remote Work**
-*Source: https://www.linkedin.com/jobs/view/brand-content-manager-remote-work-at-bairesdev-4451188707 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/brand-content-manager-remote-work-at-bairesdev-4451176843 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 6/10 | Title says "Brand Content Manager" but posting is incomplete and vague. You have 16 years experience with strong content, SEO, editorial calendars, and team leadership — you'd likely be overqualified. The role seems mid-level (3+ years required); you bring 16. However, the core responsibilities (content planning, editorial calendars, writing, SEO partnership, KPI tracking, freelancer management) *do* match your Canva, Lumine, and Mirum work. Not a perfect fit (you've done strategy and growth leadership beyond pure content), but workable. |
-| Remote / Location (25%) | 7/10 | Listed as "Remote Work" with Columbus, OH as the location tag — typical BairesDev pattern (they're Argentina-based but list US cities). Posting does not explicitly state timezone requirements, work authorization needs, or location restrictions. Assuming this is fully remote and international-friendly (BairesDev's model), you can work from Spain now or Brazil from Nov 2026. **Caution:** Posting is incomplete (cuts off mid-sentence in requirements), so timezone assumptions are unconfirmed. If they require US work auth, this drops to 1. Flag before applying. |
-| Compensation (20%) | 3/10 | **No salary disclosed.** BairesDev is known for competitive LATAM/remote rates but also for wide variance. Their typical Brand Content Manager roles range $1,200–$2,000 USD/month depending on seniority and location. With 16 years of experience, you should command $2,500–$3,500 USD/month minimum. Their posting gives zero guidance. This is a major red flag for someone with your background — you'd likely be undercompensated. Do not apply without salary discovery. |
-| Company Quality (15%) | 7/10 | BairesDev is a legitimate, established nearshore tech staffing firm (15+ years, 4,000+ employees, works with Google and major clients). Publicly visible, well-funded, and internationally recognized. However: (1) they're a staffing/agency, not a product company — work quality depends heavily on the specific client and manager; (2) reviews are mixed on Glassdoor (some praise flexibility, others cite inconsistent management and low pay for seniority); (3) no indication of who the end client is for this role (you could be marketing for their own brand or a client). Solid company, but not a top-tier brand employer. |
-| Skill Match (10%) | 8/10 | **Strong overlap.** Your CV directly matches: editorial calendars (Canva, Lumine), long-form and short-form content writing (Canva Brazil SEO, Mirum), brand voice and messaging (AIESEC, Mirum clients), content KPI tracking (Canva reports, Lumine campaigns), SEO partnership (Canva explicitly), freelancer/vendor management (Lumine team oversight, Macromator platform work). Only gap: posting is incomplete, so cannot assess all "multiple formats and digital channels" requirement. Likely no skill gaps once full posting is visible. |
-| **Final Score** | **6.0/10** | *(6×0.30)+(7×0.25)+(3×0.20)+(7×0.15)+(8×0.10) = 1.8+1.75+0.6+1.05+0.8 = 6.0* |
+| Role Fit (30%) | 7/10 | Strong overlap with your 16-year trajectory. Content strategy, editorial calendars, cross-team collaboration, and brand voice are core to your experience (Canva, Lumine, Mirum, CondoConta). However, this is a *content-first* role rather than growth/demand-gen, which is slightly narrower than your full skillset. You're overqualified on strategy and team leadership but the title fits a mid-senior content specialist lane. |
+| Remote / Location (25%) | 8/10 | Posted as "Remote Work" despite Indianapolis location tag — common for BairesDev, a distributed agency. No explicit US work-auth requirement stated. You can work from Spain now or Brazil from Nov 2026. No timezone blocker identified yet (need to confirm working hours). BairesDev is a Latin American-founded agency with LATAM operations, so they likely accept international talent. **Flag: Confirm no US employment sponsorship required before applying.** |
+| Compensation (20%) | 5/10 | **Salary not disclosed.** BairesDev is a contractor-heavy agency; this could be full-time CLT, contractor, or USD-based remote role. Industry rates for Brand Content Manager at BairesDev typically range $2k–$3.5k USD/month for senior contractors, or ~$40k–$55k USD/year for full-time. Your 16-year background + MBA suggests you should negotiate above baseline. Insufficient info to score higher — **clarify before applying.** |
+| Company Quality (15%) | 7/10 | BairesDev is established (15+ years, 4000+ employees, works with Google, top-tier startups). Credible, profitable, distributed team. However, it's a *staffing/agency model* business — high turnover, process-heavy, less product-centric than direct clients like Canva. Positive: stability, scale, professional operations. Negative: potential for siloed agency work without direct business impact. Neutral reputation; no major red flags or standout culture reviews. Solid but not a standout brand. |
+| Skill Match (10%) | 8/10 | **Strong alignment.** Your experience covers: editorial calendars (Canva, Lumine, CondoConta), brand voice & messaging (Mirum, AIESEC), cross-functional partnerships (design, social, SEO), content KPI tracking (Canva, Lumine), and freelancer/creator management (Lumine influencer networks, Macromator partner training). Writing and editing: documented at Mirum, Canva, Lumine. **Minor gap:** no explicit long-form SEO content production mentioned in this role (you do own SEO at Canva, but that's not emphasized here). You have the skills; language is slightly content-generic vs. growth-specific. |
+| **Final Score** | **6.8/10** | *(7×0.30)+(8×0.25)+(5×0.20)+(7×0.15)+(8×0.10) = 2.1+2.0+1.0+1.05+0.8 = 6.95* → **6.9/10** |
 
-**Verdict: CONSIDER** — but only after salary discovery and full posting clarity.
+**Verdict: CONSIDER** — Apply if pipeline is thin. Strong skill/role fit, but compensation unknown and this is an agency play (not direct product/SaaS impact). Confirm salary and employment type before investing application effort.
 
 ---
 
-## Top 3 Reasons to Apply
-
-1. **Strong skill-content alignment.** Your 16 years of editorial calendar ownership, SEO-driven content, brand voice work, and team/vendor management directly match the core responsibilities. You've done this successfully at scale (Canva Brazil, Lumine, Mirum).
-
-2. **Flexibility and remote-first culture.** BairesD
+## **Top 3 Reasons to Apply**
+1. **Role fit is solid:** Editorial calendars, brand voice, cross-team collaboration, and content strategy are directly transferable from Canva, Lumine, and Mirum. You've done this exact work at scale.
+2. **Remote-friendly, international company:** BairesDev explicitly works with distributed LATAM teams; no red flags on location flexibility for Spain or Brazil from Nov 2026.
+3. **Potential

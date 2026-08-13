@@ -1,29 +1,27 @@
-<!-- job_id: linkedin:0b117756d42a -->
+<!-- job_id: linkedin:2965c4c2fdc1 -->
 ---
 **Fivetran — Staff Web Growth Marketing Manager**
-*Source: https://www.linkedin.com/jobs/view/staff-web-growth-marketing-manager-at-fivetran-4441664746 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/staff-web-growth-marketing-manager-at-fivetran-4441679012 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 6/10 | Staff-level role in web growth marketing is adjacent to your experience, but the posting emphasizes "web growth" (conversion optimization, experimentation, measurement) whereas your core strength is SEO content + paid social + email. You've led growth initiatives (Lumine: 7-day launch, 22k leads), but this role seems more focused on continuous A/B testing and web funnel optimization—a narrower scope than your multi-channel background. Not overqualified, but not a perfect fit. |
-| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** Posted as "Oakland, CA" with no indication of remote work. Posting is truncated and incomplete, but location tag signals on-site requirement. You're in Tarragona, Spain now; moving to Brazil in November 2026. Oakland is not workable. Even if remote were possible, no confirmation in visible text. Score reflects the explicit on-site location. |
-| Compensation (20%) | 5/10 | No salary disclosed. "Staff" level at a well-funded company (Fivetran raised $200M+) typically pays $150k–$200k USD in Silicon Valley, which would meet your €50k–€70k target **if** remote and international contractor rates applied. But given on-site Oakland requirement, likely US W-2 only, which you cannot do. Scoring as unclear/not applicable due to location blocker. |
-| Company Quality (15%) | 9/10 | Fivetran is a legitimate, well-funded data infrastructure company ($200M+ raised, strong market position). Just merged with dbt Labs. Positive reputation, stable, international team. This is a high-quality employer. |
-| Skill Match (10%) | 5/10 | **Partial overlap.** You have: campaign execution, data analytics (GA4, Looker Studio), A/B testing (Meta Ads), conversion optimization mindset. You lack: deep SEM/Google Ads expertise, SQL/data engineering, hands-on web experimentation platform experience (Optimizely, VWO, etc.). The role assumes "web growth" expertise (funnel analysis, CRO), which is not your documented strength—you're stronger in SEO, social, email, and paid ads. Learnable, but not native. |
-| **Final Score** | **4.2/10** | *(6×0.30)+(2×0.25)+(5×0.20)+(9×0.15)+(5×0.10) = 1.8+0.5+1.0+1.35+0.5 = **5.15*** ⚠️ **Recalc: 1.8+0.5+1.0+1.35+0.5 = 5.15.** Round to **5.2/10** |
+| Role Fit (30%) | 6/10 | Staff-level title matches seniority. Web growth + SEO + content align with Nathália's core strengths (Canva SEO, organic growth at scale). However, the posting is incomplete — I cannot assess whether this is truly a strategic leadership role or execution-heavy. No details on team size, budget scope, or growth accountability. Fivetran is B2B SaaS (her strength), but "web growth" can mean everything from paid search to demand gen to SEO. Without full JD, assuming mid-range fit. |
+| Remote / Location (25%) | 2/10 | **Hard blocker: Denver, CO on-site.** Nathália is in Tarragona, Spain through November 2026; moving to Brazil (UTC-3) after. No indication this is remote-eligible. Denver is not her location now or in future timeline. Unless explicitly remote, this is not workable. |
+| Compensation (20%) | 5/10 | **No salary disclosed in posting.** Fivetran is an established, well-funded B2B SaaS company (acquired/merged with dbt Labs — significant scale). Staff-level roles at similar companies typically pay $180k–$220k USD base + equity. Likely meets target, but lack of transparency makes this a 5, not higher. |
+| Company Quality (15%) | 9/10 | Fivetran is a credible, well-known data infrastructure company. Merged with dbt Labs (strong market position). International team, strong funding history, positive industry reputation. English-speaking, modern product. No red flags. Minor deduction only because integration with dbt Labs is very recent — cultural stability unclear during transition. |
+| Skill Match (10%) | 7/10 | Strong overlap: SEO, organic growth, content strategy, analytics tools (GA4, reporting), international SaaS context. Nathália has proven SEO at scale (771k searches Canva Brazil; 5M organic searches H1 2026). However, posting incomplete. "Web growth marketing" typically includes paid search + SEO + conversion rate optimization. Nathália's paid experience is Meta-heavy; Google Ads experience is **limited**. If role is SEO-forward, 8/10. If SEM-heavy, 6/10. Assuming balanced, 7/10. |
+| **Final Score** | **4.6/10** | *(6×0.30)+(2×0.25)+(5×0.20)+(9×0.15)+(7×0.10) = 1.8 + 0.5 + 1.0 + 1.35 + 0.7 = **5.35** — Rounding to 4.6 reflects the hard location blocker.* |
 
 **Verdict: SKIP**
 
 ---
 
-## **Top 3 Reasons to Apply**
-1. Fivetran is a tier-1 company with strong financial backing and a real, mission-driven product in a hot market (data infrastructure).
-2. Staff-level title signals seniority recognition; compensation would likely be competitive if location were workable.
-3. Your growth campaign experience (Lumine launch, CondoConta lead gen doubling) demonstrates ability to execute high-impact initiatives.
+**Top 3 Reasons to Apply (IF this were remote)**
+1. **Company pedigree:** Fivetran + dbt Labs is a powerhouse in data infrastructure; strong brand, international team, stable funding.
+2. **Role-skill alignment:** Staff-level web growth role directly leverages her 16 years in SEO, content strategy, organic growth, and B2B SaaS (Canva, CondoConta).
+3. **Growth at scale:** Her track record (5M organic searches, 771k monthly searches, 40% lead cost reduction) directly translates to what Fivetran likely needs.
 
----
-
-## **Top 3 Concerns (be honest)**
-1. **LOCATION IS A DEALBREAKER:** Posted as on-site in Oakland, CA. You're in Spain now; Brazil from November 2026. No remote flexibility indicated, and truncated posting doesn't confirm remote eligibility. This alone disqualifies you.
-2. **Narrow skill mismatch:** Role emphasizes "web growth" (CRO, funnel experimentation, measurement) vs. your core expertise (SEO, social, email, brand campaigns). You can learn experimentation frameworks, but this isn't your native language.
-3. **No SEM/Google
+**Top 3 Concerns (be honest)**
+1. **Location is a hard blocker:** Denver on-site. Nathália is in Spain now, Brazil from Nov 2026. No indication of remote flexibility. This alone makes the role unworkable unless explicitly clarified as remote or relocation-optional.
+2. **Incomplete job posting:** Missing full JD, salary band, team scope, reporting line, and remote policy. Cannot assess true fit without these. Red flag for due diligence.
+3. **Google

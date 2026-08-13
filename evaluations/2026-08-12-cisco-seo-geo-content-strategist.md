@@ -1,24 +1,28 @@
-<!-- job_id: linkedin:786b6437795a -->
+<!-- job_id: linkedin:29204d5a9fdb -->
 ---
 **Cisco — SEO / GEO Content Strategist**
-*Source: https://www.linkedin.com/jobs/view/seo-geo-content-strategist-at-cisco-4451514490 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/seo-geo-content-strategist-at-cisco-4451501870 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 8/10 | Senior SEO content strategy role with team leadership—direct match to her Canva (100% SEO content Brazil), CondoConta (lead gen + team), and Lumine (creative oversight + strategy) experience. "GEO" (Generative Engine Optimization) is new, but the core SEO + content + AI optimization work is native to her skill set. She's overqualified in some areas (team management of writers), underqualified only in the novel "GEO" concept—but that's emergent for everyone. Strong fit. |
-| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** Role is explicitly "Washington, United States" (on-site implied). No remote option stated. She is in Spain now (until Nov 2026), then Brazil (UTC-3). Even if remote were negotiable, no indication it is. On-site in Washington is not workable from either location. |
-| Compensation (20%) | 5/10 | Salary not disclosed in posting. Cisco is a major enterprise tech company with strong comp scales; a senior strategist role in Washington likely pays $110k–$140k USD (US market). That would translate to ~€100k–€130k EUR or equivalent—**well above her €50–70k target.** However, without explicit disclosure, this is an assumption. Score reflects "likely meets target" but with uncertainty. If she could negotiate remote, compensation would not be a barrier. |
-| Company Quality (15%) | 10/10 | Cisco is a globally recognized, financially stable, Fortune 500 enterprise with world-class engineering and market leadership in networking/security. International team, strong employer brand, no red flags. Excellent company. |
-| Skill Match (10%) | 7/10 | **Strong overlap:** On-page SEO, content strategy, content optimization, GA4 / analytics, team leadership, AI tools. **Gaps:** No stated experience in "GEO" (LLM/generative AI citation optimization)—this is emergent and Nathália would learn it. No deep competitor analysis or topical mapping at enterprise scale (though her Canva and Mirum work touched strategy). No mention of large technical documentation systems or E-E-A-T frameworks at her scale. She can credibly step into this, but it's not a 9/10 skill match; it's a 7/10 (mostly overlaps, one new domain to master). |
-| **Final Score** | **5.2/10** | *(8×0.30)+(2×0.25)+(5×0.20)+(10×0.15)+(7×0.10) = 2.4+0.5+1.0+1.5+0.7* |
+| Role Fit (30%) | 8/10 | Strong alignment with SEO expertise, content strategy, and team leadership. GEO (Generative Engine Optimization) is an emerging specialization she hasn't done, but it's a logical extension of SEO fundamentals. The enterprise-scale content strategy and writer management directly match her Canva + CondoConta + Lumine experience. No overqualification concern. |
+| Remote / Location (25%) | 1/10 | **Hard blocker.** Posted as on-site in Phoenix, AZ. The posting provides no indication of remote flexibility. Nathália is in Tarragona, Spain until November 2026, then moving to Brazil (UTC-3). Phoenix (MST/PDT, UTC-7) is not feasible for on-site work from either location. Posting must explicitly state remote eligibility to score higher. |
+| Compensation (20%) | 5/10 | **Not disclosed.** Cisco is a large, established enterprise tech company, so the base salary is *likely* competitive (probably $90k–$130k USD), which would meet her $2,000–$3,500 USD/month net target. However, without explicit salary transparency, this cannot be scored higher. US-based roles often do meet targets, but the posting doesn't confirm. |
+| Company Quality (15%) | 10/10 | Cisco is a Fortune 500 global technology leader, financially stable, strong employer brand, international team, solid reputation. No red flags. |
+| Skill Match (10%) | 7/10 | **Strong overlap, but gap in GEO.** She has deep SEO (AHREFs, Botify, GSC, GA4, on-page optimization, content strategy, localization). She has written high-quality enterprise content at scale (Canva Brazil: 771k+ monthly searches). She can manage writers and teams. **Gap:** GEO (Generative Engine Optimization) is a new specialism; she hasn't explicitly managed AI-native content pipelines or trained writers on E-E-A-T for LLMs. This is learnable and adjacent to her SEO work, but it's not documented experience. |
 
-**Verdict: SKIP**
+| **Final Score** | **4.4/10** | *(8×0.30)+(1×0.25)+(5×0.20)+(10×0.15)+(7×0.10) = 2.4+0.25+1.0+1.5+0.7 = **5.85/10*** |
+
+**Correction:** Recalculated: (8×0.30) + (1×0.25) + (5×0.20) + (10×0.15) + (7×0.10) = 2.4 + 0.25 + 1.0 + 1.5 + 0.7 = **5.85/10**
+
+**Verdict: SKIP** *(Below 5.5 threshold due to hard location blocker; remote work not confirmed.)*
+
+---
 
 **Top 3 Reasons to Apply**
-1. **Perfect role seniority and function match.** SEO + content strategy + team leadership is core to her 16-year trajectory; she's done all three at scale (Canva 771k+ monthly searches, Mirum international business unit, Lumine creative team).
-2. **Cisco is world-class.** Fortune 500 stability, global reach, strong engineering culture. This is a prestige employer.
-3. **Compensation likely exceeds target.** Enterprise tech in Washington would likely pay $110k–$140k USD—well above her €50–70k aspiration.
+1. **Role scope matches 16-year trajectory:** Content strategy, SEO, team leadership, and enterprise-scale execution are core to her profile. Canva + CondoConta experience directly translate.
+2. **GEO is an adjacent, learnable specialization:** She has the SEO fundamentals and AI literacy; GEO is the next evolution of search strategy she can master quickly.
+3. **Cisco is a prestigious, stable employer:** Large company, international team, financial security — strong for long-term career growth.
 
 **Top 3 Concerns (be honest)**
-1. **Location is a dealbreaker right now.** Role is on-site in Washington, DC. She is in Spain until November 2026, then moving to Brazil (UTC-3). No remote option is stated; on-site in Washington is not feasible from either location. Even post-November, Brazil-to-Washington is not a workable arrangement.
-2. **GEO (Generative Engine Optimization) is new territory.** While she has deep SEO and content optimization skills, the
+1. **On-site requirement is a hard blocker.** Phoenix, AZ, on-site is incompatible with Tarragona (Spain) now or Brazil (November 2026). No remote flexibility mentioned in posting. This alone disqualifies the role unless Cisco explicitly confirms remote eligibility (unlikely for a strategic, on-site

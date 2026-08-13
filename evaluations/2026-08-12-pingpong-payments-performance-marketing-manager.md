@@ -1,0 +1,18 @@
+<!-- job_id: linkedin:44f0595198bf -->
+---
+**PingPong Payments — Performance Marketing Manager**
+*Source: https://br.linkedin.com/jobs/view/performance-marketing-manager-at-pingpong-payments-4449377470 | Evaluated: 2026-08-12*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 8/10 | Strong match. You've led performance marketing + revenue ownership at CondoConta (Growth Marketing Manager, Brazil fintech) and Lumine (launch campaign, 6-digit revenue, 22k leads). This role mirrors that: revenue KPIs, customer acquisition at scale, LATAM fintech/cross-border payments. You understand SMBs, Brazil, and multi-channel acquisition (Meta Ads, influencer, partnerships). The scope (independent revenue targets, funnel optimization, regional strategy) aligns with your seniority. Minor gap: role emphasizes SEM & SEO heavily; your SEM is lighter than Meta Ads expertise, though you have solid SEO from Canva. |
+| Remote / Location (25%) | 5/10 | **Critical issue: posting says "São Paulo, Brasil" with no explicit remote statement.** The LinkedIn snippet cuts off mid-sentence ("Hands-on experience across customer acquisition channels, in...") so full posting is incomplete. Unclear if this is on-site, hybrid, or remote. If on-site São Paulo only, it's a dealbreaker (you're in Tarragona until Nov 2026, then Brazil but not necessarily São Paulo). If remote, this becomes a 9/10. **Flag before applying: confirm remote eligibility and whether relocation to São Paulo is expected.** Given the ambiguity and the location listed without "Remote" language, score reflects risk. |
+| Compensation (20%) | 5/10 | **Salary not disclosed in posting.** No range given. PingPong is a Series B fintech (good indicator of competitive pay), but without explicit disclosure, scoring is speculative. Industry benchmark for a Performance Marketing Manager in Brazil with 4+ years at a funded fintech would be R$8k–R$15k/month (roughly $1,600–$3,000 USD). Assume mid-to-upper range given PingPong's funding stage, but cannot confirm. **Investigate during initial call.** |
+| Company Quality (15%) | 7/10 | **PingPong Payments is a credible Series B fintech** (cross-border payments for e-commerce). Received significant funding, operates across LATAM, has a real product and customer base. LinkedIn posting from verified company. Not a household name like Canva, but solid and growing. Minimal public toxicity signals. Financial stability appears reasonable for Series B stage. Team appears organized (posting from dedicated talent acquisition hire). Score reflects: credible, funded, real product, but not mega-scale brand like your prior roles. Good, not exceptional. |
+| Skill Match (10%) | 7/10 | **Strong overlap:** revenue ownership (CondoConta, Lumine), multi-channel acquisition (Meta Ads, influencer, partnerships, email), LATAM expertise (Brazil, Argentina, Chile lived experience), fintech/payments domain (CondoConta), SMB/customer lifecycle understanding (CondoConta growth & retention), funnel analysis & optimization. **Gaps:** SEM/Google Ads is lighter than their emphasis suggests ("SEO & SEM" listed as a channel); your strength is Meta Ads + organic. You have SEO (Canva), but SEM requires deeper Google Ads proficiency than you've documented. Manageable gap, not blockers. You can credibly learn/lean in. |
+| **Final Score** | **6.5/10** | *(8×0.30)+(5×0.25)+(5×0.20)+(7×0.15)+(7×0.10)* = *2.4+1.25+1.0+1.05+0.7* |
+
+**Verdict: CONSIDER — but only if remote is confirmed or São Paulo relocation is viable**
+
+**Top 3 Reasons to Apply**
+1. **Strong domain fit:** Fintech + LATAM + revenue ownership mirrors your CondoConta and Lumine success. You've already grown leads 2x and cut acquisition costs 40% in a similar

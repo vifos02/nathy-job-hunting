@@ -1,0 +1,18 @@
+<!-- job_id: linkedin:17c3982e4779 -->
+---
+**Windsor.ai — SEO Manager**
+*Source: https://rs.linkedin.com/jobs/view/seo-manager-at-windsor-ai-4434461084 | Evaluated: 2026-08-12*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 8/10 | SEO Manager role is a direct match to your 16-year trajectory and documented expertise. You've owned end-to-end SEO (Canva: 771k+ monthly searches, 5M in H1 2026; technical migrations, page launches). The "programmatic/integration-led content" requirement is adjacent to your on-page optimization and content strategy work—not a perfect fit, but credible. You're not overqualified (this isn't a director/head role), and not underqualified. Small gap: you haven't explicitly managed programmatic page generation at scale, but your Canva work on content sprints and optimization translates. |
+| Remote / Location (25%) | 7/10 | Posted location is Belgrade, Serbia, but posting says "fully remote across Europe." This is ambiguous—remote *within* Europe, or truly global? Your Italian citizenship application is in progress; you're currently in Spain. No explicit language saying "EU work authorization required," but the Serbia listing + "across Europe" suggests an EU focus. By November 2026 (when you move to Brazil), this becomes riskier unless they genuinely allow non-EU contractors. **Flag before applying:** confirm whether they hire remote non-EU contractors, or if this is EU-only. If EU-only after your move, this is a hard blocker (score drops to 2). For now, assume you could do this from Spain (UTC+1, close to their time zone). Score reflects conditional workability. |
+| Compensation (20%) | 5/10 | **Salary not disclosed.** Company size (~30 people, Switzerland-founded, customers include Puma/Audi/UBS) suggests solid funding and likely €50k–€70k range for a SEO Manager role in Serbia/EU market. However, no explicit salary, equity, or contract terms given. You cannot evaluate against your €50k–€70k target. This is a research-before-apply item. If it's a senior SEO role at a funded SaaS, it *should* meet your bar, but "likely" isn't good enough to score higher. |
+| Company Quality (15%) | 8/10 | Windsor.ai is credible: founded 2017 (9-year-old), Switzerland HQ, real product (300+ integrations, 30+ destinations), blue-chip customers (Puma, Audi, UBS, Asics). Fully remote, 30-person team across Europe suggests operational maturity. No red flags visible (no toxic reviews mentioned in posting). You'd work directly with the founder (positive for clarity; mixed for hierarchy). No salary/funding info limits the score from 9 to 8, but this is a real, stable company. |
+| Skill Match (10%) | 7/10 | **Strong overlap, some gaps:** You have deep SEO (AHREFs, Botify, GSC, GA4, Looker Studio ✓). Technical SEO and page launches ✓. Content strategy ✓. **Gap:** You don't have documented SQL experience or heavy programmatic SEO background (they mention their team is "comfortable writing some SQL"). You also haven't managed large-scale programmatic page generation (the "connector X to Y pages" approach). These are learnable, but it's a genuine gap. You can credibly do the core SEO role; the programmatic + technical depth requires some ramp. |
+| **Final Score** | **7.2/10** | *(8×0.30)+(7×0.25)+(5×0.20)+(8×0.15)+(7×0.10) = 2.4+1.75+1.0+1.2+0.7 = 7.05* |
+
+**Verdict: CONSIDER**
+
+**Top 3 Reasons to Apply**
+1. **Direct role fit on your core expertise.** SEO Manager is the title and scope you've owned at Canva. You've proven you can drive organic traffic at scale (5M+ monthly searches, migrations, optim

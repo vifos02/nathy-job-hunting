@@ -1,29 +1,36 @@
-<!-- job_id: linkedin:66fa7661afd9 -->
+<!-- job_id: linkedin:e39e70503921 -->
 ---
 **Four Seasons — Digital Marketing Manager**
-*Source: https://www.linkedin.com/jobs/view/digital-marketing-manager-at-four-seasons-4450792363 | Evaluated: 2026-08-12*
+*Source: https://mx.linkedin.com/jobs/view/digital-marketing-manager-at-four-seasons-4443592053 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 7/10 | Senior digital marketing strategy + execution + team leadership aligns well with your 16-year trajectory. However, the posting is incomplete (cut off mid-sentence), so I'm scoring on what's visible: strategy, campaigns, website, social media, brand messaging. You've done all of this at Lumine, CondoConta, Mirum, and Canva. The resort/hospitality vertical is new, but not disqualifying for a manager-level marketer. |
-| Remote / Location (25%) | 3/10 | **Critical issue:** Lanai City, HI is on-site or remote *for this specific resort location*. You are in Tarragona, Spain. Hawaii-based roles typically require US work authorization or relocation. No indication they sponsor non-US citizens. You do not have a US work permit. Even if remote-capable, this is a resort-specific role tied to Hawaiian operations — timezone (14+ hours ahead) and cultural fit suggest physical presence matters. |
-| Compensation (20%) | 5/10 | **No salary disclosed.** Four Seasons is a luxury hospitality brand with strong financial backing, so base compensation likely meets or exceeds your €50k–€70k target. However, without explicit numbers, I cannot score higher. Hospitality management roles in Hawaii often include perks (housing discounts, meals), which could offset lower base pay. Unconfirmed = risk. |
-| Company Quality (15%) | 9/10 | Four Seasons is an iconic, financially stable, global luxury brand with excellent reputation, international operations, and employee reviews generally positive. Low operational risk. Not a startup — this is establishment-tier. One of the most credible hospitality companies globally. |
-| Skill Match (10%) | 7/10 | You have strong overlap: digital strategy, social media (Instagram, YouTube experience at Lumine), campaign execution, Meta Ads, email marketing, content, website optimization, team leadership, and analytics (Looker Studio, GA4, Salesforce). **Gap:** The posting is cut off, so I cannot see if they request Google Ads, SEO-heavy ownership, or hospitality-specific tools. No flagged technical mismatch visible. You can learn hospitality vertical quickly. |
-| **Final Score** | **5.4/10** | *(7×0.30)+(3×0.25)+(5×0.20)+(9×0.15)+(7×0.10) = 2.1+0.75+1.0+1.35+0.7 = 5.9* |
+| Role Fit (30%) | 6/10 | Digital Marketing Manager is adjacent to your trajectory (you've done growth marketing, social, content, ads). However, the posting is incomplete — I cannot see job description, responsibilities, team structure, or required skills. Based on title alone, this *could* be a solid match for senior digital work, but without details, I'm scoring conservatively. The role appears hospitality-focused (luxury travel), which is a new vertical for you. |
+| Remote / Location (25%) | 2/10 | **HARD BLOCKER: On-site only in Manzanillo, Colima, Mexico.** You are in Tarragona, Spain now; moving to Brazil in November 2026. This role requires physical presence in a Mexican resort town. No flexibility indicated. Not workable. |
+| Compensation (20%) | 3/10 | **Unknown.** The posting contains no salary information. Four Seasons typically pays hospitality-grade digital roles (often MXN 40k–70k/month = ~€2k–€3.5k), which would be below your target range of €50k–€70k/year. Without explicit compensation, I cannot assume it meets your €2k–€3.5k/month net goal. |
+| Company Quality (15%) | 9/10 | Four Seasons is a globally recognized, financially stable luxury hospitality brand with strong reputation and international presence. Excellent employer brand and job security. High-quality company. |
+| Skill Match (10%) | 6/10 | The posting text is truncated and does not show full job description, required skills, or responsibilities. I can infer this role likely involves social media, website management, email, possibly some paid ads — all areas you excel in. However, without seeing the actual requirements, I cannot score higher. Potential mismatch: hospitality marketing often emphasizes reputation management, review optimization, and property-specific campaigns, which is outside your documented experience. |
+| **Final Score** | **4.2/10** | *(6×0.30)+(2×0.25)+(3×0.20)+(9×0.15)+(6×0.10)* |
 
 **Verdict: SKIP**
 
----
+**Top 3 Reasons to Apply**
+1. Four Seasons is a prestigious, stable global brand — strong for resume credential
+2. Digital Marketing Manager title aligns with your senior growth/marketing background
+3. (There is no third reason — the on-site location requirement is disqualifying)
 
-## Top 3 Reasons to Apply
-1. **Four Seasons is a world-class employer** with strong financial stability, global prestige, and likely professional development opportunities.
-2. **Your skill set is genuinely relevant:** digital strategy, social, email, campaign management, team leadership, and analytics all map to the role.
-3. **If remote is truly flexible,** you could explore whether they'd allow non-US-based remote work or if they sponsor work permits for senior hires.
+**Top 3 Concerns (be honest)**
+1. **On-site only in Manzanillo, Mexico** — you are in Spain now, Brazil from November 2026. This is not remote. No flexibility indicated. Non-negotiable blocker for your situation.
+2. **Salary not disclosed** — Four Seasons hospitality digital roles typically pay below your target range. You need confirmation before investing time.
+3. **Job posting is incomplete** — the LinkedIn page did not load the full description, responsibilities, or required skills. You cannot assess true role fit without seeing the details. Apply only after reading the complete posting.
 
----
+**Most Relevant Resume Bullets to Lead With**
+*(Do not apply unless on-site requirement is clarified as remote-friendly)*
+- If you were to apply: "Led growth marketing and social strategy for luxury subscription media (Lumine.tv), managing influencer partnerships and $4k+ paid budgets; delivered 22k+ leads and 7% conversion in campaign launch."
+- "Managed Meta Ads ($10k+ budget), A/B testing, and multi-channel campaigns across Instagram, YouTube, and email for consumer-facing platforms."
 
-## Top 3 Concerns (be honest)
-1. **🚨 US Work Authorization:** You do not have a US work permit or visa. Four Seasons is US-based; Hawaii is a US state. Posting says "Work authorization required" — you likely don't have it. Sponsorship for a manager-level hire is *possible* but not guaranteed and adds legal complexity. This is a hard friction point.
-2. **🚨 Location & Timezone Mismatch:** Lanai City, HI is 14+ hours ahead of Tarragona. Even if remote, you're returning from maternity leave and need async flexibility. A resort-focused role may demand synchronous availability during guest-facing hours (early morning Spain time, or late evening). This conflicts with your flexibility needs.
-3. **⚠️ Incomplete Posting:** The job description cuts off mid-sentence. I cannot assess the full scope, reporting structure, or specific
+**Hard Dealbreakers Present?**
+- [x] **On-site in city she doesn't live in** — Manzanillo, Colima, Mexico. You will be in Brazil from Nov 2026; currently in Spain. Not workable without explicit remote option.
+- [ ] EU work permit required
+- [ ] BRL-only pay below R$15k/month
+- [ ] US-remote

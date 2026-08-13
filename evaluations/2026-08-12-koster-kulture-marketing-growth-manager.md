@@ -1,0 +1,19 @@
+<!-- job_id: linkedin:e82029c085b6 -->
+---
+**KOSTER KULTURE — MARKETING & GROWTH MANAGER**
+*Source: https://au.linkedin.com/jobs/view/marketing-growth-manager-at-koster-kulture-4452373835 | Evaluated: 2026-08-12*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 8/10 | Strong match. D2C brand scaling, performance marketing, paid media, strategy, revenue ownership — all core strengths. Lumine (streaming D2C, $4k Meta Ads budget, launch campaign) and CondoConta (lead gen, team management, OKR) are directly analogous. Only mild gap: you haven't owned Google Ads heavily (Meta is your strong suit), but the role emphasizes Meta + Google + Pinterest, and you have proven paid media chops. High autonomy and founder reporting align with your growth trajectory. |
+| Remote / Location (25%) | 4/10 | **Location is a dealbreaker.** Posting says "Remote (Sydney Australia based - preferred)" — the word "preferred" suggests flexibility, but "Sydney Australia based" is the lead qualifier. You will be in Spain until November 2026, then Brazil (UTC-3). Sydney is UTC+10 (UTC+11 in summer). This is a **10-hour time difference** from both Spain and Brazil — incompatible with a hands-on, founder-reporting role requiring weekly performance reviews and real-time campaign management. Even if they accept remote, the timezone gap makes synchronous collaboration untenable. No explicit mention of international hiring openness. **Flag before applying.** |
+| Compensation (20%) | 5/10 | **Not disclosed.** For a "Contract / Full time, scope for growth" D2C brand in Sydney, AUD is likely range but unknown. Given it's a fashion brand (typically lower-margin than SaaS), and founder-led, this could range widely (AUD $50k–$80k FTE, or contract at variable rates). Without figures, cannot assess against your €50k–€70k target or $2k–$3.5k USD/month threshold. Mark as unclear and ask during discovery. Scope for equity/growth is a positive signal but not quantified. |
+| Company Quality (15%) | 7/10 | **Solid indie brand, limited public info.** Koster Kulture is "well known" for wearable art, has a "loyal following," and is "growing" — suggests real product, real revenue, real traction. Founder-led, bootstrapped or modest funding (no VC mentioned). Fashion is inherently capital-light if D2C-focused. No obvious red flags (toxic reviews, vague product). However, limited online presence and no Crunchbase/funding visibility limits confidence. Not a household name, but credible indie player. Smaller company = less stability than Canva, but not a startup risk either. |
+| Skill Match (10%) | 8/10 | **Very strong overlap.** Your documented skills: Meta Ads ($10k+ budget, A/B testing), campaign execution, lead gen, revenue ownership, OKR methodology, Salesforce reporting, email/SMS funnels (Brevo/MailChimp), team management. Posting requires: Meta, Google, Pinterest, email/SMS, revenue forecasting, trading planning, acquisition & retention. You have demonstrated expertise in ~80% of this. **Gap:** Google Ads and Pinterest Ads are less proven than Meta. You can learn Pinterest quickly; Google Ads is a known gap but not disqualifying for a Meta-first brand. |
+| **Final Score** | **6.0/10** | *(8×0.30)+(4×0.25)+(5×0.20)+(7×0.15)+(8×0.10) = 2.4+1.0+1.0+1.05+0.8 = 6.25* |
+
+**Verdict: CONSIDER — but only if timezone is negotiable. Otherwise SKIP.**
+
+**Top 3 Reasons to Apply**
+1. **Role fit is excellent:** D2C brand scaling, founder reporting, revenue ownership, end-to-end marketing — this mirrors your Lumine and CondoConta wins exactly. You have done this successfully.
+2. **High autonomy and clear ownership

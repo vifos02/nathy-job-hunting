@@ -1,0 +1,20 @@
+<!-- job_id: linkedin:05adfe6b81e5 -->
+---
+**Teachable — Senior Customer Marketing Manager**
+*Source: https://br.linkedin.com/jobs/view/senior-customer-marketing-manager-at-teachable-4449224020 | Evaluated: 2026-08-12*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 6/10 | Customer Marketing Manager is adjacent to your growth/product marketing experience, but it's not a perfect match. You've done growth marketing (CondoConta), product launch strategy (Lumine), and cross-team collaboration (Mirum), but this role emphasizes deep customer insights, adoption metrics, and post-launch retention—areas where your documented experience is lighter. You have the seniority and cross-functional skill set, but you're pivoting slightly into a more CS-adjacent, analytics-heavy domain. Not underqualified, but not a natural fit either. |
+| Remote / Location (25%) | 2/10 | **Hard blocker.** The posting lists "São Paulo, SP" as the location. The job description cuts off mid-sentence and provides no mention of remote work, flexibility, or distributed team options. Given that you're in Tarragona now and moving to Brazil only in November 2026, this role would require relocation to São Paulo immediately—or clarity that it's remote. Since the posting shows only the São Paulo office address with no remote language, this is a dealbreaker unless you can confirm remote eligibility before applying. Even then, the lack of explicit remote/hybrid language in a 2026 job posting is a red flag for flexibility. |
+| Compensation (20%) | 5/10 | **Salary not disclosed.** Teachable is part of Hotmart (well-funded, $10B+ ecosystem), so a senior role at a US-founded SaaS platform likely falls in the R$15k–R$25k/month range (or equivalent USD contract). This *probably* meets your €50k–€70k target once converted, but without numbers, it's speculative. Teachable's market position suggests it's not low-balling, but the absence of transparency is a minor concern for a senior hire. Flag in your outreach if you proceed. |
+| Company Quality (15%) | 8/10 | Teachable is a credible, established SaaS platform (part of Hotmart's billion-dollar portfolio). Real product, real customers, strong funding visibility. International team (you'll work with Product and CS teams globally). No red flags on culture or stability—in fact, Hotmart's ecosystem is known for scaling creator/expert-led businesses. Solid company, well-resourced. Not a household name in the US, but legitimate and growing. |
+| Skill Match (10%) | 6/10 | **Partial overlap.** You have product launch experience (Lumine), team leadership, cross-functional collaboration, email marketing, and analytics chops (Looker Studio, Salesforce reporting, OKRs). *However:* the role emphasizes customer insights, adoption funnels, retention cohorts, and deep product analytics—which suggest SQL or advanced analytics. Your posting is cut off, so you can't confirm whether they want qualitative research (your strength) or quantitative data work (weaker). You can do the positioning, messaging, and enablement parts of the job. You lack depth in retention metrics and product-led growth analytics. Learnable, but not native. |
+
+| **Final Score** | **5.0/10** | *(6×0.30)+(2×0.25)+(5×0.20)+(8×0.15)+(6×0.10) = 1.8+0.5+1.0+1.2+0.6 = 5.1* |
+
+**Verdict: SKIP**
+
+**Top 3 Reasons NOT to Apply (Honest Assessment)**
+1. **Location is a hard blocker.** São Paulo on-site (or unclear remote policy) conflicts with your Tarragona base now and Brazil move in November 2026. Even if remote is possible, the posting doesn't say so—and that silence in 2026 is a bad sign for flexibility.
+2. **Role fit is partial.** Customer Marketing Manager is a retention/adoption role; your strength is growth, launch, and awareness. You'd be pivoting into cohort analysis, product usage metrics, and CS enable

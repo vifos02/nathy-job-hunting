@@ -1,28 +1,19 @@
-<!-- job_id: linkedin:0a566f22abcf -->
+<!-- job_id: linkedin:fa1ba7c737e2 -->
 ---
 **Ovative Group — Manager, SEO**
-*Source: https://www.linkedin.com/jobs/view/manager-seo-at-ovative-group-4432265833 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/manager-seo-at-ovative-group-4432271739 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 7/10 | Manager-level SEO role matches your seniority and SEO expertise. You've led SEO for major markets (Brazil at Canva, 5M monthly searches in H1 2026) and managed teams (4 people at CondoConta). Title and scope align well. Small deduction: role emphasizes "enterprise-level optimization" and proprietary EMR methodology—you haven't explicitly managed enterprise SEO at that scale before, but the fundamentals are transferable. |
-| Remote / Location (25%) | 2/10 | **CRITICAL ISSUE**: Posted as "Chicago, IL" with no indication of remote work. The job posting is incomplete (cuts off mid-sentence), so remote eligibility cannot be confirmed. Even if remote were available, no explicit statement about international hire eligibility. Chicago is on-site only unless stated otherwise. This is a **hard blocker** unless you can confirm remote + international eligibility before applying. |
-| Compensation (20%) | 5/10 | **Salary not disclosed in posting.** Ovative Group is a solid, established agency with major clients (Best Buy, Domino's, Disney), suggesting mid-to-large budget. A Manager, SEO role at a US agency of this caliber typically pays $80k–$120k USD, which would meet your target. However, without explicit salary information, this scores as borderline/unclear. If disclosed during conversation, likely moves to 8–9. |
-| Company Quality (15%) | 8/10 | **Solid, credible company.** Ovative Group is an independent, full-funnel media agency with recognizable clients, proprietary MarTech platform (EMRge), and third-party recognition (Digiday, Google, Inc. 5000, Search Engine Land). Financially stable signals. No red flags in what's visible. Deduction of 1–2 points: not a household name like Canva, but clearly legitimate and well-regarded in the industry. |
-| Skill Match (10%) | 8/10 | **Strong match.** You have direct, proven SEO expertise: AHREFs, Botify, GSC, GA4, Looker Studio. You've led SEO content production at scale (Canva: 771k+ monthly searches 2022–2023, 5M+ in H1 2026). You understand strategy, reporting, and cross-functional collaboration. Minor gap: you haven't managed a dedicated SEO team (you led mixed marketing teams), but you've supervised team members and managed SEO priorities independently. The proprietary EMR methodology is learnable. |
+| Role Fit (30%) | 7/10 | Manager-level SEO role matches your seniority and SEO expertise well. You've led SEO at scale (Canva Brazil: 771k+ monthly searches, 5M+ organic traffic H1 2026) and managed teams (Lumine: 5-person creative oversight; CondoConta: 4-person team). However, the posting emphasizes *enterprise-level optimization* and *EMR (holistic ROI measurement)* — your documented work is strong on content production and traffic growth, but less clear on multi-channel attribution, incrementality testing, or revenue-focused measurement frameworks. This is learnable but represents a slight gap. The role is also agency-side (managing client programs), which is different from in-house SEO ownership at Canva — a shift you can make, but worth noting. |
+| Remote / Location (25%) | 2/10 | **Hard blocker.** The posting lists "Minneapolis, MN" with no mention of remote work, flexibility, or international hiring. The job posting is truncated, so I cannot confirm whether remote is available — but the location tag and lack of any "remote" language in the visible text strongly suggest on-site or hybrid in Minneapolis. You are in Tarragona, Spain now; moving to Brazil in November 2026. Minneapolis is not workable for you either way. Unless the full posting (cut off here) explicitly states "remote" or "fully remote," this is a hard skip on location alone. |
+| Compensation (20%) | 5/10 | No salary disclosed in the posting. Ovative Group is an established, well-funded agency (recognized by Google, Inc. 5000, Digiday, Search Engine Land) serving enterprise clients (Best Buy, Domino's, Disney, UnitedHealth Group), so compensation is likely competitive — likely in the $80k–$120k USD range for a Manager role in Minneapolis. That would exceed your target. However, without explicit salary disclosure, I cannot score higher than 5. Request salary range before applying. |
+| Company Quality (15%) | 8/10 | Ovative Group is a credible, established agency with strong brand recognition, enterprise client roster, proprietary MarTech (EMRge platform), and third-party validation (Google, Inc. 5000, Digiday, Search Engine Land). Financially stable, real product, international scope. You've worked at WPP (Mirum), so you understand agency culture and client services. No red flags visible. Deduct 2 points only because it's agency-side (different culture from in-house SaaS teams like Canva) and I have no data on remote culture or async friendliness — critical for you post-maternity leave. |
+| Skill Match (10%) | 7/10 | Strong match on core SEO (AHREFs, Botify, GSC, GA4, content strategy, page launches/migrations, reporting). You've led SEO teams and strategy. *Gaps:* The posting emphasizes enterprise-level measurement, incrementality, multi-touch attribution, and revenue-focused optimization (EMR framework). Your CV shows strong organic growth and traffic metrics, but less visibility into advanced analytics, incrementality testing, or cross-channel measurement. This is not a dealbreaker — you have the foundation and can learn EMR — but it's a gap. Also, no mention of SEM/paid search ownership in your CV; if the role includes PPC management, flag that as a gap. |
+| **Final Score** | **5.0/10** | *(7×0.30)+(2×0.25)+(5×0.20)+(8×0.15)+(7×0.10) = 2.1+0.5+1.0+1.2+0.7 = 5.5* |
 
-| **Final Score** | **4.9/10** | *(7×0.30)+(2×0.25)+(5×0.20)+(8×0.15)+(8×0.10) = 2.1 + 0.5 + 1.0 + 1.2 + 0.8 = 5.6* |
-
-**Verdict: SKIP (unless location/remote status can be confirmed as fully remote + international)**
-
----
-
-### Top 3 Reasons to Apply
-1. **Strong role fit for your skill set**: Manager, SEO at a credible agency perfectly matches your 16-year track record and proven SEO delivery at scale (Canva Brazil, 5M monthly searches in H1 2026).
-2. **Company credibility and growth potential**: Ovative Group is stable, well-recognized, and has a differentiated MarTech platform (EMRge)—signals of a healthy, forward-thinking organization.
-3. **Likely compensation is competitive**: As a US agency of this size, salary probably lands at $80k–$120k USD, meeting your income goal.
+**Verdict: SKIP** *(Location is a hard blocker; final score is 5.5, which is borderline "CONSIDER," but the on-site requirement in Minneapolis makes this unworkable.)*
 
 ---
 
-### Top 3 Concerns (be honest)
-1. **🚨 LOCATION IS A HARD BLOCKER**: Posted as "Chicago, IL" with no remote eligibility stated. The job posting itself is incomplete and cuts off mid-sentence, suggesting it wasn't fully reviewed.
+##

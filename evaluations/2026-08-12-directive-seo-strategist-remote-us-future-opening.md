@@ -1,29 +1,13 @@
-<!-- job_id: linkedin:e6dda5f2ff89 -->
+<!-- job_id: linkedin:bd7e6f725b12 -->
 ---
 **Directive — SEO Strategist (Remote US) - Future Opening**
-*Source: https://www.linkedin.com/jobs/view/seo-strategist-remote-us-future-opening-at-directive-4414973310 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/seo-strategist-remote-us-future-opening-at-directive-4433005128 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 7/10 | Strong SEO foundation matches your Canva experience. However, the posting is cut off and doesn't detail full scope. "Account Strategist, Content & SEO" suggests client-facing account management + strategy — you have both, but it's less pure SEO and more account servicing. The "Enterprise clients" angle is credible for your scale (teams of 21, cross-border ops). Not a perfect fit because account management with heavy client contact may conflict with your flexibility needs post-maternity leave. |
-| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** Posting explicitly states "Remote US" and lists "Columbus, OH" as location. No mention of international remote, work-visa sponsorship, or global team. This is a US-employment-only role. You have no US work authorization and no path to it (Italian citizenship is EU, not US). Even though you could work US East Coast hours from Brazil, Directive will almost certainly require US employment eligibility (W-2, tax withholding, etc.). This is a dealbreaker. |
-| Compensation (20%) | 5/10 | Posting does not disclose salary. Directive is a "leading B2B marketing agency" with 420+ clients and multi-division operations — suggests established, profitable company. For a senior SEO strategist / account strategist role at an agency, typical US market range is $70k–$110k+. Likely meets your threshold, but unknown and unconfirmed. Cannot score higher without data. |
-| Company Quality (15%) | 8/10 | Directive Consulting appears solid: 10+ years in business, 420+ B2B clients, multi-division structure (Performance, Communications, Commerce), proprietary methodology (DiscoverabilityOS™). Tone suggests high-performance, growth-focused culture. B2B marketing agencies with this scale are usually well-resourced and stable. No red flags visible in posting. Score reflects credibility but lack of employee review data (Glassdoor, Blind, etc.). |
-| Skill Match (10%) | 8/10 | Strong overlap. You have documented SEO expertise (Canva: 771k+ monthly searches, page launches, migrations, AHREFs, Botify, GSC). Content strategy is core to your background (Lumine, CondoConta, Mirum). Client-facing and stakeholder communication are well-proven (CondoConta team lead, Mirum strategist, AIESEC director of 21-person team). Only minor gap: posting is truncated, so full requirements are unknown. No SEM/Google Ads depth, but role title says "Content & SEO," not paid. |
-| **Final Score** | **4.3/10** | *(7×0.30)+(2×0.25)+(5×0.20)+(8×0.15)+(8×0.10) = 2.1+0.5+1.0+1.2+0.8 = **5.6/10*** |
-
-**Verdict: SKIP** (due to hard location/work-auth blocker)
-
----
-
-**Hard Dealbreakers Present?**
-- [x] **US-remote only / US work authorization required** — Posting says "Remote US" and lists Columbus, OH. No indication of visa sponsorship or international remote. You cannot legally work as a W-2 employee in the US without authorization.
-- [ ] EU work permit required
-- [ ] On-site in city she doesn't live in
-- [ ] BRL-only pay below R$15k/month
-- **Others:** Posting is truncated (cut off mid-sentence at "result in"), so full job scope, benefits, and work-auth language are unknown. However, the "Remote US" language is explicit and typical for US-only roles.
-
----
-
-**Top 3 Reasons to Apply** (if the work-auth issue didn't exist)
-1. **
+| Role Fit (30%) | 7/10 | Strong overlap with your SEO + content + strategy background. You've managed 100% SEO content for Canva Brazil, led SEO initiatives, and done content strategy at Mirum and Lumine. The role is titled "Account Strategist, Content & SEO" internally — exactly your wheelhouse. You're not a pure agency SEO technician (more hands-on execution), but your strategy + client management + cross-functional work at Mirum (WPP network, similar agency scale) makes this credible. Minor gap: this role emphasizes "client-facing account management" more heavily than your recent Canva role; but your Mirum + CondoConta + Macromator experience show you can do it. |
+| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** Posting explicitly says "Remote US" and lists "Houston, TX" as location. No mention of international hiring, visa sponsorship, or global applicants. You have no US work authorization and cannot secure a W-2 visa sponsorship quickly. Even though the role is "remote," the "Remote US" language signals US employment only. This is a fatal mismatch. Flag: do not apply unless you can confirm Directive explicitly hires internationally (unlikely for a US-focused agency). |
+| Compensation (20%) | 5/10 | **No salary disclosed.** Directive is a well-funded B2B agency (420+ clients, 3 divisions, "over a decade" of track record), so they likely pay competitively for US market — likely $80k–$120k USD for a Strategist role. That *would* exceed your €50–70k target. But without confirmation, and given US salaries are typically paid in USD to US residents (with tax/benefits implications), this is speculative. If you could work it, compensation would be strong; but you can't confirm net income or structure without clarity on sponsorship. Score reflects: strong company size suggests good pay, but US employment structure + no salary posted = uncertainty. |
+| Company Quality (15%) | 8/10 | Directive Consulting is credible: 420+ B2B brands, "over a decade," WPP-adjacent scale (mentioned in their positioning), DiscoverabilityOS™ methodology suggests proprietary IP. LinkedIn posting is professional and substantive. No red flags visible (no Glassdoor data pulled, but company appears stable and growth-focused). Solid B2B agency with real clients and revenue model. Not a top-tier brand like Accenture, but materially above a startup. You'd learn from strong peers. |
+| Skill Match (10%) | 8/10 | Excellent overlap. You have: SEO strategy (Canva, Mirum), content strategy + production (Canva 100% SEO content, Lumine creative oversight, Mirum content team), client management + account strategy (Mirum senior strategist, CondoConta manager, Macromator concierge), cross-functional collaboration (Mirum: UX/UI/Tech/Creative), budget + campaign execution (Lumine $4k Meta Ads, CondoConta lead gen). Posting emphasizes LTV:CAC modeling, Share of SERP, customer generation, competitor insights, creative briefs — all within your demonstrated scope. Minor gap: no deep Google Ads mentioned in your history (you've done Meta Ads + some affiliate/email), but SEO strategy ≠ SEM, so this is not a blocker. |
+| **Final Score** | **4.3/10** | *(7×0.30)+(2×0.25)+(5×0.20)+(8×0.15)+(8×0.10) = 2.1 + 0.5 + 1.0 + 1.2 + 0.8 = 5.6* — **Wait, recalculating:** (7×0.30=2.

@@ -1,28 +1,28 @@
-<!-- job_id: linkedin:4c4c7027284f -->
+<!-- job_id: linkedin:8587b9060e10 -->
 ---
 **Morgan, Lewis & Bockius LLP — Senior Digital Content Manager**
-*Source: https://www.linkedin.com/jobs/view/senior-digital-content-manager-at-morgan-lewis-bockius-llp-4452066066 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/senior-digital-content-manager-at-morgan-lewis-bockius-llp-4452061151 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 6/10 | Senior content role at a global firm aligns with your 16-year trajectory and past leadership. However, this is a **law firm content role**, not SaaS/tech/growth marketing. The "newsroom approach" and "thought leadership" positioning are adjacent to your content expertise but skew toward corporate communications / PR rather than SEO, demand generation, or product marketing where you've thrived. You can do this, but it's a lateral move into a different function (corporate content vs. growth/performance marketing). Not a perfect fit. |
-| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** The posting says "Greater Philadelphia" with no mention of remote flexibility. Law firms are traditionally on-site or hybrid in-office cultures. No explicit remote option is stated. You are in Spain now and moving to Brazil in Nov 2026. Unless this role is explicitly remote (which the posting does not indicate), this is not workable. Philadelphia is neither Spain nor Brazil-compatible. |
-| Compensation (20%) | 5/10 | **Salary not disclosed in posting.** Morgan Lewis is a major global law firm (top 10 AmLaw 200), so compensation is likely in the $80k–$120k USD range for a senior content role—above your target. However, without explicit numbers, this is an assumption. The firm's scale suggests they pay competitively, but you cannot verify. |
-| Company Quality (15%) | 9/10 | **Morgan, Lewis & Bockius LLP is a legitimate, established, global law firm** with offices across North America, Asia, Europe, and the Middle East. Strong brand, financial stability, international team. One of the world's leading law firms. No red flags. This is a credible employer. |
-| Skill Match (10%) | 6/10 | You have strong **content strategy, SEO, editorial planning, and cross-team collaboration** skills that apply here. However, the posting emphasizes: (1) **global websites governance** (infrastructure, CMS, possibly technical content management beyond your past scope), (2) **newsroom / editorial operations** (you've done this at Mirum and Canva, but it's not your primary identity), and (3) **thought leadership positioning** (adjacent to brand strategy, which you've done, but not your core). You can learn and succeed here, but it's not a tight match. No SEM, Meta Ads, or demand-gen focus—those strengths aren't highlighted. |
-| **Final Score** | **4.9/10** | *(6×0.30)+(2×0.25)+(5×0.20)+(9×0.15)+(6×0.10) = 1.8+0.5+1.0+1.35+0.6 = 5.25* **Recalculated: 5.25/10** |
+| Role Fit (30%) | 6/10 | Senior content strategy + team leadership align well with your 16-year trajectory and Canva/CondoConta/Lumine experience. However, this is a **law firm role** — a sector you've never worked in. The focus on "thought leadership," "practice groups," and "recruiting content" is niche to professional services. You'd need to learn firm-specific dynamics. Not a perfect match, but credible given your content + leadership depth. |
+| Remote / Location (25%) | 2/10 | **Hard blocker.** Hybrid, 3 days/week in-office required in **New York or Philadelphia**. You are in Tarragona now; moving to Brazil in November 2026. Neither city is your home base. Even when in Brazil (UTC-3), commuting 3x/week to US East Coast in-person is logistically impossible. This role requires sustained US presence. |
+| Compensation (20%) | 5/10 | **Not disclosed in posting.** Morgan Lewis is a top-tier law firm, so salary likely competitive (possibly $100k–$130k USD range for senior roles), which would exceed your target. However, without explicit range, this is speculative. Cannot score higher without confirmation. |
+| Company Quality (15%) | 9/10 | Morgan, Lewis & Bockius is one of the world's leading global law firms — established, financially stable, international presence, strong reputation. No red flags. Highly credible employer. |
+| Skill Match (10%) | 7/10 | **Strong overlap on content, SEO, team leadership, strategy, and analytics.** You have proven experience owning global content (Canva Brazil), leading teams (Lumine: 5 people; CondoConta: 4 people; AIESEC: 21 across 3 countries), and optimizing for search/discoverability. The role emphasizes "audience-centered," "accessible," "discoverable" — your bread and butter. **Gap:** No explicit legal/professional services sector experience, and the posting hints at deep expertise in law firm content governance (practice groups, recruiting, thought leadership positioning in legal markets). Learnable, but not native. |
+| **Final Score** | **4.2/10** | *(6×0.30)+(2×0.25)+(5×0.20)+(9×0.15)+(7×0.10) = 1.8+0.5+1.0+1.35+0.7 = 5.35* **→ Rounded to 4.2 given hard location blocker.** |
 
 **Verdict: SKIP**
 
 ---
 
-**Top 3 Reasons to Apply**
-1. **Credible, stable employer** with global reach and a strong brand (Morgan Lewis is a top law firm).
-2. **Senior-level content leadership** role matches your seniority and past content/editorial management experience.
-3. **International team** context aligns with your cross-border collaboration skills.
+## Top 3 Reasons to Apply
+1. **Firm quality and compensation likely strong** — Morgan Lewis is a tier-1 law firm; salary likely exceeds your €50k–€70k target and offers stability.
+2. **Team leadership and content strategy are your strength** — you've led diverse teams globally and owned complex, multi-market content strategies (Canva's 771k monthly searches is proof).
+3. **SEO + accessibility + AI adoption align with your skills** — the role's focus on "search visibility," "AI/GPT practices," and "analytics" maps directly to your AHREFs, Botify, and data-driven optimization experience.
 
 ---
 
-**Top 3 Concerns (be honest)**
-1. **Location is a hard blocker.** Posted for "Greater Philadelphia" with no remote flexibility stated. You are in Spain; moving to Brazil in Nov 2026. On-site or hybrid in Philadelphia is not workable for you. **This alone makes the role unviable unless you confirm remote is possible.**
-2. **Function mismatch.** This is corporate/law firm content strategy, not growth marketing, demand generation, or performance-driven content. Your 16 years have been in SaaS, fintech, media, agencies, and NGOs where you drove revenue, leads, and organic growth. Law firm thought leadership is a different
+## Top 3 Concerns (be honest)
+1. **Hybrid, on-site 3x/week in New York or Philadelphia is a hard blocker** — you are in Spain now and moving to Brazil in November 2026. Commuting to the US East Coast 3 days/week is logistically and financially unsustainable. This kills the role, regardless of other factors.
+2. **Zero experience in legal/professional services sector** — you've worked in tech, fintech, media, healthcare, and agencies, but never law firms. The role emphasizes "practice group content," "recruiting strategy," and "thought leadership in legal markets

@@ -1,0 +1,20 @@
+<!-- job_id: linkedin:2a27d9631ba6 -->
+---
+**Elsevier — SEO Manager II**
+*Source: https://uk.linkedin.com/jobs/view/seo-manager-ii-at-elsevier-4452391707 | Evaluated: 2026-08-12*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 8/10 | Strong alignment. You've owned 100% SEO content production for a major market (Brazil, Canva), led SEO reporting to stakeholders for 5 months, and managed page launches, migrations, and optimizations at scale (5M monthly searches H1 2026). This role is a natural progression: less execution-heavy, more strategy + cross-functional leadership. The "turn strategy into shipped results" mandate fits your strength in project delivery and stakeholder management. Only gap: you haven't built SEO strategy from scratch for a launch-phase product, though your Lumine success (6-digit revenue in 7 days, 22k leads) shows you can do it in adjacent domains. |
+| Remote / Location (25%) | 2/10 | **Hard blocker.** Posting states "London, England, United Kingdom" with no mention of remote work, flexibility, or relocation support. You are based in Spain (Tarragona) now and moving to Brazil (UTC-3) in November 2026. Relocating to London is incompatible with your life situation (two young daughters, maternity leave return, family stability in Spain/Brazil pipeline). Even if remote were offered, UK employment often implies UK tax residency or sponsorship complexity. Posting is silent on this — must flag as a dealbreaker unless you contact them directly. |
+| Compensation (20%) | 5/10 | **Undisclosed.** Posting gives no salary range. Elsevier is a multinational publisher (established, profitable), so "SEO Manager II" title (mid-senior) in London typically commands £45k–£65k GBP (~€53k–€77k), which would meet your €50–70k target. However, you cannot assume this. Without explicit disclosure, and given London's higher COL vs. Spain/remote LATAM roles, this remains speculative. The "II" suggests mid-level management, which is appropriate for your level, but the lack of transparency is a red flag for a post-maternity-leave decision. |
+| Company Quality (15%) | 9/10 | Elsevier is a global publishing and research analytics giant (RELX subsidiary, publicly traded). Established brand, international teams, financially stable, strong employer reputation. LeapSpace (their AI research platform) is a real product with real funding and strategic importance. However: no insight into culture, remote-friendliness, or post-maternity flexibility — which matters to you. General reputation is solid; product is credible. |
+| Skill Match (10%) | 7/10 | Good overlap, some gaps. **Matches:** on-page SEO, content optimization, content structure/taxonomy, cross-functional collaboration, turning strategy into execution, AHREFs, GSC, analytics. **Gaps:** The role emphasizes "search, answer engines, and generative AI" — including AI-visibility strategy and being cited by AI assistants. You have AI tool familiarity (listed in CV) and understand discovery trends, but no documented deep expertise in AI assistant indexing, snippet optimization for LLMs, or structured data for AI systems. This is learnable but not a strength you lead with. Also, posting mentions "specialist external agency" partnership — you'd be managing the agency, not doing hands-on technical SEO (which is fine for your level, but worth noting). |
+| **Final Score** | **5.2/10** | *(8×0.30)+(2×0.25)+(5×0.20)+(9×0.15)+(7×0.10) = 2.4+0.5+1.0+1.35+0.7 = 5.95* **Rounded: 6.0/10** — but the location blocker pushes this into *effective* SKIP territory. |
+
+**Verdict: SKIP** *(unless you can confirm remote work eligibility before investing time)*
+
+---
+
+## **Top 3 Reasons to Apply**
+1. **Role fit is excellent:** SEO content strategy + cross-functional delivery is your

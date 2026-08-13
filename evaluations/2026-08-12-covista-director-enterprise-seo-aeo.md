@@ -1,28 +1,13 @@
-<!-- job_id: linkedin:7edb039dc049 -->
+<!-- job_id: linkedin:d99b5056cf32 -->
 ---
 **Covista — Director, Enterprise SEO & AEO**
-*Source: https://www.linkedin.com/jobs/view/director-enterprise-seo-aeo-at-covista-4423652861 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/director-enterprise-seo-aeo-at-covista-4423659567 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 7/10 | Strong SEO expertise and team leadership align well. "Player-coach" model matches your style. However, this is an enterprise/healthcare education focus—a step away from SaaS/fintech/media. AEO (Answer Engine Optimization) is emerging; you have SEO depth but AEO is newer territory. Director-level title fits your 16-year arc and past leadership (team of 21 at AIESEC, 5 at Lumine, 4 at CondoConta). |
-| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** "Greater Minneapolis-St. Paul Area" + "hybrid schedule with four in-office days per week (Monday–Thursday)" = on-site requirement. You are in Tarragona, Spain now; moving to Brazil in November 2026. No mention of remote-first or international flexibility. This is not workable. |
-| Compensation (20%) | 5/10 | No salary disclosed. "Director" title in US healthcare education suggests likely $90k–$130k USD range, which would meet your income target. However, without explicit salary or willingness to sponsor remote work, cannot assume. Flagging uncertainty. |
-| Company Quality (15%) | 8/10 | Covista is a **real, established, well-funded company**—parent of Chamberlain University, Walden University, Ross University, AUC School of Medicine. ~385k alumni, 10k faculty. Public/credible player in higher ed/healthcare education. Strong employer reputation in sector. Not a startup; stable organization. |
-| Skill Match (10%) | 7/10 | You have strong, documented SEO expertise (Botify, AHREFs, GSC, GA4, Looker Studio; managed 100% of Brazil SEO content at Canva; led 5M monthly searches in H1 2026). Team leadership proven. However, **AEO is a gap**—you haven't explicitly worked on answer engine optimization or AI-driven discovery strategy. This is learnable but not a current strength. No healthcare industry experience either, but that's less critical. |
-| **Final Score** | **4.4/10** | *(7×0.30)+(2×0.25)+(5×0.20)+(8×0.15)+(7×0.10) = 2.1+0.5+1.0+1.2+0.7 = **5.5/10*** |
-
-**Verdict: SKIP**
-
-(Recalculated: 4.4 is under 5.5 threshold, but the on-site hybrid requirement is a **hard blocker** regardless. Do not apply.)
-
----
-
-**Top 3 Reasons to Apply** *(if location were remote)*
-1. Director-level SEO leadership role aligns perfectly with your 16-year trajectory and past team leadership; "player-coach" model matches your hands-on strategic style.
-2. Covista is a credible, established organization with real impact (healthcare education); stable employer with resources to invest in a strong team.
-3. SEO expertise (Botify, AHREFs, GSC, Looker Studio, content strategy) is directly transferable; you've scaled SEO production at Canva and led strategy during leadership gaps.
-
-**Top 3 Concerns (be honest)**
-1. **Location is a dealbreaker.** Hybrid 4 days/week in Minneapolis-St. Paul. You're in Tarragona now; moving to Brazil UTC-3 in November 2026. No indication of remote flexibility or international hiring. Do not apply unless they explicitly confirm remote eligibility.
-2. **AEO (Answer Engine Optimization) is a gap.** You have strong SEO, but answer engine optimization (AI-driven discovery, Reddit, YouTube ranking for AI context) is an emerging discipline you haven't formally owned. It's learnable, but you'd be credible on
+| Role Fit (30%) | 7/10 | This is a senior SEO leadership role that aligns well with your 16-year trajectory and proven SEO expertise (Canva, on-page optimization, tool mastery). You have led teams (CondoConta: 4 people; Lumine: 5-person creative oversight; AIESEC: 21 across 17 cities), owned P&L, and reported to stakeholders. The "player-coach" framing matches your hands-on leadership style. However, this is a *Director* role (likely VP-equivalent) in an enterprise healthcare educator—a vertical you haven't worked in. AEO (Answer Engine Optimization) is emerging and you haven't explicitly led AEO strategy, though your SEO foundation is strong. You'd be stepping up in seniority and into a new vertical, which is credible but not a perfect match. |
+| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** The posting explicitly states: "We operate on a hybrid schedule with four in-office days per week (Monday–Thursday)" in **Greater Chicago Area**. You are currently in Tarragona, Spain and will be in Brazil (UTC-3) from November 2026. Chicago is not accessible for a hybrid role requiring 4 days on-site per week. This is not workable under any scenario. |
+| Compensation (20%) | 5/10 | No salary disclosed in the posting. Healthcare education is a growing sector with solid funding (Covista is backed by Informa and has strong financial backing), suggesting the role would likely be competitive for a Director-level position (~$120k–$150k USD or equivalent). However, without disclosure, this is speculative. Your income goal is $2,000–$3,500 USD/month net (~$24k–$42k/year), so a Director-level salary would exceed this, which is positive. But the lack of transparency and the location blocker make compensation assessment moot. |
+| Company Quality (15%) | 8/10 | Covista is an established, credible company: largest US healthcare educator, 97k+ students, 5 accredited institutions (including American University of the Caribbean, Chamberlain, Ross, Walden), $385k alumni community, 10k faculty. Financially stable, mission-driven, strong employer brand ("Great Place to Work" culture language in posting). No red flags. However, it's not a household name globally and operates in a niche vertical (healthcare education), so not a 10. Solid mid-market organization. |
+| Skill Match (10%) | 7/10 | **Strong SEO foundation.** You have: AHREFs, Botify, GSC, GA4, on-page optimization, content strategy, page launches, migrations, organic traffic ownership (771k searches 2022–2023, 5M searches H1 2026 at Canva). You've led SEO initiatives and reported to stakeholders. **Gap: AEO is new territory.** Answer Engine Optimization (optimizing for Claude, ChatGPT, Perplexity, etc.) is an emerging discipline; you have no documented AEO experience. This is learnable but not in your current toolkit. You also haven't led enterprise-scale SEO (Canva is large, but SEO was one function; here you're leading an enterprise SEO center of excellence across multiple healthcare brands). No documented SEM/Google Ads depth (you noted Google Ads is limited for you). Overall: strong SEO legs, significant AEO gap, but trainable. |
+| **Final Score** | **4.1/10** | (7×0.30)+(2×0.25)+(5×0.20)+(8×0.15)+(7×0.10) = 2.1+0.5+1.0+1.2+0.7 = **5.5/10** — actually recalculating: (7×0.30)=2.1

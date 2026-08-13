@@ -1,0 +1,18 @@
+<!-- job_id: linkedin:3d12f6c29a9e -->
+---
+**LGC — SEO Manager**
+*Source: https://uk.linkedin.com/jobs/view/seo-manager-at-lgc-4395070043 | Evaluated: 2026-08-12*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 8/10 | This is a senior SEO leadership role that aligns well with your 16-year trajectory. You've managed 100% SEO content production for a major global market (Canva Brazil), led SEO during staffing gaps, and have deep expertise in on-page optimization, migrations, and page launches. The role asks for strategy + execution + cross-team collaboration—all documented strengths. You're not overqualified (this is a manager, not a director), and not underqualified. The only slight gap: this role emphasizes GEO/AIO (geo-targeting/AI optimization) and link-building agency management, which aren't explicitly in your past. But these are learnable extensions of SEO strategy you already own. |
+| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** The posting lists "London, England, United Kingdom" with no mention of remote. The job text cuts off, but based on LinkedIn's format (no remote badge), this appears to be on-site or hybrid in London. You will be in Tarragona (Spain) now, moving to Brazil (UTC-3) in November 2026. You have no UK work authorization and no visa pathway to the UK post-Brexit. Even if it were remote UK-hours-only, you lack a UK work permit. This is not workable. |
+| Compensation (20%) | 5/10 | No salary disclosed in the posting. LGC is a legitimate, established UK company (National Measurement Institute), so compensation is likely competitive for a UK-based manager role (likely £45k–£60k GBP). That would translate to ~€54k–€72k EUR or ~$60k–$75k USD, which meets your target. However: without explicit disclosure and without confirmation the role is remote/workable, I can't score higher. Flag for clarification if you were to pursue. |
+| Company Quality (15%) | 8/10 | LGC Group is a well-established, credible organization—the UK's designated National Measurement Institute, operating globally across 120+ countries. Stable, reputable, international footprint. Not a startup; real product and solid track record. Limited downside risk from a company stability perspective. No red flags visible. Strong minus: the on-site London requirement suggests this is a traditional corporate structure that may not prioritize remote/flexible work—a concern given your maternity-leave return and two young children. |
+| Skill Match (10%) | 7/10 | Strong overlap on core SEO (on-page, technical, content, GA4, Search Console, AHREFs, Botify). You have demonstrated campaign lifecycle management and cross-team coordination. Gaps: you haven't explicitly managed GEO/AIO strategies, link-building vendor relationships, or GTM event tracking implementation at scale. These are learnable, but they're not in your documented background. No major red flag—7/10 reflects "mostly there, some ramp-up needed." |
+| **Final Score** | **4.4/10** | *(8×0.30)+(2×0.25)+(5×0.20)+(8×0.15)+(7×0.10) = 2.4+0.5+1.0+1.2+0.7 = 5.8* — **Wait, recalculating: (8×0.30)=2.4; (2×0.25)=0.5; (5×0.20)=1.0; (8×0.15)=1.2; (7×0.10)=0.7 → 2.4+0.5+1.0+1.2+0.7=5.8.** Rounding: **5.8/10** |
+
+**Verdict: SKIP**
+
+**Top 3 Reasons to Apply** *(if the location issue were resolved)*
+1. **Near-perfect role fit for your SEO expertise.** You've managed 100% SEO production for a major global market and led

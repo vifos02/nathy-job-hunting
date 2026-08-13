@@ -1,0 +1,18 @@
+<!-- job_id: linkedin:61657b971748 -->
+---
+**Hays — Digital Marketing Manager**
+*Source: https://es.linkedin.com/jobs/view/digital-marketing-manager-at-hays-4449569116 | Evaluated: 2026-08-12*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 5/10 | Title says "Digital Marketing Manager" but job description is actually **E-commerce & Digital Business Manager** — a P&L owner role combining ecommerce operations, business development, supply chain, and pricing strategy. You have strong digital marketing skills, but this role demands 50%+ operations/business development/supplier negotiation responsibility. You've overseen budgets and teams, but you've never owned a P&L, managed inventory, negotiated manufacturer agreements, or run a full ecommerce platform operationally. This is a stretch upward in scope; you'd be underqualified for the business management half. |
+| Remote / Location (25%) | 3/10 | **On-site in Lérida (Lleida), Spain.** The posting says "Lérida y alrededores" (Lleida and surroundings). You are in Tarragona, which is ~2 hours away by car or train — technically commutable but not remote. The job makes no mention of remote work or flexibility. Given you're returning from maternity leave and have two young daughters, a 2-hour daily commute is likely not workable. By November 2026 you're moving to Brazil, so this role is only viable for the next ~3 months. **Hard blocker: on-site requirement in a city you can't sustain commuting to long-term.** |
+| Compensation (20%) | 5/10 | No salary disclosed in the posting. Hays is a major recruitment firm, so the role is likely legitimate. For a "Digital Marketing Manager" title in Spain with 3–5 years' ecommerce experience required, you'd expect €28k–€40k/year gross (entry-level to mid-level for this role). You are overqualified in seniority (16 years, team leadership, international experience), so compensation *for you* should be higher — but Hays may be benchmarking to the stated experience requirement, not your actual background. **Risk: you could be offered below-market pay for your seniority, or the role could be genuinely competitive.** Without disclosure, score is neutral-to-low. |
+| Company Quality (15%) | 7/10 | Hays is a **legitimate, large multinational recruitment and staffing firm** with a real product (job placement, staffing solutions). Financially stable, international presence, professional reputation. The client company (the tech/immersive solutions distributor) is less visible in the posting — you're applying to Hays to fill a role at their client. Hays itself is solid; the client is opaque. No red flags, but also no way to evaluate culture or long-term stability of the actual employer. Score reflects Hays' credibility but uncertainty about the actual workplace. |
+| Skill Match (10%) | 6/10 | **Overlaps:** SEO, SEM (Google Ads — limited but present), Meta Ads, email marketing, analytics (GA4, Looker Studio), content, conversion optimization, team oversight, budget management, cross-functional collaboration. **Gaps:** Shopify (you haven't used it; it's a specific platform), supplier/vendor negotiation at scale, inventory/supply chain management, P&L ownership, ecommerce operations (checkout optimization, returns, logistics coordination), pricing strategy. You have 70% of the *digital marketing* skills but only 30% of the *ecommerce operations + business development* skills the role actually demands. The job description is broader than your expertise. |
+| **Final Score** | **4.8/10** | *(5×0.30)+(3×0.25)+(5×0.20)+(7×0.15)+(6×0.10) = 1.5 + 0.75 + 1.0 + 1.05 + 0.6 = 4.9* |
+
+**Verdict: SKIP**
+
+**Top 3 Reasons NOT to Apply**
+1. **On-site in Lleida is not sustainable.** You're in Tar

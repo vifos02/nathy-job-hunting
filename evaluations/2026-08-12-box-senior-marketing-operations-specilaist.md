@@ -1,20 +1,23 @@
-<!-- job_id: linkedin:2cb2ccfe789c -->
+<!-- job_id: linkedin:7a388057c0ac -->
 ---
 **Box — Senior Marketing Operations Specialist**
-*Source: https://www.linkedin.com/jobs/view/senior-marketing-operations-specilaist-at-box-4451832227 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/senior-marketing-operations-specilaist-at-box-4451836180 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 6/10 | You have strong marketing ops experience (CondoConta: led team, owned OKRs, Salesforce reporting; Lumine: creative team oversight, budget management; Mirum: cross-office operations, vendor negotiations). However, the posting emphasizes *marketing automation platform administration* (Marketo, HubSpot, Salesforce config) and *data infrastructure* — areas where your depth is in strategy and team leadership, not hands-on platform engineering. You're a senior strategist being asked to do mid-level ops execution. Not a bad fit, but you'd be stepping back technically. |
-| Remote / Location (25%) | 1/10 | **HARD BLOCKER.** Posting specifies "Redwood City, CA" with no mention of remote eligibility. Box is a US-headquartered public company (NYSE:BOX); the job listing shows no "remote" tag or flexibility language. On-site in California is not viable from Spain now or Brazil after November 2026. Even if it were technically remote, US companies often require US work authorization for California roles, and you have no US visa/sponsorship. |
-| Compensation (20%) | 6/10 | No salary posted. Box is a mature, profitable public SaaS company (likely $100M+ revenue), so US market rates for Senior Marketing Ops in the Bay Area would typically be $110k–$140k USD salary + bonus. That *should* exceed your €50k–€70k target substantially. But without explicit posting, score reflects "likely meets target but unconfirmed." |
-| Company Quality (15%) | 9/10 | Box is established, profitable (NYSE:BOX since 2015), well-funded, with global presence (US, Europe, Asia offices). Strong brand in content management/enterprise software. No red flags visible. Likely healthy culture and international team. This is a credible, stable company. |
-| Skill Match (10%) | 5/10 | **Moderate overlap with gaps.** You have: OKR methodology ✓, Salesforce reporting ✓, budget ownership ✓, cross-team collaboration ✓, lead gen strategy ✓. You are missing or weak in: deep marketing automation platform configuration (Marketo/HubSpot/Eloqua), CRM workflow design, data modeling, SQL/data integrity troubleshooting, API integrations, campaign setup at scale. The posting emphasizes "campaign setup," "data integrity," "workflow optimization" — these are hands-on ops execution, not your strength. Your strength is strategy and team leadership. |
-| **Final Score** | **3.3/10** | *(6×0.30)+(1×0.25)+(6×0.20)+(9×0.15)+(5×0.10) = 1.8+0.25+1.2+1.35+0.5 = 5.1* — **wait, recalculating:** (6×0.30) = 1.8, (1×0.25) = 0.25, (6×0.20) = 1.2, (9×0.15) = 1.35, (5×0.10) = 0.5. **Total = 5.1.** Rounding to **5.1/10**. |
+| Role Fit (30%) | 6/10 | You have solid marketing ops experience (CondoConta, Lumine, Macromator) with OKR, Salesforce, and cross-functional collaboration. However, this role emphasizes **marketing automation platform mastery, CRM optimization, and data integrity** — areas where your strength is broader strategic ops (team leadership, budget, vendor management) rather than deep hands-on platform administration. The posting is incomplete (cut off mid-sentence), so I can't assess whether it requires SQL, advanced data modeling, or other technical depth that would lower the fit further. You could do this job competently, but it's not a natural home run. |
+| Remote / Location (25%) | 2/10 | **HARD BLOCKER.** Posting states "New York, NY" with no mention of remote work. You are in Spain now; you move to Brazil in November 2026. Neither location is accessible. No remote flexibility is indicated. This is a dealbreaker unless the posting is misleading or negotiable (unlikely for a large public company like Box). |
+| Compensation (20%) | 5/10 | **Not disclosed.** Box is a publicly traded company (NYSE:BOX) with strong financials, so a Senior Marketing Ops role in New York would likely pay in the $85k–$120k USD range (industry standard for that title/location). That's well above your target of $50–70k EUR, which is actually *good* — but you can't apply to a New York on-site role from Spain/Brazil, so this is moot. Scored 5 for "likely meets target" based on company size, but the location makes it irrelevant. |
+| Company Quality (15%) | 9/10 | Box is established (public company, NYSE-traded), financially stable, with a global footprint and strong brand recognition in enterprise content management. Excellent company reputation. The only reason this isn't a 10 is that tech/SaaS roles can have variable culture depending on the team; no specific red flags here. |
+| Skill Match (10%) | 6/10 | **Moderate overlap.** You have Salesforce, OKR methodology, and cross-functional team management. You've built email funnels and managed campaign execution. **Gaps:** The posting emphasizes marketing automation platform optimization, data integrity workflows, and analytics — suggesting hands-on platform administration rather than strategic oversight. You're strong at **directing** ops (delegating to team, owning budget, reporting), but this role wants someone who **builds and debugs** systems in Marketo, HubSpot, or Salesforce (day-to-day). You didn't lead deep technical MarTech optimization at Canva, CondoConta, or Lumine — you managed the *outcomes* of those platforms. This is a junior-to-mid technical operations role disguised as "senior," or the posting is incomplete. |
 
-**Verdict: SKIP**
+| **Final Score** | **4.1/10** | *(6×0.30)+(2×0.25)+(5×0.20)+(9×0.15)+(6×0.10) = 1.8+0.5+1.0+1.35+0.6 = 5.25* **[Recalculated: 5.25]** |
 
-**Top 3 Reasons NOT to Apply**
-1. **Location is a hard blocker.** Redwood City on-site, no remote option stated. You're in Spain now; moving to Brazil in November 2026. This role is inaccessible.
-2. **No US work authorization.** Box is a US public company. Even if remote were possible, they almost certainly require US employment sponsorship or existing authorization, which you don't have.
-3. **Role is a step backward.** You're a senior strategist and team leader. This role emphasizes hands-on platform administration (Marketo setup, data troubleshooting, CRM config)
+**[CORRECTION: I miscalculated. Let me redo: (6 × 0.30) = 1.8 | (2 × 0.25) = 0.5 | (5 × 0.20) = 1.0 | (9 × 0.15) = 1.35 | (6 × 0.10) = 0.6 | **Total = 5.25/10**]**
+
+**Verdict: SKIP** *(location is a hard blocker; role fit is weaker than it appears)*
+
+---
+
+## **Top 3 Reasons to Apply**
+1. **Box is a world-class company** — public, stable, strong brand

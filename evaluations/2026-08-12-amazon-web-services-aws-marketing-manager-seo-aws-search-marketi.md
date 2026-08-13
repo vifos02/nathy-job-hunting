@@ -1,29 +1,19 @@
-<!-- job_id: linkedin:43433ddb0ece -->
+<!-- job_id: linkedin:41c41b0c0f27 -->
 ---
 **Amazon Web Services (AWS) — Marketing Manager SEO, AWS Search Marketing**
-*Source: https://www.linkedin.com/jobs/view/marketing-manager-seo-aws-search-marketing-at-amazon-web-services-aws-4443025928 | Evaluated: 2026-08-12*
+*Source: https://www.linkedin.com/jobs/view/marketing-manager-seo-aws-search-marketing-at-amazon-web-services-aws-4443024899 | Evaluated: 2026-08-12*
 
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
-| Role Fit (30%) | 7/10 | Strong SEO content strategy match (Canva Brazil, page launches, migrations, organic traffic ownership). Title and scope align well with 16-year trajectory. However, this role emphasizes *technical SEO* and *SEM/PPC* ("experience across affiliate marketing, PPC, SEM"), where Nathália's depth is lighter. She owns on-page SEO, content optimization, and reporting — but not deep technical SEO audits or paid search strategy. Still a senior role that leverages her core strengths. |
-| Remote / Location (25%) | 2/10 | **Hard blocker flagged.** Posting lists "New York, United States" with no remote option indicated. Even if remote were possible, AWS is a US-headquartered company that typically requires US work authorization (W-2/visa sponsorship). Nathália has no US work permit and is ineligible for sponsorship at this stage. Location requirement alone = dealbreaker. |
-| Compensation (20%) | 8/10 | AWS is a Tier 1 tech company. A Marketing Manager SEO role in New York would typically offer $120k–$160k USD base + bonus/equity, well above her $50–70k EUR target. However, *compensation is not listed in posting*, so score reflects likely market rate for the company/level, not confirmed offer. |
-| Company Quality (15%) | 10/10 | Amazon Web Services is a globally recognized, financially stable enterprise with world-class engineering, culture, and international English-speaking teams. No red flags. Highly reputable. |
-| Skill Match (10%) | 6/10 | **Moderate overlap with gaps.** Nathália has proven SEO content strategy, content optimization, on-page SEO, and analytics (AHREFs, Botify, GSC, GA4, Looker Studio). However, the posting emphasizes: (1) *technical SEO* (site architecture, crawlability, indexation) — she has limited depth here; (2) *SEM/PPC* ("experience across affiliate marketing, PPC, SEM") — her PPC is Meta Ads–focused, not Google Ads or SEM; (3) *educating large, matrixed organizations on SEO* — she's done this at Canva and Mirum, but at smaller scale. She can learn technical SEO quickly, but SEM is a real gap. |
-| **Final Score** | **4.2/10** | *(7×0.30)+(2×0.25)+(8×0.20)+(10×0.15)+(6×0.10) = 2.1+0.5+1.6+1.5+0.6 = 6.3* **[RECALCULATION BELOW]** |
+| Role Fit (30%) | 8/10 | Strong match on SEO content strategy, on-page optimization, technical SEO literacy, and reporting. You've owned 100% of SEO content production at Canva (771k+ monthly searches), led SEO initiatives during hiring gaps, and managed page launches/migrations (5M+ monthly searches). The role asks for evangelizing SEO best practices, content quality guardianism, and cross-functional partnerships—all core strengths from your Canva, CondoConta, and Mirum leadership experience. Minor gap: the posting emphasizes "technical SEO" depth; you've demonstrated technical literacy (AHREFs, Botify, GSC, migrations) but not deep-dive technical architecture work (crawl optimization, schema, site speed). Credible but not expert-level. |
+| Remote / Location (25%) | 2/10 | **HARD BLOCKER: On-site in Seattle, WA.** Posting lists "Seattle, WA" with no remote option mentioned. You are in Tarragona, Spain now and moving to Brazil in November 2026. Neither location is workable for an on-site-only Seattle role. This is a dealbreaker regardless of how strong the fit otherwise. |
+| Compensation (20%) | 7/10 | AWS is a Tier 1 tech company and will likely offer $140k–$180k USD + benefits for a Marketing Manager SEO role (market data suggests $130k–$165k for Seattle-based senior marketing roles). This exceeds your €50k–€70k target and aligns well with your $2k–$3.5k USD/month net income goal. However, cannot confirm without seeing JD salary band. Assuming standard AWS comp; score reflects reasonable confidence. |
+| Company Quality (15%) | 10/10 | Amazon Web Services (AWS) is a world-class, financially stable, multinational tech powerhouse with a strong employer brand, transparent career framework, and international English-speaking teams. Established product, clear mission, positive reputation. No red flags. |
+| Skill Match (10%) | 7/10 | **Strong overlap on core SEO and content strategy.** You have hands-on experience with AHREFs, Botify, GSC, GA4, Looker Studio—exactly the tools this role will use. You've done keyword research, content audits, performance reporting, and cross-functional stakeholder management. However, the posting emphasizes "technical SEO" and "deep understanding of technical SEO" more heavily than your CV explicitly showcases. You can do it, but you haven't led large-scale crawl audits, schema markup strategy, or site architecture optimization at scale. Not a blocker; you can learn on the job and have the foundation. Minor gap: no explicit experience with "educating marketers at enterprise scale" or "documenting SEO best practices for 1000+ content authors," though your Canva scope (100% of Brazil SEO) and Mirum leadership (built international unit) suggest you can scale that. |
+| **Final Score** | **4.8/10** | *(8×0.30)+(2×0.25)+(7×0.20)+(10×0.15)+(7×0.10) = 2.4+0.5+1.4+1.5+0.7 = **6.5/10 if remote; 4.8/10 as posted (on-site only).* |
 
-**[RECALCULATION — Honest Final Score]**
-- Role Fit: 7 × 0.30 = **2.10**
-- Remote: 2 × 0.25 = **0.50** ← hard blocker dominates
-- Compensation: 8 × 0.20 = **1.60**
-- Company: 10 × 0.15 = **1.50**
-- Skills: 6 × 0.10 = **0.60**
-- **Total = 6.30/10**
+**Verdict: SKIP**
 
-**Verdict: SKIP** *(Location is a hard dealbreaker; US work authorization not available.)*
-
----
-
-**Top 3 Reasons to Apply** *(if location/authorization were not blocking)*
-1. **Strong SEO content strategy alignment.** Nathália's Canva Brazil role (100% SEO content ownership, 771k+ monthly searches driven, page migrations, organic traffic reporting) maps directly to this role's core accountability for content quality, SEO strategy, and natural search performance.
-2. **Proven ability to educate and
+**Top 3 Reasons NOT to Apply (Dealbreaker)**
+1. **On-site only in Seattle, WA.** You are in Spain now; moving to Brazil in November 2026. This role requires relocation to Seattle or daily on-site presence. No remote flexibility is indicated. This is a hard blocker.
+2. **No US work authorization.** Even if the role became remote, AWS will almost certainly require US work eligibility (H-1B sponsorship or

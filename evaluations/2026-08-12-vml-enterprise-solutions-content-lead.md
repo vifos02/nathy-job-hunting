@@ -1,0 +1,18 @@
+<!-- job_id: linkedin:3497abcc53f6 -->
+---
+**VML Enterprise Solutions — Content Lead**
+*Source: https://uk.linkedin.com/jobs/view/content-lead-at-vml-enterprise-solutions-4449217800 | Evaluated: 2026-08-12*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 7/10 | Senior content strategy role with team leadership aligns well with 16-year trajectory. You've led content teams (Mirum: doubled team accounts; Lumine: 5-person creative oversight), owned content strategy (Canva: 100% SEO content production; CondoConta: email funnels; Lumine: influencer campaigns). The emphasis on **content strategy** (persona development, audits, tone of voice, content calendars) is directly in your wheelhouse. However, this is an *agency role* focused on client delivery, not in-house product marketing—a slight shift from your most recent SaaS experience at Canva. Still solid fit. |
+| Remote / Location (25%) | 3/10 | **HARD BLOCKER.** Posting explicitly requires "hybrid role working from our London Sea Containers office at least one a week with occasional travel to our client's site." You are in Tarragona, Spain (not London), and moving to Brazil in November 2026. No indication of remote-first or flexibility for Spain-based work. London-based office requirement + occasional travel + you not being in the UK makes this logistically and legally problematic. Even with Italian citizenship in progress, you'd still need UK work authorization (post-Brexit, EU citizens cannot freely work in UK without visa sponsorship). This is a dealbreaker. |
+| Compensation (20%) | 5/10 | **Salary not disclosed.** WPP/VML Enterprise Solutions is a large, established agency group, so a "Content Lead" role would likely pay £40k–£55k GBP (~€47k–€65k), which could meet your target of €50k–€70k. However, without explicit salary band, this is borderline. If it's at the lower end (£35k) or London-only (high cost of living), it may not be competitive for a 16-year senior professional. Cannot score higher without transparency. |
+| Company Quality (15%) | 9/10 | **VML is part of WPP Enterprise Solutions**—one of the world's largest advertising and marketing services conglomerates. WPP has 100k+ employees globally, strong financial stability, and extensive international operations. VML is a recognized creative agency. You already have WPP credibility (JWT High Potential award, Mirum Brazil experience). Posting describes 12,000+ experts, partnerships with Adobe, AWS, Google, Salesforce, Shopify—signals of a mature, well-resourced organization. English-speaking, international team culture is strong. No red flags. High-quality employer. |
+| Skill Match (10%) | 8/10 | Excellent overlap. Posting requires: content strategy (audience personas, audits, content calendars, tone of voice)—you have all of this. Leadership of junior team—you've done this at Mirum (promoted through 4 roles), Lumine (5-person team), and AIESEC (21-person cross-border team). eCommerce focus—you worked on Genesys partner marketing and Lumine (streaming/subscription); not pure eCommerce but adjacent. SEO/discoverability strategy—core strength at Canva. The posting also mentions CRO, CX, UX—you've collaborated with these teams (Mirum: "UX/UI, Tech, Creative teams"), though UX/CRO are not your primary expertise. Missing: no mention of SEM or heavy paid-media execution (though posting focuses on content/strategy, not ads). Small gap, not critical. |
+| **Final Score** | **5.4/10** | *(7×0.30)+(3×0.25)+(5×0.20)+(9×0.15)+(8×0.10)* = *2.1+0.75+1.0+1.35+0.8* = **5.9/10** |
+
+**Verdict: SKIP**
+
+**Top 3 Reasons to Apply**
+1. **Strong company and team

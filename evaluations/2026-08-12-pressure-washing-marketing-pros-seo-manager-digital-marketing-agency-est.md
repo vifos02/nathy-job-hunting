@@ -1,0 +1,17 @@
+<!-- job_id: linkedin:3f50f565d4eb -->
+---
+**Pressure Washing Marketing Pros — SEO Manager (Digital Marketing Agency, EST Hours)**
+*Source: https://br.linkedin.com/jobs/view/seo-manager-digital-marketing-agency-est-hours-at-pressure-washing-marketing-pros-4450679600 | Evaluated: 2026-08-12*
+
+| Dimension | Score | Reasoning |
+|-----------|-------|-----------|
+| Role Fit (30%) | 7/10 | Strong match on SEO expertise and team leadership. You've led teams (5 at Lumine, 4 at CondoConta, 21 at AIESEC) and own hands-on SEO work (Canva Brazil, CondoConta). Local SEO is new territory—you've done broad SEO optimization and content, not niche local SEO at scale—but the core competency is there. This is a credible step up, not a lateral move. |
+| Remote / Location (25%) | 6/10 | **Red flag on timezone.** Role is 9 AM–5 PM EST *hard requirement*. EST is UTC-5. From Brazil (UTC-3 starting Nov 2026), that's 10 AM–6 PM Brazil time—workable but inflexible. The posting says "hard requirement," which suggests no flexibility for async or shifted hours. You're returning from maternity leave and need flexibility; this rigid EST window may clash with your needs. From Spain now (UTC+1), it's 2 PM–10 PM, also tight. Fully remote is a plus (no location blocker), but the timezone lock is a genuine concern. |
+| Compensation (20%) | 8/10 | $4,000–$7,000 USD/month is solid. Mid-range ($5,500) = €5,100/month or ~R$33k/month. Meets your target of $2,000–$3,500 USD/month net (this is gross, so after tax likely €3.5–4.5k/month). Trajectory to Head of SEO suggests growth potential. No equity mentioned, but the company is profitable ($1.2M revenue, 98–99% retention). |
+| Company Quality (15%) | 7/10 | Real company, real traction. $1.2M revenue, 150 active clients, 98–99% retention is credible. Niche focus (pressure washing) is specific, not vague. No red flags on reviews or culture visible in posting. Team already executes across 100+ local accounts—they're not a startup. Financials appear healthy. Less "brand name" than Canva or WPP, but solid mid-market agency. |
+| Skill Match (10%) | 6/10 | You have strong SEO (AHREFs, Botify, GSC, GA4, content optimization, page launches, migrations). You have team leadership (Lumine, CondoConta, AIESEC). **Gap: local SEO at scale.** The posting emphasizes "strong at local SEO" and managing 10–15 local accounts yourself. Your Canva work was broad-market SEO (Brazil Portuguese); your CondoConta work was lead gen/growth, not local SEO. Local SEO (citations, local packs, review management, location-specific optimization) is a subset you haven't demonstrated depth in. You can learn it, but it's not a natural extension of your current toolkit. Tools overlap (SEO tooling), strategy overlap (team + hands-on), but the *local SEO specialization* is a gap. |
+| **Final Score** | **6.8/10** | *(7.0×0.30)+(6.0×0.25)+(8.0×0.20)+(7.0×0.15)+(6.0×0.10) = 2.1+1.5+1.6+1.05+0.6 = **6.85** |
+
+**Verdict: CONSIDER**
+
+This is a borderline apply-or-pass. The role fit and compensation are solid, but the inflexible EST timezone and local SEO gap are real. Apply only if: (1) you're confident you can adapt to rigid 9 AM–5 PM EST from Brazil, and (2) you're willing to ramp up on local SE
