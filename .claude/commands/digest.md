@@ -13,6 +13,18 @@ Steps:
    git add digests/YYYY-MM-DD-HHMM.md && git commit -m "digest YYYY-MM-DD-HHMM" && git push
    Confirm the push succeeded at the end of your output.
 
+8. **Always publish an interactive HTML artifact** after the git push. Build the digest as a self-contained HTML page and publish it using the Artifact tool so it appears inline and can be opened in a browser tab. Requirements for the HTML:
+   - Stat bar at the top: total evaluated, active APPLY count, CONSIDER count, unevaluated API count, browser finds count, applied count.
+   - Sections: APPLY Candidates, CONSIDER, Unscored Highlights, Tier 1 Not Checked, Action Items, Stats.
+   - Every job row must be a clickable link (`<a href="..." target="_blank">`). No URL, no row.
+   - Rows are color-coded by status using a left-border stripe: green = APPLY, amber = CONSIDER, blue = verify first, red = disqualified, grey = unscored.
+   - Each row shows: role title (linked), company, score (monospace), verdict pill.
+   - Flag disqualified roles inline (e.g. "Disqualified — US-only remote").
+   - Flag staffing-agency roles that need verification before applying.
+   - Designs both light and dark themes via CSS custom properties.
+   - Use the Artifact tool with favicon "📋" and a description of the form "Job hunt snapshot — YYYY-MM-DD".
+   - Redeploy to the same artifact URL if one was already published this session (pass the existing URL). Otherwise publish fresh.
+
 Output:
 
 ---
