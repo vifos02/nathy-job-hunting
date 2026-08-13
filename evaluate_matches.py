@@ -261,7 +261,37 @@ def extract_eval_context(full_text: str) -> str:
 # Fetch posting content
 # ---------------------------------------------------------------------------
 
-def fetch_posting(url: str) -> str:
+# Text patterns that mean the role is closed — skip before wasting an API call.
+CLOSED_SIGNALS = [
+    "no longer accepting applications",
+    "this job is no longer",
+    "this position is no longer",
+    "position has been filled",
+    "this position has been filled",
+    "this role has been filled",
+    "this job has been filled",
+    "job is closed",
+    "this listing is closed",
+    "this posting is closed",
+    "job listing is closed",
+    "application period has closed",
+    "no longer available",
+    "this listing has expired",
+    "listing has expired",
+    "job expired",
+    "expired job",
+    "we are not accepting",
+    "not currently accepting",
+    "applications are closed",
+]
+
+# fetch_posting returns:
+#   None  → dead URL (4xx) or posting explicitly closed — skip entirely
+#   ""    → site blocked the request (login wall, CAPTCHA) — score from title/company
+#   str   → posting text
+
+
+def fetch_posting(url: str):
     """Fetch and extract readable text from a job posting URL."""
     headers = {
         "User-Agent": (
@@ -272,12 +302,17 @@ def fetch_posting(url: str) -> str:
     }
     try:
         resp = requests.get(url, headers=headers, timeout=15)
+        if resp.status_code in (403, 404, 410):
+            return None  # dead URL — skip
         if resp.status_code != 200:
-            return ""
+            return ""    # other error — score from title/company
         soup = BeautifulSoup(resp.content, "html.parser")
         for tag in soup(["script", "style", "nav", "footer", "header"]):
             tag.decompose()
         text = soup.get_text(separator="\n", strip=True)
+        text_lower = text.lower()
+        if any(signal in text_lower for signal in CLOSED_SIGNALS):
+            return None  # posting closed — skip
         return text[:4000]
     except Exception:
         return ""
@@ -456,6 +491,15 @@ def main() -> None:
         print(f"  [{evaluated + 1}/{total}] {company} — {title}")
         print(f"    Fetching posting ... ", end="", flush=True)
         posting_text = fetch_posting(url)
+        if posting_text is None:
+            print("CLOSED or dead URL — skipping")
+            # Write a tombstone so this job_id is never re-queued
+            save_evaluation(job_id, company, title,
+                            f"<!-- SKIPPED: posting closed or URL dead -->\n"
+                            f"**{company} — {title}**\n"
+                            f"*URL returned 403/404 or posting says no longer accepting.*\n"
+                            f"**Verdict: SKIP**\n")
+            continue
         print("ok" if posting_text else "blocked (will score from title/company)")
 
         print(f"    Scoring ... ", end="", flush=True)

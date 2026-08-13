@@ -3,7 +3,8 @@ Score the job posting below against Nathália's rubric in CLAUDE.md.
 Steps:
 1. Read CLAUDE.md fully before scoring anything. Pay attention to the Location Timeline and Work Authorization section.
 2. Read the posting carefully, noting: role level, location/remote policy, salary (or estimate from company size), company background, required skills, **contract duration**, and any benefits that reveal employment type.
-3. Before scoring, explicitly check for these dealbreaker signals in the full posting text:
+3. Before scoring, explicitly check for these signals in the full posting text — stop immediately if any are found:
+   - **Closed posting**: "no longer accepting applications", "position has been filled", "this job is no longer", "applications are closed", "listing has expired" → Verdict: SKIP immediately, note the posting is closed
    - **US work authorization**: "W-2", "must be authorized to work in the US", "US citizens only", "across the country" (means US-only remote), "across the US"
    - **US employment type**: "401(k)", "401K" benefit mentioned → confirms US W-2 role, not a contractor or international hire
    - **Contract duration**: if the posting specifies a fixed contract term (e.g. "4-month contract", "6-month engagement") and Nathália is looking for a permanent or long-term role, flag this explicitly
@@ -81,6 +82,7 @@ Output format — follow this exactly:
 - [ ] US work authorization required (W-2, visa sponsorship, citizenship)
 - [ ] US-only remote ("across the country", "across the US", or US states listed as location)
 - [ ] 401(k) / 401K benefit listed (confirms US W-2 employment)
+- [ ] Posting closed / no longer accepting applications
 - [ ] Short-term contract (specify duration if yes)
 - [ ] On-site in city I won't be in
 - [ ] BRL-only pay below R$15k

@@ -37,6 +37,7 @@ Output:
 ## Top Unactioned (APPLY verdict, not yet applied)
 Every row MUST include a clickable URL to the job posting.
 **Do NOT list disqualified roles** (US-only, 401K, short-term contract, or any other hard dealbreaker confirmed by manual review). They are off the list — omit them entirely. Only show roles that are actionable.
+**Do NOT list closed or dead postings** — any role whose evaluation file contains "SKIPPED: posting closed or URL dead", or whose verdict is SKIP due to a 403/404 URL. These are gone and should not reappear.
 
 ## New Unscored Matches — API Sources
 Every row MUST include the URL from evaluated-jobs.csv.
