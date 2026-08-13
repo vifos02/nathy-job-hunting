@@ -81,6 +81,42 @@ TARGET_KEYWORDS = [
     "latam seo",
     "social media marketing",
     "demand generation",
+    # Portuguese-language equivalents — surfaces Brazilian boards (Gupy, LinkedIn BR) in PT
+    "gerente de marketing",
+    "gerente de marketing digital",
+    "gerente de seo",
+    "gerente de conteúdo",
+    "gerente de growth",
+    "head de marketing",
+    "head de seo",
+    "head de conteúdo",
+    "head de growth",
+    "diretor de marketing",
+    "diretora de marketing",
+    "diretor de marketing digital",
+    "especialista em seo",
+    "especialista em marketing",
+    "especialista em marketing digital",
+    "analista sênior de seo",
+    "analista sênior de marketing",
+    "analista de seo",
+    "analista de marketing digital",
+    "gerente de operações de marketing",
+    "líder de marketing",
+    "líder de seo",
+    "líder de conteúdo",
+    "coordenador sênior de marketing",
+    # Spanish-language equivalents — LATAM boards and InfoJobs
+    "marketing digital",
+    "director de marketing",
+    "directora de marketing",
+    "jefe de marketing",
+    "jefa de marketing",
+    "responsable de marketing",
+    "responsable seo",
+    "especialista en seo",
+    "especialista en marketing",
+    "gerente de marketing",
 ]
 
 # Hard blocklist — mirrors evaluate_matches.py. Skip even if a TARGET_KEYWORD matched.
@@ -116,6 +152,9 @@ SKIP_TITLE_WORDS = [
     "seattle,", "boston,", "denver,", "miami,", "atlanta,",
     # Common on-site role types that rarely go remote
     "office manager",
+    # Portuguese-language blocklist — junior/entry-level titles in PT
+    "coordenador de marketing", "coordenadora de marketing",
+    "assistente de marketing", "estagiário", "estagiária", "júnior",
 ]
 
 SKIP_INDUSTRY_WORDS = [

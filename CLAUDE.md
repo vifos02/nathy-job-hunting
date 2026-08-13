@@ -31,6 +31,18 @@ JWT High Potential award winner (2017) — one of 54 chosen from 12,000+ WPP emp
 - SEO Manager / Head of SEO / Head of Content / Head of Marketing
 - VP Marketing / VP of Marketing
 
+**Portuguese-language equivalents (evaluate these — Brazilian boards post in PT):**
+- Gerente de Marketing / Gerente de Marketing Digital / Gerente de SEO / Gerente de Conteúdo / Gerente de Growth
+- Head de Marketing / Head de SEO / Head de Conteúdo / Head de Growth
+- Diretor(a) de Marketing / Diretor de Marketing Digital
+- Especialista em SEO / Especialista em Marketing / Especialista em Marketing Digital
+- Analista Sênior de SEO / Analista Sênior de Marketing / Analista de Marketing Digital
+- Gerente de Operações de Marketing / Líder de Marketing / Líder de SEO / Líder de Conteúdo
+
+**Spanish-language equivalents (evaluate these — LATAM boards and InfoJobs):**
+- Director(a) de Marketing / Jefe(a) de Marketing / Responsable de Marketing
+- Especialista en SEO / Especialista en Marketing Digital / Responsable SEO
+
 **Boolean/location qualifiers that are positive signals (not exclusions):**
 Words like Remote, LATAM, Brazil, Spanish, Portuguese in a title indicate the role is likely relevant to Nathália's background and should be evaluated, not skipped.
 
