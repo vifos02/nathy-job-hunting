@@ -1,15 +1,18 @@
 #!/usr/bin/env python3
 """
 list_unscored.py — Print all matched=yes jobs that have no evaluation file yet.
-No API calls. Reads evaluated-jobs.csv and evaluations/*.md only.
+No API calls. Reads evaluated-jobs.csv, browser-finds.json, and evaluations/*.md.
 
 Usage:
     python list_unscored.py              # print all unscored, grouped by source
     python list_unscored.py --csv        # output as CSV
-    python list_unscored.py --source greenhouse   # filter by source prefix
+    python list_unscored.py --source linkedin    # filter by source prefix
+    python list_unscored.py --api-only   # only API scan results (evaluated-jobs.csv)
+    python list_unscored.py --browser-only  # only browser scan results (browser-finds.json)
 """
 
 import csv
+import json
 import re
 import sys
 from pathlib import Path
@@ -24,20 +27,42 @@ def load_scored_ids():
             ids.add(m.group(1).strip())
     return ids
 
-def load_unscored(source_filter=None):
+def load_unscored(source_filter=None, api_only=False, browser_only=False):
     scored = load_scored_ids()
     rows = []
-    with open(BASE / "evaluated-jobs.csv", newline="", encoding="utf-8") as fh:
-        reader = csv.DictReader(fh)
-        for row in reader:
-            if row["matched"] != "yes":
-                continue
-            if row["job_id"] in scored:
-                continue
-            if source_filter and not row["job_id"].startswith(source_filter):
-                continue
-            rows.append(row)
-    return rows
+
+    if not browser_only:
+        with open(BASE / "evaluated-jobs.csv", newline="", encoding="utf-8") as fh:
+            reader = csv.DictReader(fh)
+            for row in reader:
+                if row["matched"] != "yes":
+                    continue
+                if row["job_id"] in scored:
+                    continue
+                if source_filter and not row["job_id"].startswith(source_filter):
+                    continue
+                rows.append(row)
+
+    if not api_only:
+        bf = BASE / "browser-finds.json"
+        if bf.exists():
+            for entry in json.loads(bf.read_text()):
+                if entry.get("matched") != "yes":
+                    continue
+                if entry["job_id"] in scored:
+                    continue
+                if source_filter and not entry["job_id"].startswith(source_filter):
+                    continue
+                rows.append(entry)
+
+    # Deduplicate by job_id (a job could appear in both files)
+    seen = set()
+    deduped = []
+    for r in rows:
+        if r["job_id"] not in seen:
+            seen.add(r["job_id"])
+            deduped.append(r)
+    return deduped
 
 def source_prefix(job_id):
     parts = job_id.split(":")
@@ -45,14 +70,16 @@ def source_prefix(job_id):
 
 def main():
     as_csv = "--csv" in sys.argv
+    api_only = "--api-only" in sys.argv
+    browser_only = "--browser-only" in sys.argv
     source_filter = None
-    for arg in sys.argv[1:]:
+    for i, arg in enumerate(sys.argv[1:], 1):
         if arg.startswith("--source="):
             source_filter = arg.split("=", 1)[1]
-        elif arg == "--source" and sys.argv.index(arg) + 1 < len(sys.argv):
-            source_filter = sys.argv[sys.argv.index(arg) + 1]
+        elif arg == "--source" and i < len(sys.argv) - 1:
+            source_filter = sys.argv[i + 1]
 
-    rows = load_unscored(source_filter)
+    rows = load_unscored(source_filter, api_only=api_only, browser_only=browser_only)
 
     if as_csv:
         writer = csv.writer(sys.stdout)
