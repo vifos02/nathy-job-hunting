@@ -13,7 +13,7 @@
 
 | **Final Score** | **7.1/10** | *(8×0.30)+(7×0.25)+(5×0.20)+(7×0.15)+(9×0.10) = 2.4+1.75+1.0+1.05+0.9 = 7.1* |
 
-**Verdict: CONSIDER — apply if location is verified as remote/flexible and salary range is disclosed as acceptable**
+**Verdict: CONSIDER — defer (do not apply now)** *(2026-08-13: 8-month contract + original job link is broken. Added to watchlist. Revisit when link is live and salary is disclosed. Score ≥7.0 would normally trigger APPLY, but contract length and broken link block action until re-verified.)*
 
 ---
 

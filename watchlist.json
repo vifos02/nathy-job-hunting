@@ -35,5 +35,9 @@
   {"company": "Pipefy",           "platform": "workable",  "slug": "pipefy"},
   {"company": "Personio",         "platform": "personio",  "slug": "open"},
   {"company": "Semrush",          "platform": "greenhouse","slug": "semrush"},
-  {"company": "Rock Content",     "platform": "greenhouse","slug": "rockcontent"}
+  {"company": "Rock Content",     "platform": "greenhouse","slug": "rockcontent"},
+  {"company": "Deel",             "platform": "greenhouse","slug": "deel"},
+  {"company": "Wellhub",          "platform": "greenhouse","slug": "wellhub"},
+  {"company": "Doctoralia",       "platform": "gupy",      "slug": "doctoralia"},
+  {"company": "Solenis",          "platform": "greenhouse","slug": "solenis"}
 ]

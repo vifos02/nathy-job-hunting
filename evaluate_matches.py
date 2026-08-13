@@ -177,6 +177,8 @@ BLOCKED_COMPANIES = {
     "sui foundation",      # crypto
     "rubyplay",            # casino games
     "odds scanner group",  # sports betting
+    "redcore",             # iGaming/gambling SEO niche
+    "aphex media",         # iGaming SEO agency
 }
 
 

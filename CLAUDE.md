@@ -57,6 +57,7 @@ Words like Remote, LATAM, Brazil, Spanish, Portuguese in a title indicate the ro
 - Any role at a company in cryptocurrency, online betting, gambling, or adult content
 - Roles explicitly requiring US work authorization, US citizenship, or US employment (W-2 only)
 - On-site roles in cities I won't be in (any US city, APAC, European cities other than where I am)
+- Roles requiring professional-level German, French, Dutch, or other languages I don't speak (Skill Match = 1; job description written entirely in that language is a reliable signal)
 
 ---
 

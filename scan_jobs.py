@@ -385,6 +385,50 @@ def fetch_personio(slug: str) -> list[dict]:
     return jobs
 
 
+def fetch_bamboohr(slug: str) -> list[dict]:
+    url = f"https://{slug}.bamboohr.com/careers/list"
+    resp = requests.get(url, timeout=15)
+    resp.raise_for_status()
+    jobs = []
+    for j in resp.json().get("result", []):
+        job_id = str(j.get("id", ""))
+        title_obj = j.get("title") or {}
+        loc_obj = j.get("location") or {}
+        title = title_obj.get("label", "") if isinstance(title_obj, dict) else str(title_obj)
+        location = loc_obj.get("label", "") if isinstance(loc_obj, dict) else str(loc_obj)
+        jobs.append({
+            "id": job_id,
+            "title": title,
+            "location": location,
+            "url": f"https://{slug}.bamboohr.com/careers/{job_id}",
+        })
+    return jobs
+
+
+def fetch_teamtailor(slug: str) -> list[dict]:
+    url = f"https://{slug}.teamtailor.com/jobs.rss"
+    resp = requests.get(url, timeout=15)
+    resp.raise_for_status()
+    root = ET.fromstring(resp.content)
+    jobs = []
+    for item in root.findall(".//item"):
+        title_el = item.find("title")
+        link_el  = item.find("link")
+        guid_el  = item.find("guid")
+        if title_el is None:
+            continue
+        href = (link_el.text if link_el is not None else "") or \
+               (guid_el.text if guid_el is not None else "")
+        job_id = "tt:" + hashlib.sha1(href.encode()).hexdigest()[:12]
+        jobs.append({
+            "id": job_id,
+            "title": title_el.text or "",
+            "location": "",
+            "url": href,
+        })
+    return jobs
+
+
 def fetch_workable(slug: str) -> list[dict]:
     url = f"https://apply.workable.com/api/v3/accounts/{slug}/jobs"
     resp = requests.post(
@@ -516,14 +560,16 @@ def fetch_weworkremotely() -> list[dict]:
 
 
 FETCHERS = {
-    "greenhouse": lambda entry: fetch_greenhouse(entry["slug"]),
-    "lever":      lambda entry: fetch_lever(entry["slug"]),
-    "ashby":      lambda entry: fetch_ashby(entry["slug"]),
-    "workday":    fetch_workday,
-    "gupy":       lambda entry: fetch_gupy(entry["slug"]),
-    "workable":   lambda entry: fetch_workable(entry["slug"]),
-    "breezy":     lambda entry: fetch_breezy(entry["slug"]),
-    "personio":   lambda entry: fetch_personio(entry["slug"]),
+    "greenhouse":  lambda entry: fetch_greenhouse(entry["slug"]),
+    "lever":       lambda entry: fetch_lever(entry["slug"]),
+    "ashby":       lambda entry: fetch_ashby(entry["slug"]),
+    "workday":     fetch_workday,
+    "gupy":        lambda entry: fetch_gupy(entry["slug"]),
+    "workable":    lambda entry: fetch_workable(entry["slug"]),
+    "breezy":      lambda entry: fetch_breezy(entry["slug"]),
+    "personio":    lambda entry: fetch_personio(entry["slug"]),
+    "bamboohr":    lambda entry: fetch_bamboohr(entry["slug"]),
+    "teamtailor":  lambda entry: fetch_teamtailor(entry["slug"]),
 }
 
 AGGREGATORS = [

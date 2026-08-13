@@ -6,14 +6,14 @@
 | Dimension | Score | Reasoning |
 |-----------|-------|-----------|
 | Role Fit (30%) | 8/10 | Strong match. Growth Marketing Manager aligns perfectly with your 16-year trajectory—you've done this at CondoConta (promotion to Manager, 4-person team), Lumine (creative team oversight, launch campaign), and Mirum (cross-channel strategy). The 360° digital mandate (paid, SEO, content, demand gen) maps directly to your documented expertise. No overqualification risk; no red flags on level. |
-| Remote / Location (25%) | 4/10 | **Major concern.** Posting specifies "Berlin" with no explicit remote language. For an EU-based SaaS, this likely means on-site or hybrid in Berlin. You're in Tarragona (Spain); moving to Brazil Nov 2026. Berlin doesn't fit either timeline. No mention of remote work, async culture, or timezone flexibility. High risk this is on-site or requires regular Berlin presence. |
+| Remote / Location (25%) | 2/10 | **Berlin on-site concern + professional German required.** Posting specifies "Berlin" with no remote language. Additionally, Consultport operates in the German-language B2B consulting market — professional German is required to communicate with clients and partners. You do not have professional-level German. Two blockers: likely on-site Berlin, and language requirement. *(corrected 2026-08-13: professional German confirmed as requirement)* |
 | Compensation (20%) | 5/10 | **Undisclosed.** No salary range provided. Consultport is a growth-stage B2B SaaS (marketplace model), which typically pays €45k–€65k for a Growth Marketing Manager role in Berlin. Likely *around* your target (€50–70k) but no certainty. Cannot confirm without further research or outreach. |
 | Company Quality (15%) | 7/10 | Solid company. Consultport is a real, funded B2B consulting marketplace (Series A/B stage, well-known in EU startup circles). Strong product-market fit, transparent positioning, international team implied. Limited toxicity signals. However, no public funding announcements or glassdoor reviews visible in this posting. Appears credible but not household-name established. |
-| Skill Match (10%) | 8/10 | Excellent overlap. You have documented expertise in: Meta Ads (budgets $10k+), SEO strategy & execution (Canva 771k+ monthly searches), content optimization, demand gen funnels (CondoConta lead generation 2x increase, Lumine 22k+ leads), campaign optimization, cross-team collaboration. **Gap:** Google Ads depth (you've used Meta heavily; Google Ads is not listed as core expertise). This is learnable but not currently a strength. LinkedIn Ads also not explicitly on your CV. |
+| Skill Match (10%) | 1/10 | **Language hard blocker.** Consultport operates in the German B2B consulting market; professional German is required to work with clients and internal teams. You do not have professional-level German. Not learnable mid-job at a German-market company. *(corrected 2026-08-13: professional German confirmed as requirement)* |
 
-| **Final Score** | **6.5/10** | *(8×0.30)+(4×0.25)+(5×0.20)+(7×0.15)+(8×0.10) = 2.40+1.00+1.00+1.05+0.80 = 6.25* |
+| **Final Score** | **5.05/10** | *(8×0.30)+(2×0.25)+(5×0.20)+(7×0.15)+(1×0.10) = 2.4+0.5+1.0+1.05+0.1 = 5.05* — corrected 2026-08-13: German language blocker |
 
-**Verdict: CONSIDER — but verify remote/location flexibility before investing time**
+**Verdict: SKIP** *(was CONSIDER at 6.5 — corrected: professional German required, confirmed hard language blocker)*
 
 ---
 

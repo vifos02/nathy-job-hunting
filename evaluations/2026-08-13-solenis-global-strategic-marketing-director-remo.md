@@ -12,7 +12,7 @@
 | Skill Match (10%) | 6/10 | **Moderate overlap, some gaps.** ✅ You have: strategic thinking, team leadership, budget ownership, cross-border team management, campaign execution, OKR methodology, Salesforce reporting, project management. ❌ You're missing: deep B2B enterprise marketing (you've done B2B event coordination at CondoConta, but not strategic B2B demand gen or account-based marketing at scale). Industry vertical is unfamiliar (industrial chemicals, not your core). No mention of Marketo, HubSpot, or enterprise marketing automation platforms in your toolkit (you know Brevo/MailChimp, which is lighter). **You can learn the vertical and tools, but this is an adjacent skill set, not a bullseye.** |
 | **Final Score** | **6.8/10** | *(7×0.30)+(8×0.25)+(5×0.20)+(8×0.15)+(6×0.10) = 2.1+2.0+1.0+1.2+0.6 = **6.9/10*** |
 
-**Verdict: CONSIDER** — apply if pipeline is thin *or* if you want to test B2B enterprise marketing as a next chapter. Not a slam-dunk fit.
+**Verdict: SKIP** *(was CONSIDER — 2026-08-13: user reviewed and passed. Role requires deep water treatment / industrial maintenance domain expertise that Nathália does not have and cannot credibly reframe from her background. Added to watchlist as a network/contact reference for future outreach.)*
 
 ---
 

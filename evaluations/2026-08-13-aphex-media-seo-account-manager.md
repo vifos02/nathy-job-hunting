@@ -12,7 +12,7 @@
 | Skill Match (10%) | 6/10 | **Overlap:** On-page SEO, content strategy, technical diagnosis, reporting, client communication, project/vendor management. **Gaps:** You have **no documented experience with competitive-niche SEO** (Gaming/iGaming specifically), **no fresh-site-from-zero ranking track record**, **no negative SEO defense experience**, **no direct link-building strategy ownership**, and **limited Claude Code / automation workflow depth** (you use AI tools but not as a core workflow automation tool). You can learn these, but they're not in your resume. Skill match is moderate-to-good, not strong. |
 | **Final Score** | **6.5/10** | *(7×0.30)+(9×0.25)+(5×0.20)+(6×0.15)+(6×0.10) = 2.1+2.25+1.0+0.9+0.6 = 6.85* |
 
-**Verdict: CONSIDER** — Apply if your pipeline is thin and you're willing to learn Gaming/iGaming SEO. Otherwise, skip in favor of a role that better matches your proven strengths.
+**Verdict: SKIP** *(was CONSIDER — corrected 2026-08-13: Aphex Media is a gaming/iGaming SEO agency; role explicitly requires iGaming background. CLAUDE.md hard rule prohibits gambling/iGaming companies. Added to BLOCKED_COMPANIES)*
 
 ---
 

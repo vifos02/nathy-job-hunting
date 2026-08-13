@@ -12,7 +12,7 @@
 | Skill Match (10%) | 6/10 | **Mixed fit.** You have strong on-page SEO, content optimization, technical SEO basics (AHREFs, Botify, GSC, GA4). You've managed high-traffic, multi-regional sites (Canva Brazil, CondoConta, Lumine). You mentor and collaborate cross-functionally. **However, posting demands specific niches you lack:** iGaming (you have no documented gaming sector experience), Parasite SEO (no mention in CV), SERM (likely Search Engine Reputation Mgmt—new to your toolkit), and AI agents like Claude Code/Codex/Cursor (you use AI tools but not these specialized coding environments). HTML/CSS "sufficient for SEO-focused code analysis"—you have basic HTML but not deep enough for code audit. You can learn these quickly, but they're not documented skills. |
 | **Final Score** | **6.7/10** | *(7×0.30)+(9×0.25)+(5×0.20)+(6×0.15)+(6×0.10) = 2.1+2.25+1.0+0.9+0.6 = 6.85* |
 
-**Verdict: CONSIDER** — Apply if your pipeline is thin OR if you're willing to invest time learning iGaming/parasite SEO and negotiating on comp/role scope. Do not apply blind; clarify salary and iGaming expectations first.
+**Verdict: SKIP** *(was CONSIDER — corrected 2026-08-13: RedCore specializes in iGaming/gambling vertical; CLAUDE.md hard rule prohibits roles at gambling/iGaming companies. Added to BLOCKED_COMPANIES)*
 
 ---
 

@@ -12,7 +12,7 @@
 | Skill Match (10%) | 6/10 | **Partial match.** Role requires regional marketing leadership—she has proven team leadership, campaign execution, budget ownership, and cross-border stakeholder management. However, posting is **severely truncated** (cuts mid-sentence in "About" section), so no visibility into specific responsibilities, channels, or tools required. Cannot assess if it's SEO/content-heavy, paid-ads-focused, demand gen, or brand. Likely *some* overlap but too incomplete to score higher. |
 | **Final Score** | **6.6/10** | *(7×0.30)+(8×0.25)+(5×0.20)+(7×0.15)+(6×0.10) = 2.1+2.0+1.0+1.05+0.6 = 6.75 → 6.6* |
 
-**Verdict: CONSIDER — Apply if pipeline is thin, but only after clarifying the posting & compensation.**
+**Verdict: CONSIDER** *(user reviewed context: comfortable with forex/CFD broker industry — posting incompleteness and salary transparency remain the main friction points before applying)*
 
 ---
 
