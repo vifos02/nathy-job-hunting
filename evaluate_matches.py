@@ -174,6 +174,9 @@ US_ONLY_COMPANIES = {
 # that have neutral-sounding names the SKIP_INDUSTRY_WORDS filter won't catch.
 BLOCKED_COMPANIES = {
     "north star network",  # sports betting media
+    "sui foundation",      # crypto
+    "rubyplay",            # casino games
+    "odds scanner group",  # sports betting
 }
 
 
