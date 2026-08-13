@@ -170,6 +170,12 @@ US_ONLY_COMPANIES = {
     "spacex",
 }
 
+# Companies confirmed to operate in blocked industries (crypto, betting, gambling, adult)
+# that have neutral-sounding names the SKIP_INDUSTRY_WORDS filter won't catch.
+BLOCKED_COMPANIES = {
+    "north star network",  # sports betting media
+}
+
 
 # ---------------------------------------------------------------------------
 # Load context
@@ -258,6 +264,8 @@ def prefilter(matches: list[dict]) -> list[dict]:
         if any(kw in title for kw in US_AUTH_TITLE_SIGNALS):
             continue
         if any(co in company for co in US_ONLY_COMPANIES):
+            continue
+        if any(co in company for co in BLOCKED_COMPANIES):
             continue
 
         keep.append(m)
