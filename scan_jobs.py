@@ -154,6 +154,8 @@ SKIP_TITLE_WORDS = [
     # E-commerce as job function — outside target scope
     "e-commerce", "ecommerce", "e commerce", "e-comm",
     "comércio eletrônico",
+    # CRM as primary job function — specialist/ops discipline outside target scope
+    "crm",
     # Common on-site role types that rarely go remote
     "office manager",
     # Portuguese-language blocklist — junior/entry-level titles in PT
