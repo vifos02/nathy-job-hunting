@@ -167,18 +167,37 @@ def fetch_greenhouse(job_id: str) -> str | None:
 def fetch_via_playwright(url: str, pw_page) -> str | None:
     """Fetch a JS-rendered page, expanding any 'Show more' buttons before reading."""
     try:
-        pw_page.goto(url, wait_until="domcontentloaded", timeout=20_000)
-        pw_page.wait_for_timeout(2500)  # let JS hydrate
+        pw_page.goto(url, wait_until="networkidle", timeout=30_000)
 
-        # LinkedIn and many ATS boards hide the full JD behind an expand button.
-        # Try clicking any visible "Show more" / "See more" / "Ver mais" buttons.
+        # Detect redirect to login wall
+        current_url = pw_page.url
+        if "linkedin.com/login" in current_url or "authwall" in current_url:
+            return ""  # not logged in in this context
+
+        # Wait for LinkedIn's job description container to appear
+        jd_selectors = [
+            ".jobs-description__content",
+            ".jobs-description",
+            ".description__text",
+            ".show-more-less-html",
+            "[class*='job-description']",
+            "[class*='jobDescription']",
+            "article",
+        ]
+        for sel in jd_selectors:
+            try:
+                pw_page.wait_for_selector(sel, timeout=5_000)
+                break
+            except Exception:
+                pass
+
+        # Click any "Show more" / expand button to get the full JD text
         expand_selectors = [
-            "button.show-more-less-html__button--more",       # LinkedIn (most common)
+            "button.show-more-less-html__button--more",
             "button[aria-label='Show more']",
             "button[aria-label='See more']",
             "button[aria-label='Ver mais']",
-            "button.jobs-description__footer-button",          # LinkedIn variant
-            "a.jobs-description__footer-button",
+            "button.jobs-description__footer-button",
             "[data-tracking-control-name='public_jobs_show-more-html-btn']",
         ]
         for selector in expand_selectors:
@@ -186,12 +205,12 @@ def fetch_via_playwright(url: str, pw_page) -> str | None:
                 btn = pw_page.query_selector(selector)
                 if btn and btn.is_visible():
                     btn.click()
-                    pw_page.wait_for_timeout(1500)  # wait for content to expand
+                    pw_page.wait_for_timeout(1500)
                     break
             except Exception:
                 pass
 
-        # Also try clicking any generic "Show more" / "Ver mais" text buttons
+        # Generic text match for expand buttons
         try:
             for btn in pw_page.query_selector_all("button"):
                 label = (btn.inner_text() or "").strip().lower()
@@ -207,7 +226,8 @@ def fetch_via_playwright(url: str, pw_page) -> str | None:
         text = _text_from_html(content.encode())
         if _check_closed(text):
             return None
-        if len(text.strip()) < 200:
+        # Lower threshold — LinkedIn pages often load some chrome even without JD
+        if len(text.strip()) < 100:
             return ""
         return text[:6000]
     except Exception:
@@ -606,14 +626,22 @@ def main():
         pw_inst = sync_playwright().start()
         try:
             browser = pw_inst.chromium.connect_over_cdp(cdp_url)
-            # Use the first existing browser context (carries the user's session)
+            # Use the first existing browser context (carries the user's cookies/session).
+            # Do NOT create a new context — a new context starts fresh with no cookies.
             if browser.contexts:
                 pw_context = browser.contexts[0]
-                pw_page = pw_context.new_page()
             else:
                 pw_context = browser.new_context()
-                pw_page = pw_context.new_page()
-            print("Connected. Using your existing Chrome session.\n")
+            pw_page = pw_context.new_page()
+            # Verify LinkedIn session is active by checking cookies
+            cookies = pw_context.cookies("https://www.linkedin.com")
+            li_at = any(c["name"] == "li_at" for c in cookies)
+            if li_at:
+                print("Connected. LinkedIn session confirmed (li_at cookie present).\n")
+            else:
+                print("Connected, but LinkedIn session cookie not found.")
+                print("  → Open LinkedIn in your Chrome window and make sure you're logged in,")
+                print("    then re-run this script.\n")
         except Exception as e:
             pw_inst.stop()
             pw_inst = None
