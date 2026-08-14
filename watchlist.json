@@ -39,5 +39,13 @@
   {"company": "Deel",             "platform": "greenhouse","slug": "deel"},
   {"company": "Wellhub",          "platform": "greenhouse","slug": "wellhub"},
   {"company": "Doctoralia",       "platform": "gupy",      "slug": "doctoralia"},
-  {"company": "Solenis",          "platform": "greenhouse","slug": "solenis"}
+  {"company": "Solenis",          "platform": "greenhouse","slug": "solenis"},
+
+  {"company": "Glovo",            "platform": "greenhouse","slug": "glovo"},
+  {"company": "Wallapop",         "platform": "greenhouse","slug": "wallapop"},
+  {"company": "Canonical",        "platform": "greenhouse","slug": "canonical"},
+  {"company": "Monday.com",       "platform": "greenhouse","slug": "mondaydotcom"},
+  {"company": "Notion",           "platform": "greenhouse","slug": "notion"},
+  {"company": "Netflix",          "platform": "lever",     "slug": "netflix"},
+  {"company": "Magazine Luiza",   "platform": "gupy",      "slug": "magazineluiza"}
 ]

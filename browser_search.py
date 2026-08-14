@@ -136,6 +136,8 @@ SKIP_TITLE_WORDS = [
     "tel aviv",
     "new york,", "san francisco,", "austin,", "chicago,", "los angeles,",
     "seattle,", "boston,", "denver,", "miami,", "atlanta,",
+    # DACH = Germany/Austria/Switzerland region; requires German fluency she doesn't have
+    "dach",
     # E-commerce as job function — outside target scope
     "e-commerce", "ecommerce", "e commerce", "e-comm",
     "comércio eletrônico",
@@ -143,10 +145,20 @@ SKIP_TITLE_WORDS = [
     # Portuguese-language blocklist — junior/entry-level titles in PT
     "coordenador de marketing", "coordenadora de marketing",
     "assistente de marketing", "estagiário", "estagiária", "júnior",
+    # Language-requirement signals in title
+    "— german", "- german", "(german)", "| german",
+    "german language", "german speaker", "german-speaking", "native german",
+    "— french", "- french", "(french)", "| french",
+    "french language", "french speaker", "french-speaking", "native french",
+    "— dutch", "- dutch", "(dutch)", "| dutch",
+    "dutch language", "dutch speaker", "dutch-speaking", "native dutch",
 ]
 SKIP_INDUSTRY_WORDS = [
     "crypto", "cryptocurrency", "bitcoin", "blockchain",
-    "betting", "gambling", "casino", "adult",
+    "betting", "gambling", "casino",
+    "igaming", "i-gaming",
+    "nft", "defi", "web3", "dao",
+    "adult entertainment", "adult content",
 ]
 # Only explicit auth language in titles — timezone alone is not a block (Brazil = UTC-3)
 US_AUTH_TITLE_SIGNALS = [

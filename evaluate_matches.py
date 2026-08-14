@@ -156,11 +156,24 @@ SKIP_TITLE_WORDS = [
     # Portuguese-language blocklist — junior/entry-level titles in PT
     "coordenador de marketing", "coordenadora de marketing",
     "assistente de marketing", "estagiário", "estagiária", "júnior",
+    # Language-requirement signals in title — languages she doesn't speak professionally.
+    # "— German" / "- French" at end of title = language required, not location.
+    # "germany" / "france" are NOT blocked here (location tag, not language requirement).
+    # Portuguese and Spanish are NOT blocked (native / fluent).
+    "— german", "- german", "(german)", "| german",
+    "german language", "german speaker", "german-speaking", "native german",
+    "— french", "- french", "(french)", "| french",
+    "french language", "french speaker", "french-speaking", "native french",
+    "— dutch", "- dutch", "(dutch)", "| dutch",
+    "dutch language", "dutch speaker", "dutch-speaking", "native dutch",
 ]
 
 SKIP_INDUSTRY_WORDS = [
     "crypto", "cryptocurrency", "bitcoin", "blockchain",
-    "betting", "gambling", "casino", "adult",
+    "betting", "gambling", "casino",
+    "igaming", "i-gaming",
+    "nft", "defi", "web3", "dao",
+    "adult entertainment", "adult content",
 ]
 
 # Title signals that explicitly restrict to US applicants (work authorization implied)
