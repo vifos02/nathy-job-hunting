@@ -15,8 +15,8 @@ Fetch strategies used automatically by source:
 
 Usage:
     # Recommended — connect to your already-running Chrome (keeps your LinkedIn session):
-    # Step 1: quit Chrome fully, then reopen it with remote debugging enabled:
-    #   /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+    # Step 1: quit Chrome fully (Cmd+Q), then reopen it with remote debugging enabled:
+    #   open -a "Google Chrome" --args --remote-debugging-port=9222
     # Step 2: log into LinkedIn normally in that Chrome window, then run:
     python3 prefilter_unscored.py --cdp --write-skips --csv ranked.csv
 
