@@ -71,6 +71,8 @@ REQUIRED_TITLE_KEYWORDS = [
     "vp marketing",
     "vp of marketing",
     "vp, marketing",
+    "marketing lead",
+    "marketing digital",
     "latam marketing",
     "latam content",
     "latam seo",
@@ -286,7 +288,7 @@ def prefilter(matches: list[dict]) -> list[dict]:
         # Hard blocklist overrides the allowlist
         if any(kw in title for kw in SKIP_TITLE_WORDS):
             continue
-        if any(kw in company for kw in SKIP_INDUSTRY_WORDS):
+        if any(kw in title or kw in company for kw in SKIP_INDUSTRY_WORDS):
             continue
         if any(kw in title for kw in US_AUTH_TITLE_SIGNALS):
             continue

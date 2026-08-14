@@ -34,6 +34,7 @@ import glob
 import hashlib
 import json
 import os
+import re
 import sys
 import time
 from datetime import date
@@ -106,10 +107,15 @@ TARGET_KEYWORDS = [
     "director de marketing",
     "directora de marketing",
     "jefe de marketing",
+    "jefa de marketing",
     "responsable seo",
     "responsable de marketing",
     "especialista en seo",
     "especialista en marketing",
+    "especialista en marketing digital",
+    "vp, marketing",
+    # PT senior coordinator — surfaces Gupy/LinkedIn BR postings
+    "coordenador sênior de marketing",
 ]
 
 # Applied after TARGET_KEYWORDS match — mirrors scan_jobs.py / evaluate_matches.py
@@ -362,14 +368,21 @@ def _linkedin_subdomain(url: str) -> str:
         return "www"
 
 
+def _kw_match(keyword: str, text: str) -> bool:
+    """Word-boundary match for short keywords (≤4 chars) to avoid false positives."""
+    if len(keyword) <= 4:
+        return bool(re.search(r'\b' + re.escape(keyword) + r'\b', text))
+    return keyword in text
+
+
 def is_match(title: str, company: str = "") -> bool:
     t = title.lower()
     c = company.lower()
-    if not any(kw in t for kw in TARGET_KEYWORDS):
+    if not any(_kw_match(kw, t) for kw in TARGET_KEYWORDS):
         return False
     if any(kw in t for kw in SKIP_TITLE_WORDS):
         return False
-    if any(kw in c for kw in SKIP_INDUSTRY_WORDS):
+    if any(kw in t or kw in c for kw in SKIP_INDUSTRY_WORDS):
         return False
     if any(kw in t for kw in US_AUTH_TITLE_SIGNALS):
         return False
@@ -718,7 +731,7 @@ def scrape_remoteco(page, seen_ids: set, today: str) -> tuple:
             seen_ids.add(job_id)
             seen_ids.add(ct_key)
 
-            matched = is_match(title)
+            matched = is_match(title, company)
             row = {
                 "job_id": job_id,
                 "company": company,

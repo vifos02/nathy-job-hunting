@@ -116,6 +116,8 @@ TARGET_KEYWORDS = [
     "responsable seo",
     "especialista en seo",
     "especialista en marketing",
+    "especialista en marketing digital",
+    "vp, marketing",
 ]
 
 # Hard blocklist — mirrors evaluate_matches.py. Skip even if a TARGET_KEYWORD matched.
