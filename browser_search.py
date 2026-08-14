@@ -166,8 +166,6 @@ LINKEDIN_ALLOWED_SUBDOMAINS = {
     "de", "fr", "nl", "it", "be", "se", "no", "dk", "fi", "at", "ch", "lu",
     # North America
     "ca",
-    # Anglophone + regional tech hubs
-    "au", "nz", "sg",
 }
 
 SEARCH_QUERIES = [
