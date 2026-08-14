@@ -151,18 +151,24 @@ US_AUTH_TITLE_SIGNALS = [
 ]
 
 # LinkedIn assigns subdomains by company country (sa.linkedin.com = Saudi company, etc.).
-# Allowlist keeps only markets where remote-friendly, internationally-hiring companies post.
-# Anything outside this set is skipped — it avoids noise from Middle East, South/East Asia,
-# sub-Saharan Africa, and Eastern Europe boards that rarely produce relevant remote roles.
+# Allowlist — only markets relevant to Nathália's search. Everything else is silently skipped.
+#
+# EXPLICITLY EXCLUDED (not in this list → skipped automatically):
+#   Middle East:     sa, ae, kw, qa, bh, om, jo, lb, eg, iq, ir, ye
+#   South Asia:      in, bd, pk, lk, np
+#   East Asia:       cn, hk, tw, jp, kr
+#   Southeast Asia:  sg, my, id, ph, th, vn, mm, kh
+#   Oceania:         au, nz
+#   Sub-Saharan Africa, Eastern Europe, Central Asia — all excluded
 LINKEDIN_ALLOWED_SUBDOMAINS = {
     "www",            # global / default
-    # LATAM — Brazil is primary target market; rest are LATAM-remote-friendly
+    # LATAM — Brazil is primary target; rest are LATAM-remote-friendly markets
     "br", "mx", "co", "ar", "cl", "pe", "uy", "ec", "ve", "py", "bo",
     # Spain + Portugal — current location + EU adjacency
     "es", "pt",
     # UK + Ireland — large tech presence, many EU-remote HQs
     "gb", "ie",
-    # Western + Northern Europe — common for remote-worldwide postings
+    # Western + Northern Europe — common source of remote-worldwide postings
     "de", "fr", "nl", "it", "be", "se", "no", "dk", "fi", "at", "ch", "lu",
     # North America
     "ca",
