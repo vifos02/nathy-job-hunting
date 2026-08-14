@@ -132,9 +132,13 @@ SKIP_TITLE_WORDS = [
     "japan", "tokyo", "singapore", "apac", "asia pacific",
     "china", "hong kong", "korea", "sydney", "australia",
     "indonesia", "jakarta", "malaysia", "kuala lumpur", "philippines",
-    "são paulo", "sao paulo", "tel aviv",
+    # São Paulo and Curitiba intentionally NOT blocked — moving to Brazil Nov 2026
+    "tel aviv",
     "new york,", "san francisco,", "austin,", "chicago,", "los angeles,",
     "seattle,", "boston,", "denver,", "miami,", "atlanta,",
+    # E-commerce as job function — outside target scope
+    "e-commerce", "ecommerce", "e commerce", "e-comm",
+    "comércio eletrônico",
     "office manager",
     # Portuguese-language blocklist — junior/entry-level titles in PT
     "coordenador de marketing", "coordenadora de marketing",
@@ -234,6 +238,14 @@ SEARCH_QUERIES = [
     "jefe de marketing",
     "especialista en seo",
     "especialista en marketing digital",
+    # São Paulo + Curitiba hybrid — moving to Brazil Nov 2026; on-site and hybrid roles are viable
+    "marketing manager são paulo",
+    "seo manager são paulo",
+    "gerente de marketing são paulo",
+    "marketing híbrido são paulo",
+    "gerente de marketing curitiba",
+    "marketing manager curitiba",
+    "seo curitiba",
 ]
 
 # InfoJobs-specific query list — focused on what the Spanish board is good at:

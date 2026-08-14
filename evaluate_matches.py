@@ -142,10 +142,15 @@ SKIP_TITLE_WORDS = [
     "indonesia", "jakarta", "malaysia", "kuala lumpur", "philippines",
     # DACH = Germany/Austria/Switzerland region; requires German fluency she doesn't have
     "dach",
-    # On-site locations in title (city + comma = likely location tag)
-    "são paulo", "sao paulo", "tel aviv",
+    # On-site locations in title — cities she won't be near
+    # São Paulo and Curitiba are intentionally NOT blocked — moving to Brazil Nov 2026,
+    # hybrid roles there are in scope.
+    "tel aviv",
     "new york,", "san francisco,", "austin,", "chicago,", "los angeles,",
     "seattle,", "boston,", "denver,", "miami,", "atlanta,",
+    # E-commerce as job function (not company industry) — outside target scope
+    "e-commerce", "ecommerce", "e commerce", "e-comm",
+    "comércio eletrônico",
     # On-site role types that rarely go remote
     "office manager",
     # Portuguese-language blocklist — junior/entry-level titles in PT

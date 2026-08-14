@@ -90,6 +90,35 @@ Update this list as you discover new targets. Add the ATS/careers URL and any no
 
 ---
 
+## Great Place to Work Certified — Brazil & Spain
+
+Companies recognized on GPTW's annual Best Workplaces lists for Brazil (2025) and Spain (2026),
+filtered for marketing team relevance and excluding duplicates already in the Fortune 500 section above.
+
+Source: GPTW Brasil 2025 (main + TI rankings) | GPTW España 2026 + Best Workplaces Tech España 2025.
+
+### Brazil — GPTW 2025
+
+| Company | GPTW Rank / Category | Industry | ATS / Careers URL | Tier | Notes |
+|---------|----------------------|----------|-------------------|------|-------|
+| Magazine Luiza (Magalu) | #2 Gigantes (10k+ employees) | Retail tech | https://www.magazineluiza.com.br/trabalhe-conosco | 🔴 | One of Brazil's best-known digital marketing teams. Strong SEO, content, social, growth. São Paulo HQ. |
+| Serasa Experian | #18 GPTW TI Grandes | Fintech / Data | https://carreiras.serasaexperian.com.br | 🔴 | Experian subsidiary. LATAM marketing and content roles. Fintech background from CondoConta is directly relevant. São Paulo. |
+| Vivo / Telefónica Brasil | #11 GPTW TI Grandes | Telecom | https://vivo.gupy.io | 🟡 | Largest telecom in Brazil. Digital marketing, brand, and content roles. São Paulo HQ. |
+| CI&T Software | #27 GPTW TI Grandes | Digital consulting | https://ciandt.com/us/en-us/careers | 🟡 | Brazilian tech company, global clients. Digital marketing strategy and content roles. São Paulo + global. |
+| Thomson Reuters Brasil | #26 GPTW TI Grandes | Media / Legal tech | https://jobs.thomsonreuters.com | 🟡 | Content, editorial, and marketing roles. English-first environment. Pays well. |
+| Novo Nordisk Brasil | #1 GPTW Grandes (all sectors) | Pharma | https://www.novonordisk.com.br/carreiras | ⚪ | LATAM marketing manager roles exist. Strong culture. Less direct industry fit. São Paulo. |
+| Cognizant Brasil | #21 GPTW TI Grandes | IT consulting | https://careers.cognizant.com | ⚪ | Fortune 500. LATAM presence. Internal marketing and demand gen roles. Slower hiring cycle. |
+
+### Spain — GPTW 2026
+
+| Company | GPTW Rank / Category | Industry | ATS / Careers URL | Tier | Notes |
+|---------|----------------------|----------|-------------------|------|-------|
+| Publicis Groupe Spain | #9 Best Workplaces 1000+ | Advertising / Media | https://careers.publicisgroupe.com | 🔴 | WPP's main rival — she knows the agency holding world deeply. Madrid + Barcelona. Content, digital, SEO, social roles. |
+| Marriott International Spain | #4 Best Workplaces 1000+ | Hospitality | https://jobs.marriott.com | 🟡 | Barcelona presence. Digital marketing and social media roles. Multilingual team. |
+| Equinix Spain | Best Workplaces Tech 2025 (251–500) | Data centers / Tech | https://careers.equinix.com | ⚪ | Barcelona. B2B tech marketing. Less direct fit but strong culture and international team. |
+
+---
+
 ## Fortune 500 Multinationals — São Paulo & Barcelona
 
 Companies on the US Fortune 500 with confirmed offices in São Paulo (SP) and/or Barcelona (BCN),
