@@ -90,6 +90,49 @@ Update this list as you discover new targets. Add the ATS/careers URL and any no
 
 ---
 
+## Fortune 500 Multinationals — São Paulo & Barcelona
+
+Companies on the US Fortune 500 with confirmed offices in São Paulo (SP) and/or Barcelona (BCN),
+or known EOR hiring in those countries. Prioritized for marketing relevance.
+
+"Both" = physical office in both cities. EOR = no local entity but confirmed remote hiring via Deel/Remote/similar.
+
+| Company | São Paulo | Barcelona | Industry | ATS / Careers URL | Tier | Notes |
+|---------|-----------|-----------|----------|-------------------|------|-------|
+| Google (Alphabet) | ✅ office | ✅ office | Tech | https://careers.google.com | 🔴 | Google Brasil HQ in SP; Barcelona engineering hub. Strong LATAM marketing team. Content/SEO/growth roles. |
+| Meta (Facebook) | ✅ office | ❌ | Tech / Social | https://www.metacareers.com | 🔴 | Meta Brasil office in SP. LATAM marketing, Brazil market roles. Portuguese fluency valued. |
+| Microsoft | ✅ office | ✅ office | Tech | https://careers.microsoft.com | 🔴 | Microsoft Brasil in SP; Barcelona presence. LATAM content and marketing roles exist. |
+| Amazon | ✅ office | ✅ office | Tech / Retail | https://www.amazon.jobs | 🟡 | AWS São Paulo region + Amazon.com.br operations; Barcelona tech hub. Marketing roles tend to be US-centric. |
+| Salesforce | ✅ office | ✅ office | CRM SaaS | https://salesforce.com/company/careers | 🔴 | SP and BCN offices. LATAM marketing and content roles common. Growth/demand gen. |
+| Oracle | ✅ office | ✅ office | Tech / Cloud | https://www.oracle.com/careers | 🟡 | Oracle Brasil in SP; Barcelona. Enterprise-focused, marketing roles exist but slow-moving. |
+| SAP | ✅ office | ✅ office | ERP / SaaS | https://jobs.sap.com | 🟡 | SAP Brasil (SP) and Barcelona. LATAM marketing roles. German company, not technically Fortune 500 but globally equivalent. |
+| IBM | ✅ office | ✅ office | Tech / Consulting | https://www.ibm.com/employment | 🟡 | IBM Brasil HQ in SP; Barcelona. Content and digital marketing roles. Large but slow hiring. |
+| Cisco | ✅ office | ✅ office | Networking Tech | https://jobs.cisco.com | 🟡 | Cisco Brazil in SP; Barcelona office. B2B tech marketing. |
+| HP Inc. | ✅ office | ✅ office | Tech / Hardware | https://jobs.hp.com | ⚪ | HP Brazil in SP; Barcelona. Mostly product/channel marketing. |
+| Accenture | ✅ office | ✅ office | Consulting | https://www.accenture.com/us-en/careers | 🟡 | Very large SP and BCN offices. Marketing practice and internal marketing roles. Knows WPP network. |
+| Booking Holdings | ✅ office | ✅ office | Travel Tech | https://careers.bookingholdings.com | 🔴 | Booking.com Brazil and Barcelona. Content, SEO, and localization roles. Strong fit. |
+| Netflix | ✅ office | ❌ | Streaming | https://jobs.netflix.com | 🔴 | Netflix Brasil in SP. LATAM content marketing, social, and growth roles. Excellent fit. |
+| Mastercard | ✅ office | ❌ | Fintech | https://careers.mastercard.com | 🟡 | SP office. LATAM marketing and communications roles. Fintech background from CondoConta relevant. |
+| Visa | ✅ office | ❌ | Fintech | https://careers.visa.com | 🟡 | SP office. LATAM marketing. Similar to Mastercard profile. |
+| PayPal | ✅ office | ❌ | Fintech | https://careers.pypl.com | 🟡 | PayPal Brazil operations. Digital marketing and growth roles. |
+| Uber | ✅ office | ❌ | Mobility / Tech | https://www.uber.com/us/en/careers | 🟡 | Very large SP presence. LATAM marketing, growth, and city-ops marketing. High velocity team. |
+| Nike | ✅ office | ✅ office | Consumer / Apparel | https://jobs.nike.com | 🟡 | Nike Brazil and Spain. Brand and digital marketing roles. Agency background valued. |
+| Johnson & Johnson | ✅ office | ✅ office | Healthcare | https://jobs.jnj.com | ⚪ | J&J Brazil HQ in SP; Barcelona. Pharma/consumer marketing — less direct fit. |
+| Procter & Gamble | ✅ office | ✅ office | Consumer Goods | https://www.pgcareers.com | ⚪ | P&G Brazil and Spain. Consumer brand marketing. Rigid culture, long process. |
+| 3M | ✅ office | ✅ office | Manufacturing | https://careers.3m.com | ⚪ | 3M Brazil in SP; Spain. B2B marketing roles, lower relevance. |
+| Intel | ✅ office | ✅ office | Semiconductors | https://jobs.intel.com | ⚪ | Brazil and Barcelona offices. Mostly engineering; occasional content/marketing. |
+| Dell Technologies | ✅ office | ✅ office | Tech / Hardware | https://jobs.dell.com | ⚪ | Dell Brazil and Spain. B2B marketing, lower urgency. |
+| Caterpillar | ✅ office | ❌ | Manufacturing | https://www.caterpillar.com/en/careers | ⚪ | Large Brazil manufacturing base. B2B, not a natural fit. |
+
+### Notes on EOR / Remote-first Fortune 500
+Some Fortune 500 companies hire internationally without local offices via EOR services (Deel, Remote.com, Papaya Global). These are worth searching if they post fully remote roles:
+- **Cloudflare** — remote-first, uses EOR for international hires; LATAM/content marketing roles
+- **Twilio** — remote-friendly, Brazil-relevant roles (SMS/WhatsApp integrations)
+- **Zendesk** — remote roles, LATAM market focus
+- **HubSpot** — not yet Fortune 500 but Fortune 1000; hires remote in Brazil via EOR; top priority
+
+---
+
 ## Various job boards
 
 https://www.remoterocketship.com/?page=1&sort=DateAdded&locations=Worldwide%2CEurope%2CLatin+America%2CBrazil&seniority=senior%2Cexpert&minSalary=50000&jobTitle=Marketing

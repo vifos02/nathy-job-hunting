@@ -145,6 +145,8 @@ SKIP_TITLE_WORDS = [
     "japan", "tokyo", "singapore", "apac", "asia pacific",
     "indonesia", "jakarta", "malaysia", "kuala lumpur", "philippines",
     "china", "hong kong", "korea", "sydney", "australia",
+    # DACH = Germany/Austria/Switzerland region; requires German fluency she doesn't have
+    "dach",
     # On-site US/LATAM cities in title (city + comma = likely on-site location tag)
     "são paulo", "sao paulo", "tel aviv",
     "new york,", "san francisco,", "austin,", "chicago,", "los angeles,",
