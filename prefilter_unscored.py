@@ -165,10 +165,44 @@ def fetch_greenhouse(job_id: str) -> str | None:
 
 
 def fetch_via_playwright(url: str, pw_page) -> str | None:
-    """Fetch a JS-rendered page using an already-open Playwright page."""
+    """Fetch a JS-rendered page, expanding any 'Show more' buttons before reading."""
     try:
         pw_page.goto(url, wait_until="domcontentloaded", timeout=20_000)
         pw_page.wait_for_timeout(2500)  # let JS hydrate
+
+        # LinkedIn and many ATS boards hide the full JD behind an expand button.
+        # Try clicking any visible "Show more" / "See more" / "Ver mais" buttons.
+        expand_selectors = [
+            "button.show-more-less-html__button--more",       # LinkedIn (most common)
+            "button[aria-label='Show more']",
+            "button[aria-label='See more']",
+            "button[aria-label='Ver mais']",
+            "button.jobs-description__footer-button",          # LinkedIn variant
+            "a.jobs-description__footer-button",
+            "[data-tracking-control-name='public_jobs_show-more-html-btn']",
+        ]
+        for selector in expand_selectors:
+            try:
+                btn = pw_page.query_selector(selector)
+                if btn and btn.is_visible():
+                    btn.click()
+                    pw_page.wait_for_timeout(1500)  # wait for content to expand
+                    break
+            except Exception:
+                pass
+
+        # Also try clicking any generic "Show more" / "Ver mais" text buttons
+        try:
+            for btn in pw_page.query_selector_all("button"):
+                label = (btn.inner_text() or "").strip().lower()
+                if label in ("show more", "see more", "ver mais", "mostrar mais", "leer más"):
+                    if btn.is_visible():
+                        btn.click()
+                        pw_page.wait_for_timeout(1500)
+                        break
+        except Exception:
+            pass
+
         content = pw_page.content()
         text = _text_from_html(content.encode())
         if _check_closed(text):
