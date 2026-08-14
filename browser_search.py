@@ -150,6 +150,26 @@ US_AUTH_TITLE_SIGNALS = [
     "california,", "us northeast,", "us south,", "us midwest,",
 ]
 
+# LinkedIn assigns subdomains by company country (sa.linkedin.com = Saudi company, etc.).
+# Allowlist keeps only markets where remote-friendly, internationally-hiring companies post.
+# Anything outside this set is skipped — it avoids noise from Middle East, South/East Asia,
+# sub-Saharan Africa, and Eastern Europe boards that rarely produce relevant remote roles.
+LINKEDIN_ALLOWED_SUBDOMAINS = {
+    "www",            # global / default
+    # LATAM — Brazil is primary target market; rest are LATAM-remote-friendly
+    "br", "mx", "co", "ar", "cl", "pe", "uy", "ec", "ve", "py", "bo",
+    # Spain + Portugal — current location + EU adjacency
+    "es", "pt",
+    # UK + Ireland — large tech presence, many EU-remote HQs
+    "gb", "ie",
+    # Western + Northern Europe — common for remote-worldwide postings
+    "de", "fr", "nl", "it", "be", "se", "no", "dk", "fi", "at", "ch", "lu",
+    # North America
+    "ca",
+    # Anglophone + regional tech hubs
+    "au", "nz", "sg",
+}
+
 SEARCH_QUERIES = [
     # Core discipline queries — run worldwide
     "seo manager",
@@ -300,6 +320,16 @@ def _is_us_location(location: str) -> bool:
 def url_id(url: str) -> str:
     """12-char SHA1 of the URL — stable job ID for browser-found jobs."""
     return hashlib.sha1(url.encode()).hexdigest()[:12]
+
+
+def _linkedin_subdomain(url: str) -> str:
+    """Return the subdomain from a LinkedIn job URL (e.g. 'br' from br.linkedin.com/...)."""
+    try:
+        host = url.split("//", 1)[1].split("/")[0]  # e.g. "br.linkedin.com"
+        parts = host.split(".")
+        return parts[0] if len(parts) == 3 else "www"
+    except Exception:
+        return "www"
 
 
 def is_match(title: str, company: str = "") -> bool:
@@ -574,6 +604,10 @@ def scrape_linkedin(page, seen_ids: set, today: str) -> tuple:
                 # Strip tracking params — everything after ?
                 href = href.split("?")[0].rstrip("/")
                 if not href or href in found_urls:
+                    continue
+                # Skip jobs from LinkedIn country subdomains outside target markets
+                # (sa.=Saudi, pl.=Poland, in.=India, eg.=Egypt, ae.=UAE, etc.)
+                if _linkedin_subdomain(href) not in LINKEDIN_ALLOWED_SUBDOMAINS:
                     continue
                 found_urls.add(href)
 
