@@ -700,38 +700,91 @@ def scrape_linkedin(page, seen_ids: set, today: str) -> tuple:
 def scrape_remoteco(page, seen_ids: set, today: str) -> tuple:
     all_new, matches = [], []
 
-    url = "https://remote.co/remote-jobs/marketing/"
-    print(f"    marketing listing ... ", end="", flush=True)
-
-    for attempt in range(2):
-        try:
-            page.goto(url, timeout=35000, wait_until="domcontentloaded")
-            page.wait_for_timeout(2500)
+    # Remote.co redesigned — try the general remote-jobs listing then filter by keyword
+    urls_to_try = [
+        "https://remote.co/remote-jobs/marketing/",
+        "https://remote.co/remote-jobs/",
+    ]
+    loaded = False
+    for url in urls_to_try:
+        print(f"    {url.split('remote.co')[1]} ... ", end="", flush=True)
+        for attempt in range(2):
+            try:
+                page.goto(url, timeout=40000, wait_until="load")
+                page.wait_for_timeout(3000)
+                loaded = True
+                break
+            except Exception as e:
+                err_msg = str(e).split("\n")[0][:120]
+                if attempt == 0:
+                    time.sleep(3)
+                    continue
+                print(f"SKIP ({type(e).__name__}: {err_msg})")
+        if loaded:
             break
-        except Exception as e:
-            if attempt == 0:
-                time.sleep(3)
-                continue
-            print(f"SKIP ({type(e).__name__})")
-            return [], []
+
+    if not loaded:
+        return [], []
+
+    # Dismiss cookie consent if present
+    for btn_sel in [
+        "button#onetrust-accept-btn-handler",
+        "button[class*='accept']",
+        "button[id*='accept']",
+        "[class*='cookie'] button",
+        "button[data-action*='accept']",
+    ]:
+        try:
+            btn = page.query_selector(btn_sel)
+            if btn and btn.is_visible():
+                btn.click()
+                page.wait_for_timeout(1000)
+                break
+        except Exception:
+            pass
+
+    # Try waiting for job cards to appear (JS-rendered)
+    for selector in [".job_listings li", "li.job_listing", "[class*='job-card']"]:
+        try:
+            page.wait_for_selector(selector, timeout=8000)
+            break
+        except Exception:
+            pass
 
     # Remote.co uses WP Job Manager — cards are <li> inside .job_listings
     cards = (
         page.query_selector_all(".job_listings li.job_listing")
         or page.query_selector_all("li.job_listing")
         or page.query_selector_all("article.job_listing")
+        or page.query_selector_all("[class*='job-card']")
         or page.query_selector_all("[class*='JobCard']")
     )
+
+    if not cards:
+        body_snippet = page.content()[:500].lower()
+        print(f"0 (no cards found; page title: {page.title()!r})")
+        return [], []
 
     new_count = 0
     for card in cards:
         try:
-            title_el = card.query_selector(".position h3, h3")
+            title_el = (
+                card.query_selector(".position h3")
+                or card.query_selector("h3")
+                or card.query_selector("h2")
+                or card.query_selector("a[class*='title']")
+            )
             if not title_el:
                 continue
             title = title_el.inner_text().strip()
+            if not is_match(title):
+                continue  # only keep relevant titles from the general listing
 
-            company_el = card.query_selector(".company strong, .company_name")
+            company_el = (
+                card.query_selector(".company strong")
+                or card.query_selector(".company_name")
+                or card.query_selector("[class*='company']")
+            )
             company = company_el.inner_text().strip() if company_el else "Unknown"
 
             link_el = card.query_selector("a")
@@ -777,20 +830,53 @@ def scrape_infojobs(page, seen_ids: set, today: str) -> tuple:
     all_new, matches = [], []
     found_urls: set = set()
 
+    # Load InfoJobs once, accept cookies, then iterate queries via URL changes
+    # Modern URL format (replaces the deprecated .xhtml JSF endpoint)
+    _ij_base = "https://www.infojobs.net/ofertas-trabajo"
+    _ij_loaded = False
+
+    print(f"    [init] loading InfoJobs ... ", end="", flush=True)
+    try:
+        page.goto(_ij_base, timeout=40000, wait_until="domcontentloaded")
+        page.wait_for_timeout(3000)
+        _ij_loaded = True
+        print("OK")
+    except Exception as e:
+        err_msg = str(e).split("\n")[0][:120]
+        print(f"BLOCKED ({type(e).__name__}: {err_msg}) — skipping InfoJobs for this run")
+
+    if _ij_loaded:
+        # Dismiss GDPR / cookie consent on first load
+        for btn_sel in [
+            "button#didomi-notice-agree-button",
+            "button[id*='accept']",
+            "button[class*='accept']",
+            "#onetrust-accept-btn-handler",
+            "button[data-testid*='accept']",
+        ]:
+            try:
+                btn = page.query_selector(btn_sel)
+                if btn and btn.is_visible():
+                    btn.click()
+                    page.wait_for_timeout(1500)
+                    break
+            except Exception:
+                pass
+
     for query in INFOJOBS_QUERIES:
+        if not _ij_loaded:
+            break
         q = query.replace(" ", "+")
-        # teleworking=FULL_REMOTE = 100% remote filter; sortBy=PUBLICATION_DATE = newest first
-        url = (
-            f"https://www.infojobs.net/jobsearch/search-results/list.xhtml"
-            f"?keyword={q}&teleworking=FULL_REMOTE&sortBy=PUBLICATION_DATE"
-        )
+        # Modern InfoJobs search URL with remote filter
+        url = f"{_ij_base}?keyword={q}&teleworking=FULL_REMOTE&order=date"
         print(f"    {query!r} ... ", end="", flush=True)
 
         try:
             page.goto(url, timeout=40000, wait_until="domcontentloaded")
-            page.wait_for_timeout(4000)
+            page.wait_for_timeout(3500)
         except Exception as e:
-            print(f"SKIP ({type(e).__name__})")
+            err_msg = str(e).split("\n")[0][:80]
+            print(f"SKIP ({type(e).__name__}: {err_msg})")
             continue
 
         body = page.content().lower()
@@ -800,6 +886,7 @@ def scrape_infojobs(page, seen_ids: set, today: str) -> tuple:
             or "robot" in body[:3000]
             or "too many requests" in body[:3000]
             or "cloudflare" in body[:3000]
+            or "cf-browser-verification" in body[:3000]
         ):
             print("BLOCKED — skipping InfoJobs for this run")
             break
