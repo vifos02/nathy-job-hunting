@@ -126,16 +126,20 @@ Steps:
    - Rows use class `apply`, `consider`, or `unscored` on the `<tr>` for the left-border stripe.
    - Verdict pill uses class `p-apply`, `p-consider`, or `p-skip`.
 
-10. Commit and push both files in one go:
+9b. **Link validation (APPLY + CONSIDER only):** Before writing the digest, check if `link-status.json` exists in the repo root. If it does, read it — it's a `{url: status_code}` dict written by `validate_links.py`. For any APPLY or CONSIDER entry whose URL appears in that dict with status 404, 403, or 410, prepend "⚠️ " to the company name in both the markdown and HTML tables. If `link-status.json` is absent or empty, skip validation silently (no warning needed).
+
+10. Run `python3 update_index.py` to rebuild index.html with the new digest listed at the top.
+
+11. Commit and push all three files in one go:
     ```
-    git add digests/YYYY-MM-DD-HHMM.md digests/YYYY-MM-DD-HHMM.html
+    git add digests/YYYY-MM-DD-HHMM.md digests/YYYY-MM-DD-HHMM.html index.html
     git commit -m "digest YYYY-MM-DD-HHMM"
     git push
     ```
     Confirm the push succeeded.
-    Then tell the user: **`open digests/YYYY-MM-DD-HHMM.html`** to view it in their browser.
+    Then tell the user: **`open https://vifos02.github.io/nathy-job-hunting/`** to view the digest index, or open the direct digest link.
 
-    Do NOT use the Artifact tool. The HTML file is the deliverable.
+    Do NOT use the Artifact tool. The GitHub Pages URL is the deliverable.
 
 ---
 

@@ -551,10 +551,18 @@ def fetch_workingnomads() -> list[dict]:
 def fetch_weworkremotely() -> list[dict]:
     resp = requests.get(
         "https://weworkremotely.com/categories/remote-marketing-jobs.rss",
-        timeout=15,
+        timeout=20,
+        headers={"User-Agent": "Mozilla/5.0 (compatible; nathy-job-hunter/1.0)"},
     )
     resp.raise_for_status()
-    root = ET.fromstring(resp.content)
+    content = resp.content.strip()
+    # WWR occasionally returns an HTML error page instead of XML — skip cleanly
+    if not (content.startswith(b"<?xml") or content.startswith(b"<rss") or content.startswith(b"<feed")):
+        raise ValueError(f"WWR returned non-XML (len={len(content)}): {content[:120]!r}")
+    try:
+        root = ET.fromstring(content)
+    except ET.ParseError as exc:
+        raise ValueError(f"WWR XML parse error: {exc}") from exc
     jobs = []
     for item in root.findall(".//item"):
         title_el = item.find("title")

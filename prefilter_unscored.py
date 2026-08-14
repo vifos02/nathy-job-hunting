@@ -34,11 +34,12 @@ try:
 except ImportError:
     HTTP_AVAILABLE = False
 
-ROOT          = Path(__file__).parent
-SEEN_JOBS     = ROOT / "evaluated-jobs.csv"
-BROWSER_FINDS = ROOT / "browser-finds.json"
-EVALS_DIR     = ROOT / "evaluations"
-COMPANIES_MD  = ROOT / "companies.md"
+ROOT            = Path(__file__).parent
+SEEN_JOBS       = ROOT / "evaluated-jobs.csv"
+BROWSER_FINDS   = ROOT / "browser-finds.json"
+EVALS_DIR       = ROOT / "evaluations"
+COMPANIES_MD    = ROOT / "companies.md"
+MANUAL_REVIEWS  = ROOT / "manual-reviews.csv"
 
 # ---------------------------------------------------------------------------
 # Import filter rules from evaluate_matches.py (single source of truth)
@@ -124,22 +125,36 @@ def load_scored_ids() -> set:
     return ids
 
 
+def load_manual_reviewed_ids() -> set:
+    """Return job_ids that have been manually reviewed via mark_skip.py."""
+    ids: set = set()
+    if not MANUAL_REVIEWS.exists():
+        return ids
+    with MANUAL_REVIEWS.open(newline="", encoding="utf-8") as f:
+        for row in csv.DictReader(f):
+            if row.get("job_id"):
+                ids.add(row["job_id"].strip())
+    return ids
+
+
 def load_unscored() -> list[dict]:
     scored = load_scored_ids()
+    manual = load_manual_reviewed_ids()
+    skip_ids = scored | manual
     rows = []
     seen_ids: set = set()
 
     if SEEN_JOBS.exists():
         with SEEN_JOBS.open(newline="", encoding="utf-8") as f:
             for row in csv.DictReader(f):
-                if row.get("matched") == "yes" and row["job_id"] not in scored:
+                if row.get("matched") == "yes" and row["job_id"] not in skip_ids:
                     if row["job_id"] not in seen_ids:
                         seen_ids.add(row["job_id"])
                         rows.append(row)
 
     if BROWSER_FINDS.exists():
         for entry in json.loads(BROWSER_FINDS.read_text(encoding="utf-8")):
-            if entry.get("matched") == "yes" and entry["job_id"] not in scored:
+            if entry.get("matched") == "yes" and entry["job_id"] not in skip_ids:
                 if entry["job_id"] not in seen_ids:
                     seen_ids.add(entry["job_id"])
                     rows.append(entry)

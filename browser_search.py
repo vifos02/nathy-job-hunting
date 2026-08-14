@@ -495,9 +495,18 @@ def scrape_indeed(page, seen_ids: set, today: str) -> tuple:
             print("BLOCKED (CAPTCHA) — skipping Indeed for this run")
             break
 
-        cards = page.query_selector_all("div.job_seen_beacon")
+        # Indeed frequently redesigns — try selectors in order of precedence
+        cards = (
+            page.query_selector_all("div.job_seen_beacon")
+            or page.query_selector_all("div[data-jk]")
+            or page.query_selector_all("div[class*='tapItem']")
+            or page.query_selector_all("li[class*='Result']")
+            or page.query_selector_all("li[class*='job']")
+        )
         if not cards:
-            cards = page.query_selector_all("li[class*='job']")
+            print("0 (no card selector matched — Indeed HTML may have changed)")
+            time.sleep(2)
+            continue
 
         new_count = 0
         for card in cards:
@@ -694,17 +703,25 @@ def scrape_remoteco(page, seen_ids: set, today: str) -> tuple:
     url = "https://remote.co/remote-jobs/marketing/"
     print(f"    marketing listing ... ", end="", flush=True)
 
-    try:
-        page.goto(url, timeout=25000, wait_until="domcontentloaded")
-        page.wait_for_timeout(2000)
-    except Exception as e:
-        print(f"SKIP ({type(e).__name__})")
-        return [], []
+    for attempt in range(2):
+        try:
+            page.goto(url, timeout=35000, wait_until="domcontentloaded")
+            page.wait_for_timeout(2500)
+            break
+        except Exception as e:
+            if attempt == 0:
+                time.sleep(3)
+                continue
+            print(f"SKIP ({type(e).__name__})")
+            return [], []
 
     # Remote.co uses WP Job Manager — cards are <li> inside .job_listings
-    cards = page.query_selector_all(".job_listings li.job_listing")
-    if not cards:
-        cards = page.query_selector_all("li.job_listing")
+    cards = (
+        page.query_selector_all(".job_listings li.job_listing")
+        or page.query_selector_all("li.job_listing")
+        or page.query_selector_all("article.job_listing")
+        or page.query_selector_all("[class*='JobCard']")
+    )
 
     new_count = 0
     for card in cards:
@@ -770,14 +787,20 @@ def scrape_infojobs(page, seen_ids: set, today: str) -> tuple:
         print(f"    {query!r} ... ", end="", flush=True)
 
         try:
-            page.goto(url, timeout=30000, wait_until="domcontentloaded")
-            page.wait_for_timeout(3000)
+            page.goto(url, timeout=40000, wait_until="domcontentloaded")
+            page.wait_for_timeout(4000)
         except Exception as e:
             print(f"SKIP ({type(e).__name__})")
             continue
 
         body = page.content().lower()
-        if "captcha" in body[:3000] or "access denied" in body[:3000] or "robot" in body[:3000]:
+        if (
+            "captcha" in body[:3000]
+            or "access denied" in body[:3000]
+            or "robot" in body[:3000]
+            or "too many requests" in body[:3000]
+            or "cloudflare" in body[:3000]
+        ):
             print("BLOCKED — skipping InfoJobs for this run")
             break
 
