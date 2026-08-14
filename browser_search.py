@@ -167,7 +167,7 @@ LINKEDIN_ALLOWED_SUBDOMAINS = {
     # Spain + Portugal — current location + EU adjacency
     "es", "pt",
     # UK + Ireland — large tech presence, many EU-remote HQs
-    "gb", "ie",
+    "uk", "ie",  # LinkedIn uses "uk" subdomain, not "gb"
     # Western + Northern Europe — common source of remote-worldwide postings
     "de", "fr", "nl", "it", "be", "se", "no", "dk", "fi", "at", "ch", "lu",
     # North America
