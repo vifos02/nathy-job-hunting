@@ -119,6 +119,34 @@ Source: GPTW Brasil 2025 (main + TI rankings) | GPTW España 2026 + Best Workpla
 
 ---
 
+## Top Employers Institute Certified — Brazil & Spain
+
+Companies certified by the Top Employers Institute for 2026 in Brazil (75 certified) or Spain (146 certified),
+filtered for marketing team relevance and excluding duplicates already listed in other sections.
+
+Source: Top Employers Institute 2026 official certifications (Brazil + Spain).
+
+### Brazil — Top Employers 2026
+
+| Company | Industry | ATS / Careers URL | Tier | Notes |
+|---------|----------|-------------------|------|-------|
+| Nestlé Brasil | Consumer goods | https://www.nestle.com.br/carreiras | 🟡 | Recurring Top Employer (multiple consecutive years including 2025; 2026 very likely). Large brand, content, and digital marketing team. São Paulo. |
+| Mondelez Brasil | FMCG / Consumer goods | https://careers.mondelezinternational.com | 🟡 | Global food brand (Oreo, Lacta, Club Social). Confirmed Top Employer 2026 Brazil. Strong marketing and digital team. São Paulo. |
+| Sodexo Brasil | Services / Workplace | https://careers.sodexo.com | ⚪ | Confirmed Top Employer 2026 (second consecutive year). Internal B2B marketing. Strong people culture. São Paulo. |
+| Boehringer Ingelheim Brasil | Pharma / Life sciences | https://www.boehringer-ingelheim.com/careers | ⚪ | Confirmed Top Employer 2026 Brazil. Pharma marketing roles (LATAM). Good culture. São Paulo. |
+
+### Spain — Top Employers 2026
+
+| Company | Industry | ATS / Careers URL | Tier | Notes |
+|---------|----------|-------------------|------|-------|
+| Dentsu España | Advertising / Marketing | https://www.dentsu.com/es/es/careers | 🔴 | Global agency group (Carat, dentsu X, Isobar). Top Employer Spain 2026. Marketing, SEO, content, social, digital roles. Holds 2,300+ professionals. WPP-adjacent world. Madrid + Barcelona. |
+| Banco Santander | Banking / Financial | https://www.santander.com/careers | 🟡 | Top Employer Spain 2026. Ranked #9 Best Company Spain 2026. Large digital marketing and comms team. Madrid HQ. Also has Santander Brasil — LATAM-connected. |
+| BBVA | Banking / Financial | https://careers.bbva.com | 🟡 | Top Employer Spain 2026. Named Europe's Best Employer 2026 by FT/Statista. Strong digital culture. Large brand and marketing team. Madrid HQ. |
+| Iberdrola | Energy | https://www.iberdrola.com/careers | 🟡 | Top Employer Spain 2026 (second consecutive year — only global energy company with this cert). Large comms and brand team. Bilbao + Madrid + international. |
+| Amadeus | Travel tech / SaaS | https://www.amadeus.com/en/careers | 🟡 | Top Employer Spain 2026. Madrid/Barcelona HQ. Travel tech SaaS. Digital marketing, content, and demand gen roles. English-first team. |
+
+---
+
 ## Fortune 500 Multinationals — São Paulo & Barcelona
 
 Companies on the US Fortune 500 with confirmed offices in São Paulo (SP) and/or Barcelona (BCN),
