@@ -14,15 +14,19 @@ Fetch strategies used automatically by source:
   others        → plain requests + BeautifulSoup
 
 Usage:
-    # Step 1 — save your LinkedIn login once (opens a real browser window):
-    python prefilter_unscored.py --save-auth
+    # Recommended — connect to your already-running Chrome (keeps your LinkedIn session):
+    # Step 1: quit Chrome fully, then reopen it with remote debugging enabled:
+    #   /Applications/Google\ Chrome.app/Contents/MacOS/Google\ Chrome --remote-debugging-port=9222
+    # Step 2: log into LinkedIn normally in that Chrome window, then run:
+    python3 prefilter_unscored.py --cdp --write-skips --csv ranked.csv
 
-    # Step 2 — run the full pre-filter using saved login:
-    python prefilter_unscored.py --playwright --write-skips --csv ranked.csv
+    # Alternative — save a LinkedIn session once (if --cdp doesn't work):
+    python3 prefilter_unscored.py --save-auth
+    python3 prefilter_unscored.py --playwright --write-skips --csv ranked.csv
 
     # Other flags:
-    python prefilter_unscored.py --dry-run           # show list, no fetching
-    python prefilter_unscored.py --limit 50          # process only first N jobs
+    python3 prefilter_unscored.py --dry-run           # show list, no fetching
+    python3 prefilter_unscored.py --limit 50          # process only first N jobs
 
 After running with --write-skips, evaluate_matches.py will skip the confirmed SKIPs
 and only score the survivors. Without API credits, open ranked.csv and manually
@@ -164,7 +168,7 @@ def fetch_via_playwright(url: str, pw_page) -> str | None:
     """Fetch a JS-rendered page using an already-open Playwright page."""
     try:
         pw_page.goto(url, wait_until="domcontentloaded", timeout=20_000)
-        pw_page.wait_for_timeout(2000)  # let JS hydrate
+        pw_page.wait_for_timeout(2500)  # let JS hydrate
         content = pw_page.content()
         text = _text_from_html(content.encode())
         if _check_closed(text):
@@ -211,9 +215,12 @@ def fetch_jd(job: dict, pw_page=None) -> str | None:
     if job_id.startswith("linkedin:"):
         if pw_page is not None:
             return fetch_via_playwright(url, pw_page)
-        return ""  # can't fetch without Playwright — pass through as blocked
+        return ""  # can't fetch without browser — pass through as blocked
 
     return fetch_plain_http(url)
+
+
+CDP_DEFAULT_PORT = 9222
 
 
 # ---------------------------------------------------------------------------
@@ -456,13 +463,36 @@ def write_tombstone(job_id: str, company: str, title: str, url: str, reasons: li
 # ---------------------------------------------------------------------------
 
 def save_linkedin_auth():
-    """Open a headed browser, let the user log into LinkedIn, then save the session."""
+    """Open a headed browser without automation flags so LinkedIn allows login."""
     if not PLAYWRIGHT_AVAILABLE:
         sys.exit("Playwright not installed. Run: pip install playwright && playwright install chromium")
     print("Opening browser — log into LinkedIn, then press Enter here to save the session.")
     with sync_playwright() as pw:
-        browser = pw.chromium.launch(headless=False)
-        context = browser.new_context()
+        # Use installed Google Chrome if available — avoids Playwright's Chromium
+        # which macOS may quarantine and which shows the 'test' automation banner.
+        try:
+            browser = pw.chromium.launch(
+                headless=False,
+                channel="chrome",          # use your real Chrome install
+                args=["--disable-blink-features=AutomationControlled"],
+                ignore_default_args=["--enable-automation"],
+            )
+        except Exception:
+            # Fall back to Playwright's Chromium if Chrome isn't installed
+            browser = pw.chromium.launch(
+                headless=False,
+                args=["--disable-blink-features=AutomationControlled"],
+                ignore_default_args=["--enable-automation"],
+            )
+        context = browser.new_context(
+            user_agent=(
+                "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) "
+                "AppleWebKit/537.36 (KHTML, like Gecko) "
+                "Chrome/124.0.0.0 Safari/537.36"
+            )
+        )
+        # Hide the webdriver property that bot-detection scripts check
+        context.add_init_script("delete Object.getPrototypeOf(navigator).webdriver")
         page = context.new_page()
         page.goto("https://www.linkedin.com/login")
         input("\nLog in inside the browser window, then press Enter here to save... ")
@@ -475,6 +505,13 @@ def save_linkedin_auth():
 def main():
     parser = argparse.ArgumentParser(description=__doc__,
                                      formatter_class=argparse.RawDescriptionHelpFormatter)
+    parser.add_argument("--cdp", action="store_true",
+                        help="Connect to your already-running Chrome via CDP (port 9222). "
+                             "Start Chrome first with: "
+                             "/Applications/Google\\ Chrome.app/Contents/MacOS/Google\\ Chrome "
+                             "--remote-debugging-port=9222")
+    parser.add_argument("--cdp-port", type=int, default=CDP_DEFAULT_PORT,
+                        help=f"Chrome remote debugging port (default: {CDP_DEFAULT_PORT})")
     parser.add_argument("--save-auth", action="store_true",
                         help="Open a browser window to log into LinkedIn and save the session for future runs")
     parser.add_argument("--dry-run", action="store_true",
@@ -493,7 +530,7 @@ def main():
         save_linkedin_auth()
         return
 
-    if args.playwright and not PLAYWRIGHT_AVAILABLE:
+    if (args.playwright or args.cdp) and not PLAYWRIGHT_AVAILABLE:
         sys.exit("Playwright not installed. Run: pip install playwright && playwright install chromium")
 
     jobs = load_unscored()
@@ -527,7 +564,30 @@ def main():
     pw_page    = None
     pw_inst    = None
 
-    if args.playwright:
+    if args.cdp:
+        # Connect to already-running Chrome — uses the user's real session, no login needed
+        cdp_url = f"http://localhost:{args.cdp_port}"
+        print(f"Connecting to Chrome via CDP at {cdp_url} ...")
+        print("  (Make sure Chrome is running with --remote-debugging-port=9222)")
+        pw_inst = sync_playwright().start()
+        try:
+            browser = pw_inst.chromium.connect_over_cdp(cdp_url)
+            # Use the first existing browser context (carries the user's session)
+            if browser.contexts:
+                pw_context = browser.contexts[0]
+                pw_page = pw_context.new_page()
+            else:
+                pw_context = browser.new_context()
+                pw_page = pw_context.new_page()
+            print("Connected. Using your existing Chrome session.\n")
+        except Exception as e:
+            pw_inst.stop()
+            pw_inst = None
+            print(f"  Could not connect to Chrome: {e}")
+            print("  Make sure Chrome is open and was started with --remote-debugging-port=9222")
+            print("  Falling back to plain fetch (LinkedIn JDs will be skipped).\n")
+
+    elif args.playwright:
         print("Starting Playwright browser for LinkedIn fetches...")
         context_kwargs = {
             "user_agent": (
@@ -541,7 +601,7 @@ def main():
             print(f"  Using saved LinkedIn session from {AUTH_STATE.name}")
         else:
             print("  No saved session found — LinkedIn JDs may hit auth walls.")
-            print("  Run with --save-auth first for better results.")
+            print("  Run with --save-auth first, or use --cdp instead.")
         pw_inst = sync_playwright().start()
         browser = pw_inst.chromium.launch(headless=True)
         pw_context = browser.new_context(**context_kwargs)
