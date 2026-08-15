@@ -162,6 +162,25 @@ def load_unscored() -> list[dict]:
     return rows
 
 # ---------------------------------------------------------------------------
+# LinkedIn domain allowlist — mirrors LINKEDIN_ALLOWED_SUBDOMAINS in browser_search.py.
+# Jobs from any other *.linkedin.com subdomain are hard-blocked; almost all are
+# on-site India/APAC/Middle East roles that survived the title-only pass.
+# ---------------------------------------------------------------------------
+LINKEDIN_ALLOWED_SUBDOMAINS = {
+    "www",
+    # LATAM
+    "br", "mx", "co", "ar", "cl", "pe", "uy", "ec", "ve", "py", "bo",
+    # Spain + Portugal
+    "es", "pt",
+    # UK + Ireland
+    "uk", "ie",
+    # Western + Northern Europe
+    "de", "fr", "nl", "it", "be", "se", "no", "dk", "fi", "at", "ch", "lu",
+    # North America
+    "ca",
+}
+
+# ---------------------------------------------------------------------------
 # Title + company hard filter (imported rules from evaluate_matches.py)
 # ---------------------------------------------------------------------------
 
@@ -186,6 +205,13 @@ def title_company_filter(jobs: list[dict]) -> tuple[list[dict], list[dict]]:
                     reason = f"too old ({found_date_str})"
             except ValueError:
                 pass
+
+        if reason is None:
+            # LinkedIn domain check — reject non-target-market subdomains
+            _url = job.get("url", "")
+            _lm = re.match(r"https?://([a-z]{2,})\.linkedin\.com", _url)
+            if _lm and _lm.group(1) not in LINKEDIN_ALLOWED_SUBDOMAINS:
+                reason = f"LinkedIn domain not in target list: {_lm.group(1)}.linkedin.com"
 
         if reason is None:
             # Must match at least one target keyword
