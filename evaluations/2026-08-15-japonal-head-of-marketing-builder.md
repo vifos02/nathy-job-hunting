@@ -1,4 +1,4 @@
-<!-- job_id: linkedin:4449534288 -->
+<!-- job_id: linkedin:b55676faea2e -->
 ---
 **Japonal — Head of Marketing Builder | Scale-Up | 100% Remoto**
 *Source: https://es.linkedin.com/jobs/view/head-of-marketing-builder-scale-up-100%25-remoto-at-japonal-4449534288 | Evaluated: 2026-08-15*

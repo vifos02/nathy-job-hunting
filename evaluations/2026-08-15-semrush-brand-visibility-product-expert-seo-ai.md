@@ -1,4 +1,4 @@
-<!-- job_id: linkedin:4452991061 -->
+<!-- job_id: linkedin:c9d03a32f001 -->
 ---
 **Semrush — Brand Visibility Product Expert, SEO & AI Visibility (Enterprise Solution Unit)**
 *Source: https://es.linkedin.com/jobs/view/brand-visibility-product-expert-seo-ai-visibility-enterprise-solution-unit-at-semrush-4452991061 | Evaluated: 2026-08-15*

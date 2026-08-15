@@ -1,4 +1,4 @@
-<!-- job_id: linkedin:4453109113 -->
+<!-- job_id: linkedin:561a59b83f77 -->
 ---
 **Confidential — Head of Marketing (100% Remote)**
 *Source: https://es.linkedin.com/jobs/view/head-of-marketing-remote-at-confidential-4453109113 | Evaluated: 2026-08-15*
